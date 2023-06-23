@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="jspsych/jspsych.js"></script>
+    <script src="jspsych/plugin-survey-text.js"></script>
+    <script src="jspsych/plugin-html-button-response.js"></script>
+    <script src="jspsych/plugin-html-slider-response-JT.js"></script>
+    <script src="helpers.js"></script>
+    <link  href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+  <script>
+
+// send the data to store script
+function saveData(data){
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/store');
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(data);
+      // xhr.send(JSON.stringify({filedata: data}));
+    }
+
+// initialise jspsych 
+var jsPsych = initJsPsych({
+  on_finish: function () {
+    jsPsych.data.displayData("csv");
+  },
+});
+
+/* define the control stimuli */
+
+
+/* define the ingredients for the target stimuli */
+
+// numberOfItems should be identical to the number of predicates
+var numberOfItems = 6
+
+// predicates (already in 3rd person singular, present or past tense)
+var predicates = ["knows","thinks","discovered", "confessed","said","is right"]
+
+// array of contents 
+var contents = ['sophia', 'emma', 'mia', 'danny', 'tony', 'jackson']
+var contents_long = {
+  'sophia': "got a tattoo",
+  'emma': "studied on Saturday morning",
+  'mia': "drank two cocktails last night",
+  'danny': "ate the last cupcake",
+  'tony': "had a drink last night",
+  'jackson': "ran 10 miles"
+}
+
+// define the content name as proper name or pronoun
+var names_of_contents = {
+  'sophia': {name: 'Sophia', pronoun: 'she'},
+  'emma': {name: 'Emma', pronoun: 'she'},
+  'mia': {name: 'Mia', pronoun: 'she'},
+  'danny': {name: 'Danny', pronoun: 'he'},
+  'tony': {name: 'Tony', pronoun: 'he'},
+  'jackson': {name: 'Jackson', pronoun: 'he'}
+}
+
+// predefine an attitude holder name for each content, opposite gender of content name
+var ahs = {
+  'sophia': {name: 'Patrick', pronoun: 'He'},
+  'emma': {name: 'James', pronoun: 'He'},
+  'mia': {name: 'David', pronoun: 'He'},
+  'danny': {name: 'Linda', pronoun: 'She'},
+  'tony': {name: 'Jessica', pronoun: 'She'},
+  'jackson': {name: 'Patricia', pronoun: 'She'}
+}
+
+
+// questions for each content
+var questions = {
+  'sophia': {'mc' : "What about Patrick? Why is he angry?",
+  cc: "What about Sophia? What did she do?"},
+  'emma': {'mc' : "What about James? Why is he annoyed?",
+  cc: "What about Emma? What did she do?"},
+  'mia': {'mc' : "What about David? Why is he smirking?",
+  cc: "What about Mia? What did she do?"},
+  'danny': {'mc' : "What about Linda? Why is she pouting?",
+  cc: "What about Danny? What did he do?"},
+  'tony': {'mc' : "What about Jessica? Why is she upset?",
+  cc: "What about Tony? What did he do?"},
+  'jackson': {'mc' : "What about Patricia? Why is she proud?",
+  cc: "What about Jackson? What did he do?"}
+}
+
+
+// function to get a random predicate and remove it from array
+function getPredicate() {
+    predicate = shuffle(predicates).shift()
+  return predicate
+}
+
+// function to get a random content and remove it from array
+function getContent() {
+    content = shuffle(contents).shift()
+  return content
+}
+
+// function to get the mc or cc question for a content 
+function getQuestion(content,j) {
+    question = questions[content][j]
+    return question
+}
+
+// function to make an item
+function makeAnItem(i,j) {
+  // get a first speaker
+    var name_data = shuffle(names).shift()
+    var speaker1 = name_data.name
+  // get a second speaker
+    var name_data = shuffle(names).shift()
+    var speaker2 = name_data.name
+  // get a content and a predicate
+    var content = getContent()
+    var predicate = getPredicate()
+  // get a question for that content
+    var question = getQuestion(content,j)
+  // get long content from content and the names of the content
+    var content_long = contents_long[content]
+    var content_name = names_of_contents[content].name
+    var content_pronoun = names_of_contents[content].pronoun
+  // get the ah and the corresponding pronoun
+    var ah = ahs[content].name
+    var ah_pronoun = ahs[content].pronoun
+    return {
+    "speaker1": speaker1,
+    "speaker2": speaker2, 
+    "predicate": predicate,
+    "content": content_long,
+    "content_name": content_name,
+    "content_pronoun": content_pronoun,
+    "type": j,
+    "question": question,
+    "ah": ah,
+    "ah_pronoun": ah_pronoun,
+
+    }
+  }
+
+// predicates.length determins how many items are built
+// console.log(numberOfItems)
+
+// initialize empty array of items
+items = []
+
+// loop to create an array of items: one item for each predicate
+// half with mc question, half with cc question
+for (var i = 0; i < numberOfItems/2; i++) {
+   item = makeAnItem(i,'mc')
+   items.push(item)
+}  
+
+for (var i = numberOfItems/2; i < numberOfItems; i++) {
+   item = makeAnItem(i,'cc')
+   items.push(item)
+}
+
+// console.log(items)
+
+// this function takes an item as an argument and builds the stimulus to be displayed
+// whether the pronoun or the proper name are used in the main clause and the CC
+// depend on the type of item
+function buildStimulus(item) {
+   if (item.type == "mc") {
+      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> " +item.ah_pronoun + " " + item.predicate + " that " + item.content_name + " " + item.content +".</em>";
+      } {
+  return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> " +item.ah + " " + item.predicate + " that " + item.content_pronoun + " " + item.content +".</em>"
+}
+}
+
+// console.log(items)
+
+// console.log(items.length)
+
+// initialize array of stimuli with stimulus keys and empty values
+// the length is the length of the items array
+var stimuli = Array.from(Array(items.length).keys())
+// console.log(stimuli)
+
+function createKey(index) {
+  var name = "stimulus:";
+  return name;
+}
+var stimuli = stimuli.map(createKey);
+
+// console.log(stimuli)
+
+stimuli = stimuli.map(() => ({ }));
+
+// console.log(stimuli)
+
+// loop through the items to turn them into stimuli that can be displayed
+for (let i = 0; i < items.length; i++) {
+   stimuli[i].stimulus = buildStimulus(items[i]);
+} 
+
+// console.log(stimuli)
+
+/* create the control stimuli */ 
+
+var control_stimuli = [
+  {stimulus: "<b>Mary:</b><em> Do these muffins have blueberries in them?</em><br> <b>John:</b><em> These muffins, which have chocolate in them, are delicious.</em>"},
+  {stimulus: "<b>Jennifer:</b><em> Does Ann dance ballet?</em><br> <b>Robert:</b><em> Ann, who dances tango, is coming for coffee later today.</em>"},
+  {stimulus: "<b>Michael:</b><em> What about Samantha? Does she have a new hat?</em><br> <b>Elizabeth:</b><em> Samantha, who is really into fashion, has new glasses.</em>"},
+  {stimulus: "<b>Richard:</b><em> What about John's kids? Are they in the garage?</em><br> <b>Susan:</b><em> John's kids, who are really well-behaved, are in the yard.</em>"}
+]
+
+/* add the control stimuli to the stimuli */
+stimuli = stimuli.concat(control_stimuli);
+
+console.log(stimuli)
+
+/* Now that we have a list of stimuli, we define the experiment trials and screens */
+
+// instruction and consent screen
+var consent_screen = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: "<h3>Instructions</h3>\
+  <p style='text-align:left'>In this experiment, you will read conversations between two people, as in this example, where Candy asks a question, and Lenny responds:</p>\
+  <p style='text-align:left'> <b>Candy</b>: <i>What about the house? Is it big? </i> <br> <b>Lenny</b>: <i> Cassandra suggested that it's huge. </i> </p>\
+  <p style='text-align:left'>We ask you to rate whether the response (here, by Lenny) sounds good. You will give your response on a slider from 'no' (not good) to 'yes' (good).</p>\
+  <img src=images/slider.png width = \"400\">\
+  <p style='text-align:left'>The study will take about 2 minutes.</p>\
+  <p style='text-align:left' font size=\"1\">By clicking on the button below you agree to participate in this experiment, which is conducted by researchers at the University of Stuttgart. You may withdraw from this experiment at any time without penalty or loss of benefits, including loss or reduction of payment. If you do withdraw from the study before the end, please write to Conglei Xu (st180735@stud.uni-stuttgart.de) for information on how to collect payment. The data collected will be anonymous and confidential. If you have any questions, you may contact the requester through Prolific's platform, or directly at st180735@stud.uni-stuttgart.de.</p>",
+  choices: ["Yes, I consent to participate"],
+};
+
+// definition of a judgment trial
+var judgment_trial = {
+  type: jsPsychHtmlSliderResponse,
+  prompt:  
+    "<p>How good is the response to the question?</p>",
+  labels: ["very bad response", "very good response"],
+  slider_width: "400",
+  require_movement: true,
+  stimulus: jsPsych.timelineVariable("stimulus"),
+};
+
+// create all judgment trials 
+var all_judgment_trials = {
+  timeline: [judgment_trial],
+  timeline_variables: stimuli,
+  randomize_order: true,
+};
+
+// demographic information
+var demographics = {
+
+}
+
+// final screen
+var final_screen = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: "<h3>Thank you for participating!</h3>\
+  <p style='text-align:left'>Completion code: <b>XXXXXXX </b></p>",
+  choices: ["Click to finish the experiment"],
+};
+
+var full_timeline = [
+  consent_screen,
+  all_judgment_trials,
+  // demographics,
+  final_screen,
+];
+
+jsPsych.run(full_timeline);
+
+  </script>
+</html>
