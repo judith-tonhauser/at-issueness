@@ -3,7 +3,8 @@
   <head>
     <title>My experiment</title>
     <script src="jspsych/jspsych.js"></script>
-    <script src="jspsych/plugin-survey-text.js"></script>
+    <!-- <script src="jspsych/plugin-survey-text.js"></script> -->
+    <script src="jspsych/plugin-survey.js"></script>
     <script src="jspsych/plugin-html-button-response.js"></script>
     <script src="jspsych/plugin-html-slider-response-JT.js"></script>
     <script src="helpers.js"></script>
@@ -23,10 +24,15 @@ function saveData(data){
 
 // initialise jspsych 
 var jsPsych = initJsPsych({
+  show_progress_bar: true,
+  auto_update_progress_bar: false,
   on_finish: function () {
-    jsPsych.data.displayData("csv");
-  },
-});
+    console.log('The experiment is over.')}
+})
+
+/* for the progress bar: create a global count variable that increases by 1 after each trial, and use that to set the progress bar value at the end of each trial */
+var count = 0;
+var n_trials = 10; //6 target trials, 4 control trials
 
 /* define the control stimuli */
 
@@ -224,9 +230,14 @@ var consent_screen = {
   <p style='text-align:left'> <b>Candy</b>: <i>What about the house? Is it big? </i> <br> <b>Lenny</b>: <i> Cassandra suggested that it's huge. </i> </p>\
   <p style='text-align:left'>We ask you to rate whether the response (here, by Lenny) sounds good. You will give your response on a slider from 'no' (not good) to 'yes' (good).</p>\
   <img src=images/slider.png width = \"400\">\
-  <p style='text-align:left'>The study will take about 2 minutes.</p>\
+  <p style='text-align:left'>At the end of the experiment, we will ask you some optional demographic questions (age, gender, native language). The study will take about 2 minutes.</p>\
   <p style='text-align:left' font size=\"1\">By clicking on the button below you agree to participate in this experiment, which is conducted by researchers at the University of Stuttgart. You may withdraw from this experiment at any time without penalty or loss of benefits, including loss or reduction of payment. If you do withdraw from the study before the end, please write to Conglei Xu (st180735@stud.uni-stuttgart.de) for information on how to collect payment. The data collected will be anonymous and confidential. If you have any questions, you may contact the requester through Prolific's platform, or directly at st180735@stud.uni-stuttgart.de.</p>",
   choices: ["Yes, I consent to participate"],
+  on_finish: function(data) {
+              count++;
+              var progress = count/n_trials;
+              jsPsych.setProgressBar(progress);
+            }
 };
 
 // definition of a judgment trial
@@ -237,7 +248,7 @@ var judgment_trial = {
   labels: ["very bad response", "very good response"],
   slider_width: "400",
   require_movement: true,
-  stimulus: jsPsych.timelineVariable("stimulus"),
+  stimulus: jsPsych.timelineVariable("stimulus")
 };
 
 // create all judgment trials 
@@ -245,11 +256,68 @@ var all_judgment_trials = {
   timeline: [judgment_trial],
   timeline_variables: stimuli,
   randomize_order: true,
+  on_finish: function(data) {
+         count++;
+         var progress = count/n_trials;
+         jsPsych.setProgressBar(progress);
+      }
 };
 
 // demographic information
 var demographics = {
-
+  type: jsPsychSurvey,
+  pages: [
+    [
+      {
+        type: 'html',
+        prompt: 'Please answer these demographic questions truthfully. You will be paid no matter what you respond here.',
+      },
+      {
+        type: 'text',
+        prompt: "How old are you?", 
+        name: 'age', 
+        textbox_columns: 3, 
+        required: false
+      }, 
+      {
+        type: 'multi-choice',
+        prompt: "What is your gender?", 
+        name: 'gender', 
+        columns: 4,
+        options: ['female', 'male', 'non-binary', 'prefer not to say'], 
+        required: false,
+      },
+      {
+        type: 'multi-choice',
+        prompt: "Are you a native speaker of English?",
+        name: 'language',
+        columns: 2, 
+        options: ['yes', 'no'], 
+        required: false,
+      },
+      {
+        type: 'multi-choice',
+        prompt: "Are you a speaker of American English (as opposed to, e.g., Indian English)?",
+        name: 'amE', 
+        columns: 2,
+        options: ['yes', 'no'], 
+        required: false,
+      },
+      {
+        type: 'text',
+        prompt: "We are interested in any other comments you might have about this study. Please type them in the box:", 
+        name: 'comments', 
+        textbox_columns: 20, 
+        textbox_rows: 5,
+        required: false
+      }
+    ]
+  ],
+  on_finish: function(data) {
+         count++;
+         var progress = count/n_trials;
+         jsPsych.setProgressBar(progress);
+      }
 }
 
 // final screen
@@ -258,12 +326,17 @@ var final_screen = {
   stimulus: "<h3>Thank you for participating!</h3>\
   <p style='text-align:left'>Completion code: <b>XXXXXXX </b></p>",
   choices: ["Click to finish the experiment"],
+  on_finish: function(data) {
+         count++;
+         var progress = count/n_trials;
+         jsPsych.setProgressBar(progress);
+      }
 };
 
 var full_timeline = [
   consent_screen,
   all_judgment_trials,
-  // demographics,
+  demographics,
   final_screen,
 ];
 
