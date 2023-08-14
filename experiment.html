@@ -176,13 +176,12 @@ console.log(items)
 // whether the pronoun or the proper name are used in the main clause and the CC
 // depend on the type of item
 function buildStimulus(item) {
-   if (item.type == "mc") {
+   if (item.type == 'mc') {
       return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> " +item.ah_pronoun + " " + item.predicate + " that " + item.content_name + " " + item.content +".</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";
-      } {
+      } else {
   return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> " +item.ah + " " + item.predicate + " that " + item.content_pronoun + " " + item.content +".</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";
 }
 }
-
 //  console.log(items)
 
 // console.log(items.length)
