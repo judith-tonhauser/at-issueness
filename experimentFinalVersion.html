@@ -55,7 +55,8 @@ var contents_long = {
   'tony': "had a drink last night",
   'jackson': "ran 10 miles"
 }
-
+// Define an array of names
+var names = ["Alice", "Bob", "Steven", "Daniel", "Ken", "Charlie", "Vincent", "Noah", "Frank", "Grace", "Oliver", "Isabel", "Jack", "William", "Charlotte", "Chole", "Dawn", "Clare", "Nina", "Nora", "Leo"];
 // define the content name as proper name or pronoun
 var names_of_contents = {
   'sophia': {name: 'Sophia', pronoun: 'she'},
@@ -100,6 +101,12 @@ function getPredicate() {
   return predicate
 }
 
+// function to get a random name and remove it from array
+function getName() {
+    name = shuffle(names).shift();
+    return name;
+}
+
 // function to get a random content and remove it from array
 function getContent() {
     content = shuffle(contents).shift()
@@ -115,11 +122,9 @@ function getQuestion(content,j) {
 // function to make an item
 function makeAnItem(i,j) {
   // get a first speaker
-    var name_data = shuffle(names).shift()
-    var speaker1 = name_data.name
+    var speaker1 = getName();
   // get a second speaker
-    var name_data = shuffle(names).shift()
-    var speaker2 = name_data.name
+    var speaker2 = getName();
   // get a content and a predicate
     var content = getContent()
     var predicate = getPredicate()
@@ -172,9 +177,9 @@ console.log(items)
 // depend on the type of item
 function buildStimulus(item) {
    if (item.type == "mc") {
-      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> " +item.ah_pronoun + " " + item.predicate + " that " + item.content_name + " " + item.content +".</em>";
+      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> " +item.ah_pronoun + " " + item.predicate + " that " + item.content_name + " " + item.content +".</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";
       } {
-  return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> " +item.ah + " " + item.predicate + " that " + item.content_pronoun + " " + item.content +".</em>"
+  return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> " +item.ah + " " + item.predicate + " that " + item.content_pronoun + " " + item.content +".</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";
 }
 }
 
@@ -213,10 +218,10 @@ console.log(stimuli)
 /* create the control stimuli */ 
 
 var control_stimuli = [
-  {stimulus: "<b>Mary:</b><em> Do these muffins have blueberries in them?</em><br> <b>John:</b><em> Linda claimed that she likes drinking coffee.</em>"},
-  {stimulus: "<b>Jennifer:</b><em> What about Ann? Where did she go?</em><br> <b>Robert:</b><em> Ann, who loves travelling, went to London.</em>"},
-  {stimulus: "<b>Michael:</b><em> What about Samantha? What did she buy? </em><br> <b>Elizabeth:</b><em> Samantha, who is really into fashion, bought a new hat.</em>"},
-  {stimulus: "<b>Richard:</b><em> What about John's kids? Are they in the garage?</em><br> <b>Susan:</b><em> Linda claimed that John's kids are good at math. </em>"}
+  {stimulus: "<b>Mary:</b><em> Do these muffins have blueberries in them?</em><br> <b>John:</b><em> Linda claimed that she likes drinking coffee.</em> <br> <br> <br>How natural is John's answer to Mary's question?"},
+  {stimulus: "<b>Jennifer:</b><em> What about Ann? Where did she go?</em><br> <b>Robert:</b><em> Ann, who loves travelling, went to London.</em> <br> <br> <br>How natural is Robert's answer to Jennifer's question?"},
+  {stimulus: "<b>Michael:</b><em> What about Samantha? What did she buy? </em><br> <b>Elizabeth:</b><em> Samantha, who is really into fashion, bought a new hat.</em> <br> <br> <br>How natural is Elizabeth's answer to Michael's question?"},
+  {stimulus: "<b>Richard:</b><em> What about John's kids? Are they in the garage?</em><br> <b>Susan:</b><em> Linda claimed that John's kids are good at math. </em> <br> <br> <br>How natural is Susan's answer to Richard's question?"}
 ]
 
 /* add the control stimuli to the stimuli */
@@ -232,9 +237,8 @@ var consent_screen = {
   stimulus: "<h3>Instructions</h3>\
   <p style='text-align:left'>In this experiment, you will read conversations between two people, as in this example, where Candy asks a question, and Lenny responds:</p>\
   <p style='text-align:left'> <b>Candy</b>: <i>What about the house? Is it big? </i> <br> <b>Lenny</b>: <i> Cassandra suggested that it's huge. </i> </p>\
-  <p style='text-align:left'>We ask you to rate whether the response (here, by Lenny) sounds good. You will give your response on a slider from 'no' (not good) to 'yes' (good).</p>\
-  <img src=images/slider.png width = \"400\">\
-  <p style='text-align:left'>At the end of the experiment, we will ask you some optional demographic questions (age, gender, native language). The study will take about 2 minutes.</p>\
+  <p style='text-align:left'>We ask you to rate how natural Lenny's answer to Candy's question is. You will give your response on a slider from 'totally unnatural' to 'totally natural'.</p>\
+  <p style='text-align:left'>At the end of the experiment, we will ask you some optional demographic questions (age, gender, native language). The study will take about three minutes.</p>\
   <p style='text-align:left' font size=\"1\">By clicking on the button below you agree to participate in this experiment, which is conducted by researchers at the University of Stuttgart. You may withdraw from this experiment at any time without penalty or loss of benefits, including loss or reduction of payment. If you do withdraw from the study before the end, please write to Conglei Xu (st180735@stud.uni-stuttgart.de) for information on how to collect payment. The data collected will be anonymous and confidential. If you have any questions, you may contact the requester through Prolific's platform, or directly at st180735@stud.uni-stuttgart.de.</p>",
   choices: ["Yes, I consent to participate"],
   on_finish: function(data) {
@@ -248,8 +252,8 @@ var consent_screen = {
 var judgment_trial = {
   type: jsPsychHtmlSliderResponse,
   prompt:  
-    "<p>How good is the response to the question?</p>",
-  labels: ["very bad response", "very good response"],
+    " ",
+  labels: ["totally unnatural", "totally natural"],
   slider_width: "400",
   require_movement: true,
   stimulus: jsPsych.timelineVariable("stimulus")
@@ -328,7 +332,7 @@ var demographics = {
 var final_screen = {
   type: jsPsychHtmlButtonResponse,
   stimulus: "<h3>Thank you for participating!</h3>\
-  <p style='text-align:left'>Completion code: <b>XXXXXXX </b></p>",
+  <p style='text-align:left'>Completion code: <b> CN8LF6L7 </b></p>",
   choices: ["Click to finish the experiment"],
   on_finish: function(data) {
          count++;
