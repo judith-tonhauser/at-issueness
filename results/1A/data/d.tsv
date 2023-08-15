@@ -1,0 +1,11 @@
+response	trial_index	participantID	age	gender	language	amE	comments	target	predicate	cc	ai
+0.84	1	1	0	non-binary	English	AmE	"""":""""""""}	target	be right	Emma studied on Saturday morning	mc
+0.84	2	1	0	non-binary	English	AmE	"""":""""""""}	target	think	Jackson ran 10 miles	cc
+0.64	3	1	0	non-binary	English	AmE	"""":""""""""}	target	say	Danny ate the last cupcake	cc
+0.05	4	1	0	non-binary	English	AmE	"""":""""""""}	badControl1	control	control	control
+0.98	5	1	0	non-binary	English	AmE	"""":""""""""}	goodControl1	control	control	control
+0.03	6	1	0	non-binary	English	AmE	"""":""""""""}	badControl2	control	control	control
+0.95	7	1	0	non-binary	English	AmE	"""":""""""""}	goodControl2	control	control	control
+0.82	8	1	0	non-binary	English	AmE	"""":""""""""}	target	know	Tony had a drink last night	cc
+0.68	9	1	0	non-binary	English	AmE	"""":""""""""}	target	confess	Sophia got a tattoo	mc
+0.74	10	1	0	non-binary	English	AmE	"""":""""""""}	target	discover	Mia drank two cocktails last night	mc
