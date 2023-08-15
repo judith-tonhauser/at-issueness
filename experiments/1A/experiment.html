@@ -22,17 +22,33 @@ function saveData(data){
       // xhr.send(JSON.stringify({filedata: data}));
     }
 
+// // initialise jspsych 
+// var jsPsych = initJsPsych({
+//   show_progress_bar: true,
+//   auto_update_progress_bar: false,
+//   on_finish: function () {
+//     console.log('The experiment is over.')}
+// })
+
 // initialise jspsych 
 var jsPsych = initJsPsych({
   show_progress_bar: true,
   auto_update_progress_bar: false,
-  on_finish: function () {
-    console.log('The experiment is over.')}
-})
+  on_finish: function(){
+    saveData(jsPsych.data.get().csv());
+    window.location = "https://app.prolific.co/submissions/complete?cc=CN8LF6L7"
+  }
+});
+
+// var jsPsych = initJsPsych({
+//   on_finish: function(){
+//     window.location = "https://app.prolific.co/submissions/complete?cc=XXXXXXX"
+//   }
+// });
 
 /* for the progress bar: create a global count variable that increases by 1 after each trial, and use that to set the progress bar value at the end of each trial */
 var count = 0;
-var n_trials = 10; //6 target trials, 4 control trials
+var n_trials = 12; //6 target trials, 4 control trials, 1 instructions, 1 demographics
 
 /* define the control stimuli */
 
@@ -330,23 +346,22 @@ var demographics = {
 }
 
 // final screen
-var final_screen = {
-  type: jsPsychHtmlButtonResponse,
-  stimulus: "<h3>Thank you for participating!</h3>\
-  <p style='text-align:left'>Completion code: <b> CN8LF6L7 </b></p>",
-  choices: ["Click to finish the experiment"],
-  on_finish: function(data) {
-         count++;
-         var progress = count/n_trials;
-         jsPsych.setProgressBar(progress);
-      }
-};
+// var final_screen = {
+//   type: jsPsychHtmlButtonResponse,
+//   stimulus: "<h3>Thank you for participating!</h3>\
+//   <p style='text-align:left'>Completion code: <b> CN8LF6L7 </b></p>",
+//   choices: ["Click to finish the experiment"],
+//   on_finish: function(data) {
+//          count++;
+//          var progress = count/n_trials;
+//          jsPsych.setProgressBar(progress);
+//       }
+// };
 
 var full_timeline = [
   consent_screen,
   all_judgment_trials,
-  demographics,
-  final_screen,
+  demographics
 ];
 
 jsPsych.run(full_timeline);
