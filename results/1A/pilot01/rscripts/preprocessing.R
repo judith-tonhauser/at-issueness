@@ -166,7 +166,7 @@ table(d$language)
 
 d <- d %>%
   filter(language != "notSpeakerOfEnglish") %>%  droplevels()
-length(unique(d$participantID)) #396 #2 participants excluded
+length(unique(d$participantID)) #
 
 # exclude non-American English speakers
 length(which(is.na(d$amE))) #0 (everybody responded)
@@ -174,7 +174,7 @@ table(d$amE)
 
 d <- d %>%
   filter(amE != "notAmE") %>%  droplevels()
-length(unique(d$participantID)) #393 # 3 participants excluded
+length(unique(d$participantID)) #
 
 # change response from character to numeric
 d$response <- as.numeric(d$response)

@@ -33,7 +33,6 @@ table(t$ai)
 # Fig 1: plot mean naturalness rating by condition and predicate ----
 
 # calculate mean naturalness rating by condition and predicate
-t$predicate <- as.factor(t$predicate)
 nat.means = t %>%
   group_by(predicate,ai) %>%
   summarize(Mean = mean(response), CILow = ci.low(response), CIHigh = ci.high(response)) %>%
@@ -105,30 +104,13 @@ ggplot(t.means[t.means$ai == "cc",], aes(x = Mean, y = Mean_AW),label = predicat
                   segment.color = 'grey50') +
   scale_x_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels= c("0",".2",".4",".6",".8","1")) +
   scale_y_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels= c("0",".2",".4",".6",".8","1")) +
-  geom_abline(intercept=0,slope=1,color="gray70",linetype="dashed") +
+  geom_abline(intercept=1,slope=-1,color="gray70",linetype="dashed") +
   xlab("Mean naturalness rating (when CC is at-issue)") +
   ylab("Mean asking-whether rating") +
   theme(panel.spacing.x = unit(4, "mm")) +
   coord_fixed(ratio = 1) 
 ggsave("../graphs/comparison-1A-CC-at-issue-asking-whether.pdf",height=4,width=4)
 
-# plot with MC at-issue
-ggplot(t.means[t.means$ai == "mc",], aes(x = Mean, y = Mean_AW),label = predicate) +
-  geom_point(stroke=.5,size=2.5,color="black") +
-  geom_errorbar(aes(ymin=YMin_AW,ymax=YMax_AW),width=.01,color="black") + 
-  geom_errorbarh(aes(xmin=YMin,xmax=YMax),height=.01,color="black") +
-  geom_text_repel(aes(label = predicate),
-                  #box.padding   = 0.35, 
-                  point.padding = 0.5,
-                  segment.color = 'grey50') +
-  scale_x_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels= c("0",".2",".4",".6",".8","1")) +
-  scale_y_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels= c("0",".2",".4",".6",".8","1")) +
-  geom_abline(intercept=0,slope=1,color="gray70",linetype="dashed") +
-  xlab("Mean naturalness rating (when CC is at-issue)") +
-  ylab("Mean asking-whether rating") +
-  theme(panel.spacing.x = unit(4, "mm")) +
-  coord_fixed(ratio = 1) 
-ggsave("../graphs/comparison-1A-MC-at-issue-asking-whether.pdf",height=4,width=4)
 
 # compare using means and violin plots
 ggplot(t.means, aes(x=predicate, y=Mean, group = ai)) +
