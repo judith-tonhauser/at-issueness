@@ -130,4 +130,19 @@ ggplot(t.means[t.means$ai == "mc",], aes(x = Mean, y = Mean_AW),label = predicat
   coord_fixed(ratio = 1) 
 ggsave("../graphs/comparison-1A-MC-at-issue-asking-whether.pdf",height=4,width=4)
 
+# compare using means and violin plots
+ggplot(t.means, aes(x=predicate, y=Mean, group = ai)) +
+  geom_point(shape=21,stroke=.5,size=3, aes(color = ai, fill=ai)) +
+  geom_point(data=t.means, aes(x=predicate, y=Mean_AW), color = "green", size=3) +
+  #geom_errorbar(aes(ymin=YMin,ymax=YMax),width=0.1,color="black") +
+  #geom_errorbar(data=t.means,aes(ymin=YMin_AW,ymax=YMax_AW),width=0.1,color="red") +
+  #geom_violin(data=t,aes(x=predicateAI, y=response),scale="width",color="gray80", fill = "gray80", alpha = .3) +
+  scale_y_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels = c("0",".2",".4",".6",".8","1")) +
+  guides(fill=FALSE) +
+  theme(legend.position="top") +
+  ylab("Mean naturalness rating") +
+  xlab("Predicate") 
+ggsave("../graphs/means-by-predicate-and-ai.pdf",height=3,width=7)
+
+
 
