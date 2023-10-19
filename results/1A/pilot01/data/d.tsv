@@ -1,0 +1,21 @@
+response	trial_index	participantID	age	gender	language	amE	comments	target	predicate	cc	ai
+0.2	1	2	36	male	English	AmE	"""":""""""""}	target	discover	Sophia got a tattoo	mc
+0.41	2	2	36	male	English	AmE	"""":""""""""}	target	confess	Tony had a drink last night	mc
+0	3	2	36	male	English	AmE	"""":""""""""}	badControl2	control	control	control
+0.22	4	2	36	male	English	AmE	"""":""""""""}	goodControl1	control	control	control
+0.25	5	2	36	male	English	AmE	"""":""""""""}	target	know	Jackson ran 10 miles	cc
+0.59	6	2	36	male	English	AmE	"""":""""""""}	goodControl2	control	control	control
+0	7	2	36	male	English	AmE	"""":""""""""}	target	be right	Emma studied on Saturday morning	cc
+0.78	8	2	36	male	English	AmE	"""":""""""""}	target	say	Danny ate the last cupcake	mc
+0.85	9	2	36	male	English	AmE	"""":""""""""}	target	think	Mia drank two cocktails last night	cc
+0.12	10	2	36	male	English	AmE	"""":""""""""}	badControl1	control	control	control
+0.74	1	1	31	female	English	AmE	"""":""""""""}	target	discover	Danny ate the last cupcake	mc
+1	2	1	31	female	English	AmE	"""":""""""""}	goodControl1	control	control	control
+0	3	1	31	female	English	AmE	"""":""""""""}	badControl1	control	control	control
+0	4	1	31	female	English	AmE	"""":""""""""}	badControl2	control	control	control
+1	5	1	31	female	English	AmE	"""":""""""""}	target	say	Tony had a drink last night	cc
+0.9	6	1	31	female	English	AmE	"""":""""""""}	target	be right	Jackson ran 10 miles	cc
+0.67	7	1	31	female	English	AmE	"""":""""""""}	target	know	Mia drank two cocktails last night	cc
+1	8	1	31	female	English	AmE	"""":""""""""}	goodControl2	control	control	control
+1	9	1	31	female	English	AmE	"""":""""""""}	target	think	Sophia got a tattoo	mc
+0.74	10	1	31	female	English	AmE	"""":""""""""}	target	confess	Emma studied on Saturday morning	mc

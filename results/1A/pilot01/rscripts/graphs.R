@@ -6,7 +6,7 @@ this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(this.dir)
 
 # load required packages
-require(tidyverse)
+library(tidyverse)
 library(ggrepel)
 library(dichromat)
 library(forcats)
@@ -18,7 +18,7 @@ cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00",
 theme_set(theme_bw())
 
 # load helper functions
-source('../../helpers.R')
+source('../../../helpers.R')
 
 # load cleaned data
 d = read_tsv("../data/d.tsv")
@@ -41,16 +41,23 @@ nat.means = t %>%
   mutate(YMin = Mean - CILow, YMax = Mean + CIHigh)
 nat.means
 
-nat.means$predicate = factor(t$predicate, levels = nat.means$predicate[order(nat.means$Mean)], ordered = TRUE)
+# order predicates by mean ai in mc condition
+tmp = t %>%
+  filter(ai == "mc") %>%
+  group_by(predicate) %>%
+  summarize(Mean = mean(response))
+tmp
+
+nat.means$predicate = factor(t$predicate, levels = tmp$predicate[order(tmp$Mean)], ordered = TRUE)
 levels(nat.means$predicate)
-t$predicate = factor(t$predicate, levels = nat.means$predicate[order(nat.means$Mean)], ordered = TRUE)
+t$predicate = factor(t$predicate, levels = tmp$predicate[order(tmp$Mean)], ordered = TRUE)
 levels(t$predicate)
 
 # plot of naturalness means, with participants' individual responses
 ggplot(nat.means, aes(x=ai, y=Mean)) +
   geom_point(shape=21,stroke=.5,size=3, color="black", fill = "black") +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=0.1,color="black") +
-  geom_violin(data=t,aes(x=predicate, y=response),scale="width",color="gray80", fill = "gray80") +
+  geom_violin(data=t,aes(x=ai, y=response),scale="width",color="gray80", fill = "gray80", alpha = .3) +
   scale_y_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels = c("0",".2",".4",".6",".8","1")) +
   guides(fill=FALSE) +
   theme(legend.position="top") +
@@ -99,7 +106,7 @@ ggplot(t.means[t.means$ai == "cc",], aes(x = Mean, y = Mean_AW),label = predicat
   scale_x_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels= c("0",".2",".4",".6",".8","1")) +
   scale_y_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels= c("0",".2",".4",".6",".8","1")) +
   geom_abline(intercept=0,slope=1,color="gray70",linetype="dashed") +
-  xlab("Mean naturalness rating (CC at-issue)") +
+  xlab("Mean naturalness rating (when CC is at-issue)") +
   ylab("Mean asking-whether rating") +
   theme(panel.spacing.x = unit(4, "mm")) +
   coord_fixed(ratio = 1) 
@@ -117,7 +124,7 @@ ggplot(t.means[t.means$ai == "mc",], aes(x = Mean, y = Mean_AW),label = predicat
   scale_x_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels= c("0",".2",".4",".6",".8","1")) +
   scale_y_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0), labels= c("0",".2",".4",".6",".8","1")) +
   geom_abline(intercept=0,slope=1,color="gray70",linetype="dashed") +
-  xlab("Mean naturalness rating (CC at-issue)") +
+  xlab("Mean naturalness rating (when CC is at-issue)") +
   ylab("Mean asking-whether rating") +
   theme(panel.spacing.x = unit(4, "mm")) +
   coord_fixed(ratio = 1) 

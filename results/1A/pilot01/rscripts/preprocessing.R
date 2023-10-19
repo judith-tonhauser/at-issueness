@@ -5,7 +5,7 @@
 this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(this.dir)
 
-source('../../helpers.R')
+source('../../../helpers.R')
 
 # load required packages for pre-processing data
 library(tidyverse)
@@ -113,13 +113,17 @@ d$cc = case_when(grepl("studied", d$stimulus) ~ "Emma studied on Saturday mornin
                         grepl("tattoo",d$stimulus) ~ "Sophia got a tattoo",
                         TRUE ~ "control")
 table(d$cc)
+view(d)
 
 # what is at-issue?
+# "why"-question: main clause at-issue
+# "what"-question: cc at-issue, but some controls also have "what"-question
 d$ai = case_when(grepl("Why", d$stimulus) ~ "mc",
-                 grepl("Tony?", d$stimulus) ~ "cc",
-                 grepl("Danny?", d$stimulus) ~ "cc",
-                 grepl("Jackson?", d$stimulus) ~ "cc",
-                 TRUE ~ "control")
+                 grepl("blueberries", d$stimulus) ~ "control",
+                 grepl("Ann", d$stimulus) ~ "control",
+                 grepl("Samantha", d$stimulus) ~ "control",
+                 grepl("garage", d$stimulus) ~ "control",
+                 TRUE ~ "cc")
 table(d$ai)
 
 # remove stimulus column now that everything has been extracted from it
@@ -308,3 +312,4 @@ d %>%
 # 4 preferNoToSay     x
 
 write_tsv(d, file="../data/d.tsv")
+
