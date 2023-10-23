@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="jspsych/jspsych.js"></script>
+    <!-- <script src="jspsych/plugin-survey-text.js"></script> -->
+    <script src="jspsych/plugin-survey.js"></script>
+    <script src="jspsych/plugin-html-button-response.js"></script>
+    <script src="jspsych/plugin-html-slider-response-JT.js"></script>
+    <script src="helpers.js"></script>
+    <link  href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+  <script>
+
+// send the data to store script
+function saveData(data){
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/store');
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(data);
+      // xhr.send(JSON.stringify({filedata: data}));
+    }
+
+// initialise jspsych 
+var jsPsych = initJsPsych({
+  show_progress_bar: true,
+  auto_update_progress_bar: false,
+  on_finish: function () {
+    console.log('The experiment is over.')}
+})
+
+/* for the progress bar: create a global count variable that increases by 1 after each trial, and use that to set the progress bar value at the end of each trial */
+var count = 0;
+var n_trials = 10; //6 target trials, 4 control trials
+
+/* define the control stimuli */
+
+
+/* define the ingredients for the target stimuli */
+
+// numberOfItems should be identical to the number of predicates
+var numberOfItems = 6
+
+// predicates (already in 3rd person singular, present or past tense)
+var predicates = ["know","think","discover", "confess","say","right"]
+
+// array of contents 
+var contents = ['sophia', 'emma', 'mia', 'danny', 'tony', 'jackson']
+var contents_long = {
+  'sophia': "got a tattoo",
+  'emma': "studied on Saturday morning",
+  'mia': "drank two cocktails last night",
+  'danny': "ate the last cupcake",
+  'tony': "had a drink last night",
+  'jackson': "ran 10 miles"
+}
+// Define an array of names
+var names = ["Alice", "Bob", "Steven", "Daniel", "Ken", "Charlie", "Vincent", "Noah", "Frank", "Grace", "Oliver", "Isabel", "Jack", "William", "Charlotte", "Chloe", "Dawn", "Clare", "Nina", "Nora", "Leo"];
+// define the content name as proper name or pronoun
+var names_of_contents = {
+  'sophia': {name: 'Sophia', pronoun: 'she'},
+  'emma': {name: 'Emma', pronoun: 'she'},
+  'mia': {name: 'Mia', pronoun: 'she'},
+  'danny': {name: 'Danny', pronoun: 'he'},
+  'tony': {name: 'Tony', pronoun: 'he'},
+  'jackson': {name: 'Jackson', pronoun: 'he'}
+}
+
+// predefine an attitude holder name for each content, opposite gender of content name
+var ahs = {
+  'sophia': {name: 'Patrick', pronoun: 'he'},
+  'emma': {name: 'James', pronoun: 'he'},
+  'mia': {name: 'David', pronoun: 'he'},
+  'danny': {name: 'Linda', pronoun: 'she'},
+  'tony': {name: 'Jessica', pronoun: 'she'},
+  'jackson': {name: 'Patricia', pronoun: 'she'}
+}
+
+
+// questions for each content
+var questions = {
+  'sophia': {'mc' : "What about Patrick? Why is he angry?",
+  cc: "What about Sophia? What did she do?"},
+  'emma': {'mc' : "What about James? Why is he annoyed?",
+  cc: "What about Emma? What did she do?"},
+  'mia': {'mc' : "What about David? Why is he smirking?",
+  cc: "What about Mia? What did she do?"},
+  'danny': {'mc' : "What about Linda? Why is she pouting?",
+  cc: "What about Danny? What did he do?"},
+  'tony': {'mc' : "What about Jessica? Why is she upset?",
+  cc: "What about Tony? What did he do?"},
+  'jackson': {'mc' : "What about Patricia? Why is she proud?",
+  cc: "What about Jackson? What did he do?"}
+}
+
+
+// function to get a random predicate and remove it from array
+function getPredicate() {
+    predicate = shuffle(predicates).shift()
+  return predicate
+}
+
+// function to get a random name and remove it from array
+function getName() {
+    name = shuffle(names).shift();
+    return name;
+}
+
+// function to get a random content and remove it from array
+function getContent() {
+    content = shuffle(contents).shift()
+  return content
+}
+
+// function to get the mc or cc question for a content 
+function getQuestion(content,j) {
+    question = questions[content][j]
+    return question
+}
+
+// function to make an item
+function makeAnItem(i,j) {
+  // get a first speaker
+    var speaker1 = getName();
+  // get a second speaker
+    var speaker2 = getName();
+  // get a content and a predicate
+    var content = getContent()
+    var predicate = getPredicate()
+  // get a question for that content
+    var question = getQuestion(content,j)
+  // get long content from content and the names of the content
+    var content_long = contents_long[content]
+    var content_name = names_of_contents[content].name
+    var content_pronoun = names_of_contents[content].pronoun
+  // get the ah and the corresponding pronoun
+    var ah = ahs[content].name
+    var ah_pronoun = ahs[content].pronoun
+    return {
+    "speaker1": speaker1,
+    "speaker2": speaker2, 
+    "predicate": predicate,
+    "content": content_long,
+    "content_name": content_name,
+    "content_pronoun": content_pronoun,
+    "type": j,
+    "question": question,
+    "ah": ah,
+    "ah_pronoun": ah_pronoun,
+
+    }
+  }
+
+// predicates.length determins how many items are built
+// console.log(numberOfItems)
+
+// initialize empty array of items
+items = []
+
+// loop to create an array of items: one item for each predicate
+// half with mc question, half with cc question
+for (var i = 0; i < numberOfItems/2; i++) {
+   item = makeAnItem(i,'mc')
+   items.push(item)
+}  
+
+for (var i = numberOfItems/2; i < numberOfItems; i++) {
+   item = makeAnItem(i,'cc')
+   items.push(item)
+}
+
+console.log(items)
+
+// this function takes an item as an argument and builds the stimulus to be displayed
+// whether the pronoun or the proper name are used in the main clause and the CC
+// depend on the type of item
+function buildStimulus(item) {
+   if (item.type == 'mc' && (item.predicate === 'discover' || item.predicate === 'confess' || item.predicate === 'say')) {
+      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> Did " +item.ah_pronoun + " " + item.predicate + " that " + item.content_name + " " + item.content +"?</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";
+      } 
+      else if (item.type == 'mc' && (item.predicate === 'know' || item.predicate === 'think')){
+      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> Does " +item.ah_pronoun + " " + item.predicate + " that " + item.content_name + " " + item.content +"?</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";  
+      }
+      else if (item.type == 'mc' && (item.predicate === 'right')){
+      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> Is " +item.ah_pronoun + " " + item.predicate + " that " + item.content_name + " " + item.content +"?</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";  
+      }
+      else if (item.type == 'cc' && (item.predicate === 'discover' || item.predicate === 'confess' || item.predicate === 'say')){
+      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> Did " +item.ah + " " + item.predicate + " that " + item.content_pronoun + " " + item.content +"?</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";
+      }
+      else if (item.type == 'cc' && (item.predicate === 'know' || item.predicate === 'think')){
+      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> Does " +item.ah + " " + item.predicate + " that " + item.content_pronoun + " " + item.content +"?</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";
+      }
+      else if (item.type == 'cc' && (item.predicate === 'right')){
+      return "<b>" + item.speaker1 + ":</b><em> " + item.question +"</em><br> <b>" +item.speaker2 +":</b><em> Is " +item.ah + " " + item.predicate + " that " + item.content_pronoun + " " + item.content +"?</em> <br> <br> <br> How natural is " + item.speaker2 + "'s answer to " + item.speaker1 +"'s question? ";
+      }
+}
+//  console.log(items)
+
+// console.log(items.length)
+
+// initialize array of stimuli with "stimulus" keys and empty values
+// the length is the length of the items array
+var stimuli = Array.from(Array(items.length).keys())
+console.log(stimuli)
+
+// for each item in the array, create a key "stimulus:"
+function createKey(index) {
+  var name = "stimulus:";
+  return name;
+}
+
+// apply the function "createKey" to the array of stimuli
+var stimuli = stimuli.map(createKey);
+
+console.log(stimuli)
+
+// in the array "stimuli", change each item into a key-value pair {"stimulus:" }
+stimuli = stimuli.map(() => ({ }));
+
+console.log(stimuli)
+
+// loop through the items to turn them into stimuli that can be displayed
+for (let i = 0; i < items.length; i++) {
+   stimuli[i].stimulus = buildStimulus(items[i]);
+} 
+
+console.log(stimuli)
+
+/* create the control stimuli */ 
+
+var control_stimuli = [
+  {stimulus: "<b>Mary:</b><em> Do these muffins have blueberries in them?</em><br> <b>John:</b><em> Did Linda claime that she likes drinking coffee?</em> <br> <br> <br>How natural is John's answer to Mary's question?"},
+  {stimulus: "<b>Jennifer:</b><em> What about Ann? Where did she go?</em><br> <b>Robert:</b><em> Did Ann, who loves travelling, go to London?</em> <br> <br> <br>How natural is Robert's answer to Jennifer's question?"},
+  {stimulus: "<b>Michael:</b><em> What about Samantha? What did she buy? </em><br> <b>Elizabeth:</b><em> Did Samantha, who is really into fashion, buy a new hat?</em> <br> <br> <br>How natural is Elizabeth's answer to Michael's question?"},
+  {stimulus: "<b>Richard:</b><em> What about John's kids? Are they in the garage?</em><br> <b>Susan:</b><em> Did Linda claim that John's kids are good at math?</em> <br> <br> <br>How natural is Susan's answer to Richard's question?"}
+]
+
+/* add the control stimuli to the stimuli */
+stimuli = stimuli.concat(control_stimuli);
+
+console.log(stimuli)
+
+/* Now that we have a list of stimuli, we define the experiment trials and screens */
+
+// instruction and consent screen
+var consent_screen = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: "<h3>Instructions</h3>\
+  <p style='text-align:left'>In this experiment, you will read conversations between two people, as in this example, where Candy asks a question, and Lenny responds:</p>\
+  <p style='text-align:left'> <b>Candy</b>: <i>What about the house? Is it big? </i> <br> <b>Lenny</b>: <i> Cassandra suggested that it's huge. </i> </p>\
+  <p style='text-align:left'>We ask you to rate how natural Lenny's answer to Candy's question is. You will give your response on a slider from 'totally unnatural' to 'totally natural'.</p>\
+  <p style='text-align:left'>At the end of the experiment, we will ask you some optional demographic questions (age, gender, native language). The study will take about three minutes.</p>\
+  <p style='text-align:left' font size=\"1\">By clicking on the button below you agree to participate in this experiment, which is conducted by researchers at the University of Stuttgart. You may withdraw from this experiment at any time without penalty or loss of benefits, including loss or reduction of payment. If you do withdraw from the study before the end, please write to Conglei Xu (st180735@stud.uni-stuttgart.de) for information on how to collect payment. The data collected will be anonymous and confidential. If you have any questions, you may contact the requester through Prolific's platform, or directly at st180735@stud.uni-stuttgart.de.</p>",
+  choices: ["Yes, I consent to participate"],
+  on_finish: function(data) {
+              count++;
+              var progress = count/n_trials;
+              jsPsych.setProgressBar(progress);
+            }
+};
+
+// definition of a judgment trial
+var judgment_trial = {
+  type: jsPsychHtmlSliderResponse,
+  prompt:  
+    " ",
+  labels: ["totally unnatural", "totally natural"],
+  slider_width: "400",
+  require_movement: true,
+  stimulus: jsPsych.timelineVariable("stimulus")
+};
+
+// create all judgment trials 
+var all_judgment_trials = {
+  timeline: [judgment_trial],
+  timeline_variables: stimuli,
+  randomize_order: true,
+  on_finish: function(data) {
+         count++;
+         var progress = count/n_trials;
+         jsPsych.setProgressBar(progress);
+      }
+};
+
+// demographic information
+var demographics = {
+  type: jsPsychSurvey,
+  pages: [
+    [
+      {
+        type: 'html',
+        prompt: 'Please answer these demographic questions truthfully. You will be paid no matter what you respond here.',
+      },
+      {
+        type: 'text',
+        prompt: "How old are you?", 
+        name: 'age', 
+        textbox_columns: 3, 
+        required: false
+      }, 
+      {
+        type: 'multi-choice',
+        prompt: "What is your gender?", 
+        name: 'gender', 
+        columns: 4,
+        options: ['female', 'male', 'non-binary', 'prefer not to say'], 
+        required: false,
+      },
+      {
+        type: 'multi-choice',
+        prompt: "Are you a native speaker of English?",
+        name: 'language',
+        columns: 2, 
+        options: ['yes', 'no'], 
+        required: false,
+      },
+      {
+        type: 'multi-choice',
+        prompt: "Are you a speaker of American English (as opposed to, e.g., Indian English)?",
+        name: 'amE', 
+        columns: 2,
+        options: ['yes', 'no'], 
+        required: false,
+      },
+      {
+        type: 'text',
+        prompt: "We are interested in any other comments you might have about this study. Please type them in the box:", 
+        name: 'comments', 
+        textbox_columns: 20, 
+        textbox_rows: 5,
+        required: false
+      }
+    ]
+  ],
+  on_finish: function(data) {
+         count++;
+         var progress = count/n_trials;
+         jsPsych.setProgressBar(progress);
+      }
+}
+
+// final screen
+var final_screen = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: "<h3>Thank you for participating!</h3>\
+  <p style='text-align:left'>Completion code: <b> CN8LF6L7 </b></p>",
+  choices: ["Click to finish the experiment"],
+  on_finish: function(data) {
+         count++;
+         var progress = count/n_trials;
+         jsPsych.setProgressBar(progress);
+      }
+};
+
+var full_timeline = [
+  consent_screen,
+  all_judgment_trials,
+  demographics,
+  final_screen,
+];
+
+jsPsych.run(full_timeline);
+
+  </script>
+</html>
