@@ -24,9 +24,6 @@ d = d %>%
 length(unique(d$participant_id)) #
 d$participantID <- match(d$participant_id, unique(sort(d$participant_id)))
 
-# how many participants?
-length(unique(d$participantID)) #
-
 # select needed columns
 d = d %>%
   select(c(stimulus, response, trial_index, participantID))
