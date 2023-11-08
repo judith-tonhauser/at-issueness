@@ -47,7 +47,7 @@ tmp = t %>%
   summarize(Mean = mean(response))
 tmp
 
-nat.means$predicate = factor(t$predicate, levels = tmp$predicate[order(tmp$Mean)], ordered = TRUE)
+nat.means$predicate = factor(nat.means$predicate, levels = tmp$predicate[order(tmp$Mean)], ordered = TRUE)
 levels(nat.means$predicate)
 t$predicate = factor(t$predicate, levels = tmp$predicate[order(tmp$Mean)], ordered = TRUE)
 levels(t$predicate)
