@@ -10,6 +10,7 @@
     <script src="jspsych/plugin-html-slider-response-JT.js"></script>
     <script src="helpers.js"></script>
     <link  href="jspsych/jspsych.css" rel="stylesheet" type="text/css" />
+    <script src="jspsych/plugin-survey-text.js"></script>
   </head>
   <body></body>
   <script>
@@ -344,6 +345,145 @@ var consent_screen = {
   choices: ["Yes, I consent to participate"],
 };
 
+// define the botcaptcha trials
+var speaker = shuffle(["James", "John", "Robert", "Michael", "William", "David", "Richard", "Joseph", "Thomas", "Charles"]).shift()
+var listener = shuffle(["Mary", "Patricia", "Jennifer", "Linda", "Elizabeth", "Barbara", "Susan", "Jessica", "Sarah", "Margaret"]).shift()
+var speaker2 = shuffle(["James", "John", "Robert", "Michael", "William", "David", "Richard", "Joseph", "Thomas", "Charles"]).shift()
+var listener2 = shuffle(["Mary", "Patricia", "Jennifer", "Linda", "Elizabeth", "Barbara", "Susan", "Jessica", "Sarah", "Margaret"]).shift()
+
+var text = "<b>Please verify that you are a human by answering this question:</b><br><br><br>" + speaker + ' says to ' + listener + ': "It\'s a beautiful day, isn\'t it?"' + '<br><br> Who is ' + speaker + ' talking to? Write the name into the box.';
+
+var text2 = "<b>Please verify that you are a human by answering this question:</b><br><br><br>" + speaker2 + ' says to ' + listener2 + ': "It\'s a beautiful day, isn\'t it?"' + '<br><br> Who is ' + speaker2 + ' talking to? Write the name into the box.';
+
+var botcaptcha_trial1 = {
+  type: jsPsychSurveyText,
+  questions: [
+    {prompt: text}
+  ],
+  on_finish: function(data){
+    console.log(data.response.Q0)
+    console.log(listener)
+// score the text response as correct or incorrect.
+    if (data.response.Q0.toLowerCase() == listener.toLowerCase()){
+       data.correct = true
+       return "<p style='text-align:left'><b>Correct!</b></p>";
+     } else {
+       data.correct = false; 
+    }
+  }
+}
+
+var botcaptcha_trial2 = {
+  type: jsPsychSurveyText,
+  questions: [
+    {prompt: text2}
+  ],
+  on_finish: function(data){
+    console.log("i'm in botcaptcha_trial2")
+    console.log(data.response.Q0)
+    console.log(listener2)
+// score the text response as correct or incorrect.
+    if (data.response.Q0.toLowerCase() == listener2.toLowerCase()){
+       data.correct = true
+       return "<p style='text-align:left'><b>Correct!</b></p>";
+     } else {
+       data.correct = false; 
+    }
+  }
+}
+
+// what to do in case the response was incorrect
+var feedback1IC = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: "<p style='text-align:left'><b> Incorrect response! Please try again. </b><br><br></p>",
+  choices: ['Return to bot captcha']
+}
+
+var feedback1IC2 = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: "<p style='text-align:left'><b> Incorrect response again! Please return the experiment. You are not allowed to participate.</b><br><br></p>",
+  choices: []
+}
+
+// feedback, in case the response was correct
+var feedback1C = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: "<p style='text-align:left'><b> Correct response! You are a human :) </b><br><br></p>",
+  choices: ['Continue to the experiment']
+}
+
+
+// conditional: in case response was incorrect, repeat botcaptcha
+var botcaptcha_conditionalInCorrect1 = {
+  timeline: [feedback1IC, botcaptcha_trial2],
+  conditional_function: function(){
+    // feedback is dynamic, depending on accuracy of last response
+    var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
+    // console.log("i'm in the incorrect conditional 1")
+    // console.log(last_trial_correct)
+    if (last_trial_correct){ // if true, so the last trial was correct, carry out feedback "incorrect"
+      return false
+    } else { // else: if last trial was incorrect, don't carry out "incorrect" feedback
+      return true; 
+    }
+  }
+}
+
+// conditional: in case response was incorrect, repeat botcaptcha
+var botcaptcha_conditionalInCorrect2 = {
+  timeline: [feedback1IC2],
+  conditional_function: function(){
+    // feedback is dynamic, depending on accuracy of last response
+    var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
+    // console.log("i'm in the incorrect conditional 2")
+    // console.log(last_trial_correct)
+    // console.log(jsPsych.data.get())
+    if (last_trial_correct){ // if true, so the last trial was correct, carry out feedback "incorrect"
+      return false
+    } else { // else: if last trial was incorrect, don't carry out "incorrect" feedback
+      return true; 
+    }
+  }
+}
+
+// conditional: in case response was correct, don't repeat botcaptcha
+var botcaptcha_conditionalCorrect1 = {
+  timeline: [feedback1C],
+  conditional_function: function(){
+    // feedback is dynamic, depending on accuracy of last response
+    var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
+    // console.log("i'm in the correct conditional")
+    // console.log(last_trial_correct)
+    if (last_trial_correct){ // if true, so the last trial was correct, carry out feedback "correct"
+      return true
+    } else { // else: if last trial was incorrect, don't carry out "correct" feedback
+      return false;  
+    }
+  }
+}
+
+// a loop is always carried out at least once, a conditional not necessarily
+var botcaptcha_loop1 = {
+    timeline: [botcaptcha_trial1, botcaptcha_conditionalInCorrect1, botcaptcha_conditionalInCorrect2, botcaptcha_conditionalCorrect1],
+    loop_function: function(data){
+    // var last_trial_correct = jsPsych.data.get().last(1).values()[0].correct;
+    // console.log("Response was:"+last_trial_correct) 
+    // console.log("i'm inside the loop now")
+    // console.log(jsPsych.data.get())
+    // console.log(jsPsych.data.get().last(2))
+    // console.log(jsPsych.data.get().last(2).values()[0].correct)
+    // here we have to go back 2 trials, to get at the last response to the practice trial
+    var last_trial_correct = jsPsych.data.get().last(2).values()[0].correct;
+    // console.log(last_trial_correct)
+    if (last_trial_correct){ // if true, so the last trial was correct, carry out feedback "incorrect"
+      return false; // don't repeat the loop if the response was correct
+    } else {
+      return true; // repeat if the response was incorrect
+    }
+    }
+}
+
+
 var trial1 = {
   type: jsPsychSurveyMultiChoice,
   questions: [
@@ -585,6 +725,7 @@ var demographics = {
 }
 
 var full_timeline = [
+  botcaptcha_loop1,
   consent_screen,
   //all_judgment_trials,
   trial1,trial2,trial3,trial4,trial5,trial6,trial7,trial8,trial9,
