@@ -29,14 +29,16 @@ function shuffle(array) {
    return array;
 }   
 
-// send the data to store script
-function saveData(data){
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', '/store');
-      xhr.setRequestHeader('Content-Type', 'application/json');
-      xhr.send(data);
-      // xhr.send(JSON.stringify({filedata: data}));
-    }
+/* Send data data to store script: */
+async function saveData(data){
+  const response = await fetch('/store', {
+    method:  "POST",
+    cache:   "no-cache",
+    headers: {"Content-Type": "text/csv"},
+    body:    data
+  })
+  document.getElementById("jspsych-content").innerHTML = await response.text();
+}
 
 // initialise jspsych
 var jsPsych = initJsPsych({
