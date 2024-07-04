@@ -279,6 +279,11 @@ stimuli = stimuli.map(() => ({ }));
 
 //console.log(stimuli)
 
+//initialize array of stimuliNew4
+var stimuliNew4 = Array.from(Array(items.length).keys()).map((i) => {
+      return {stimulus: buildStimulus(items[i])};
+    });
+
 // loop through the items to turn them into stimuli that can be displayed
 for (let i = 0; i < items.length; i++) {
    stimuli[i].stimulus = buildStimulus(items[i])
