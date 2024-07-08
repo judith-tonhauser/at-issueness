@@ -234,10 +234,14 @@ var jsPsychSurveyMultiChoice = (function (jspsych) {
       create_simulation_data(trial, simulation_options) {
           const question_data = {};
           let rt = 1000;
+          const question_texts = {};
+          const options_data = {};
           for (const q of trial.questions) {
               const name = q.name ? q.name : `Q${trial.questions.indexOf(q)}`;
               question_data[name] = this.jsPsych.randomization.sampleWithoutReplacement(q.options, 1)[0];
               rt += this.jsPsych.randomization.sampleExGaussian(1500, 400, 1 / 200, true);
+              question_texts[name] = q.prompt;  // Store question text
+              options_data[name] = q.options;  // Store options
           }
           const default_data = {
               response: question_data,
