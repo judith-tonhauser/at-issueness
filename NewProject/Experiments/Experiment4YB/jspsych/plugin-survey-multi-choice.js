@@ -242,7 +242,9 @@ var jsPsychSurveyMultiChoice = (function (jspsych) {
           const default_data = {
               response: question_data,
               rt: rt,
-              question_order: trial.randomize_question_order
+              question_order: trial.randomize_question_order,
+              options: options_data,  // Include options in the trial data
+              questions: question_texts  // Include questions in the trial data
                   ? this.jsPsych.randomization.shuffle([...Array(trial.questions.length).keys()])
                   : [...Array(trial.questions.length).keys()],
           };
