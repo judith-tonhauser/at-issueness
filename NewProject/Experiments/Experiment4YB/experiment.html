@@ -383,8 +383,8 @@ var botcaptcha_trial1 = {
     {prompt: text}
   ],
   on_finish: function(data){
-    console.log(data.response.Q0)
-    console.log(listener)
+    // console.log(data.response.Q0)
+    // console.log(listener)
 // score the text response as correct or incorrect.
     if (data.response.Q0.toLowerCase() == listener.toLowerCase()){
        data.correct = true
@@ -512,7 +512,8 @@ var trial1 = {
       prompt: stimuliNew4[0].stimulus,
       options: [stimuliNew4[0].option1, stimuliNew4[0].option2, stimuliNew4[0].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[0].stimulus
     }, 
   ], 
   randomize_question_order: false,
@@ -523,6 +524,8 @@ var trial1 = {
        }
 };
 
+console.log(trial1)
+
 var trial2 = {
   type: jsPsychSurveyMultiChoice,
   questions: [
@@ -530,7 +533,8 @@ var trial2 = {
       prompt: stimuliNew4[1].stimulus,
       options: [stimuliNew4[1].option1, stimuliNew4[1].option2, stimuliNew4[1].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[1].stimulus
     }, 
   ], 
   randomize_question_order: false,
@@ -548,7 +552,8 @@ var trial3 = {
       prompt: stimuliNew4[2].stimulus,
       options: [stimuliNew4[2].option1, stimuliNew4[2].option2, stimuliNew4[2].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[2].stimulus
     }, 
   ], 
   randomize_question_order: false,
@@ -566,7 +571,8 @@ var trial4 = {
       prompt: stimuliNew4[3].stimulus,
       options: [stimuliNew4[3].option1, stimuliNew4[3].option2, stimuliNew4[3].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[3].stimulus
     }, 
   ], 
   randomize_question_order: false,
@@ -584,7 +590,8 @@ var trial5 = {
       prompt: stimuliNew4[4].stimulus,
       options: [stimuliNew4[4].option1, stimuliNew4[4].option2, stimuliNew4[4].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[4].stimulus
     }, 
   ], 
   randomize_question_order: false,
@@ -602,7 +609,8 @@ var trial6 = {
       prompt: stimuliNew4[5].stimulus,
       options: [stimuliNew4[5].option1, stimuliNew4[5].option2, stimuliNew4[5].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[5].stimulus
     }, 
   ], 
   randomize_question_order: false,
@@ -620,7 +628,8 @@ var trial7 = {
       prompt: stimuliNew4[6].stimulus,
       options: [stimuliNew4[6].option1, stimuliNew4[6].option2, stimuliNew4[6].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[6].stimulus
     }, 
   ], 
   randomize_question_order: false,
@@ -638,7 +647,8 @@ var trial8 = {
       prompt: stimuliNew4[7].stimulus,
       options: [stimuliNew4[7].option1, stimuliNew4[7].option2, stimuliNew4[7].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[7].stimulus
     }, 
   ], 
   randomize_question_order: false,
@@ -656,7 +666,8 @@ var trial9 = {
       prompt: stimuliNew4[8].stimulus,
       options: [stimuliNew4[8].option1, stimuliNew4[8].option2, stimuliNew4[8].option3],
       horizontal: false,
-      required: true
+      required: true,
+      name: stimuliNew4[8].stimulus
     }, 
   ], 
   randomize_question_order: false,
