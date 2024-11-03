@@ -1,10 +1,6 @@
 # EXP1 QUD
 # preprocessing
 
-# programming issue: not all the data that were paid for are collected
-# first round: paid 400, collected only 375
-# second round: paid 25, collected only 23
-
 # set working directory to directory of script
 this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(this.dir)
@@ -24,9 +20,6 @@ theme_set(theme_bw())
 d = read_csv("../data/combined.csv")
 
 # parsing warnings are due to the rows with demographics info and final screens (ignore)
-
-# bind the data
-#d = rbind(d1,d2)
 
 # remove rows with info about instructions and final screens
 d <- d %>% filter(!(trial_type %in% c("survey-text", "html-button-response")))
