@@ -15,13 +15,9 @@ theme_set(theme_bw())
 
 # load clean data for analysis ----
 
-# load clean projectivity data for analysis
 yb = read.csv("../../exp4/data/cd.csv")
 dd = read.csv("../../exp3/data/cd.csv") 
 
-# projection: binary vs continuous ----
-
-# for projectivity data, plot proportions against mean slider ratings
 yb_means = yb %>%
   group_by(expression) %>%
   summarize(Mean_yb = mean(nResponse), CILow_yb = ci.low(nResponse), CIHigh_yb = ci.high(nResponse)) %>%
@@ -44,14 +40,6 @@ names(shapes) <- levels(dd_yb$expression)
 # Define a vector of colors for 7 expressions
 colors <- c("darkorchid", "black", "gray60", "tomato1", "dodgerblue", "forestgreen", "gold")
 names(colors) <- levels(dd_yb$expression)
-
-# shape-predicate mapping
-# 21: mc
-# 22: non-veridical non-factive NF
-# 23: factive F
-# 24: optionally factive V
-# 25: veridical non-factive VNF
-# 0, 1: Add appropriate labels if needed
 
 pp <- ggplot(dd_yb, aes(x = Mean_dd, y = Mean_yb, fill = expression, shape = expression)) +
   geom_errorbar(aes(ymin = YMinM, ymax = YMaxM), width = 0) +
