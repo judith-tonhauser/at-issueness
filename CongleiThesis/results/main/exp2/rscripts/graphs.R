@@ -1,4 +1,4 @@
-# 13_explicitIgnorance
+# Exp2 Asking whether
 # graphs
 
 # set working directory to directory of script
