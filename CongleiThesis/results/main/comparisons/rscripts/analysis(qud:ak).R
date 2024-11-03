@@ -15,13 +15,9 @@ theme_set(theme_bw())
 
 # load clean data for analysis ----
 
-# load clean projectivity data for analysis
 ak = read.csv("../../exp2/data/cd.csv")
 qud = read.csv("../../exp1/data/cd.csv") 
 
-# projection: binary vs continuous ----
-
-# for projectivity data, plot proportions against mean slider ratings
 ak_means = ak %>%
   group_by(expression) %>%
   summarize(Mean_ak = mean(response), CILow_ak = ci.low(response), CIHigh_ak = ci.high(response)) %>%
@@ -45,13 +41,6 @@ names(shapes) <- levels(qud_ak$expression)
 colors <- c("darkorchid", "black", "gray60", "tomato1", "dodgerblue", "forestgreen", "gold")
 names(colors) <- levels(qud_ak$expression)
 
-# shape-predicate mapping
-# 21: mc
-# 22: non-veridical non-factive NF
-# 23: factive F
-# 24: optionally factive V
-# 25: veridical non-factive VNF
-# 0, 1: Add appropriate labels if needed
 
 pp <- ggplot(qud_ak, aes(x = Mean_qud, y = Mean_ak, fill = expression, shape = expression)) +
   geom_errorbar(aes(ymin = YMinM, ymax = YMaxM), width = 0) +
