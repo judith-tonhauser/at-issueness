@@ -271,12 +271,8 @@ tmp = d %>%
 #group_by(expression,cc) %>% 
 #tally
 tmp
-nrow(tmp) # 20 (if everything had been chosen, should be 1200 = 3 contexts x 400 predicate/cc combinations)
-min(tmp$n) #1
-mean(tmp$n) #1.05
-max(tmp$n) #1.05
 #view(tmp)
 write_csv(tmp, file="../data/cd.csv")
-# how many data points per predicate/context combination?
+
 
 
