@@ -19,9 +19,6 @@ theme_set(theme_bw())
 yb = read.csv("../../exp4/data/cd.csv")
 ak = read.csv("../../exp2/data/cd.csv") 
 
-# projection: binary vs continuous ----
-
-# for projectivity data, plot proportions against mean slider ratings
 yb_means = yb %>%
   group_by(expression) %>%
   summarize(Mean_yb = mean(nResponse), CILow_yb = ci.low(nResponse), CIHigh_yb = ci.high(nResponse)) %>%
