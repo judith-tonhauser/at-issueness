@@ -204,30 +204,6 @@ ggplot(c.means, aes(x=expression,y=Mean)) +
   #geom_text(aes(label=participantID), vjust = 1, cex= 5)+
   ylab("Mean response")
 
-# controlGood3 didn't work: here the mean naturalness rating is way lower
-# makes sense in hindsight: question presupposes that he has a car, but the statement says
-# that he was looking to buy one
-
-# "item_id" : "controlGood1",
-# "utterance" : "Does Samantha have a new hat?",
-# "fact" : "I don't know if Samantha has a new hat"
-# },
-# {
-#   "item_id" : "controlGood2",
-#   "utterance" : "Does this pizza have mushrooms on it?",
-#   "fact" : "I don't know if this pizza has mushrooms on it"
-# },
-# {
-#   "item_id" : "controlGood3",
-#   "utterance" : "Was Hendrick's car expensive?",
-#   "fact" : "Hendrick was looking to buy a car"
-# },
-# {
-#   "item_id" : "controlGood4",
-#   "utterance" : "Is Mary's aunt sick?",
-#   "fact" : "Mary visited her aunt yesterday"
-
-# don't use controlGood3 to exclude participants data
 
 # good controls
 controls = d %>%
