@@ -15,13 +15,9 @@ theme_set(theme_bw())
 
 # load clean data for analysis ----
 
-# load clean projectivity data for analysis
 dd = read.csv("../../exp3/data/cd.csv")
 qud = read.csv("../../exp1/data/cd.csv") 
 
-# projection: binary vs continuous ----
-
-# for projectivity data, plot proportions against mean slider ratings
 dd_means = dd %>%
   group_by(expression) %>%
   summarize(Mean_dd = mean(response), CILow_dd = ci.low(response), CIHigh_dd = ci.high(response)) %>%
