@@ -1,4 +1,4 @@
-# 13_explicitIgnorance
+# Exp1 QUD
 # graphs
 
 # set working directory to directory of script
