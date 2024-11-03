@@ -1,0 +1,505 @@
+participantID,trial_type,trial_index,age,gender,language,amE,comments,expression,choice,nResponse,cc
+41,survey-multi-choice,4,23,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,lost his key
+41,survey-multi-choice,5,23,female,English,AmE,""":""""}",confirm,"Yes, but",0,bought a new car
+41,survey-multi-choice,7,23,female,English,AmE,""":""""}",confess,"Yes, but",0,ate the last cupcake
+41,survey-multi-choice,8,23,female,English,AmE,""":""""}",know,"No,",1,stole the money
+41,survey-multi-choice,9,23,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,cheated on his wife
+41,survey-multi-choice,10,23,female,English,AmE,""":""""}",discover,"Yes, but",0,broke the plate
+41,survey-multi-choice,11,23,female,English,AmE,""":""""}",be right,"No,",1,saw the murder
+74,survey-multi-choice,3,30,male,English,AmE,""":""none""}",be right,"No,",1,lost his key
+74,survey-multi-choice,4,30,male,English,AmE,""":""none""}",discover,"No,",1,broke the plate
+74,survey-multi-choice,6,30,male,English,AmE,""":""none""}",mnrrc,"No,",1,bought a new car
+74,survey-multi-choice,8,30,male,English,AmE,""":""none""}",fnrrc,"No,",1,stole the money
+74,survey-multi-choice,9,30,male,English,AmE,""":""none""}",confirm,"No,",1,saw the murder
+74,survey-multi-choice,10,30,male,English,AmE,""":""none""}",know,"No,",1,ate the last cupcake
+74,survey-multi-choice,11,30,male,English,AmE,""":""none""}",confess,"No,",1,cheated on his wife
+42,survey-multi-choice,4,34,female,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+42,survey-multi-choice,5,34,female,English,AmE,""":""""}",know,"Yes, but",0,broke the plate
+42,survey-multi-choice,6,34,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+42,survey-multi-choice,7,34,female,English,AmE,""":""""}",confess,"No,",1,saw the murder
+42,survey-multi-choice,9,34,female,English,AmE,""":""""}",fnrrc,"No,",1,bought a new car
+42,survey-multi-choice,10,34,female,English,AmE,""":""""}",discover,"No,",1,lost his key
+42,survey-multi-choice,11,34,female,English,AmE,""":""""}",mnrrc,"No,",1,stole the money
+72,survey-multi-choice,3,32,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,stole the money
+72,survey-multi-choice,4,32,female,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
+72,survey-multi-choice,5,32,female,English,AmE,""":""""}",discover,"No,",1,lost his key
+72,survey-multi-choice,6,32,female,English,AmE,""":""""}",know,"No,",1,cheated on his wife
+72,survey-multi-choice,9,32,female,English,AmE,""":""""}",confirm,"No,",1,saw the murder
+72,survey-multi-choice,10,32,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
+72,survey-multi-choice,11,32,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,broke the plate
+21,survey-multi-choice,4,34,female,English,AmE,""":""no idea""}",discover,"No,",1,bought a new car
+21,survey-multi-choice,5,34,female,English,AmE,""":""no idea""}",confess,"No,",1,cheated on his wife
+21,survey-multi-choice,7,34,female,English,AmE,""":""no idea""}",know,"No,",1,broke the plate
+21,survey-multi-choice,8,34,female,English,AmE,""":""no idea""}",confirm,"No,",1,ate the last cupcake
+21,survey-multi-choice,9,34,female,English,AmE,""":""no idea""}",mnrrc,"No,",1,lost his key
+21,survey-multi-choice,10,34,female,English,AmE,""":""no idea""}",fnrrc,"Yes, but",0,saw the murder
+21,survey-multi-choice,11,34,female,English,AmE,""":""no idea""}",be right,"No,",1,stole the money
+36,survey-multi-choice,3,28,female,English,AmE,""":""""}",confess,"Yes, but",0,saw the murder
+36,survey-multi-choice,4,28,female,English,AmE,""":""""}",be right,"No,",1,broke the plate
+36,survey-multi-choice,6,28,female,English,AmE,""":""""}",know,"No,",1,stole the money
+36,survey-multi-choice,7,28,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
+36,survey-multi-choice,8,28,female,English,AmE,""":""""}",mnrrc,"No,",1,lost his key
+36,survey-multi-choice,9,28,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,cheated on his wife
+36,survey-multi-choice,11,28,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+50,survey-multi-choice,3,37,female,English,AmE,""":""""}",confirm,"No,",1,stole the money
+50,survey-multi-choice,4,37,female,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
+50,survey-multi-choice,5,37,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+50,survey-multi-choice,7,37,female,English,AmE,""":""""}",mnrrc,"No,",1,broke the plate
+50,survey-multi-choice,8,37,female,English,AmE,""":""""}",know,"No,",1,lost his key
+50,survey-multi-choice,9,37,female,English,AmE,""":""""}",confess,"No,",1,saw the murder
+50,survey-multi-choice,11,37,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,bought a new car
+75,survey-multi-choice,4,19,male,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+75,survey-multi-choice,5,19,male,English,AmE,""":""""}",know,"No,",1,bought a new car
+75,survey-multi-choice,6,19,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
+75,survey-multi-choice,7,19,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
+75,survey-multi-choice,8,19,male,English,AmE,""":""""}",be right,"No,",1,stole the money
+75,survey-multi-choice,9,19,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+75,survey-multi-choice,10,19,male,English,AmE,""":""""}",fnrrc,"No,",1,lost his key
+32,survey-multi-choice,4,47,male,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
+32,survey-multi-choice,6,47,male,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+32,survey-multi-choice,7,47,male,English,AmE,""":""""}",be right,"No,",1,lost his key
+32,survey-multi-choice,8,47,male,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+32,survey-multi-choice,9,47,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
+32,survey-multi-choice,10,47,male,English,AmE,""":""""}",know,"No,",1,saw the murder
+32,survey-multi-choice,11,47,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,stole the money
+6,survey-multi-choice,3,50,female,English,AmE,""":""""}",confess,"No,",1,stole the money
+6,survey-multi-choice,4,50,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,cheated on his wife
+6,survey-multi-choice,6,50,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
+6,survey-multi-choice,7,50,female,English,AmE,""":""""}",know,"No,",1,saw the murder
+6,survey-multi-choice,9,50,female,English,AmE,""":""""}",be right,"No,",1,lost his key
+6,survey-multi-choice,10,50,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,broke the plate
+6,survey-multi-choice,11,50,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+16,survey-multi-choice,3,32,male,English,AmE,""":""""}",discover,"No,",1,lost his key
+16,survey-multi-choice,4,32,male,English,AmE,""":""""}",confess,"Yes, but",0,ate the last cupcake
+16,survey-multi-choice,6,32,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,bought a new car
+16,survey-multi-choice,7,32,male,English,AmE,""":""""}",mnrrc,"Yes, but",0,broke the plate
+16,survey-multi-choice,8,32,male,English,AmE,""":""""}",know,"Yes, but",0,cheated on his wife
+16,survey-multi-choice,10,32,male,English,AmE,""":""""}",be right,"No,",1,stole the money
+16,survey-multi-choice,11,32,male,English,AmE,""":""""}",confirm,"Yes, but",0,saw the murder
+10,survey-multi-choice,3,22,female,English,AmE,""":""""}",be right,"Yes, and",0,saw the murder
+10,survey-multi-choice,4,22,female,English,AmE,""":""""}",discover,"Yes, but",0,bought a new car
+10,survey-multi-choice,5,22,female,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
+10,survey-multi-choice,6,22,female,English,AmE,""":""""}",confess,"No,",1,stole the money
+10,survey-multi-choice,7,22,female,English,AmE,""":""""}",mnrrc,"No,",1,broke the plate
+10,survey-multi-choice,9,22,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
+10,survey-multi-choice,11,22,female,English,AmE,""":""""}",fnrrc,"No,",1,lost his key
+69,survey-multi-choice,5,29,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
+69,survey-multi-choice,6,29,female,English,AmE,""":""""}",confirm,"No,",1,stole the money
+69,survey-multi-choice,7,29,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,cheated on his wife
+69,survey-multi-choice,8,29,female,English,AmE,""":""""}",confess,"Yes, but",0,broke the plate
+69,survey-multi-choice,9,29,female,English,AmE,""":""""}",mnrrc,"No,",1,lost his key
+69,survey-multi-choice,10,29,female,English,AmE,""":""""}",discover,"Yes, but",0,saw the murder
+69,survey-multi-choice,11,29,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
+39,survey-multi-choice,3,26,male,English,AmE,""":""""}",confess,"Yes, but",0,cheated on his wife
+39,survey-multi-choice,4,26,male,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
+39,survey-multi-choice,5,26,male,English,AmE,""":""""}",confirm,"No,",1,saw the murder
+39,survey-multi-choice,6,26,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,bought a new car
+39,survey-multi-choice,7,26,male,English,AmE,""":""""}",mnrrc,"Yes, but",0,broke the plate
+39,survey-multi-choice,8,26,male,English,AmE,""":""""}",be right,"No,",1,stole the money
+39,survey-multi-choice,10,26,male,English,AmE,""":""""}",discover,"No,",1,lost his key
+22,survey-multi-choice,3,45,female,English,AmE,""":""""}",confirm,"No,",1,broke the plate
+22,survey-multi-choice,4,45,female,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
+22,survey-multi-choice,5,45,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
+22,survey-multi-choice,7,45,female,English,AmE,""":""""}",confess,"No,",1,stole the money
+22,survey-multi-choice,8,45,female,English,AmE,""":""""}",fnrrc,"No,",1,saw the murder
+22,survey-multi-choice,10,45,female,English,AmE,""":""""}",mnrrc,"No,",1,lost his key
+22,survey-multi-choice,11,45,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
+47,survey-multi-choice,3,38,male,English,AmE,""":""no issues""}",confess,"No,",1,lost his key
+47,survey-multi-choice,4,38,male,English,AmE,""":""no issues""}",know,"No,",1,ate the last cupcake
+47,survey-multi-choice,5,38,male,English,AmE,""":""no issues""}",mnrrc,"No,",1,bought a new car
+47,survey-multi-choice,6,38,male,English,AmE,""":""no issues""}",be right,"No,",1,stole the money
+47,survey-multi-choice,7,38,male,English,AmE,""":""no issues""}",fnrrc,"Yes, but",0,broke the plate
+47,survey-multi-choice,8,38,male,English,AmE,""":""no issues""}",discover,"No,",1,cheated on his wife
+47,survey-multi-choice,11,38,male,English,AmE,""":""no issues""}",confirm,"No,",1,saw the murder
+38,survey-multi-choice,4,34,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,saw the murder
+38,survey-multi-choice,6,34,male,English,AmE,""":""""}",confess,"No,",1,bought a new car
+38,survey-multi-choice,7,34,male,English,AmE,""":""""}",know,"No,",1,broke the plate
+38,survey-multi-choice,8,34,male,English,AmE,""":""""}",be right,"No,",1,stole the money
+38,survey-multi-choice,9,34,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+38,survey-multi-choice,10,34,male,English,AmE,""":""""}",mnrrc,"No,",1,lost his key
+38,survey-multi-choice,11,34,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
+13,survey-multi-choice,3,36,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+13,survey-multi-choice,4,36,male,English,AmE,""":""""}",confirm,"No,",1,lost his key
+13,survey-multi-choice,5,36,male,English,AmE,""":""""}",discover,"No,",1,stole the money
+13,survey-multi-choice,6,36,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,broke the plate
+13,survey-multi-choice,7,36,male,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
+13,survey-multi-choice,8,36,male,English,AmE,""":""""}",know,"No,",1,bought a new car
+13,survey-multi-choice,10,36,male,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+14,survey-multi-choice,3,25,male,English,AmE,""":""I have an English BA.""}",be right,"No,",1,lost his key
+14,survey-multi-choice,4,25,male,English,AmE,""":""I have an English BA.""}",confirm,"No,",1,ate the last cupcake
+14,survey-multi-choice,5,25,male,English,AmE,""":""I have an English BA.""}",fnrrc,"No,",1,cheated on his wife
+14,survey-multi-choice,8,25,male,English,AmE,""":""I have an English BA.""}",know,"No,",1,stole the money
+14,survey-multi-choice,9,25,male,English,AmE,""":""I have an English BA.""}",confess,"No,",1,bought a new car
+14,survey-multi-choice,10,25,male,English,AmE,""":""I have an English BA.""}",mnrrc,"No,",1,saw the murder
+14,survey-multi-choice,11,25,male,English,AmE,""":""I have an English BA.""}",discover,"No,",1,broke the plate
+63,survey-multi-choice,3,63,male,English,AmE,""":""""}",confirm,"No,",1,lost his key
+63,survey-multi-choice,5,63,male,English,AmE,""":""""}",confess,"No,",1,cheated on his wife
+63,survey-multi-choice,6,63,male,English,AmE,""":""""}",discover,"No,",1,stole the money
+63,survey-multi-choice,7,63,male,English,AmE,""":""""}",be right,"No,",1,saw the murder
+63,survey-multi-choice,8,63,male,English,AmE,""":""""}",mnrrc,"No,",1,broke the plate
+63,survey-multi-choice,9,63,male,English,AmE,""":""""}",fnrrc,"No,",1,bought a new car
+63,survey-multi-choice,10,63,male,English,AmE,""":""""}",know,"Yes, but",0,ate the last cupcake
+51,survey-multi-choice,3,28,female,English,AmE,""":""""}",fnrrc,"No,",1,ate the last cupcake
+51,survey-multi-choice,4,28,female,English,AmE,""":""""}",confess,"No,",1,bought a new car
+51,survey-multi-choice,6,28,female,English,AmE,""":""""}",be right,"No,",1,stole the money
+51,survey-multi-choice,7,28,female,English,AmE,""":""""}",discover,"No,",1,saw the murder
+51,survey-multi-choice,8,28,female,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
+51,survey-multi-choice,10,28,female,English,AmE,""":""""}",mnrrc,"No,",1,lost his key
+51,survey-multi-choice,11,28,female,English,AmE,""":""""}",know,"No,",1,broke the plate
+28,survey-multi-choice,3,33,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,saw the murder
+28,survey-multi-choice,4,33,female,English,AmE,""":""""}",know,"No,",1,stole the money
+28,survey-multi-choice,5,33,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
+28,survey-multi-choice,6,33,female,English,AmE,""":""""}",confess,"Yes, but",0,lost his key
+28,survey-multi-choice,7,33,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,cheated on his wife
+28,survey-multi-choice,9,33,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
+28,survey-multi-choice,11,33,female,English,AmE,""":""""}",confirm,"Yes, but",0,broke the plate
+70,survey-multi-choice,3,30,female,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+70,survey-multi-choice,5,30,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
+70,survey-multi-choice,7,30,female,English,AmE,""":""""}",be right,"No,",1,lost his key
+70,survey-multi-choice,8,30,female,English,AmE,""":""""}",fnrrc,"No,",1,bought a new car
+70,survey-multi-choice,9,30,female,English,AmE,""":""""}",confess,"No,",1,stole the money
+70,survey-multi-choice,10,30,female,English,AmE,""":""""}",discover,"No,",1,broke the plate
+70,survey-multi-choice,11,30,female,English,AmE,""":""""}",confirm,"No,",1,saw the murder
+4,survey-multi-choice,3,51,female,English,AmE,""":""Thanks!""}",confess,"No,",1,stole the money
+4,survey-multi-choice,4,51,female,English,AmE,""":""Thanks!""}",confirm,"No,",1,saw the murder
+4,survey-multi-choice,6,51,female,English,AmE,""":""Thanks!""}",fnrrc,"No,",1,cheated on his wife
+4,survey-multi-choice,7,51,female,English,AmE,""":""Thanks!""}",know,"No,",1,ate the last cupcake
+4,survey-multi-choice,8,51,female,English,AmE,""":""Thanks!""}",be right,"No,",1,bought a new car
+4,survey-multi-choice,9,51,female,English,AmE,""":""Thanks!""}",mnrrc,"Yes, but",0,broke the plate
+4,survey-multi-choice,11,51,female,English,AmE,""":""Thanks!""}",discover,"No,",1,lost his key
+7,survey-multi-choice,4,54,male,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+7,survey-multi-choice,6,54,male,English,AmE,""":""""}",confess,"No,",1,lost his key
+7,survey-multi-choice,7,54,male,English,AmE,""":""""}",fnrrc,"No,",1,bought a new car
+7,survey-multi-choice,8,54,male,English,AmE,""":""""}",know,"Yes, but",0,ate the last cupcake
+7,survey-multi-choice,9,54,male,English,AmE,""":""""}",confirm,"No,",1,saw the murder
+7,survey-multi-choice,10,54,male,English,AmE,""":""""}",discover,"No,",1,stole the money
+7,survey-multi-choice,11,54,male,English,AmE,""":""""}",be right,"No,",1,broke the plate
+49,survey-multi-choice,5,28,non-binary,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+49,survey-multi-choice,6,28,non-binary,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+49,survey-multi-choice,7,28,non-binary,English,AmE,""":""""}",fnrrc,"No,",1,ate the last cupcake
+49,survey-multi-choice,8,28,non-binary,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+49,survey-multi-choice,9,28,non-binary,English,AmE,""":""""}",discover,"No,",1,broke the plate
+49,survey-multi-choice,10,28,non-binary,English,AmE,""":""""}",confess,"No,",1,lost his key
+49,survey-multi-choice,11,28,non-binary,English,AmE,""":""""}",know,"No,",1,stole the money
+25,survey-multi-choice,3,56,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+25,survey-multi-choice,4,56,female,English,AmE,""":""""}",know,"Yes, but",0,lost his key
+25,survey-multi-choice,5,56,female,English,AmE,""":""""}",confirm,"Yes, but",0,saw the murder
+25,survey-multi-choice,6,56,female,English,AmE,""":""""}",fnrrc,"No,",1,cheated on his wife
+25,survey-multi-choice,8,56,female,English,AmE,""":""""}",discover,"No,",1,broke the plate
+25,survey-multi-choice,9,56,female,English,AmE,""":""""}",confess,"No,",1,bought a new car
+25,survey-multi-choice,11,56,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,stole the money
+54,survey-multi-choice,3,43,female,English,AmE,""":""""}",know,"No,",1,broke the plate
+54,survey-multi-choice,4,43,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+54,survey-multi-choice,5,43,female,English,AmE,""":""""}",fnrrc,"No,",1,lost his key
+54,survey-multi-choice,7,43,female,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+54,survey-multi-choice,8,43,female,English,AmE,""":""""}",discover,"No,",1,stole the money
+54,survey-multi-choice,9,43,female,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
+54,survey-multi-choice,11,43,female,English,AmE,""":""""}",be right,"No,",1,saw the murder
+37,survey-multi-choice,4,23,male,English,AmE,""":""""}",know,"No,",1,saw the murder
+37,survey-multi-choice,5,23,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+37,survey-multi-choice,6,23,male,English,AmE,""":""""}",confess,"Yes, but",0,broke the plate
+37,survey-multi-choice,7,23,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,stole the money
+37,survey-multi-choice,8,23,male,English,AmE,""":""""}",discover,"No,",1,lost his key
+37,survey-multi-choice,10,23,male,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+37,survey-multi-choice,11,23,male,English,AmE,""":""""}",mnrrc,"Yes, but",0,ate the last cupcake
+56,survey-multi-choice,3,20,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,saw the murder
+56,survey-multi-choice,4,20,female,English,AmE,""":""""}",confirm,"Yes, but",0,bought a new car
+56,survey-multi-choice,6,20,female,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
+56,survey-multi-choice,7,20,female,English,AmE,""":""""}",know,"Yes, but",0,stole the money
+56,survey-multi-choice,8,20,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+56,survey-multi-choice,9,20,female,English,AmE,""":""""}",discover,"No,",1,lost his key
+56,survey-multi-choice,11,20,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,broke the plate
+80,survey-multi-choice,3,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",confirm,"Yes, but",0,lost his key
+80,survey-multi-choice,4,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",know,"No,",1,saw the murder
+80,survey-multi-choice,6,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",fnrrc,"Yes, but",0,bought a new car
+80,survey-multi-choice,7,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",discover,"No,",1,broke the plate
+80,survey-multi-choice,8,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",mnrrc,"Yes, but",0,ate the last cupcake
+80,survey-multi-choice,9,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",be right,"No,",1,stole the money
+80,survey-multi-choice,11,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",confess,"Yes, but",0,cheated on his wife
+58,survey-multi-choice,3,36,female,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+58,survey-multi-choice,4,36,female,English,AmE,""":""""}",be right,"No,",1,stole the money
+58,survey-multi-choice,6,36,female,English,AmE,""":""""}",know,"No,",1,cheated on his wife
+58,survey-multi-choice,7,36,female,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+58,survey-multi-choice,9,36,female,English,AmE,""":""""}",discover,"No,",1,broke the plate
+58,survey-multi-choice,10,36,female,English,AmE,""":""""}",fnrrc,"No,",1,bought a new car
+58,survey-multi-choice,11,36,female,English,AmE,""":""""}",confess,"No,",1,lost his key
+24,survey-multi-choice,3,57,female,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+24,survey-multi-choice,4,57,female,English,AmE,""":""""}",discover,"No,",1,stole the money
+24,survey-multi-choice,6,57,female,English,AmE,""":""""}",know,"No,",1,saw the murder
+24,survey-multi-choice,8,57,female,English,AmE,""":""""}",be right,"No,",1,broke the plate
+24,survey-multi-choice,9,57,female,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+24,survey-multi-choice,10,57,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,lost his key
+24,survey-multi-choice,11,57,female,English,AmE,""":""""}",confess,"No,",1,bought a new car
+19,survey-multi-choice,3,29,male,English,AmE,""":""""}",confirm,"No,",1,lost his key
+19,survey-multi-choice,4,29,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
+19,survey-multi-choice,6,29,male,English,AmE,""":""""}",fnrrc,"No,",1,stole the money
+19,survey-multi-choice,8,29,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
+19,survey-multi-choice,9,29,male,English,AmE,""":""""}",know,"No,",1,bought a new car
+19,survey-multi-choice,10,29,male,English,AmE,""":""""}",mnrrc,"No,",1,ate the last cupcake
+19,survey-multi-choice,11,29,male,English,AmE,""":""""}",be right,"No,",1,saw the murder
+73,survey-multi-choice,4,25,female,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+73,survey-multi-choice,5,25,female,English,AmE,""":""""}",confirm,"No,",1,broke the plate
+73,survey-multi-choice,6,25,female,English,AmE,""":""""}",discover,"No,",1,bought a new car
+73,survey-multi-choice,7,25,female,English,AmE,""":""""}",fnrrc,"No,",1,saw the murder
+73,survey-multi-choice,8,25,female,English,AmE,""":""""}",confess,"No,",1,lost his key
+73,survey-multi-choice,10,25,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
+73,survey-multi-choice,11,25,female,English,AmE,""":""""}",be right,"No,",1,stole the money
+79,survey-multi-choice,3,40,female,English,AmE,""":""""}",confess,"No,",1,broke the plate
+79,survey-multi-choice,4,40,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+79,survey-multi-choice,5,40,female,English,AmE,""":""""}",discover,"No,",1,lost his key
+79,survey-multi-choice,7,40,female,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+79,survey-multi-choice,8,40,female,English,AmE,""":""""}",fnrrc,"No,",1,stole the money
+79,survey-multi-choice,9,40,female,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
+79,survey-multi-choice,10,40,female,English,AmE,""":""""}",know,"No,",1,bought a new car
+3,survey-multi-choice,3,33,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,ate the last cupcake
+3,survey-multi-choice,4,33,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+3,survey-multi-choice,5,33,female,English,AmE,""":""""}",know,"No,",1,stole the money
+3,survey-multi-choice,8,33,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+3,survey-multi-choice,9,33,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,broke the plate
+3,survey-multi-choice,10,33,female,English,AmE,""":""""}",discover,"No,",1,saw the murder
+3,survey-multi-choice,11,33,female,English,AmE,""":""""}",confess,"Yes, but",0,lost his key
+57,survey-multi-choice,3,24,female,English,AmE,""":""""}",confirm,"Yes, but",0,ate the last cupcake
+57,survey-multi-choice,4,24,female,English,AmE,""":""""}",fnrrc,"No,",1,stole the money
+57,survey-multi-choice,5,24,female,English,AmE,""":""""}",be right,"Yes, but",0,bought a new car
+57,survey-multi-choice,6,24,female,English,AmE,""":""""}",know,"No,",1,lost his key
+57,survey-multi-choice,7,24,female,English,AmE,""":""""}",confess,"No,",1,cheated on his wife
+57,survey-multi-choice,8,24,female,English,AmE,""":""""}",mnrrc,"No,",1,broke the plate
+57,survey-multi-choice,11,24,female,English,AmE,""":""""}",discover,"No,",1,saw the murder
+66,survey-multi-choice,3,44,female,English,AmE,""":""""}",discover,"Yes, but",0,bought a new car
+66,survey-multi-choice,4,44,female,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+66,survey-multi-choice,5,44,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+66,survey-multi-choice,6,44,female,English,AmE,""":""""}",know,"No,",1,cheated on his wife
+66,survey-multi-choice,8,44,female,English,AmE,""":""""}",confirm,"Yes, but",0,stole the money
+66,survey-multi-choice,9,44,female,English,AmE,""":""""}",confess,"Yes, but",0,broke the plate
+66,survey-multi-choice,11,44,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,lost his key
+26,survey-multi-choice,3,41,male,English,AmE,""":""""}",be right,"No,",1,bought a new car
+26,survey-multi-choice,4,41,male,English,AmE,""":""""}",discover,"Yes, but",0,lost his key
+26,survey-multi-choice,5,41,male,English,AmE,""":""""}",confess,"No,",1,stole the money
+26,survey-multi-choice,6,41,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+26,survey-multi-choice,7,41,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,saw the murder
+26,survey-multi-choice,10,41,male,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+26,survey-multi-choice,11,41,male,English,AmE,""":""""}",know,"No,",1,broke the plate
+55,survey-multi-choice,3,42,male,English,AmE,""":""""}",mnrrc,"Yes, but",0,stole the money
+55,survey-multi-choice,4,42,male,English,AmE,""":""""}",know,"No,",1,saw the murder
+55,survey-multi-choice,5,42,male,English,AmE,""":""""}",be right,"No,",1,lost his key
+55,survey-multi-choice,7,42,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,cheated on his wife
+55,survey-multi-choice,9,42,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
+55,survey-multi-choice,10,42,male,English,AmE,""":""""}",discover,"No,",1,bought a new car
+55,survey-multi-choice,11,42,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+31,survey-multi-choice,3,34,male,English,AmE,""":""""}",mnrrc,"No,",1,lost his key
+31,survey-multi-choice,4,34,male,English,AmE,""":""""}",discover,"No,",1,stole the money
+31,survey-multi-choice,5,34,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,saw the murder
+31,survey-multi-choice,6,34,male,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
+31,survey-multi-choice,9,34,male,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
+31,survey-multi-choice,10,34,male,English,AmE,""":""""}",be right,"No,",1,broke the plate
+31,survey-multi-choice,11,34,male,English,AmE,""":""""}",confess,"No,",1,bought a new car
+59,survey-multi-choice,3,44,male,English,AmE,""":""Thank you""}",mnrrc,"Yes, but",0,saw the murder
+59,survey-multi-choice,4,44,male,English,AmE,""":""Thank you""}",confirm,"No,",1,lost his key
+59,survey-multi-choice,5,44,male,English,AmE,""":""Thank you""}",confess,"Yes, but",0,broke the plate
+59,survey-multi-choice,6,44,male,English,AmE,""":""Thank you""}",know,"No,",1,ate the last cupcake
+59,survey-multi-choice,7,44,male,English,AmE,""":""Thank you""}",fnrrc,"No,",1,cheated on his wife
+59,survey-multi-choice,8,44,male,English,AmE,""":""Thank you""}",discover,"No,",1,stole the money
+59,survey-multi-choice,11,44,male,English,AmE,""":""Thank you""}",be right,"No,",1,bought a new car
+11,survey-multi-choice,3,37,male,English,AmE,""":""""}",confess,"No,",1,lost his key
+11,survey-multi-choice,4,37,male,English,AmE,""":""""}",discover,"No,",1,stole the money
+11,survey-multi-choice,5,37,male,English,AmE,""":""""}",know,"No,",1,bought a new car
+11,survey-multi-choice,6,37,male,English,AmE,""":""""}",confirm,"No,",1,saw the murder
+11,survey-multi-choice,7,37,male,English,AmE,""":""""}",mnrrc,"No,",1,broke the plate
+11,survey-multi-choice,8,37,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+11,survey-multi-choice,9,37,male,English,AmE,""":""""}",fnrrc,"No,",1,ate the last cupcake
+35,survey-multi-choice,3,37,non-binary,English,AmE,""":""""}",discover,"No,",1,broke the plate
+35,survey-multi-choice,4,37,non-binary,English,AmE,""":""""}",fnrrc,"Yes, but",0,ate the last cupcake
+35,survey-multi-choice,5,37,non-binary,English,AmE,""":""""}",know,"Yes, but",0,stole the money
+35,survey-multi-choice,7,37,non-binary,English,AmE,""":""""}",confess,"No,",1,lost his key
+35,survey-multi-choice,8,37,non-binary,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
+35,survey-multi-choice,9,37,non-binary,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+35,survey-multi-choice,11,37,non-binary,English,AmE,""":""""}",be right,"No,",1,bought a new car
+29,survey-multi-choice,4,48,female,English,AmE,""":""""}",confess,"Yes, but",0,lost his key
+29,survey-multi-choice,5,48,female,English,AmE,""":""""}",confirm,"Yes, but",0,cheated on his wife
+29,survey-multi-choice,6,48,female,English,AmE,""":""""}",know,"No,",1,saw the murder
+29,survey-multi-choice,7,48,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
+29,survey-multi-choice,8,48,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,stole the money
+29,survey-multi-choice,10,48,female,English,AmE,""":""""}",be right,"No,",1,broke the plate
+29,survey-multi-choice,11,48,female,English,AmE,""":""""}",mnrrc,"No,",1,bought a new car
+64,survey-multi-choice,3,25,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,broke the plate
+64,survey-multi-choice,4,25,male,English,AmE,""":""""}",mnrrc,"Yes, but",0,stole the money
+64,survey-multi-choice,6,25,male,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+64,survey-multi-choice,7,25,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+64,survey-multi-choice,9,25,male,English,AmE,""":""""}",discover,"No,",1,lost his key
+64,survey-multi-choice,10,25,male,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
+64,survey-multi-choice,11,25,male,English,AmE,""":""""}",know,"Yes, but",0,saw the murder
+5,survey-multi-choice,3,32,male,English,AmE,""":""""}",confirm,"Yes, but",0,bought a new car
+5,survey-multi-choice,4,32,male,English,AmE,""":""""}",mnrrc,"No,",1,stole the money
+5,survey-multi-choice,5,32,male,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
+5,survey-multi-choice,6,32,male,English,AmE,""":""""}",know,"No,",1,saw the murder
+5,survey-multi-choice,7,32,male,English,AmE,""":""""}",fnrrc,"No,",1,lost his key
+5,survey-multi-choice,9,32,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+5,survey-multi-choice,11,32,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
+1,survey-multi-choice,3,26,male,English,AmE,""":""""}",confess,"Yes, but",0,saw the murder
+1,survey-multi-choice,6,26,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
+1,survey-multi-choice,7,26,male,English,AmE,""":""""}",know,"No,",1,lost his key
+1,survey-multi-choice,8,26,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,broke the plate
+1,survey-multi-choice,9,26,male,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+1,survey-multi-choice,10,26,male,English,AmE,""":""""}",mnrrc,"Yes, but",0,bought a new car
+1,survey-multi-choice,11,26,male,English,AmE,""":""""}",confirm,"No,",1,stole the money
+44,survey-multi-choice,4,31,female,English,AmE,""":""""}",fnrrc,"No,",1,cheated on his wife
+44,survey-multi-choice,6,31,female,English,AmE,""":""""}",confirm,"No,",1,lost his key
+44,survey-multi-choice,7,31,female,English,AmE,""":""""}",know,"No,",1,stole the money
+44,survey-multi-choice,8,31,female,English,AmE,""":""""}",discover,"No,",1,bought a new car
+44,survey-multi-choice,9,31,female,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+44,survey-multi-choice,10,31,female,English,AmE,""":""""}",confess,"No,",1,broke the plate
+44,survey-multi-choice,11,31,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+46,survey-multi-choice,4,51,female,English,AmE,"""}",fnrrc,"No,",1,lost his key
+46,survey-multi-choice,6,51,female,English,AmE,"""}",be right,"No,",1,cheated on his wife
+46,survey-multi-choice,7,51,female,English,AmE,"""}",confess,"No,",1,saw the murder
+46,survey-multi-choice,8,51,female,English,AmE,"""}",mnrrc,"Yes, but",0,bought a new car
+46,survey-multi-choice,9,51,female,English,AmE,"""}",discover,"No,",1,broke the plate
+46,survey-multi-choice,10,51,female,English,AmE,"""}",confirm,"No,",1,ate the last cupcake
+46,survey-multi-choice,11,51,female,English,AmE,"""}",know,"No,",1,stole the money
+52,survey-multi-choice,3,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",confirm,"No,",1,lost his key
+52,survey-multi-choice,4,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",fnrrc,"Yes, but",0,ate the last cupcake
+52,survey-multi-choice,6,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",be right,"No,",1,stole the money
+52,survey-multi-choice,7,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",discover,"No,",1,saw the murder
+52,survey-multi-choice,8,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",confess,"No,",1,cheated on his wife
+52,survey-multi-choice,9,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",know,"No,",1,broke the plate
+52,survey-multi-choice,11,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",mnrrc,"Yes, but",0,bought a new car
+48,survey-multi-choice,3,28,male,English,AmE,""":""""}",know,"No,",1,cheated on his wife
+48,survey-multi-choice,4,28,male,English,AmE,""":""""}",confess,"Yes, but",0,stole the money
+48,survey-multi-choice,5,28,male,English,AmE,""":""""}",mnrrc,"Yes, but",0,saw the murder
+48,survey-multi-choice,7,28,male,English,AmE,""":""""}",be right,"No,",1,broke the plate
+48,survey-multi-choice,8,28,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,bought a new car
+48,survey-multi-choice,9,28,male,English,AmE,""":""""}",discover,"No,",1,lost his key
+48,survey-multi-choice,10,28,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+8,survey-multi-choice,3,27,male,English,AmE,""":""no comment""}",confess,"No,",1,bought a new car
+8,survey-multi-choice,5,27,male,English,AmE,""":""no comment""}",confirm,"No,",1,lost his key
+8,survey-multi-choice,6,27,male,English,AmE,""":""no comment""}",mnrrc,"No,",1,saw the murder
+8,survey-multi-choice,7,27,male,English,AmE,""":""no comment""}",be right,"No,",1,broke the plate
+8,survey-multi-choice,8,27,male,English,AmE,""":""no comment""}",fnrrc,"No,",1,ate the last cupcake
+8,survey-multi-choice,9,27,male,English,AmE,""":""no comment""}",know,"No,",1,cheated on his wife
+8,survey-multi-choice,10,27,male,English,AmE,""":""no comment""}",discover,"No,",1,stole the money
+9,survey-multi-choice,3,29,female,English,AmE,""":""n/a""}",confirm,"No,",1,cheated on his wife
+9,survey-multi-choice,5,29,female,English,AmE,""":""n/a""}",mnrrc,"No,",1,lost his key
+9,survey-multi-choice,6,29,female,English,AmE,""":""n/a""}",know,"No,",1,bought a new car
+9,survey-multi-choice,7,29,female,English,AmE,""":""n/a""}",discover,"No,",1,ate the last cupcake
+9,survey-multi-choice,9,29,female,English,AmE,""":""n/a""}",fnrrc,"Yes, but",0,broke the plate
+9,survey-multi-choice,10,29,female,English,AmE,""":""n/a""}",be right,"No,",1,stole the money
+9,survey-multi-choice,11,29,female,English,AmE,""":""n/a""}",confess,"Yes, but",0,saw the murder
+33,survey-multi-choice,4,36,female,English,AmE,""":""""}",be right,"No,",1,stole the money
+33,survey-multi-choice,6,36,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+33,survey-multi-choice,7,36,female,English,AmE,""":""""}",fnrrc,"No,",1,cheated on his wife
+33,survey-multi-choice,8,36,female,English,AmE,""":""""}",know,"No,",1,broke the plate
+33,survey-multi-choice,9,36,female,English,AmE,""":""""}",mnrrc,"No,",1,saw the murder
+33,survey-multi-choice,10,36,female,English,AmE,""":""""}",discover,"No,",1,lost his key
+33,survey-multi-choice,11,36,female,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
+76,survey-multi-choice,3,54,female,English,AmE,""":""""}",confess,"No,",1,broke the plate
+76,survey-multi-choice,5,54,female,English,AmE,""":""""}",know,"No,",1,cheated on his wife
+76,survey-multi-choice,6,54,female,English,AmE,""":""""}",discover,"No,",1,bought a new car
+76,survey-multi-choice,8,54,female,English,AmE,""":""""}",fnrrc,"No,",1,lost his key
+76,survey-multi-choice,9,54,female,English,AmE,""":""""}",confirm,"No,",1,stole the money
+76,survey-multi-choice,10,54,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,saw the murder
+76,survey-multi-choice,11,54,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+34,survey-multi-choice,4,39,female,English,AmE,""":""""}",know,"No,",1,lost his key
+34,survey-multi-choice,5,39,female,English,AmE,""":""""}",confess,"Yes, but",0,broke the plate
+34,survey-multi-choice,7,39,female,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
+34,survey-multi-choice,8,39,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
+34,survey-multi-choice,9,39,female,English,AmE,""":""""}",mnrrc,"No,",1,stole the money
+34,survey-multi-choice,10,39,female,English,AmE,""":""""}",be right,"No,",1,saw the murder
+34,survey-multi-choice,11,39,female,English,AmE,""":""""}",fnrrc,"No,",1,bought a new car
+15,survey-multi-choice,3,52,male,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+15,survey-multi-choice,5,52,male,English,AmE,""":""""}",discover,"No,",1,stole the money
+15,survey-multi-choice,7,52,male,English,AmE,""":""""}",know,"No,",1,lost his key
+15,survey-multi-choice,8,52,male,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+15,survey-multi-choice,9,52,male,English,AmE,""":""""}",confirm,"No,",1,broke the plate
+15,survey-multi-choice,10,52,male,English,AmE,""":""""}",fnrrc,"No,",1,saw the murder
+15,survey-multi-choice,11,52,male,English,AmE,""":""""}",confess,"No,",1,bought a new car
+40,survey-multi-choice,3,48,female,English,AmE,""":""""}",discover,"Yes, but",0,bought a new car
+40,survey-multi-choice,4,48,female,English,AmE,""":""""}",confess,"Yes, but",0,cheated on his wife
+40,survey-multi-choice,5,48,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,ate the last cupcake
+40,survey-multi-choice,6,48,female,English,AmE,""":""""}",confirm,"Yes, but",0,saw the murder
+40,survey-multi-choice,7,48,female,English,AmE,""":""""}",know,"Yes, but",0,broke the plate
+40,survey-multi-choice,10,48,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,stole the money
+40,survey-multi-choice,11,48,female,English,AmE,""":""""}",be right,"No,",1,lost his key
+71,survey-multi-choice,3,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",confirm,"No,",1,broke the plate
+71,survey-multi-choice,4,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",know,"No,",1,ate the last cupcake
+71,survey-multi-choice,5,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",be right,"No,",1,stole the money
+71,survey-multi-choice,6,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",mnrrc,"No,",1,lost his key
+71,survey-multi-choice,9,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",discover,"No,",1,saw the murder
+71,survey-multi-choice,10,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",fnrrc,"No,",1,cheated on his wife
+71,survey-multi-choice,11,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",confess,"No,",1,bought a new car
+18,survey-multi-choice,3,41,female,English,AmE,""":""""}",confess,"No,",1,cheated on his wife
+18,survey-multi-choice,4,41,female,English,AmE,""":""""}",discover,"No,",1,stole the money
+18,survey-multi-choice,5,41,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
+18,survey-multi-choice,6,41,female,English,AmE,""":""""}",know,"No,",1,saw the murder
+18,survey-multi-choice,7,41,female,English,AmE,""":""""}",fnrrc,"No,",1,lost his key
+18,survey-multi-choice,9,41,female,English,AmE,""":""""}",confirm,"No,",1,broke the plate
+18,survey-multi-choice,10,41,female,English,AmE,""":""""}",mnrrc,"No,",1,ate the last cupcake
+67,survey-multi-choice,3,57,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,bought a new car
+67,survey-multi-choice,4,57,female,English,AmE,""":""""}",know,"Yes, but",0,ate the last cupcake
+67,survey-multi-choice,7,57,female,English,AmE,""":""""}",be right,"No,",1,saw the murder
+67,survey-multi-choice,8,57,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,broke the plate
+67,survey-multi-choice,9,57,female,English,AmE,""":""""}",confirm,"Yes, but",0,stole the money
+67,survey-multi-choice,10,57,female,English,AmE,""":""""}",confess,"No,",1,cheated on his wife
+67,survey-multi-choice,11,57,female,English,AmE,""":""""}",discover,"Yes, but",0,lost his key
+23,survey-multi-choice,4,67,female,English,AmE,""":""""}",know,"No,",1,broke the plate
+23,survey-multi-choice,5,67,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
+23,survey-multi-choice,6,67,female,English,AmE,""":""""}",be right,"No,",1,lost his key
+23,survey-multi-choice,7,67,female,English,AmE,""":""""}",fnrrc,"No,",1,cheated on his wife
+23,survey-multi-choice,9,67,female,English,AmE,""":""""}",confirm,"No,",1,stole the money
+23,survey-multi-choice,10,67,female,English,AmE,""":""""}",confess,"Yes, but",0,saw the murder
+23,survey-multi-choice,11,67,female,English,AmE,""":""""}",mnrrc,"No,",1,bought a new car
+62,survey-multi-choice,4,30,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+62,survey-multi-choice,5,30,female,English,AmE,""":""""}",mnrrc,"No,",1,ate the last cupcake
+62,survey-multi-choice,6,30,female,English,AmE,""":""""}",confess,"No,",1,stole the money
+62,survey-multi-choice,7,30,female,English,AmE,""":""""}",discover,"No,",1,saw the murder
+62,survey-multi-choice,9,30,female,English,AmE,""":""""}",know,"No,",1,broke the plate
+62,survey-multi-choice,10,30,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
+62,survey-multi-choice,11,30,female,English,AmE,""":""""}",fnrrc,"No,",1,lost his key
+61,survey-multi-choice,3,44,female,English,AmE,""":""""}",fnrrc,"Yes, but",0,ate the last cupcake
+61,survey-multi-choice,4,44,female,English,AmE,""":""""}",confirm,"No,",1,broke the plate
+61,survey-multi-choice,5,44,female,English,AmE,""":""""}",know,"No,",1,stole the money
+61,survey-multi-choice,6,44,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,saw the murder
+61,survey-multi-choice,8,44,female,English,AmE,""":""""}",confess,"No,",1,bought a new car
+61,survey-multi-choice,9,44,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+61,survey-multi-choice,10,44,female,English,AmE,""":""""}",discover,"No,",1,lost his key
+27,survey-multi-choice,5,29,male,English,AmE,""":""""}",confirm,"Yes, but",0,saw the murder
+27,survey-multi-choice,6,29,male,English,AmE,""":""""}",mnrrc,"Yes, but",0,broke the plate
+27,survey-multi-choice,7,29,male,English,AmE,""":""""}",fnrrc,"Yes, but",0,cheated on his wife
+27,survey-multi-choice,10,29,male,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
+27,survey-multi-choice,11,29,male,English,AmE,""":""""}",discover,"No,",1,lost his key
+27,survey-multi-choice,12,29,male,English,AmE,""":""""}",confess,"Yes, but",0,stole the money
+27,survey-multi-choice,13,29,male,English,AmE,""":""""}",know,"No,",1,bought a new car
+45,survey-multi-choice,3,62,female,English,AmE,""":""None""}",be right,"No,",1,bought a new car
+45,survey-multi-choice,5,62,female,English,AmE,""":""None""}",confirm,"No,",1,saw the murder
+45,survey-multi-choice,6,62,female,English,AmE,""":""None""}",know,"No,",1,lost his key
+45,survey-multi-choice,7,62,female,English,AmE,""":""None""}",mnrrc,"No,",1,ate the last cupcake
+45,survey-multi-choice,8,62,female,English,AmE,""":""None""}",fnrrc,"Yes, but",0,broke the plate
+45,survey-multi-choice,9,62,female,English,AmE,""":""None""}",discover,"No,",1,cheated on his wife
+45,survey-multi-choice,11,62,female,English,AmE,""":""None""}",confess,"Yes, but",0,stole the money
+77,survey-multi-choice,3,40,male,English,AmE,""":""""}",fnrrc,"No,",1,ate the last cupcake
+77,survey-multi-choice,4,40,male,English,AmE,""":""""}",know,"No,",1,saw the murder
+77,survey-multi-choice,6,40,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
+77,survey-multi-choice,7,40,male,English,AmE,""":""""}",mnrrc,"No,",1,broke the plate
+77,survey-multi-choice,8,40,male,English,AmE,""":""""}",confess,"No,",1,bought a new car
+77,survey-multi-choice,10,40,male,English,AmE,""":""""}",be right,"No,",1,stole the money
+77,survey-multi-choice,11,40,male,English,AmE,""":""""}",confirm,"No,",1,lost his key
+2,survey-multi-choice,4,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",discover,"No,",1,saw the murder
+2,survey-multi-choice,5,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",know,"Yes, but",0,bought a new car
+2,survey-multi-choice,6,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",confirm,"No,",1,stole the money
+2,survey-multi-choice,7,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",confess,"Yes, but",0,cheated on his wife
+2,survey-multi-choice,9,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",mnrrc,"Yes, but",0,ate the last cupcake
+2,survey-multi-choice,10,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",be right,"Yes, but",0,broke the plate
+2,survey-multi-choice,11,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",fnrrc,"Yes, but",0,lost his key
+43,survey-multi-choice,4,43,female,English,AmE,""":""""}",discover,"No,",1,lost his key
+43,survey-multi-choice,5,43,female,English,AmE,""":""""}",know,"Yes, but",0,saw the murder
+43,survey-multi-choice,6,43,female,English,AmE,""":""""}",mnrrc,"No,",1,cheated on his wife
+43,survey-multi-choice,8,43,female,English,AmE,""":""""}",confess,"Yes, but",0,stole the money
+43,survey-multi-choice,9,43,female,English,AmE,""":""""}",fnrrc,"No,",1,bought a new car
+43,survey-multi-choice,10,43,female,English,AmE,""":""""}",be right,"No,",1,broke the plate
+43,survey-multi-choice,11,43,female,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
+60,survey-multi-choice,3,45,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
+60,survey-multi-choice,4,45,female,English,AmE,""":""""}",fnrrc,"No,",1,lost his key
+60,survey-multi-choice,5,45,female,English,AmE,""":""""}",confess,"Yes, but",0,saw the murder
+60,survey-multi-choice,6,45,female,English,AmE,""":""""}",mnrrc,"Yes, but",0,broke the plate
+60,survey-multi-choice,7,45,female,English,AmE,""":""""}",confirm,"Yes, but",0,ate the last cupcake
+60,survey-multi-choice,8,45,female,English,AmE,""":""""}",know,"No,",1,stole the money
+60,survey-multi-choice,10,45,female,English,AmE,""":""""}",discover,"No,",1,bought a new car
