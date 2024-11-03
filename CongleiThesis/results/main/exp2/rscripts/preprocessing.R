@@ -292,50 +292,19 @@ d <- d %>%
   droplevels()
 length(unique(d$participantID)) #75, so 3 participants excluded
 
-# exclude turkers who always clicked on roughly the same point on the scale 
-# on the target trials
-table(d$trial_type)
-variances = d %>%
-  filter(trial_type == "html-slider-response") %>%
-  group_by(participantID) %>%
-  summarize(Variance = var(response)) %>%
-  mutate(TooSmall = Variance < mean(Variance) - 2*sd(Variance))
-variances
-
-
-lowvarworkers = as.character(variances[variances$TooSmall,]$participantID)
-summary(variances)
-lowvarworkers # participants consistently clicked on roughly the same point on the scale
-
-lvw = d %>%
-filter(as.character(participantID) %in% lowvarworkers) %>%
-   droplevels() %>%
-   mutate(Participant = as.factor(as.character(participantID)))
-# 
- ggplot(lvw,aes(x=Participant,y=response)) +
-   geom_point()
-# 
-# # exclude the participants identified above
- d <- droplevels(subset(d, !(d$participantID %in% lowvarworkers)))
- length(unique(d$participantID)) #1 participant is excluded
-
-# adjust the names of the predicates
-#d = d %>%
-#mutate(expression = recode(expression, "right" = "be right"))
-
 
 # age and gender of remaining participants
-table(d$age) #22-74
+table(d$age) #20-74
 length(which(is.na(d$age))) # 0 missing values
 # exclude outliers (0, 3330) before calculating mean
-mean(d[10 < d$age & d$age < 100,]$age,na.rm=TRUE) #38.66
+mean(d[10 < d$age & d$age < 100,]$age,na.rm=TRUE) #38.41
 
 d %>% 
   select(gender, participantID) %>% 
   unique() %>% 
   group_by(gender) %>% 
   summarize(count=n())
-# 1 female          45
+# 1 female          46
 # 2 male            27
 # 3 non-binary      1
 # 4 preferNoToSay   1
@@ -350,81 +319,5 @@ tmp = d %>%
   filter(cc != "noCC") #%>%
   #group_by(expression,cc) %>% 
   #tally
-tmp
-nrow(tmp) # 518 (if everything had been chosen, should be 1200 = 3 contexts x 400 predicate/cc combinations)
-min(tmp$n) #1
-mean(tmp$n) #1.05
-max(tmp$n) #1.05
 #view(tmp)
 write_csv(tmp, file="../data/cd.csv")
-# how many data points per predicate/context combination?
-#tmp = d %>%
-  #filter(cc != "noCC") %>%
-  #group_by(expression,context) %>% 
-  #tally
-#tmp
-
-
-#nrow(tmp) # 60 combinations (3 contexts x 20 predicates)
-#sd(tmp$n)
-#min(tmp$n) #59
-#mean(tmp$n) #123
-#median(tmp$n) #80
-#max(tmp$n) #234
-#write_csv(d, file="../data/cd.csv")
-
-# how many data points per predicate/context combination?
-#tmp = d %>%
-#  filter(cc != "noCC") %>%
-#  group_by(expression,context) %>% 
-#  tally
-#tmp
-#nrow(tmp) # 60 combinations (3 contexts x 20 predicates)
-#sd(tmp$n)
-#min(tmp$n) #59
-#mean(tmp$n) #123
-#median(tmp$n) #80
-#max(tmp$n) #234
-
-# how many data points for each predicate in the explicit ignorance context?
-#tmp = d %>%
-# filter(context == "explicitIgnorance") %>%
-# filter(cc != "noCC") %>%
-# group_by(expression,context) %>% 
-# tally
-#tmp
-#nrow(tmp) # 20 combinations (1 contexts x 20 predicates)
-#sd(tmp$n) #8.7
-#min(tmp$n) #200
-#mean(tmp$n) #222
-#median(tmp$n) #224.5
-#max(tmp$n) #234
-
-#table(d$context)
-# how many data points for each predicate in the two neutral contexts?
-#tmp = d %>%
-#  filter(context == "factL") %>%
-#  filter(cc != "noCC") %>%
-#  group_by(expression,context) %>% 
-#  tally
-#tmp
-#nrow(tmp) # 20 (1 context x 20 predicates)
-#sd(tmp$n) #8.25
-#min(tmp$n) #59
-#mean(tmp$n) #74
-#median(tmp$n) #75
-#max(tmp$n) #87
-
-#tmp = d %>%
-#  filter(context == "factH") %>%
-#  filter(cc != "noCC") %>%
-#  group_by(expression,context) %>% 
-#  tally
-#tmp
-#nrow(tmp) # 20 (1 context x 20 predicates)
-#sd(tmp$n) #8
-#min(tmp$n) #61
-#mean(tmp$n) #74
-#median(tmp$n) #75
-#max(tmp$n) #86
-
