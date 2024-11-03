@@ -19,7 +19,7 @@ theme_set(theme_bw())
 dd = read.csv("../../exp3/data/cd.csv")
 ak = read.csv("../../exp2/data/cd.csv") 
 
-# projection: binary vs continuous ----
+
 
 # for projectivity data, plot proportions against mean slider ratings
 dd_means = dd %>%
@@ -45,13 +45,6 @@ names(shapes) <- levels(ak_dd$expression)
 colors <- c("darkorchid", "black", "gray60", "tomato1", "dodgerblue", "forestgreen", "gold")
 names(colors) <- levels(ak_dd$expression)
 
-# shape-predicate mapping
-# 21: mc
-# 22: non-veridical non-factive NF
-# 23: factive F
-# 24: optionally factive V
-# 25: veridical non-factive VNF
-# 0, 1: Add appropriate labels if needed
 
 pp <- ggplot(ak_dd, aes(x = Mean_ak, y = Mean_dd, fill = expression, shape = expression)) +
   geom_errorbar(aes(ymin = YMinM, ymax = YMaxM), width = 0) +
