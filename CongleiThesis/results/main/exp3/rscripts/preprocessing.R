@@ -1,10 +1,6 @@
 # Exp3 Direct dissent diagnostic
 # preprocessing
 
-# programming issue: not all the data that were paid for are collected
-# first round: paid 400, collected only 375
-# second round: paid 25, collected only 23
-
 # set working directory to directory of script
 this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(this.dir)
@@ -23,9 +19,6 @@ theme_set(theme_bw())
 d = read_csv("../data/combined.csv")
 
 # parsing warnings are due to the rows with demographics info and final screens (ignore)
-
-# bind the data
-#d = rbind(d1,d2)
 
 # remove rows with info about instructions and final screens
 d <- d %>% filter(!(trial_type %in% c("survey-text", "html-button-response")))
@@ -212,31 +205,6 @@ ggplot(c.means, aes(x=expression,y=Mean)) +
   #geom_text(aes(label=participantID), vjust = 1, cex= 5)+
   ylab("Mean response")
 
-# controlGood3 didn't work: here the mean naturalness rating is way lower
-# makes sense in hindsight: question presupposes that he has a car, but the statement says
-# that he was looking to buy one
-
-# "item_id" : "controlGood1",
-# "utterance" : "Does Samantha have a new hat?",
-# "fact" : "I don't know if Samantha has a new hat"
-# },
-# {
-#   "item_id" : "controlGood2",
-#   "utterance" : "Does this pizza have mushrooms on it?",
-#   "fact" : "I don't know if this pizza has mushrooms on it"
-# },
-# {
-#   "item_id" : "controlGood3",
-#   "utterance" : "Was Hendrick's car expensive?",
-#   "fact" : "Hendrick was looking to buy a car"
-# },
-# {
-#   "item_id" : "controlGood4",
-#   "utterance" : "Is Mary's aunt sick?",
-#   "fact" : "Mary visited her aunt yesterday"
-
-# don't use controlGood3 to exclude participants data
-
 # good controls
 controls = d %>%
   filter(expression == "controlGood1" | expression == "controlGood2")
@@ -300,7 +268,6 @@ d <- d %>%
 length(unique(d$participantID)) #73, so 5 participants excluded
 
 
-
 # age and gender of remaining participants
 table(d$age) #19-80
 length(which(is.na(d$age))) # 0 missing values
@@ -331,61 +298,4 @@ tmp
 #view(tmp)
 write_csv(tmp, file="../data/cd.csv")
 
-
-
-
-# how many data points per predicate/context combination?
-#tmp = d %>%
-#  filter(cc != "noCC") %>%
-#  group_by(expression,context) %>% 
-#  tally
-#tmp
-#nrow(tmp) # 60 combinations (3 contexts x 20 predicates)
-#sd(tmp$n)
-#min(tmp$n) #59
-#mean(tmp$n) #123
-#median(tmp$n) #80
-#max(tmp$n) #234
-
-# how many data points for each predicate in the explicit ignorance context?
-#tmp = d %>%
-# filter(context == "explicitIgnorance") %>%
-# filter(cc != "noCC") %>%
-# group_by(expression,context) %>% 
-# tally
-#tmp
-#nrow(tmp) # 20 combinations (1 contexts x 20 predicates)
-#sd(tmp$n) #8.7
-#min(tmp$n) #200
-#mean(tmp$n) #222
-#median(tmp$n) #224.5
-#max(tmp$n) #234
-
-#table(d$context)
-# how many data points for each predicate in the two neutral contexts?
-#tmp = d %>%
-#  filter(context == "factL") %>%
-#  filter(cc != "noCC") %>%
-#  group_by(expression,context) %>% 
-#  tally
-#tmp
-#nrow(tmp) # 20 (1 context x 20 predicates)
-#sd(tmp$n) #8.25
-#min(tmp$n) #59
-#mean(tmp$n) #74
-#median(tmp$n) #75
-#max(tmp$n) #87
-
-#tmp = d %>%
-#  filter(context == "factH") %>%
-#  filter(cc != "noCC") %>%
-#  group_by(expression,context) %>% 
-#  tally
-#tmp
-#nrow(tmp) # 20 (1 context x 20 predicates)
-#sd(tmp$n) #8
-#min(tmp$n) #61
-#mean(tmp$n) #74
-#median(tmp$n) #75
-#max(tmp$n) #86
 
