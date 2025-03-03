@@ -13,7 +13,7 @@
   - stats
   - results analysis, discussion
   - limit: 13,000 wds total (including references) + supplements
-- double check experiment code (JT)
+- ~double check experiment code (JT)~
 
 ### future
 - rerun direct dissent experiment to match S&K
