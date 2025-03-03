@@ -8,8 +8,9 @@
 
 ## To do
 ### current
-- draft based on existing experiments (LH)
-  - intro, methods, results descriptive summaries
+- draft based on existing experiments
+  - intro (LH)
+  - methods, results descriptive summaries (JT)
   - stats
   - results analysis, discussion
   - limit: 13,000 wds total (including references) + supplements
