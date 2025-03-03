@@ -15,6 +15,7 @@
   - results analysis, discussion
   - limit: 13,000 wds total (including references) + supplements
 - ~double check experiment code (JT)~
+- make a table w all diagnostics that have been used for AI-ness; paper, exp, expressions tested, diagnostics -- into document
 
 ### future
 - rerun direct dissent experiment to match S&K
