@@ -7,6 +7,11 @@
 \documentclass[12pt]{article}
 \input{format}
 
+% JT also loaded these packages
+\usepackage{enumitem}
+\usepackage{caption}
+%\usepackage{subcaption}
+
 \title{What is at-issueness? An experimental comparison of diagnostics}
 \author{\normalsize Lisa Hofmann, Conglei Xu, Judith Tonhauser}
 \date{\small\today}
@@ -93,67 +98,180 @@
       % \item Do the results support the notion that different diagnostics under the same theoretical conceptions modulate the at-issueness of contents?
     \end{enumerate}
 
-\section{Experiment}
+\section{Experiments}
+
+To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4). To be able to compare the results of the diagnostics, the same seven contents shown in \ref{stims} were investigated under the four diagnostics, namely the contents of sentence-medial and sentence-final NRRCs, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right}. These seven contents were instantiated by the same items across the four experiments.
   
-  To compare the four at-issueness diagnostics, we collected at-issueness judgments for seven types of content in a series of four experiments. These are the content of sentence-medial and -final NRRCs, and the content of the clausal complements of \emph{discover, know, be right, confirm} and \emph{confess}.
-
-    \ex.
-      \a. Sentence-medial NRRC\\
-        \emph{Greg, who bought a new car, is envied by his neighbor.}
-      \b. Sentence-final NRRC\\
-      \z.
+    \ex.\label{stims}
+      \a.\label{stims.a} Content of sentence-medial NRRC \\
+        \emph{Lucy, who broke the plate, apologised.} $\leadsto$ Lucy broke the plate
+      \b.\label{stims.b} Content of sentence-final NRRC \\
+      \emph{The police found Jack, who saw the murder.} $\leadsto$ Jack saw the murder
+      \c.\label{stims.c} Content of the clausal complement of \emph{know} \\
+      \emph{Ann knows that Raul cheated on his wife.} $\leadsto$ Raul cheated on his wife
+       \d.\label{stims.d} Content of the clausal complement of \emph{discover} \\
+      \emph{Mary discovered that Denny ate the last cupcake.} $\leadsto$ Denny ate the last cupcake
+       \e.\label{stims.e} Content of the clausal complement of \emph{be right} \\
+      \emph{Tom is right that Ann stole the money.} $\leadsto$ Ann stole the money
+       \f.\label{stims.f} Content of the clausal complement of \emph{confirm} \\
+      \emph{Harry confirmed that Greg bought a new car.} $\leadsto$ Greg bought a new car
+       \z.\label{stims.g} Content of the clausal complement of \emph{confess} {\bf JT hates linguex. This is one of the reasons} \\
+      \emph{Lucy confessed that Dustin lost his key.} $\leadsto$ Dustin lost his keys
     \z.
+    
+In each experiment, participants read the stimuli and gave ratings corresponding to the diagnostics.  
 
-    The at-issueness of the same contents was tested using the QUD-diagnostic in Experiment 1, using the \lq asking whether\rq\ diagnostic in Experiment 2, with the direct dissent diagnostic in Experiment 3, and the \lq yes but\rq\ test in Experiment 4.
 
   \subsection{Methods}
-    \subsubsection{Participants}
-      For each of the four experiments, we recruited 80 participants on Prolific
+  
+\subsubsection{Participants}
+
+For each of the four experiments, we recruited 80 participants on Prolific. These participants had registered on the platform as
+monolingual native speakers of English who lived in the USA. They had at least 100 previous submissions
+and an approval rate of at least 97\%.
+
+Table \ref{t:recruited}...
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l | c | r r r r r r}
+            & recruited & ages & mean age & female & male & nonbinary & did not disclose \\ \hline
+Exp.~1 & &  &  & &  & &  \\
+Exp.~2 & &  &  & &  & &  \\
+Exp.~3 &&  &  & &  & &  \\
+Exp.~4 &&  &  & &  & &  \\
+\hline
+\end{tabular}
+
+\caption{Information about the participants recruited in Exps.~1-4.}\label{t:recruited}
+\end{table}
+      
+\subsubsection{Materials and procedure}
 
      Each content type was instantiated by one of seven items (e.g., `Greg bought a new car') and realized as either an assertion \ref{qud}, \ref{dd}, \ref{yesbut} or a polar question \ref{aw}. Participants responded for the seven target stimuli and two control stimuli, by adjusting a slider for (\pref{qud}--\pref{dd}), or by choosing a response in \ref{yesbut}.
+     
+\begin{figure}[h!]
+\centering
+
+\begin{subfigure}{.49\textwidth}
+\centering
+\fbox{\includegraphics[width=1\textwidth]{figures/trialExp1}}
+ \caption{Exp.~1: QUD diagnostic}
+ \end{subfigure} 
+ \begin{subfigure}{.49\textwidth}
+\centering
+\fbox{\includegraphics[width=1\textwidth]{figures/trialExp2}}
+ \caption{Exp.~2: `asking whether' diagnostic}
+ \end{subfigure}
+
+\begin{subfigure}{.49\textwidth}
+\centering
+\fbox{\includegraphics[width=1\textwidth]{figures/trialExp3}}
+ \caption{Exp.~3: `direct dissent' diagnostic}
+ \end{subfigure} 
+ \begin{subfigure}{.49\textwidth}
+\centering
+\fbox{\includegraphics[width=1\textwidth]{figures/trialExp4}}
+ \caption{Exp.~4: `yes, but' diagnostic}
+ \end{subfigure}
+
+\caption{Sample trials in (a) Exp.~1, (b) Exp.~2, (c) Exp.~3 and (d) Exp.~4.} \label{fig:trials}
+
+\end{figure}
 
 
-  \subsection{Results.}
-    \Cref{fig:slider-ratings,fig:yb} show the mean responses by content for the four diagnostics. Comparing the results across diagnostics reveals some key differences.
+\subsubsection{Data exclusion}
+
+We excluded the data of participants who did not self-identify as native speakers of
+American English and of participants whose responses to the xxx was more than 2 sd away from the group mean WHAT ABOUT EXP 4?
+
+Table \ref{t:excluded} identifies how many participants were excluded in each experiment, the properties of the remaining participants, and the number of data points that entered into the analyses.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l r | r r | r r r r r r | r}
+             & & \multicolumn{2}{c}{exclusion criterion} & \multicolumn{6}{c}{remaining participants} & \\ 
+            & recruited & language & fillers & ages & mean age & f & m & nb & dnd & data points \\ \hline
+Exp.~1 &  &  &  &  &  &  & &  & & \\ 
+Exp.~2 &  &  &  &  &  &  & &  & & \\ 
+Exp.~3 &  &  &  &  &  &  & &  & & \\ 
+Exp.~4 &  &  &  &  &  &  & &  & & \\ 
+\hline
+\end{tabular}
+\caption{Information about the participants excluded in Exps.~1-4.}\label{t:excluded}
+\end{table}
+
+  \subsection{Results}
+  
+  \Cref{fig:slider-ratings,fig:yb} show the mean responses by content for the four diagnostics. Comparing the results across diagnostics reveals some key differences.
     %
     First, the diagnostics vary in their sensitivity to differences between contents: The by-content means in Experiment 2 (`asking whether' diagnostic) show a larger range (\Cref{fig:AK}) than in the other three experiments (\Cref{fig:qud,fig:dd,fig:yb}).
+    
+    
+\begin{figure}[h!]
+\centering
+
+\begin{subfigure}{.49\textwidth}
+\centering
+ \includegraphics[width=1\textwidth]{../../results/main/exp1/graphs/mean-ratings.pdf}
+ \caption{Exp.~1: QUD diagnostic}
+ \end{subfigure} %
+ \begin{subfigure}{.49\textwidth}
+\centering
+ \includegraphics[width=1\textwidth]{../../results/main/exp2/graphs/mean-ratings.pdf}
+ \caption{Exp.~2: `asking whether' diagnostic}
+ \end{subfigure}
+
+
+\begin{subfigure}{.49\textwidth}
+\centering
+ \includegraphics[width=1\textwidth]{../../results/main/exp3/graphs/mean-ratings.pdf}
+ \caption{Exp.~3: `direct dissent' diagnostic}
+ \end{subfigure} %
+ \begin{subfigure}{.49\textwidth}
+\centering
+ \includegraphics[width=1\textwidth]{../../results/main/exp4/graphs/mean-ratings.pdf}
+ \caption{Exp.~4: `yes, but' diagnostic}
+ \end{subfigure}
+
+\caption{Results of Exps.~1-4. Panels (a)-(c) show the mean responses by content for the QUD-diagnostic in Exp.~1 (a), for the `asking whether' diagnostic in Exp.~2 (b), and for the `direct dissent' diagnostic in Exp.~3 (c). Panel (d) shows the proportion of `no' choices by content for the `yes, but' diagnostic in Exp.~4. Error bars indicate 95\% bootstrapped confidence intervals. Violin plots in panels (a)-(c) indicate the kernel probability density of the individual participants’ ratings. The gray dots in panel (d) individual participant responses (either ‘no’ or one of the ‘yes’-responses, jittered vertically and horizontally for legibility).} \label{fig:results}
+
+\end{figure}
 
     % followed by \emph{confirm}, then \emph{confess}
-    \begin{figure}[ht]
-
-      \caption{Mean responses by content for the QUD-diagnostic (a), `asking whether' diagnostic (b), and `direct dissent' diagnostic (c). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots indicate the kernel probability density of the individual participants’ ratings, which were given on a 0--1 scale, by adjusting a slider.} \label{fig:slider-ratings}
-
-      \centering
-      \subfloat[Answer match ratings for the QUD-diagnostic]{
-            \includegraphics[width=.48\textwidth]{../../results/main/exp1/graphs/mean-ratings.pdf}
-            \label{fig:qud}
-        }
-        \subfloat[`asking whether' ratings]{
-            \includegraphics[width=.48\textwidth]{../../results/main/exp2/graphs/mean-ratings.pdf}
-            \label{fig:AK}
-        }\\
-        \vspace{-\baselineskip}
-        \subfloat[Naturalness ratings for the `direct dissent' diagnostic]{
-            \includegraphics[width=.48\textwidth]{../../results/main/exp3/graphs/mean-ratings.pdf}
-            \label{fig:dd}
-        }
-    \end{figure}
-
-    \begin{figure}[ht]
-    \vspace{-2\baselineskip}
-      \caption{Proportion of ‘no’ choices by content for the `yes but' diagnostic. Error bars indicate 95\% bootstrapped confidence intervals. Gray dots indicate individual participant responses (either ‘no’ or one of the ‘yes’-responses, jittered vertically and horizontally for legibility).} \label{fig:yb}
-      \vspace{-.5\baselineskip}
-      \centering
-      \includegraphics[width=.48\textwidth]{../../results/main/exp4/graphs/mean-ratings.pdf}
-    \end{figure}
+%    \begin{figure}[ht]
+%
+%      \caption{Mean responses by content for the QUD-diagnostic (a), `asking whether' diagnostic (b), and `direct dissent' diagnostic (c). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots indicate the kernel probability density of the individual participants’ ratings, which were given on a 0--1 scale, by adjusting a slider.} \label{fig:slider-ratings}
+%
+%      \centering
+%      \subfloat[Answer match ratings for the QUD-diagnostic]{
+%            \includegraphics[width=.48\textwidth]{../../results/main/exp1/graphs/mean-ratings.pdf}
+%            \label{fig:qud}
+%        }
+%        \subfloat[`asking whether' ratings]{
+%            \includegraphics[width=.48\textwidth]{../../results/main/exp2/graphs/mean-ratings.pdf}
+%            \label{fig:AK}
+%        }\\
+%        \vspace{-\baselineskip}
+%        \subfloat[Naturalness ratings for the `direct dissent' diagnostic]{
+%            \includegraphics[width=.48\textwidth]{../../results/main/exp3/graphs/mean-ratings.pdf}
+%            \label{fig:dd}
+%        }
+%    \end{figure}
+%
+%    \begin{figure}[ht]
+%    \vspace{-2\baselineskip}
+%      \caption{Proportion of ‘no’ choices by content for the `yes but' diagnostic. Error bars indicate 95\% bootstrapped confidence intervals. Gray dots indicate individual participant responses (either ‘no’ or one of the ‘yes’-responses, jittered vertically and horizontally for legibility).} \label{fig:yb}
+%      \vspace{-.5\baselineskip}
+%      \centering
+%      \includegraphics[width=.48\textwidth]{../../results/main/exp4/graphs/mean-ratings.pdf}
+%    \end{figure}
 
     Second, the content manipulation affects the ratings differently across the four diagnostics, sometimes in opposite directions. This results in a different order of predicates by response means between experiments.
     \begin{itemize}
       \item For instance, \emph{be right} ranks highest under the `asking whether' diagnostic (\Cref{fig:AK}), and the `yes, but' test (\Cref{fig:yb}), but ranks lowest under the QUD-diagnostic (\Cref{fig:qud}), and shows no clear effect in the direct dissent diagnostic (\Cref{fig:dd}).
     \end{itemize}
     
-
-    \paragraph{Analysis.}
     \begin{itemize}
       \item Analysis similar to what we did in projection study? -- Interaction effects
       \item How about something similar to the rank-analysis that Yvonne Kilian did for comparing diagnostics?
@@ -161,7 +279,7 @@
     \end{itemize}
 
 
-  \subsection{Discussion.}
+  \subsection{Discussion}
     The differening results between diagnostics suggest that they are not interchangeable.
 
     \subsubsection{Sensitivity}
