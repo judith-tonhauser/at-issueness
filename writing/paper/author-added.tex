@@ -1,0 +1,44 @@
+
+%=====================================================================
+%=========================== text ===========================
+
+	% punctuation
+		\usepackage{csquotes} % for quotation marks
+
+%====================================================================
+%=========================== links, references =======================
+	% more linguex options for referencing select examples without parentheses
+	  \newif\ifparens\parensfalse
+	  \makeatletter
+	  \renewcommand{\theExNo}{\protect\theExLBr\arabic{ExNo}\protect\theExRBr}
+	  \renewcommand{\theSubExNo}{%
+	    \hbox{\if@noftnote\protect\theExLBr\Exarabic{ExNo}\firstrefdash
+	        \Exalph{SubExNo}\protect\theExRBr
+	      \else
+	        \protect\theFnExLBr\Exroman{FnExNo}\firstrefdash%
+	        \Exalph{SubExNo}\protect\theFnExRBr
+	      \fi}}
+
+	  \renewcommand{\theSubSubExNo}{%
+	    \hbox{\if@noftnote\protect\theExLBr%
+	            \Exarabic{ExNo}\firstrefdash\Exalph{SubExNo}\secondrefdash
+	               \Exroman{SubSubExNo}\protect\theExRBr%
+	      \else\protect\theFnExLBr\Exroman{FnExNo}\firstrefdash
+	                \Exalph{SubExNo}\secondrefdash\Exarabic{SubSubExNo}\protect\theFnExRBr\fi}}%
+	  \makeatother
+	  \renewcommand\theExLBr{\ifparens\else(\fi}
+	  \renewcommand\theExRBr{\ifparens\else)\fi}
+	  \newcommand\pref[1]{{\parenstrue\ref{#1}}}
+
+	% in text citation macros
+	\newcommand{\citepos}[1]{\citeauthor{#1}'s \citeyear{#1}}
+	\newcommand{\citeposs}[1]{\citeauthor{#1}'s}
+	\newcommand{\citetpos}[1]{\citeauthor{#1}'s \citeyear{#1}}
+
+	%
+	\usepackage{cleveref}
+
+
+%=====================================================================
+%=========================== figures, tables =========================
+	% \usepackage{subcaption}
