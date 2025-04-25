@@ -222,9 +222,20 @@
 
     To investigate how consistent the diagnostics are, we conducted four experiments measuring the at-issueness of the same contents across diagnostics.
 
+{\bf JT: \citealt{degen-tonhauser-glossa} will hopefully be accepted soon, we should include something like this figure because prior results but also to motivate the inclusion of be right and confirm in the stimuli of the four experiments}
+    
+\begin{figure}[h!]
+  \centering
+
+\includegraphics[width=0.7\textwidth]{../../results/main/degen-tonhauser-glossa/graphs/mean-asking-whether-ratings.pdf}
+
+  \caption{Mean `asking whether' ratings for the contents of the clausal complements of 20 clause-embedding predicates, from \citealt{degen-tonhauser-glossa}.}
+  \label{fig:dtglossa}
+  \end{figure}
+
 \section{Experiments \label{sec:2_experiments}}
 
-  To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4). To be able to compare the results of the diagnostics, the same seven contents shown in \ref{stims} were investigated under the four diagnostics, namely the contents of sentence-medial and sentence-final NRRCs, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right}. These seven contents were instantiated by the same items across the four experiments.
+  To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4).\footnote{The experiments, data and R code for generating the figures and analyses of the experiments reported in this paper are available at INSERT URL TO ANONYMOUS GITHUB REPO BEFORE SUBMISSION. All experiments were conducted with approval from the ethics review committee of [university name redacted for review].} To be able to compare the results of the diagnostics, the same seven contents shown in \ref{stims} were investigated under the four diagnostics: the contents of sentence-medial and sentence-final NRRCs \ref{stims.a}-\ref{stims.b}, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right} \ref{stims.c}-\ref{stims.g}. These seven contents were instantiated by the same items across the four experiments.
 
   \ex.\label{stims}
     \a.\label{stims.a} Content of sentence-medial NRRC \\
@@ -243,6 +254,10 @@
     \emph{Lucy confessed that Dustin lost his key.} $\leadsto$ Dustin lost his keys
     \z.
   \z.
+  
+These seven contents were chosen with two considerations in mind. First, several of the contents were investigated in prior literature, which found differences in at-issueness between the contents. This includes the content of sentence-medial and -final NRRCs as well as the content of the complement of \emph{know, discover} and \emph{confess} (e.g., \citealt{syrett_experimental_2015,tonhauser_how_2018}). Second, the contents of the complements of \emph{be right} and \emph{confirm} were included because \citealt{degen-tonhauser-glossa} observed that they 
+
+
 
   In each experiment, participants read the stimuli and gave ratings corresponding to the diagnostics.
 
@@ -250,29 +265,45 @@
     
   \subsubsection{Participants}
 
-  For each of the four experiments, we recruited 80 participants on Prolific. These participants had registered on the platform as monolingual native speakers of English who lived in the USA. They had at least 100 previous submissions and an approval rate of at least 97\%.
-
-  Table \ref{t:recruited}...
+  For each of the four experiments, we recruited unique 80 participants on Prolific. These participants had registered on the platform as living in the USA and as having English as their primary language. They had at least 50 previous submissions and an approval rate of at least 97\%.  Table \ref{t:recruited} shows the age and gender distributions of the recruited participants.
 
   \begin{table}[h!]
   \centering
-  \begin{tabular}{l | c | r r r r r r}
-              & recruited & ages & mean age & female & male & nonbinary & did not disclose \\ \hline
-  Exp.~1 & &  &  & &  & &  \\
-  Exp.~2 & &  &  & &  & &  \\
-  Exp.~3 &&  &  & &  & &  \\
-  Exp.~4 &&  &  & &  & &  \\
+  \begin{tabular}{l | c | r r r }
+              & recruited & ages (mean age) & f/m/nb/dnd \\ \hline
+  Exp.~1 (QUD) & 80 & 18-81 (43.8) & 42/37/0/1  \\
+  Exp.~2 (asking whether) & 80 & 20-74 (38.5)  & 48/30/1/1  \\
+  Exp.~3 (direct dissent) & 80 & 18-77 (39.1) & 50/28/1/1  \\
+  Exp.~4 (yes, but) &80 & 19-67 (38.0)  & 48/30/2/0 &  \\
   \hline
   \end{tabular}
 
-  \caption{Information about the participants recruited in Exps.~1-4.}\label{t:recruited}
+  \caption{Information about the participants recruited in Exps.~1-4 (f = female, m = male, nb = nonbinary, dnd = did not disclose).}\label{t:recruited}
   \end{table}
 
   \subsubsection{Materials and procedure}
+  
+The four experiments measured the at-issueness of the seven contents in \ref{stims} with a different at-issueness diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4). As illustrated in \ref{diag} for the content of sentence-medial NRRCs (here: Lucy broke the plate), each diagnostic was implemented as is standard in the literature: In Exp.~1 \ref{diag.a}, which implemented the QUD diagnostic, participants read a dialogue between two named speakers, where the first utters an interrogative sentence (the presumed QUD) that is about the content to be diagnosed and the second responds with a declarative that contributes the content to be diagnosed. In Exp.~2 \ref{diag.b}, which implemented the `asking whether' diagnostic, participants read an interrogative sentence uttered by a named speaker, where the interrogative sentence contributes the content to be diagnosed. In Exp.~3 \ref{diag.c}, which implemented the `direct dissent' diagnostic, participants read a dialogue between two named speakers, where the first utters a declarative sentence with the content to be diagnosed and the second directly dissents with the content to be diagnosed. Finally, in Exp.~4 \ref{diag.d}, which implemented the `yes, but' diagnostic, participants read a dialogue between two named speakers where the first utters a declarative sentence that contributes the content to be diagnosed and the second responds with one of two indirect dissent variants (\emph{yes, but..}, \emph{yes, and...}) or with a direct dissent.
 
-  Each content type was instantiated by one of seven items (e.g., `Greg bought a new car') and realized as either an assertion \ref{qud}, \ref{dd}, \ref{yesbut} or a polar question \ref{aw}. Participants responded for the seven target stimuli and two control stimuli, by adjusting a slider for (\pref{qud}--\pref{dd}), or by choosing a response in \ref{yesbut}.
+\ex.\label{diag} Implementations of the diagnostics in Exps.~1-4
+\a.\label{diag.a} Exp.~1 (QUD diagnostic)
+\\ {\bf Nora:} \emph{What did Lucy break?}
+\\ {\bf Leo:} \emph{Lucy, who broke the plate, apologized.}
+\b.\label{diag.b} Exp.~2 (`asking whether' diagnostic )
+\\ {\bf Nora:} \emph{Did Lucy, who broke the plate, apologize?}
+\c.\label{diag.c} Exp.~3 (`direct dissent' diagnostic)
+\\ {\bf Nora:} \emph{Lucy, who broke the plate, apologized.}
+\\ {\bf Leo:} \emph{No, she didn't break the plate.}
+\d.\label{diag.d} Exp.~4 (`yes, but' diagnostic)
+\\ {\bf Nora:} \emph{Lucy, who broke the plate, apologized.}
+\\ {\bf Nina:} \emph{Yes, but she didn't break the plate.}
+\\ \hspace*{1cm} \emph{Yes, and she didn't break the plate.}
+\\ \hspace*{1cm} \emph{No, she didn't break the plate.}
 
-  \begin{figure}[h!]
+As shown in Fig.~\ref{fig:trials}, the response options in each of the four experiments also differed depending on the diagnostic: In Exp.~1 (QUD diagnostic), shown in panel (a), participants were asked how well the response fits the question and they gave their response on a slider marked `totally doesn't fit' on one end (coded 0) and `totally fits' on the other end (coded as 1). In Exp.~2 (`asking whether' diagnostic), shown in panel (b), participants were asked whether the question is about the content to be diagnosed and they gave their response on a slider marked `no' on one end (coded as 1) and `yes' on the other (coded as 0). In Exp.~3 (direct dissent diagnostic), participants were asked how natural the direct dissent and participants gave their response on a slider marked `totally unnatural' (coded as 0) on one end and `totally natural' on the other (coded as 1). Finally, in Exp.~4 (`yes, but' diagnostic), participants were asked to choose the response that sounded best; the two indirect dissents were coded as 1 and the direct one as 0. Across the four experiments, the responses were coded as 0 or 1 such that 0 meant that the content to be diagnosed was rated as at-issue and 1 meant that the content was rated as not-at-issue.
+
+
+ \begin{figure}[h!]
   \centering
   % Top row
   \subfigure[Exp.~1: QUD diagnostic]{%
@@ -301,33 +332,50 @@
   \caption{Sample trials in (a) Exp.~1, (b) Exp.~2, (c) Exp.~3, and (d) Exp.~4.}
   \label{fig:trials}
   \end{figure}
+  
+  Each of the seven contents in \ref{stims} was instantiated by one of the seven items shown in \ref{items} in each of the four experiments.
+ 
+ \ex.\label{items}
+ \a. Jack saw the murder.
+ \b. Raul cheated on his wife.
+ \c. Ann stole the money.
+ \d. Danny ate the last cupcake.
+ \b. Lucy broke the plate.
+ \b. Dustin lost his key.
+ \b. Greg bought a new car.
+ \z.
+ 
+ Each experiment also included two control items each, which functioned as attention checks: one item was expected to be at-issue and the other one not-at-issue. See Supplement \ref{supp:stims} for the control items used in each experiment.
+ 
+ In each of the four experiments, each participant's set of items was generated by randomly combining each of the seven contents in \ref{stims} with a unique content in \ref{items}. Participants completed a total of 9 trials, namely 7 target trials and the same 2 control trials. Trial order was randomized.
+ 
+After completing the experiment, participants filled out a short optional demographic survey. To encourage truthful responses, participants were told that they would be paid no matter what answers they gave in the survey. 
 
   \subsubsection{Data exclusion}
-
+    
   We excluded the data of participants who did not self-identify as native speakers of
-  American English and of participants whose responses to the xxx was more than 2 sd away from the group mean WHAT ABOUT EXP 4?
-
-  Table \ref{t:excluded} identifies how many participants were excluded in each experiment, the properties of the remaining participants, and the number of data points that entered into the analyses.
+  American English and of participants whose responses to either one of the two control trials was more than 2 sd away from the group mean (Exps.~1-3) or whose responses to either one of the two control trials was wrong (Exp.~4).   Table \ref{t:excluded} shows how many participants were excluded in each experiment, the properties of the remaining participants, and the number of data points that entered into the analyses.
 
   \begin{table}[h!]
   \centering
-  \begin{tabular}{l r | r r | r r r r r r | r}
-               & & \multicolumn{2}{c}{exclusion criterion} & \multicolumn{6}{c}{remaining participants} & \\ 
-              & recruited & language & fillers & ages & mean age & f & m & nb & dnd & data points \\ \hline
-  Exp.~1 &  &  &  &  &  &  & &  & & \\ 
-  Exp.~2 &  &  &  &  &  &  & &  & & \\ 
-  Exp.~3 &  &  &  &  &  &  & &  & & \\ 
-  Exp.~4 &  &  &  &  &  &  & &  & & \\ 
+  \begin{tabular}{l | r r | r r  | r }
+               & \multicolumn{2}{c|}{\bf exclusion criterion} & \multicolumn{2}{c|}{\bf remaining participants} & data \\ 
+              & language & fillers & ages (mean age) & f/m/nb/dnd &  points \\ \hline
+  Exp.~1 (QUD   & 1 &  10 &  18-81 (41.1) & 36/32/0/1 & 621 \\ 
+  Exp.~2 (asking whether) &  2 &  4 & 22-74 (38.7) & 45/27/1/1 & 666 \\ 
+  Exp.~3  (direct dissent) &  2 &  7 & 18-77 (39.5) & 44/25/1/1  & 639 \\ 
+  Exp.~4  (yes, but) & 4 & 4 & 19-67 (38.5)  & 43/27/2/0 & 648 \\ 
   \hline
   \end{tabular}
-  \caption{Information about the participants excluded in Exps.~1-4.}\label{t:excluded}
+  \caption{Information from Exps.~1-4 about the number of participants whose data was excluded based on their self-declared language (variety) and the fillers, about the remaining participants, and about the number of data points that entered into the analysis.}\label{t:excluded}
   \end{table}
 
   \subsection{Results}
   
-  \Cref{fig:results} shows the mean responses by content for the four diagnostics. Comparing the results across diagnostics reveals some key differences.
-
-  First, the diagnostics vary in their sensitivity to differences between contents: The by-content means in Experiment 2 (`asking whether' diagnostic) show a larger range (\Cref{fig:AK}) than in the other three experiments (\Cref{fig:qud,fig:dd,fig:yb}).
+  The four panels of Fig.~\ref{fig:results} show the results of the four experiments for the seven target contents and the two controls, that is, the mean naturalness ratings in Exp.~1 (QUD diagnostic), the mean `asking whether' ratings in Exp.~2 (`asking whether' diagnostic), the mean naturalness ratings in Exp.~3 (`direct dissent' diagnostic) and the proportion of `no' choices in Exp.~4 (`yes, but' diagnostic). As shown, the results of the four experiments exhibit differences in the absolute rating of the seven target contents compared to the two controls, which received ratings at floor and at ceiling across the four experiments: In Exp.~2 (`asking whether' diagnostic), the seven target contents received a broad range of ratings between the two extremes, whereas they all received relatively high ratings in Exp.~3 (`direct dissent' diagnostic). The results of the other two experiments fall in-between. 
+  
+  The results of the four experiments also exhibit differences in the relative ratings of the seven target contents with respect to one another.
+  
 
   \begin{figure}[h!]
     \centering

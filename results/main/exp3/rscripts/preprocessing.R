@@ -40,6 +40,7 @@ table(dg$response)
 # age
 dg$age = as.numeric(gsub("\\D", "", dg$response))
 table(dg$age)
+mean(dg[dg$age < 100,]$age) # exclude participant who entered 372 from mean calculation
 
 # gender
 dg$gender = case_when(grepl("female", dg$response) ~ "female",
@@ -218,6 +219,8 @@ d %>%
 # 2 male            25
 # 3 non-binary      1
 # 4 preferNoToSay   1
+
+nrow(d)
 
 write_csv(d, file="../data/cd.csv")
 
