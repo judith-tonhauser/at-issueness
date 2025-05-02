@@ -29,7 +29,23 @@
 
 \PassOptionsToPackage{table}{xcolor}
 \documentclass[times,linguex,xcolor]{glossa}
+\usepackage{rotating}
 \usepackage{tablefootnote}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{booktabs}
+
+\usepackage{adjustbox}
+\usepackage{array}
+
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+
+\newcommand*\rots{\multicolumn{1}{R{90}{.7em}}}% no optional argument here, please!
 %\usepackage{xcolor}
 
 % possible options:
@@ -82,6 +98,22 @@
 }
 
 \input{author-added}
+
+% positive coefficients/difference
+\definecolor{purple1}{RGB}{178,24,43}
+\definecolor{purple2}{RGB}{239,138,98} 
+\definecolor{purple3}{RGB}{253,219,199} 
+%\definecolor{yellow4}{RGB}{255,255,204}
+%\definecolor{green1}{RGB}{0, 158, 115} % >.95
+%\definecolor{green2}{RGB}{55, 185, 141} % .85-.95
+%\definecolor{green3}{RGB}{88, 214, 167} % .75-.85
+%\definecolor{green4}{RGB}{119, 242, 194} % <.75
+
+% negative coefficients/difference
+\definecolor{yellow1}{RGB}{33,102,172}
+\definecolor{yellow2}{RGB}{103,169,207}
+\definecolor{yellow3}{RGB}{209,229,240}
+%\definecolor{purple4}{RGB}{236,206,223}
 
 \begin{document}
 
@@ -226,6 +258,8 @@
     \subsubsection{Medial appositives.} Based on impressionistic judgment data, \citealt{koev_notions_2018} argues that medial appositives can be Q-at-issue, but not P-at-issue. An experimental study in \citealt{syrett_experimental_2015} found that sentence-medial appositives are less at-issue than sentence-final ones using the direct dissent test, \citealt{drozdov_projection_2024} found no difference with the `asking whether' diagnostic.
 
     To investigate how consistent the diagnostics are, we conducted four experiments measuring the at-issueness of the same contents across diagnostics.
+    
+    {\bf section 1 also needs to say something about how we will compare the diagnostics. my current thinking is: do they distinguish contents that have been distinguished in prior research (in the same direction)? then we can discuss why they might not: because they tap into different properties? because of the way in which the diagnostic was implemented?} 
 
 {\bf JT: \citealt{degen-tonhauser-glossa} will hopefully be accepted soon, we should include something like this figure because prior results but also to motivate the inclusion of be right and confirm in the stimuli of the four experiments}
     
@@ -464,13 +498,46 @@ contents associated with the other target expressions differed from each other i
 tivity, except for the pairs discover/know (which displayed only a marginally significant
 difference), discover/stop, be stupid to/discover, and be stupid to/stop.
 
-\begin{table}[h]
+\addtolength{\tabcolsep}{-.19em}
+
+\begin{figure}[!h]
 \centering
-\begin{tabular}{cc}
-&
-\end{tabular}
-\caption{}
-\end{table}
+
+\subfigure[Exp.~1 (QUD diagnostic)]{%
+\begin{tabular}{r | ccccccc}
+& \rots{be right} & \rots{confess} & \rots{confirm} & \rots{discover} & \rots{final NRRC} & \rots{know} & \rots{medial NRRC} \\
+\hline
+\input{../../results/main/exp1/models/table1}
+\hline
+\end{tabular}}
+\hfill
+\subfigure[Exp.~2 (`asking whether' diagnostic)]{%
+\begin{tabular}{r | ccccccc}
+& \rots{be right} & \rots{confess} & \rots{confirm} & \rots{discover} & \rots{final NRRC} & \rots{know} & \rots{medial NRRC} \\
+\hline
+\input{../../results/main/exp2/models/table1}
+\hline
+\end{tabular}}
+
+\subfigure[Exp.~3 (`direct dissent' diagnostic)]{%
+\begin{tabular}{r | ccccccc}
+& \rots{be right} & \rots{confess} & \rots{confirm} & \rots{discover} & \rots{final NRRC} & \rots{know} & \rots{medial NRRC} \\
+\hline
+\input{../../results/main/exp1/models/table1}
+\hline
+\end{tabular}}
+\hfill
+\subfigure[Exp.~4 (`yes, but' diagnostic)]{%
+\begin{tabular}{r | ccccccc}
+& \rots{be right} & \rots{confess} & \rots{confirm} & \rots{discover} & \rots{final NRRC} & \rots{know} & \rots{medial NRRC} \\
+\hline
+\input{../../results/main/exp2/models/table1}
+\hline
+\end{tabular}}
+
+\caption{Pairwise differences between expressions (ordered from top to bottom and left to right by increasing mean in Exp.~2 (`asking whether' diagnostic). A gray cell for a pair means that the 95\% HDI did not include 0; a white cell means that the 95\% HDI included 0.}\label{fig:pairwise}
+\end{figure}
+
 
 \subsection{Discussion}
 
