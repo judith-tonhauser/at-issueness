@@ -191,7 +191,7 @@ nrow(goodControl) #76 participants
 # identify participants who didn't respond "no/1" to the good control 
 outliers.good = goodControl[goodControl$nResponse != 1,]
 nrow(outliers.good)
-# 4 participants
+# 4 participants out of 76 (72/76 = .95 got it right)
 # 12 65 30 17
 
 # bad control

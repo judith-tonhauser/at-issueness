@@ -21,12 +21,22 @@ d = read_csv("../data/cd.csv")
 
 length(unique(d$participantID)) #74 participants
 
+# exclude controls
+t = d %>%
+  filter(!(expression == "AI MC" | expression == "NAI MC"))
+table(t$expression)
+
 # mean rating by expression
-means = d %>%
+means = t %>%
   group_by(expression) %>%
   summarize(Mean = mean(response), CILow = ci.low(response), CIHigh = ci.high(response)) %>%
   mutate(YMin = Mean - CILow, YMax = Mean + CIHigh, expression = fct_reorder(as.factor(expression),Mean))
 means
+
+# range
+min(means$Mean)
+max(means$Mean)
+max(means$Mean) - min(means$Mean)
 
 # plot 
 ggplot(data=means, aes(x=expression, y=Mean)) +

@@ -96,8 +96,8 @@ d$expression <- case_when(
   grepl("confess", d$stimulus) ~ "confess",
   grepl("French course", d$stimulus) ~ "controlGood",
   grepl("like apples", d$stimulus) ~ "controlBad",
-  grepl("found Jack|criticized|manager|forgave|chef|boss|neighbor", d$stimulus) ~ "fnrrc",
-  grepl("ran away|feels guilty|caught by the police|sweet tooth|apologized|feels upset|driver's license", d$stimulus) ~ "mnrrc",
+  grepl("found Jack|criticized|manager|forgave|chef|boss|neighbor", d$stimulus) ~ "final NRRC",
+  grepl("ran away|feels guilty|caught by the police|sweet tooth|apologized|feels upset|driver's license", d$stimulus) ~ "medial NRRC",
   TRUE ~ "ERROR"
 )
 table(d$expression)
