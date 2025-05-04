@@ -53,8 +53,8 @@ betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
 m.b = brm(formula = betamodel,
           family=Beta(),
           data=t, 
-          cores = 4, iter = 3000, warmup = 500,
-          control = list(adapt_delta = .95,max_treedepth=15))
+          cores = 3, iter = 4000, warmup = 700,
+          control = list(adapt_delta = .99,max_treedepth=17))
 
 # model summary
 summary(m.b)
