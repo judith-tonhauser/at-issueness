@@ -106,14 +106,16 @@ table(d$expression)
 d$choice <- case_when(
   grepl("Yes, and", d$dissent) ~ "Yes, and",
   grepl("Yes, but", d$dissent) ~ "Yes, but",
-  grepl("No,", d$dissent) ~ "No,",
+  grepl("No,", d$dissent) ~ "No",
   TRUE ~ "ERROR"
 )
 table(d$choice)
 
 # add nResponse column (numeric variant of yes/no response)
+# no = at-issue (0), yes = not-at-issue (1)
 d = d %>%
-  mutate(nResponse = ifelse(choice == "No,", 1, 0))
+  mutate(nResponse = ifelse(choice == "No", 0, 1))
+table(d$nResponse)
 
 # item
 d$cc = case_when(grepl("saw the murder", d$statement) ~ "saw the murder",
@@ -188,8 +190,8 @@ goodControl = d %>%
   filter(expression == "controlGood")
 nrow(goodControl) #76 participants 
 
-# identify participants who didn't respond "no/1" to the good control 
-outliers.good = goodControl[goodControl$nResponse != 1,]
+# identify participants who didn't respond "no/0" to the good control 
+outliers.good = goodControl[goodControl$nResponse != 0,]
 nrow(outliers.good)
 # 4 participants out of 76 (72/76 = .95 got it right)
 # 12 65 30 17
@@ -200,7 +202,7 @@ badControl = d %>%
 nrow(badControl) #76 participants 
 
 # identify participants whose response to the bad control is more than 2sd higher than the mean
-outliers.bad = badControl[badControl$nResponse == 1,]
+outliers.bad = badControl[badControl$nResponse == 0,]
 nrow(outliers.bad)
 # 0 participants
 

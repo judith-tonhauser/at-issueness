@@ -1,622 +1,622 @@
 response,participantID,age,gender,language,amE,comments,expression,cc
-0.96,61,48,male,English,AmE,""":""""}",AI MC,control
-0.75,61,48,male,English,AmE,""":""""}",medial NRRC,cheated on his wife
-0.36,61,48,male,English,AmE,""":""""}",be right,broke the plate
-0.2,61,48,male,English,AmE,""":""""}",discover,lost his key
-0.15,61,48,male,English,AmE,""":""""}",final NRRC,saw the murder
-0.07,61,48,male,English,AmE,""":""""}",confess,stole the money
-0.55,61,48,male,English,AmE,""":""""}",confirm,bought a new car
-0.34,61,48,male,English,AmE,""":""""}",know,ate the last cupcake
-0,61,48,male,English,AmE,""":""""}",NAI MC,control
-1,52,39,male,English,AmE,""":""""}",AI MC,control
-0.1,52,39,male,English,AmE,""":""""}",be right,saw the murder
-0,52,39,male,English,AmE,""":""""}",medial NRRC,bought a new car
-0.02,52,39,male,English,AmE,""":""""}",know,cheated on his wife
-0.84,52,39,male,English,AmE,""":""""}",confess,stole the money
-0.75,52,39,male,English,AmE,""":""""}",discover,lost his key
-0.59,52,39,male,English,AmE,""":""""}",final NRRC,broke the plate
-0,52,39,male,English,AmE,""":""""}",NAI MC,control
-1,52,39,male,English,AmE,""":""""}",confirm,ate the last cupcake
-0,76,33,female,English,AmE,""":""""}",be right,stole the money
-1,76,33,female,English,AmE,""":""""}",AI MC,control
-0.73,76,33,female,English,AmE,""":""""}",confirm,broke the plate
-0.27,76,33,female,English,AmE,""":""""}",know,bought a new car
-0,76,33,female,English,AmE,""":""""}",NAI MC,control
-0.96,76,33,female,English,AmE,""":""""}",confess,cheated on his wife
-0.22,76,33,female,English,AmE,""":""""}",final NRRC,ate the last cupcake
-0.69,76,33,female,English,AmE,""":""""}",medial NRRC,saw the murder
-0.76,76,33,female,English,AmE,""":""""}",discover,lost his key
-0,33,40,female,English,AmE,""":""""}",NAI MC,control
-1,33,40,female,English,AmE,""":""""}",know,stole the money
-1,33,40,female,English,AmE,""":""""}",AI MC,control
-1,33,40,female,English,AmE,""":""""}",discover,bought a new car
+0.040000000000000036,61,48,male,English,AmE,""":""""}",AI MC,control
+0.25,61,48,male,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0.64,61,48,male,English,AmE,""":""""}",be right,broke the plate
+0.8,61,48,male,English,AmE,""":""""}",discover,lost his key
+0.85,61,48,male,English,AmE,""":""""}",final NRRC,saw the murder
+0.9299999999999999,61,48,male,English,AmE,""":""""}",confess,stole the money
+0.44999999999999996,61,48,male,English,AmE,""":""""}",confirm,bought a new car
+0.6599999999999999,61,48,male,English,AmE,""":""""}",know,ate the last cupcake
+1,61,48,male,English,AmE,""":""""}",NAI MC,control
+0,52,39,male,English,AmE,""":""""}",AI MC,control
+0.9,52,39,male,English,AmE,""":""""}",be right,saw the murder
+1,52,39,male,English,AmE,""":""""}",medial NRRC,bought a new car
+0.98,52,39,male,English,AmE,""":""""}",know,cheated on his wife
+0.16000000000000003,52,39,male,English,AmE,""":""""}",confess,stole the money
+0.25,52,39,male,English,AmE,""":""""}",discover,lost his key
+0.41000000000000003,52,39,male,English,AmE,""":""""}",final NRRC,broke the plate
+1,52,39,male,English,AmE,""":""""}",NAI MC,control
+0,52,39,male,English,AmE,""":""""}",confirm,ate the last cupcake
+1,76,33,female,English,AmE,""":""""}",be right,stole the money
+0,76,33,female,English,AmE,""":""""}",AI MC,control
+0.27,76,33,female,English,AmE,""":""""}",confirm,broke the plate
+0.73,76,33,female,English,AmE,""":""""}",know,bought a new car
+1,76,33,female,English,AmE,""":""""}",NAI MC,control
+0.040000000000000036,76,33,female,English,AmE,""":""""}",confess,cheated on his wife
+0.78,76,33,female,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0.31000000000000005,76,33,female,English,AmE,""":""""}",medial NRRC,saw the murder
+0.24,76,33,female,English,AmE,""":""""}",discover,lost his key
+1,33,40,female,English,AmE,""":""""}",NAI MC,control
+0,33,40,female,English,AmE,""":""""}",know,stole the money
+0,33,40,female,English,AmE,""":""""}",AI MC,control
+0,33,40,female,English,AmE,""":""""}",discover,bought a new car
 0.5,33,40,female,English,AmE,""":""""}",confirm,broke the plate
-0.76,33,40,female,English,AmE,""":""""}",final NRRC,lost his key
-0.93,33,40,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
-0.83,33,40,female,English,AmE,""":""""}",be right,ate the last cupcake
+0.24,33,40,female,English,AmE,""":""""}",final NRRC,lost his key
+0.06999999999999995,33,40,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0.17000000000000004,33,40,female,English,AmE,""":""""}",be right,ate the last cupcake
 0.5,33,40,female,English,AmE,""":""""}",confess,saw the murder
-0.58,1,59,male,English,AmE,""":""""}",final NRRC,lost his key
-1,1,59,male,English,AmE,""":""""}",AI MC,control
-0,1,59,male,English,AmE,""":""""}",NAI MC,control
-0.8,1,59,male,English,AmE,""":""""}",medial NRRC,broke the plate
-0.58,1,59,male,English,AmE,""":""""}",be right,bought a new car
-0.68,1,59,male,English,AmE,""":""""}",confirm,saw the murder
-0.56,1,59,male,English,AmE,""":""""}",know,stole the money
-0.71,1,59,male,English,AmE,""":""""}",discover,ate the last cupcake
-0.2,1,59,male,English,AmE,""":""""}",confess,cheated on his wife
-0.6,66,64,female,English,AmE,""":""interesting study""}",medial NRRC,cheated on his wife
-0.55,66,64,female,English,AmE,""":""interesting study""}",final NRRC,lost his key
-1,66,64,female,English,AmE,""":""interesting study""}",AI MC,control
-1,66,64,female,English,AmE,""":""interesting study""}",confess,ate the last cupcake
-0,66,64,female,English,AmE,""":""interesting study""}",NAI MC,control
-0.91,66,64,female,English,AmE,""":""interesting study""}",discover,saw the murder
-0.56,66,64,female,English,AmE,""":""interesting study""}",know,broke the plate
-0.6,66,64,female,English,AmE,""":""interesting study""}",be right,bought a new car
-0.91,66,64,female,English,AmE,""":""interesting study""}",confirm,stole the money
-0.33,30,52,male,English,AmE,""":""""}",NAI MC,control
-0.71,30,52,male,English,AmE,""":""""}",know,broke the plate
-0.62,30,52,male,English,AmE,""":""""}",confess,bought a new car
-0.61,30,52,male,English,AmE,""":""""}",medial NRRC,ate the last cupcake
-0.76,30,52,male,English,AmE,""":""""}",confirm,cheated on his wife
-0.63,30,52,male,English,AmE,""":""""}",final NRRC,saw the murder
-0.95,30,52,male,English,AmE,""":""""}",AI MC,control
-0.72,30,52,male,English,AmE,""":""""}",be right,stole the money
-0.67,30,52,male,English,AmE,""":""""}",discover,lost his key
-1,35,32,male,English,AmE,""":""""}",confirm,bought a new car
-1,35,32,male,English,AmE,""":""""}",final NRRC,broke the plate
-0.69,35,32,male,English,AmE,""":""""}",discover,ate the last cupcake
-0.52,35,32,male,English,AmE,""":""""}",confess,saw the murder
-1,35,32,male,English,AmE,""":""""}",AI MC,control
-0,35,32,male,English,AmE,""":""""}",NAI MC,control
-0.42,35,32,male,English,AmE,""":""""}",medial NRRC,stole the money
-0.38,35,32,male,English,AmE,""":""""}",be right,lost his key
-0.23,35,32,male,English,AmE,""":""""}",know,cheated on his wife
-1,32,32,male,English,AmE,""":""nice study""}",AI MC,control
-0,32,32,male,English,AmE,""":""nice study""}",know,cheated on his wife
-0,32,32,male,English,AmE,""":""nice study""}",NAI MC,control
-0,32,32,male,English,AmE,""":""nice study""}",discover,broke the plate
-0.67,32,32,male,English,AmE,""":""nice study""}",confirm,stole the money
-0.03,32,32,male,English,AmE,""":""nice study""}",be right,ate the last cupcake
-0.22,32,32,male,English,AmE,""":""nice study""}",confess,lost his key
-1,32,32,male,English,AmE,""":""nice study""}",medial NRRC,saw the murder
-0.05,32,32,male,English,AmE,""":""nice study""}",final NRRC,bought a new car
-0.15,2,36,female,English,AmE,""":""None""}",final NRRC,ate the last cupcake
-0.7,2,36,female,English,AmE,""":""None""}",medial NRRC,lost his key
-0.99,2,36,female,English,AmE,""":""None""}",confess,broke the plate
-0.64,2,36,female,English,AmE,""":""None""}",know,cheated on his wife
-0.83,2,36,female,English,AmE,""":""None""}",discover,bought a new car
-0.77,2,36,female,English,AmE,""":""None""}",be right,saw the murder
-1,2,36,female,English,AmE,""":""None""}",AI MC,control
-0.91,2,36,female,English,AmE,""":""None""}",confirm,stole the money
-0,2,36,female,English,AmE,""":""None""}",NAI MC,control
-1,19,67,male,English,AmE,""":""""}",AI MC,control
-0.82,19,67,male,English,AmE,""":""""}",know,saw the murder
-0,19,67,male,English,AmE,""":""""}",NAI MC,control
-0.82,19,67,male,English,AmE,""":""""}",final NRRC,broke the plate
-0.6,19,67,male,English,AmE,""":""""}",medial NRRC,lost his key
-0.42,19,67,male,English,AmE,""":""""}",be right,stole the money
-0.96,19,67,male,English,AmE,""":""""}",confirm,ate the last cupcake
-0.88,19,67,male,English,AmE,""":""""}",confess,cheated on his wife
-0.94,19,67,male,English,AmE,""":""""}",discover,bought a new car
-0.73,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",know,bought a new car
-0.54,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",be right,lost his key
-0.75,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",final NRRC,cheated on his wife
-0.94,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",confirm,stole the money
-1,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",AI MC,control
-0.82,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",discover,ate the last cupcake
-0.75,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",medial NRRC,broke the plate
-0.92,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",confess,saw the murder
-0,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",NAI MC,control
-0.76,71,41,female,English,AmE,""":""""}",medial NRRC,stole the money
-0.71,71,41,female,English,AmE,""":""""}",know,bought a new car
-0.36,71,41,female,English,AmE,""":""""}",confess,saw the murder
-0.55,71,41,female,English,AmE,""":""""}",final NRRC,cheated on his wife
-0.92,71,41,female,English,AmE,""":""""}",AI MC,control
-0.77,71,41,female,English,AmE,""":""""}",confirm,broke the plate
-0,71,41,female,English,AmE,""":""""}",NAI MC,control
-0.42,71,41,female,English,AmE,""":""""}",be right,ate the last cupcake
-0.53,71,41,female,English,AmE,""":""""}",discover,lost his key
-1,44,32,female,English,AmE,""":""nice and simple""}",AI MC,control
-0.98,44,32,female,English,AmE,""":""nice and simple""}",final NRRC,saw the murder
-0,44,32,female,English,AmE,""":""nice and simple""}",NAI MC,control
-1,44,32,female,English,AmE,""":""nice and simple""}",know,bought a new car
-1,44,32,female,English,AmE,""":""nice and simple""}",medial NRRC,stole the money
-1,44,32,female,English,AmE,""":""nice and simple""}",confess,ate the last cupcake
-1,44,32,female,English,AmE,""":""nice and simple""}",confirm,broke the plate
-1,44,32,female,English,AmE,""":""nice and simple""}",discover,lost his key
-1,44,32,female,English,AmE,""":""nice and simple""}",be right,cheated on his wife
-0.57,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",confirm,saw the murder
-0.96,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",discover,stole the money
-0.02,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",NAI MC,control
-0.62,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",medial NRRC,ate the last cupcake
-1,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",AI MC,control
-0.29,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",be right,lost his key
-0.96,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",final NRRC,bought a new car
-0.66,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",know,cheated on his wife
-0.82,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",confess,broke the plate
-0.07,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",be right,cheated on his wife
-0.65,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",final NRRC,saw the murder
-0.73,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",medial NRRC,lost his key
-0.98,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",discover,ate the last cupcake
-0.8,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",know,stole the money
-0.85,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",confess,bought a new car
-1,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",AI MC,control
-0,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",NAI MC,control
-0.87,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",confirm,broke the plate
-1,37,72,female,English,AmE,""":""""}",final NRRC,broke the plate
-1,37,72,female,English,AmE,""":""""}",be right,bought a new car
-1,37,72,female,English,AmE,""":""""}",know,stole the money
-1,37,72,female,English,AmE,""":""""}",medial NRRC,ate the last cupcake
-1,37,72,female,English,AmE,""":""""}",AI MC,control
-1,37,72,female,English,AmE,""":""""}",discover,saw the murder
-1,37,72,female,English,AmE,""":""""}",confess,lost his key
-1,37,72,female,English,AmE,""":""""}",confirm,cheated on his wife
-0,37,72,female,English,AmE,""":""""}",NAI MC,control
-1,9,31,male,English,AmE,""":""""}",AI MC,control
-1,9,31,male,English,AmE,""":""""}",confess,stole the money
-1,9,31,male,English,AmE,""":""""}",discover,bought a new car
-1,9,31,male,English,AmE,""":""""}",confirm,saw the murder
-0.75,9,31,male,English,AmE,""":""""}",be right,lost his key
-0,9,31,male,English,AmE,""":""""}",NAI MC,control
-0.91,9,31,male,English,AmE,""":""""}",final NRRC,cheated on his wife
-1,9,31,male,English,AmE,""":""""}",medial NRRC,ate the last cupcake
-0.6,9,31,male,English,AmE,""":""""}",know,broke the plate
-0.77,74,68,male,English,AmE,""":""""}",confirm,saw the murder
-1,74,68,male,English,AmE,""":""""}",AI MC,control
-0.96,74,68,male,English,AmE,""":""""}",medial NRRC,stole the money
-0.64,74,68,male,English,AmE,""":""""}",be right,ate the last cupcake
-0.9,74,68,male,English,AmE,""":""""}",know,cheated on his wife
-0.93,74,68,male,English,AmE,""":""""}",discover,broke the plate
-0.95,74,68,male,English,AmE,""":""""}",confess,lost his key
-0.96,74,68,male,English,AmE,""":""""}",final NRRC,bought a new car
-0,74,68,male,English,AmE,""":""""}",NAI MC,control
-0.29,23,38,male,English,AmE,""":""""}",medial NRRC,stole the money
-0.53,23,38,male,English,AmE,""":""""}",confirm,broke the plate
-0.62,23,38,male,English,AmE,""":""""}",discover,cheated on his wife
-0.59,23,38,male,English,AmE,""":""""}",know,lost his key
-0,23,38,male,English,AmE,""":""""}",NAI MC,control
-0.53,23,38,male,English,AmE,""":""""}",confess,ate the last cupcake
-1,23,38,male,English,AmE,""":""""}",AI MC,control
-0.54,23,38,male,English,AmE,""":""""}",be right,bought a new car
-0.34,23,38,male,English,AmE,""":""""}",final NRRC,saw the murder
-0.94,12,38,male,English,AmE,""":""""}",confirm,ate the last cupcake
-0.94,12,38,male,English,AmE,""":""""}",discover,broke the plate
-0.87,12,38,male,English,AmE,""":""""}",final NRRC,saw the murder
-1,12,38,male,English,AmE,""":""""}",AI MC,control
-0.88,12,38,male,English,AmE,""":""""}",medial NRRC,cheated on his wife
-0.59,12,38,male,English,AmE,""":""""}",be right,lost his key
-0.72,12,38,male,English,AmE,""":""""}",know,stole the money
-0.76,12,38,male,English,AmE,""":""""}",confess,bought a new car
-0.11,12,38,male,English,AmE,""":""""}",NAI MC,control
-0.83,46,58,male,English,AmE,""":""N/A""}",confirm,saw the murder
-0.27,46,58,male,English,AmE,""":""N/A""}",be right,lost his key
-0.85,46,58,male,English,AmE,""":""N/A""}",AI MC,control
-0.28,46,58,male,English,AmE,""":""N/A""}",know,ate the last cupcake
-1,46,58,male,English,AmE,""":""N/A""}",medial NRRC,stole the money
-0.2,46,58,male,English,AmE,""":""N/A""}",NAI MC,control
-0.25,46,58,male,English,AmE,""":""N/A""}",discover,cheated on his wife
-0.22,46,58,male,English,AmE,""":""N/A""}",final NRRC,broke the plate
-0.21,46,58,male,English,AmE,""":""N/A""}",confess,bought a new car
-0.54,64,39,female,English,AmE,""":""""}",medial NRRC,lost his key
-0.83,64,39,female,English,AmE,""":""""}",discover,stole the money
-0.55,64,39,female,English,AmE,""":""""}",know,saw the murder
-0.77,64,39,female,English,AmE,""":""""}",confirm,broke the plate
-1,64,39,female,English,AmE,""":""""}",AI MC,control
-0.56,64,39,female,English,AmE,""":""""}",be right,ate the last cupcake
-0.75,64,39,female,English,AmE,""":""""}",final NRRC,cheated on his wife
-0.02,64,39,female,English,AmE,""":""""}",NAI MC,control
-0.56,64,39,female,English,AmE,""":""""}",confess,bought a new car
-1,42,28,female,English,AmE,""":""""}",AI MC,control
-0.82,42,28,female,English,AmE,""":""""}",discover,ate the last cupcake
-1,42,28,female,English,AmE,""":""""}",confirm,cheated on his wife
-0.95,42,28,female,English,AmE,""":""""}",final NRRC,lost his key
-0.88,42,28,female,English,AmE,""":""""}",know,stole the money
-0.7,42,28,female,English,AmE,""":""""}",be right,broke the plate
-0.4,42,28,female,English,AmE,""":""""}",medial NRRC,bought a new car
-0,42,28,female,English,AmE,""":""""}",NAI MC,control
-0.67,42,28,female,English,AmE,""":""""}",confess,saw the murder
-1,77,33,male,English,AmE,""":""""}",final NRRC,saw the murder
-0,77,33,male,English,AmE,""":""""}",NAI MC,control
-1,77,33,male,English,AmE,""":""""}",discover,bought a new car
-0.78,77,33,male,English,AmE,""":""""}",confess,stole the money
-0.74,77,33,male,English,AmE,""":""""}",know,cheated on his wife
-0.92,77,33,male,English,AmE,""":""""}",confirm,ate the last cupcake
-0.88,77,33,male,English,AmE,""":""""}",AI MC,control
-0.86,77,33,male,English,AmE,""":""""}",medial NRRC,broke the plate
-0.83,77,33,male,English,AmE,""":""""}",be right,lost his key
-0,36,47,female,English,AmE,""":""""}",NAI MC,control
-0.76,36,47,female,English,AmE,""":""""}",final NRRC,cheated on his wife
-0.92,36,47,female,English,AmE,""":""""}",confirm,stole the money
-0.96,36,47,female,English,AmE,""":""""}",AI MC,control
-0.99,36,47,female,English,AmE,""":""""}",discover,broke the plate
-0.38,36,47,female,English,AmE,""":""""}",confess,ate the last cupcake
-0.41,36,47,female,English,AmE,""":""""}",know,lost his key
-0.71,36,47,female,English,AmE,""":""""}",medial NRRC,saw the murder
-0.39,36,47,female,English,AmE,""":""""}",be right,bought a new car
-1,80,63,female,English,AmE,""":""""}",AI MC,control
-0,80,63,female,English,AmE,""":""""}",NAI MC,control
-0.76,80,63,female,English,AmE,""":""""}",confirm,lost his key
-0.27,80,63,female,English,AmE,""":""""}",final NRRC,ate the last cupcake
-1,80,63,female,English,AmE,""":""""}",discover,stole the money
-0.24,80,63,female,English,AmE,""":""""}",be right,bought a new car
-0.67,80,63,female,English,AmE,""":""""}",know,cheated on his wife
-0.73,80,63,female,English,AmE,""":""""}",medial NRRC,broke the plate
-0.69,80,63,female,English,AmE,""":""""}",confess,saw the murder
-0,55,29,female,English,AmE,""":""""}",discover,ate the last cupcake
-0,55,29,female,English,AmE,""":""""}",know,stole the money
-0,55,29,female,English,AmE,""":""""}",be right,broke the plate
-0.61,55,29,female,English,AmE,""":""""}",confess,saw the murder
-0.31,55,29,female,English,AmE,""":""""}",final NRRC,lost his key
-0.57,55,29,female,English,AmE,""":""""}",confirm,bought a new car
-0.06,55,29,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
-0,55,29,female,English,AmE,""":""""}",NAI MC,control
-1,55,29,female,English,AmE,""":""""}",AI MC,control
-0.71,62,18,female,English,AmE,""":""""}",know,lost his key
-1,62,18,female,English,AmE,""":""""}",AI MC,control
-0.19,62,18,female,English,AmE,""":""""}",NAI MC,control
-0.66,62,18,female,English,AmE,""":""""}",discover,broke the plate
-0.62,62,18,female,English,AmE,""":""""}",confess,saw the murder
-0.69,62,18,female,English,AmE,""":""""}",confirm,ate the last cupcake
-0.2,62,18,female,English,AmE,""":""""}",final NRRC,bought a new car
-0.64,62,18,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
-0.63,62,18,female,English,AmE,""":""""}",be right,stole the money
-0.23,58,41,male,English,AmE,""":""""}",be right,saw the murder
-0.75,58,41,male,English,AmE,""":""""}",know,broke the plate
-0.28,58,41,male,English,AmE,""":""""}",confirm,lost his key
-0.07,58,41,male,English,AmE,""":""""}",NAI MC,control
-1,58,41,male,English,AmE,""":""""}",AI MC,control
-0.34,58,41,male,English,AmE,""":""""}",discover,ate the last cupcake
-1,58,41,male,English,AmE,""":""""}",confess,stole the money
-0.16,58,41,male,English,AmE,""":""""}",medial NRRC,bought a new car
-0.64,58,41,male,English,AmE,""":""""}",final NRRC,cheated on his wife
-0.7,53,34,female,English,AmE,""":""""}",be right,lost his key
-1,53,34,female,English,AmE,""":""""}",confirm,stole the money
-0.59,53,34,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
-1,53,34,female,English,AmE,""":""""}",know,ate the last cupcake
-1,53,34,female,English,AmE,""":""""}",discover,bought a new car
-0.52,53,34,female,English,AmE,""":""""}",final NRRC,saw the murder
-1,53,34,female,English,AmE,""":""""}",confess,broke the plate
-1,53,34,female,English,AmE,""":""""}",AI MC,control
-0,53,34,female,English,AmE,""":""""}",NAI MC,control
-0.43,68,64,preferNoToSay,English,AmE,""":""""}",be right,bought a new car
-0.26,68,64,preferNoToSay,English,AmE,""":""""}",final NRRC,cheated on his wife
-0,68,64,preferNoToSay,English,AmE,""":""""}",NAI MC,control
-1,68,64,preferNoToSay,English,AmE,""":""""}",AI MC,control
-0.51,68,64,preferNoToSay,English,AmE,""":""""}",discover,broke the plate
-0.4,68,64,preferNoToSay,English,AmE,""":""""}",confirm,stole the money
-0.27,68,64,preferNoToSay,English,AmE,""":""""}",medial NRRC,saw the murder
-0.46,68,64,preferNoToSay,English,AmE,""":""""}",confess,ate the last cupcake
-0.56,68,64,preferNoToSay,English,AmE,""":""""}",know,lost his key
-0.7,11,43,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
-0.51,11,43,male,English,AmE,""":""""}",confess,cheated on his wife
-0.87,11,43,male,English,AmE,""":""""}",AI MC,control
-0.4,11,43,male,English,AmE,""":""""}",know,lost his key
-0.56,11,43,male,English,AmE,""":""""}",discover,broke the plate
-0.76,11,43,male,English,AmE,""":""""}",medial NRRC,stole the money
-0.08,11,43,male,English,AmE,""":""""}",NAI MC,control
-0.37,11,43,male,English,AmE,""":""""}",be right,bought a new car
-0.1,11,43,male,English,AmE,""":""""}",confirm,saw the murder
-0.9,73,42,female,English,AmE,".""}",final NRRC,stole the money
-0.87,73,42,female,English,AmE,".""}",medial NRRC,bought a new car
-0.98,73,42,female,English,AmE,".""}",confess,saw the murder
-0,73,42,female,English,AmE,".""}",NAI MC,control
-0.74,73,42,female,English,AmE,".""}",be right,broke the plate
-1,73,42,female,English,AmE,".""}",know,cheated on his wife
-1,73,42,female,English,AmE,".""}",AI MC,control
-0.95,73,42,female,English,AmE,".""}",discover,lost his key
-1,73,42,female,English,AmE,".""}",confirm,ate the last cupcake
-0.6,7,33,female,English,AmE,""":""""}",be right,cheated on his wife
-0.6,7,33,female,English,AmE,""":""""}",final NRRC,bought a new car
-0.59,7,33,female,English,AmE,""":""""}",discover,lost his key
-0.62,7,33,female,English,AmE,""":""""}",confirm,ate the last cupcake
-0.65,7,33,female,English,AmE,""":""""}",confess,stole the money
-0.86,7,33,female,English,AmE,""":""""}",AI MC,control
-0.06,7,33,female,English,AmE,""":""""}",NAI MC,control
-0.64,7,33,female,English,AmE,""":""""}",know,broke the plate
-0.63,7,33,female,English,AmE,""":""""}",medial NRRC,saw the murder
-0.41,69,44,female,English,AmE,""":""""}",confess,cheated on his wife
+0.42000000000000004,1,59,male,English,AmE,""":""""}",final NRRC,lost his key
+0,1,59,male,English,AmE,""":""""}",AI MC,control
+1,1,59,male,English,AmE,""":""""}",NAI MC,control
+0.19999999999999996,1,59,male,English,AmE,""":""""}",medial NRRC,broke the plate
+0.42000000000000004,1,59,male,English,AmE,""":""""}",be right,bought a new car
+0.31999999999999995,1,59,male,English,AmE,""":""""}",confirm,saw the murder
+0.43999999999999995,1,59,male,English,AmE,""":""""}",know,stole the money
+0.29000000000000004,1,59,male,English,AmE,""":""""}",discover,ate the last cupcake
+0.8,1,59,male,English,AmE,""":""""}",confess,cheated on his wife
+0.4,66,64,female,English,AmE,""":""interesting study""}",medial NRRC,cheated on his wife
+0.44999999999999996,66,64,female,English,AmE,""":""interesting study""}",final NRRC,lost his key
+0,66,64,female,English,AmE,""":""interesting study""}",AI MC,control
+0,66,64,female,English,AmE,""":""interesting study""}",confess,ate the last cupcake
+1,66,64,female,English,AmE,""":""interesting study""}",NAI MC,control
+0.08999999999999997,66,64,female,English,AmE,""":""interesting study""}",discover,saw the murder
+0.43999999999999995,66,64,female,English,AmE,""":""interesting study""}",know,broke the plate
+0.4,66,64,female,English,AmE,""":""interesting study""}",be right,bought a new car
+0.08999999999999997,66,64,female,English,AmE,""":""interesting study""}",confirm,stole the money
+0.6699999999999999,30,52,male,English,AmE,""":""""}",NAI MC,control
+0.29000000000000004,30,52,male,English,AmE,""":""""}",know,broke the plate
+0.38,30,52,male,English,AmE,""":""""}",confess,bought a new car
+0.39,30,52,male,English,AmE,""":""""}",medial NRRC,ate the last cupcake
+0.24,30,52,male,English,AmE,""":""""}",confirm,cheated on his wife
+0.37,30,52,male,English,AmE,""":""""}",final NRRC,saw the murder
+0.050000000000000044,30,52,male,English,AmE,""":""""}",AI MC,control
+0.28,30,52,male,English,AmE,""":""""}",be right,stole the money
+0.32999999999999996,30,52,male,English,AmE,""":""""}",discover,lost his key
+0,35,32,male,English,AmE,""":""""}",confirm,bought a new car
+0,35,32,male,English,AmE,""":""""}",final NRRC,broke the plate
+0.31000000000000005,35,32,male,English,AmE,""":""""}",discover,ate the last cupcake
+0.48,35,32,male,English,AmE,""":""""}",confess,saw the murder
+0,35,32,male,English,AmE,""":""""}",AI MC,control
+1,35,32,male,English,AmE,""":""""}",NAI MC,control
+0.5800000000000001,35,32,male,English,AmE,""":""""}",medial NRRC,stole the money
+0.62,35,32,male,English,AmE,""":""""}",be right,lost his key
+0.77,35,32,male,English,AmE,""":""""}",know,cheated on his wife
+0,32,32,male,English,AmE,""":""nice study""}",AI MC,control
+1,32,32,male,English,AmE,""":""nice study""}",know,cheated on his wife
+1,32,32,male,English,AmE,""":""nice study""}",NAI MC,control
+1,32,32,male,English,AmE,""":""nice study""}",discover,broke the plate
+0.32999999999999996,32,32,male,English,AmE,""":""nice study""}",confirm,stole the money
+0.97,32,32,male,English,AmE,""":""nice study""}",be right,ate the last cupcake
+0.78,32,32,male,English,AmE,""":""nice study""}",confess,lost his key
+0,32,32,male,English,AmE,""":""nice study""}",medial NRRC,saw the murder
+0.95,32,32,male,English,AmE,""":""nice study""}",final NRRC,bought a new car
+0.85,2,36,female,English,AmE,""":""None""}",final NRRC,ate the last cupcake
+0.30000000000000004,2,36,female,English,AmE,""":""None""}",medial NRRC,lost his key
+0.010000000000000009,2,36,female,English,AmE,""":""None""}",confess,broke the plate
+0.36,2,36,female,English,AmE,""":""None""}",know,cheated on his wife
+0.17000000000000004,2,36,female,English,AmE,""":""None""}",discover,bought a new car
+0.22999999999999998,2,36,female,English,AmE,""":""None""}",be right,saw the murder
+0,2,36,female,English,AmE,""":""None""}",AI MC,control
+0.08999999999999997,2,36,female,English,AmE,""":""None""}",confirm,stole the money
+1,2,36,female,English,AmE,""":""None""}",NAI MC,control
+0,19,67,male,English,AmE,""":""""}",AI MC,control
+0.18000000000000005,19,67,male,English,AmE,""":""""}",know,saw the murder
+1,19,67,male,English,AmE,""":""""}",NAI MC,control
+0.18000000000000005,19,67,male,English,AmE,""":""""}",final NRRC,broke the plate
+0.4,19,67,male,English,AmE,""":""""}",medial NRRC,lost his key
+0.5800000000000001,19,67,male,English,AmE,""":""""}",be right,stole the money
+0.040000000000000036,19,67,male,English,AmE,""":""""}",confirm,ate the last cupcake
+0.12,19,67,male,English,AmE,""":""""}",confess,cheated on his wife
+0.06000000000000005,19,67,male,English,AmE,""":""""}",discover,bought a new car
+0.27,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",know,bought a new car
+0.45999999999999996,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",be right,lost his key
+0.25,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",final NRRC,cheated on his wife
+0.06000000000000005,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",confirm,stole the money
+0,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",AI MC,control
+0.18000000000000005,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",discover,ate the last cupcake
+0.25,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",medial NRRC,broke the plate
+0.07999999999999996,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",confess,saw the murder
+1,28,53,female,English,AmE,""":""I wasn't sure if these were verbal responses because some, although correct, wouldn't be said out loud in the way written""}",NAI MC,control
+0.24,71,41,female,English,AmE,""":""""}",medial NRRC,stole the money
+0.29000000000000004,71,41,female,English,AmE,""":""""}",know,bought a new car
+0.64,71,41,female,English,AmE,""":""""}",confess,saw the murder
+0.44999999999999996,71,41,female,English,AmE,""":""""}",final NRRC,cheated on his wife
+0.07999999999999996,71,41,female,English,AmE,""":""""}",AI MC,control
+0.22999999999999998,71,41,female,English,AmE,""":""""}",confirm,broke the plate
+1,71,41,female,English,AmE,""":""""}",NAI MC,control
+0.5800000000000001,71,41,female,English,AmE,""":""""}",be right,ate the last cupcake
+0.47,71,41,female,English,AmE,""":""""}",discover,lost his key
+0,44,32,female,English,AmE,""":""nice and simple""}",AI MC,control
+0.020000000000000018,44,32,female,English,AmE,""":""nice and simple""}",final NRRC,saw the murder
+1,44,32,female,English,AmE,""":""nice and simple""}",NAI MC,control
+0,44,32,female,English,AmE,""":""nice and simple""}",know,bought a new car
+0,44,32,female,English,AmE,""":""nice and simple""}",medial NRRC,stole the money
+0,44,32,female,English,AmE,""":""nice and simple""}",confess,ate the last cupcake
+0,44,32,female,English,AmE,""":""nice and simple""}",confirm,broke the plate
+0,44,32,female,English,AmE,""":""nice and simple""}",discover,lost his key
+0,44,32,female,English,AmE,""":""nice and simple""}",be right,cheated on his wife
+0.43000000000000005,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",confirm,saw the murder
+0.040000000000000036,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",discover,stole the money
+0.98,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",NAI MC,control
+0.38,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",medial NRRC,ate the last cupcake
+0,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",AI MC,control
+0.71,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",be right,lost his key
+0.040000000000000036,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",final NRRC,bought a new car
+0.33999999999999997,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",know,cheated on his wife
+0.18000000000000005,56,51,female,English,AmE,""":""Well, the study was interesting because most of the answers really did fit if but and then again, they didn't fit, interesting.""}",confess,broke the plate
+0.9299999999999999,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",be right,cheated on his wife
+0.35,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",final NRRC,saw the murder
+0.27,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",medial NRRC,lost his key
+0.020000000000000018,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",discover,ate the last cupcake
+0.19999999999999996,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",know,stole the money
+0.15000000000000002,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",confess,bought a new car
+0,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",AI MC,control
+1,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",NAI MC,control
+0.13,8,37,male,English,AmE,""":""I reduced the level if the answer did provide a response to the question but added extraneous information.""}",confirm,broke the plate
+0,37,72,female,English,AmE,""":""""}",final NRRC,broke the plate
+0,37,72,female,English,AmE,""":""""}",be right,bought a new car
+0,37,72,female,English,AmE,""":""""}",know,stole the money
+0,37,72,female,English,AmE,""":""""}",medial NRRC,ate the last cupcake
+0,37,72,female,English,AmE,""":""""}",AI MC,control
+0,37,72,female,English,AmE,""":""""}",discover,saw the murder
+0,37,72,female,English,AmE,""":""""}",confess,lost his key
+0,37,72,female,English,AmE,""":""""}",confirm,cheated on his wife
+1,37,72,female,English,AmE,""":""""}",NAI MC,control
+0,9,31,male,English,AmE,""":""""}",AI MC,control
+0,9,31,male,English,AmE,""":""""}",confess,stole the money
+0,9,31,male,English,AmE,""":""""}",discover,bought a new car
+0,9,31,male,English,AmE,""":""""}",confirm,saw the murder
+0.25,9,31,male,English,AmE,""":""""}",be right,lost his key
+1,9,31,male,English,AmE,""":""""}",NAI MC,control
+0.08999999999999997,9,31,male,English,AmE,""":""""}",final NRRC,cheated on his wife
+0,9,31,male,English,AmE,""":""""}",medial NRRC,ate the last cupcake
+0.4,9,31,male,English,AmE,""":""""}",know,broke the plate
+0.22999999999999998,74,68,male,English,AmE,""":""""}",confirm,saw the murder
+0,74,68,male,English,AmE,""":""""}",AI MC,control
+0.040000000000000036,74,68,male,English,AmE,""":""""}",medial NRRC,stole the money
+0.36,74,68,male,English,AmE,""":""""}",be right,ate the last cupcake
+0.09999999999999998,74,68,male,English,AmE,""":""""}",know,cheated on his wife
+0.06999999999999995,74,68,male,English,AmE,""":""""}",discover,broke the plate
+0.050000000000000044,74,68,male,English,AmE,""":""""}",confess,lost his key
+0.040000000000000036,74,68,male,English,AmE,""":""""}",final NRRC,bought a new car
+1,74,68,male,English,AmE,""":""""}",NAI MC,control
+0.71,23,38,male,English,AmE,""":""""}",medial NRRC,stole the money
+0.47,23,38,male,English,AmE,""":""""}",confirm,broke the plate
+0.38,23,38,male,English,AmE,""":""""}",discover,cheated on his wife
+0.41000000000000003,23,38,male,English,AmE,""":""""}",know,lost his key
+1,23,38,male,English,AmE,""":""""}",NAI MC,control
+0.47,23,38,male,English,AmE,""":""""}",confess,ate the last cupcake
+0,23,38,male,English,AmE,""":""""}",AI MC,control
+0.45999999999999996,23,38,male,English,AmE,""":""""}",be right,bought a new car
+0.6599999999999999,23,38,male,English,AmE,""":""""}",final NRRC,saw the murder
+0.06000000000000005,12,38,male,English,AmE,""":""""}",confirm,ate the last cupcake
+0.06000000000000005,12,38,male,English,AmE,""":""""}",discover,broke the plate
+0.13,12,38,male,English,AmE,""":""""}",final NRRC,saw the murder
+0,12,38,male,English,AmE,""":""""}",AI MC,control
+0.12,12,38,male,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0.41000000000000003,12,38,male,English,AmE,""":""""}",be right,lost his key
+0.28,12,38,male,English,AmE,""":""""}",know,stole the money
+0.24,12,38,male,English,AmE,""":""""}",confess,bought a new car
+0.89,12,38,male,English,AmE,""":""""}",NAI MC,control
+0.17000000000000004,46,58,male,English,AmE,""":""N/A""}",confirm,saw the murder
+0.73,46,58,male,English,AmE,""":""N/A""}",be right,lost his key
+0.15000000000000002,46,58,male,English,AmE,""":""N/A""}",AI MC,control
+0.72,46,58,male,English,AmE,""":""N/A""}",know,ate the last cupcake
+0,46,58,male,English,AmE,""":""N/A""}",medial NRRC,stole the money
+0.8,46,58,male,English,AmE,""":""N/A""}",NAI MC,control
+0.75,46,58,male,English,AmE,""":""N/A""}",discover,cheated on his wife
+0.78,46,58,male,English,AmE,""":""N/A""}",final NRRC,broke the plate
+0.79,46,58,male,English,AmE,""":""N/A""}",confess,bought a new car
+0.45999999999999996,64,39,female,English,AmE,""":""""}",medial NRRC,lost his key
+0.17000000000000004,64,39,female,English,AmE,""":""""}",discover,stole the money
+0.44999999999999996,64,39,female,English,AmE,""":""""}",know,saw the murder
+0.22999999999999998,64,39,female,English,AmE,""":""""}",confirm,broke the plate
+0,64,39,female,English,AmE,""":""""}",AI MC,control
+0.43999999999999995,64,39,female,English,AmE,""":""""}",be right,ate the last cupcake
+0.25,64,39,female,English,AmE,""":""""}",final NRRC,cheated on his wife
+0.98,64,39,female,English,AmE,""":""""}",NAI MC,control
+0.43999999999999995,64,39,female,English,AmE,""":""""}",confess,bought a new car
+0,42,28,female,English,AmE,""":""""}",AI MC,control
+0.18000000000000005,42,28,female,English,AmE,""":""""}",discover,ate the last cupcake
+0,42,28,female,English,AmE,""":""""}",confirm,cheated on his wife
+0.050000000000000044,42,28,female,English,AmE,""":""""}",final NRRC,lost his key
+0.12,42,28,female,English,AmE,""":""""}",know,stole the money
+0.30000000000000004,42,28,female,English,AmE,""":""""}",be right,broke the plate
+0.6,42,28,female,English,AmE,""":""""}",medial NRRC,bought a new car
+1,42,28,female,English,AmE,""":""""}",NAI MC,control
+0.32999999999999996,42,28,female,English,AmE,""":""""}",confess,saw the murder
+0,77,33,male,English,AmE,""":""""}",final NRRC,saw the murder
+1,77,33,male,English,AmE,""":""""}",NAI MC,control
+0,77,33,male,English,AmE,""":""""}",discover,bought a new car
+0.21999999999999997,77,33,male,English,AmE,""":""""}",confess,stole the money
+0.26,77,33,male,English,AmE,""":""""}",know,cheated on his wife
+0.07999999999999996,77,33,male,English,AmE,""":""""}",confirm,ate the last cupcake
+0.12,77,33,male,English,AmE,""":""""}",AI MC,control
+0.14,77,33,male,English,AmE,""":""""}",medial NRRC,broke the plate
+0.17000000000000004,77,33,male,English,AmE,""":""""}",be right,lost his key
+1,36,47,female,English,AmE,""":""""}",NAI MC,control
+0.24,36,47,female,English,AmE,""":""""}",final NRRC,cheated on his wife
+0.07999999999999996,36,47,female,English,AmE,""":""""}",confirm,stole the money
+0.040000000000000036,36,47,female,English,AmE,""":""""}",AI MC,control
+0.010000000000000009,36,47,female,English,AmE,""":""""}",discover,broke the plate
+0.62,36,47,female,English,AmE,""":""""}",confess,ate the last cupcake
+0.5900000000000001,36,47,female,English,AmE,""":""""}",know,lost his key
+0.29000000000000004,36,47,female,English,AmE,""":""""}",medial NRRC,saw the murder
+0.61,36,47,female,English,AmE,""":""""}",be right,bought a new car
+0,80,63,female,English,AmE,""":""""}",AI MC,control
+1,80,63,female,English,AmE,""":""""}",NAI MC,control
+0.24,80,63,female,English,AmE,""":""""}",confirm,lost his key
+0.73,80,63,female,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0,80,63,female,English,AmE,""":""""}",discover,stole the money
+0.76,80,63,female,English,AmE,""":""""}",be right,bought a new car
+0.32999999999999996,80,63,female,English,AmE,""":""""}",know,cheated on his wife
+0.27,80,63,female,English,AmE,""":""""}",medial NRRC,broke the plate
+0.31000000000000005,80,63,female,English,AmE,""":""""}",confess,saw the murder
+1,55,29,female,English,AmE,""":""""}",discover,ate the last cupcake
+1,55,29,female,English,AmE,""":""""}",know,stole the money
+1,55,29,female,English,AmE,""":""""}",be right,broke the plate
+0.39,55,29,female,English,AmE,""":""""}",confess,saw the murder
+0.69,55,29,female,English,AmE,""":""""}",final NRRC,lost his key
+0.43000000000000005,55,29,female,English,AmE,""":""""}",confirm,bought a new car
+0.94,55,29,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
+1,55,29,female,English,AmE,""":""""}",NAI MC,control
+0,55,29,female,English,AmE,""":""""}",AI MC,control
+0.29000000000000004,62,18,female,English,AmE,""":""""}",know,lost his key
+0,62,18,female,English,AmE,""":""""}",AI MC,control
+0.81,62,18,female,English,AmE,""":""""}",NAI MC,control
+0.33999999999999997,62,18,female,English,AmE,""":""""}",discover,broke the plate
+0.38,62,18,female,English,AmE,""":""""}",confess,saw the murder
+0.31000000000000005,62,18,female,English,AmE,""":""""}",confirm,ate the last cupcake
+0.8,62,18,female,English,AmE,""":""""}",final NRRC,bought a new car
+0.36,62,18,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0.37,62,18,female,English,AmE,""":""""}",be right,stole the money
+0.77,58,41,male,English,AmE,""":""""}",be right,saw the murder
+0.25,58,41,male,English,AmE,""":""""}",know,broke the plate
+0.72,58,41,male,English,AmE,""":""""}",confirm,lost his key
+0.9299999999999999,58,41,male,English,AmE,""":""""}",NAI MC,control
+0,58,41,male,English,AmE,""":""""}",AI MC,control
+0.6599999999999999,58,41,male,English,AmE,""":""""}",discover,ate the last cupcake
+0,58,41,male,English,AmE,""":""""}",confess,stole the money
+0.84,58,41,male,English,AmE,""":""""}",medial NRRC,bought a new car
+0.36,58,41,male,English,AmE,""":""""}",final NRRC,cheated on his wife
+0.30000000000000004,53,34,female,English,AmE,""":""""}",be right,lost his key
+0,53,34,female,English,AmE,""":""""}",confirm,stole the money
+0.41000000000000003,53,34,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0,53,34,female,English,AmE,""":""""}",know,ate the last cupcake
+0,53,34,female,English,AmE,""":""""}",discover,bought a new car
+0.48,53,34,female,English,AmE,""":""""}",final NRRC,saw the murder
+0,53,34,female,English,AmE,""":""""}",confess,broke the plate
+0,53,34,female,English,AmE,""":""""}",AI MC,control
+1,53,34,female,English,AmE,""":""""}",NAI MC,control
+0.5700000000000001,68,64,preferNoToSay,English,AmE,""":""""}",be right,bought a new car
+0.74,68,64,preferNoToSay,English,AmE,""":""""}",final NRRC,cheated on his wife
+1,68,64,preferNoToSay,English,AmE,""":""""}",NAI MC,control
+0,68,64,preferNoToSay,English,AmE,""":""""}",AI MC,control
+0.49,68,64,preferNoToSay,English,AmE,""":""""}",discover,broke the plate
+0.6,68,64,preferNoToSay,English,AmE,""":""""}",confirm,stole the money
+0.73,68,64,preferNoToSay,English,AmE,""":""""}",medial NRRC,saw the murder
+0.54,68,64,preferNoToSay,English,AmE,""":""""}",confess,ate the last cupcake
+0.43999999999999995,68,64,preferNoToSay,English,AmE,""":""""}",know,lost his key
+0.30000000000000004,11,43,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0.49,11,43,male,English,AmE,""":""""}",confess,cheated on his wife
+0.13,11,43,male,English,AmE,""":""""}",AI MC,control
+0.6,11,43,male,English,AmE,""":""""}",know,lost his key
+0.43999999999999995,11,43,male,English,AmE,""":""""}",discover,broke the plate
+0.24,11,43,male,English,AmE,""":""""}",medial NRRC,stole the money
+0.92,11,43,male,English,AmE,""":""""}",NAI MC,control
+0.63,11,43,male,English,AmE,""":""""}",be right,bought a new car
+0.9,11,43,male,English,AmE,""":""""}",confirm,saw the murder
+0.09999999999999998,73,42,female,English,AmE,".""}",final NRRC,stole the money
+0.13,73,42,female,English,AmE,".""}",medial NRRC,bought a new car
+0.020000000000000018,73,42,female,English,AmE,".""}",confess,saw the murder
+1,73,42,female,English,AmE,".""}",NAI MC,control
+0.26,73,42,female,English,AmE,".""}",be right,broke the plate
+0,73,42,female,English,AmE,".""}",know,cheated on his wife
+0,73,42,female,English,AmE,".""}",AI MC,control
+0.050000000000000044,73,42,female,English,AmE,".""}",discover,lost his key
+0,73,42,female,English,AmE,".""}",confirm,ate the last cupcake
+0.4,7,33,female,English,AmE,""":""""}",be right,cheated on his wife
+0.4,7,33,female,English,AmE,""":""""}",final NRRC,bought a new car
+0.41000000000000003,7,33,female,English,AmE,""":""""}",discover,lost his key
+0.38,7,33,female,English,AmE,""":""""}",confirm,ate the last cupcake
+0.35,7,33,female,English,AmE,""":""""}",confess,stole the money
+0.14,7,33,female,English,AmE,""":""""}",AI MC,control
+0.94,7,33,female,English,AmE,""":""""}",NAI MC,control
+0.36,7,33,female,English,AmE,""":""""}",know,broke the plate
+0.37,7,33,female,English,AmE,""":""""}",medial NRRC,saw the murder
+0.5900000000000001,69,44,female,English,AmE,""":""""}",confess,cheated on his wife
 0.5,69,44,female,English,AmE,""":""""}",discover,ate the last cupcake
-1,69,44,female,English,AmE,""":""""}",AI MC,control
-0.49,69,44,female,English,AmE,""":""""}",know,stole the money
-0.15,69,44,female,English,AmE,""":""""}",NAI MC,control
-0.42,69,44,female,English,AmE,""":""""}",medial NRRC,bought a new car
+0,69,44,female,English,AmE,""":""""}",AI MC,control
+0.51,69,44,female,English,AmE,""":""""}",know,stole the money
+0.85,69,44,female,English,AmE,""":""""}",NAI MC,control
+0.5800000000000001,69,44,female,English,AmE,""":""""}",medial NRRC,bought a new car
 0.5,69,44,female,English,AmE,""":""""}",confirm,broke the plate
-0.26,69,44,female,English,AmE,""":""""}",be right,saw the murder
-0.32,69,44,female,English,AmE,""":""""}",final NRRC,lost his key
-0,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",be right,saw the murder
-0.93,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",confess,lost his key
-0.98,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",medial NRRC,cheated on his wife
-0,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",know,bought a new car
-0,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",NAI MC,control
-0,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",discover,stole the money
-1,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",AI MC,control
-1,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",confirm,ate the last cupcake
-1,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",final NRRC,broke the plate
-0.06,27,40,female,English,AmE,""":""""}",be right,bought a new car
-0.72,27,40,female,English,AmE,""":""""}",discover,broke the plate
-1,27,40,female,English,AmE,""":""""}",AI MC,control
-0.68,27,40,female,English,AmE,""":""""}",final NRRC,lost his key
-0.76,27,40,female,English,AmE,""":""""}",know,stole the money
-0.75,27,40,female,English,AmE,""":""""}",confess,ate the last cupcake
-0.7,27,40,female,English,AmE,""":""""}",confirm,cheated on his wife
-0.61,27,40,female,English,AmE,""":""""}",medial NRRC,saw the murder
-0,27,40,female,English,AmE,""":""""}",NAI MC,control
-0.59,63,43,male,English,AmE,""":""""}",be right,saw the murder
-0.56,63,43,male,English,AmE,""":""""}",final NRRC,lost his key
-0,63,43,male,English,AmE,""":""""}",NAI MC,control
-0.71,63,43,male,English,AmE,""":""""}",confess,stole the money
-1,63,43,male,English,AmE,""":""""}",confirm,cheated on his wife
-0.57,63,43,male,English,AmE,""":""""}",medial NRRC,bought a new car
-0.72,63,43,male,English,AmE,""":""""}",know,ate the last cupcake
-1,63,43,male,English,AmE,""":""""}",discover,broke the plate
-1,63,43,male,English,AmE,""":""""}",AI MC,control
-0.86,16,42,female,English,AmE,""":""""}",know,cheated on his wife
-0.83,16,42,female,English,AmE,""":""""}",confess,ate the last cupcake
-1,16,42,female,English,AmE,""":""""}",AI MC,control
-0.54,16,42,female,English,AmE,""":""""}",final NRRC,bought a new car
-0.85,16,42,female,English,AmE,""":""""}",discover,lost his key
-0.77,16,42,female,English,AmE,""":""""}",be right,saw the murder
-0.88,16,42,female,English,AmE,""":""""}",confirm,stole the money
-0.55,16,42,female,English,AmE,""":""""}",medial NRRC,broke the plate
-0.15,16,42,female,English,AmE,""":""""}",NAI MC,control
-1,65,50,male,English,AmE,""":""""}",AI MC,control
-0.51,65,50,male,English,AmE,""":""""}",confess,bought a new car
-0.52,65,50,male,English,AmE,""":""""}",be right,ate the last cupcake
-0.01,65,50,male,English,AmE,""":""""}",discover,saw the murder
-1,65,50,male,English,AmE,""":""""}",medial NRRC,broke the plate
-0.51,65,50,male,English,AmE,""":""""}",confirm,cheated on his wife
-0,65,50,male,English,AmE,""":""""}",NAI MC,control
+0.74,69,44,female,English,AmE,""":""""}",be right,saw the murder
+0.6799999999999999,69,44,female,English,AmE,""":""""}",final NRRC,lost his key
+1,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",be right,saw the murder
+0.06999999999999995,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",confess,lost his key
+0.020000000000000018,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",medial NRRC,cheated on his wife
+1,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",know,bought a new car
+1,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",NAI MC,control
+1,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",discover,stole the money
+0,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",AI MC,control
+0,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",confirm,ate the last cupcake
+0,51,61,female,English,AmE,""":""Some are a little confusing but it was kind of a fun study.""}",final NRRC,broke the plate
+0.94,27,40,female,English,AmE,""":""""}",be right,bought a new car
+0.28,27,40,female,English,AmE,""":""""}",discover,broke the plate
+0,27,40,female,English,AmE,""":""""}",AI MC,control
+0.31999999999999995,27,40,female,English,AmE,""":""""}",final NRRC,lost his key
+0.24,27,40,female,English,AmE,""":""""}",know,stole the money
+0.25,27,40,female,English,AmE,""":""""}",confess,ate the last cupcake
+0.30000000000000004,27,40,female,English,AmE,""":""""}",confirm,cheated on his wife
+0.39,27,40,female,English,AmE,""":""""}",medial NRRC,saw the murder
+1,27,40,female,English,AmE,""":""""}",NAI MC,control
+0.41000000000000003,63,43,male,English,AmE,""":""""}",be right,saw the murder
+0.43999999999999995,63,43,male,English,AmE,""":""""}",final NRRC,lost his key
+1,63,43,male,English,AmE,""":""""}",NAI MC,control
+0.29000000000000004,63,43,male,English,AmE,""":""""}",confess,stole the money
+0,63,43,male,English,AmE,""":""""}",confirm,cheated on his wife
+0.43000000000000005,63,43,male,English,AmE,""":""""}",medial NRRC,bought a new car
+0.28,63,43,male,English,AmE,""":""""}",know,ate the last cupcake
+0,63,43,male,English,AmE,""":""""}",discover,broke the plate
+0,63,43,male,English,AmE,""":""""}",AI MC,control
+0.14,16,42,female,English,AmE,""":""""}",know,cheated on his wife
+0.17000000000000004,16,42,female,English,AmE,""":""""}",confess,ate the last cupcake
+0,16,42,female,English,AmE,""":""""}",AI MC,control
+0.45999999999999996,16,42,female,English,AmE,""":""""}",final NRRC,bought a new car
+0.15000000000000002,16,42,female,English,AmE,""":""""}",discover,lost his key
+0.22999999999999998,16,42,female,English,AmE,""":""""}",be right,saw the murder
+0.12,16,42,female,English,AmE,""":""""}",confirm,stole the money
+0.44999999999999996,16,42,female,English,AmE,""":""""}",medial NRRC,broke the plate
+0.85,16,42,female,English,AmE,""":""""}",NAI MC,control
+0,65,50,male,English,AmE,""":""""}",AI MC,control
+0.49,65,50,male,English,AmE,""":""""}",confess,bought a new car
+0.48,65,50,male,English,AmE,""":""""}",be right,ate the last cupcake
+0.99,65,50,male,English,AmE,""":""""}",discover,saw the murder
+0,65,50,male,English,AmE,""":""""}",medial NRRC,broke the plate
+0.49,65,50,male,English,AmE,""":""""}",confirm,cheated on his wife
+1,65,50,male,English,AmE,""":""""}",NAI MC,control
 0.5,65,50,male,English,AmE,""":""""}",know,stole the money
-1,65,50,male,English,AmE,""":""""}",final NRRC,lost his key
-0.25,59,39,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
-0.71,59,39,male,English,AmE,""":""""}",medial NRRC,broke the plate
-1,59,39,male,English,AmE,""":""""}",AI MC,control
-0,59,39,male,English,AmE,""":""""}",NAI MC,control
-0.06,59,39,male,English,AmE,""":""""}",be right,lost his key
-0,59,39,male,English,AmE,""":""""}",discover,saw the murder
-0.25,59,39,male,English,AmE,""":""""}",know,stole the money
-0.71,59,39,male,English,AmE,""":""""}",confirm,bought a new car
-0.59,59,39,male,English,AmE,""":""""}",confess,cheated on his wife
-0.17,60,63,female,English,AmE,""":""none""}",discover,lost his key
-0.09,60,63,female,English,AmE,""":""none""}",be right,ate the last cupcake
-0.87,60,63,female,English,AmE,""":""none""}",confess,stole the money
-0.39,60,63,female,English,AmE,""":""none""}",know,bought a new car
-0.09,60,63,female,English,AmE,""":""none""}",final NRRC,saw the murder
-0,60,63,female,English,AmE,""":""none""}",NAI MC,control
-0.57,60,63,female,English,AmE,""":""none""}",confirm,broke the plate
-0.57,60,63,female,English,AmE,""":""none""}",medial NRRC,cheated on his wife
-1,60,63,female,English,AmE,""":""none""}",AI MC,control
-1,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",confirm,lost his key
-0,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",NAI MC,control
-1,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",AI MC,control
-0.73,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",medial NRRC,ate the last cupcake
-0.68,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",know,saw the murder
-0.76,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",discover,cheated on his wife
-0.79,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",be right,stole the money
-0.63,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",final NRRC,bought a new car
-0.58,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",confess,broke the plate
-0.51,5,39,male,English,AmE,""":""""}",be right,cheated on his wife
-0.42,5,39,male,English,AmE,""":""""}",medial NRRC,stole the money
+0,65,50,male,English,AmE,""":""""}",final NRRC,lost his key
+0.75,59,39,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0.29000000000000004,59,39,male,English,AmE,""":""""}",medial NRRC,broke the plate
+0,59,39,male,English,AmE,""":""""}",AI MC,control
+1,59,39,male,English,AmE,""":""""}",NAI MC,control
+0.94,59,39,male,English,AmE,""":""""}",be right,lost his key
+1,59,39,male,English,AmE,""":""""}",discover,saw the murder
+0.75,59,39,male,English,AmE,""":""""}",know,stole the money
+0.29000000000000004,59,39,male,English,AmE,""":""""}",confirm,bought a new car
+0.41000000000000003,59,39,male,English,AmE,""":""""}",confess,cheated on his wife
+0.83,60,63,female,English,AmE,""":""none""}",discover,lost his key
+0.91,60,63,female,English,AmE,""":""none""}",be right,ate the last cupcake
+0.13,60,63,female,English,AmE,""":""none""}",confess,stole the money
+0.61,60,63,female,English,AmE,""":""none""}",know,bought a new car
+0.91,60,63,female,English,AmE,""":""none""}",final NRRC,saw the murder
+1,60,63,female,English,AmE,""":""none""}",NAI MC,control
+0.43000000000000005,60,63,female,English,AmE,""":""none""}",confirm,broke the plate
+0.43000000000000005,60,63,female,English,AmE,""":""none""}",medial NRRC,cheated on his wife
+0,60,63,female,English,AmE,""":""none""}",AI MC,control
+0,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",confirm,lost his key
+1,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",NAI MC,control
+0,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",AI MC,control
+0.27,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",medial NRRC,ate the last cupcake
+0.31999999999999995,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",know,saw the murder
+0.24,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",discover,cheated on his wife
+0.20999999999999996,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",be right,stole the money
+0.37,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",final NRRC,bought a new car
+0.42000000000000004,79,81,female,English,AmE,""":""It would be easier if there were numbers on the slider bars.""}",confess,broke the plate
+0.49,5,39,male,English,AmE,""":""""}",be right,cheated on his wife
+0.5800000000000001,5,39,male,English,AmE,""":""""}",medial NRRC,stole the money
 0.5,5,39,male,English,AmE,""":""""}",confirm,ate the last cupcake
 0.5,5,39,male,English,AmE,""":""""}",final NRRC,bought a new car
-0,5,39,male,English,AmE,""":""""}",NAI MC,control
-0.36,5,39,male,English,AmE,""":""""}",confess,saw the murder
+1,5,39,male,English,AmE,""":""""}",NAI MC,control
+0.64,5,39,male,English,AmE,""":""""}",confess,saw the murder
 0.5,5,39,male,English,AmE,""":""""}",discover,broke the plate
-1,5,39,male,English,AmE,""":""""}",AI MC,control
+0,5,39,male,English,AmE,""":""""}",AI MC,control
 0.5,5,39,male,English,AmE,""":""""}",know,lost his key
-1,72,63,male,English,AmE,""":""""}",confess,ate the last cupcake
-1,72,63,male,English,AmE,""":""""}",AI MC,control
-0.6,72,63,male,English,AmE,""":""""}",be right,saw the murder
-0,72,63,male,English,AmE,""":""""}",NAI MC,control
-0.94,72,63,male,English,AmE,""":""""}",confirm,broke the plate
-0.8,72,63,male,English,AmE,""":""""}",medial NRRC,cheated on his wife
-0.72,72,63,male,English,AmE,""":""""}",final NRRC,bought a new car
-0.91,72,63,male,English,AmE,""":""""}",discover,lost his key
-0.66,72,63,male,English,AmE,""":""""}",know,stole the money
-0,29,37,male,English,AmE,""":""""}",NAI MC,control
-0.1,29,37,male,English,AmE,""":""""}",know,saw the murder
-1,29,37,male,English,AmE,""":""""}",confess,broke the plate
-1,29,37,male,English,AmE,""":""""}",discover,bought a new car
-1,29,37,male,English,AmE,""":""""}",confirm,cheated on his wife
-1,29,37,male,English,AmE,""":""""}",final NRRC,lost his key
-0.79,29,37,male,English,AmE,""":""""}",medial NRRC,ate the last cupcake
-1,29,37,male,English,AmE,""":""""}",AI MC,control
-0.9,29,37,male,English,AmE,""":""""}",be right,stole the money
-0.9,67,37,female,English,AmE,""":""""}",confirm,ate the last cupcake
-1,67,37,female,English,AmE,""":""""}",AI MC,control
-0.83,67,37,female,English,AmE,""":""""}",discover,cheated on his wife
-0.69,67,37,female,English,AmE,""":""""}",be right,stole the money
-0.74,67,37,female,English,AmE,""":""""}",medial NRRC,lost his key
-0.8,67,37,female,English,AmE,""":""""}",confess,broke the plate
-0.64,67,37,female,English,AmE,""":""""}",know,saw the murder
-0,67,37,female,English,AmE,""":""""}",NAI MC,control
-0.37,67,37,female,English,AmE,""":""""}",final NRRC,bought a new car
-0.88,43,50,female,English,AmE,""":""""}",discover,ate the last cupcake
-1,43,50,female,English,AmE,""":""""}",know,cheated on his wife
-0.9,43,50,female,English,AmE,""":""""}",confirm,broke the plate
-0.84,43,50,female,English,AmE,""":""""}",be right,bought a new car
-1,43,50,female,English,AmE,""":""""}",AI MC,control
-0,43,50,female,English,AmE,""":""""}",NAI MC,control
-0.82,43,50,female,English,AmE,""":""""}",medial NRRC,saw the murder
-0.83,43,50,female,English,AmE,""":""""}",confess,stole the money
-0.8,43,50,female,English,AmE,""":""""}",final NRRC,lost his key
-0,4,21,male,English,AmE,""":""""}",know,cheated on his wife
-0.55,4,21,male,English,AmE,""":""""}",medial NRRC,lost his key
-1,4,21,male,English,AmE,""":""""}",confirm,ate the last cupcake
-1,4,21,male,English,AmE,""":""""}",AI MC,control
-1,4,21,male,English,AmE,""":""""}",discover,saw the murder
-1,4,21,male,English,AmE,""":""""}",be right,stole the money
-0.61,4,21,male,English,AmE,""":""""}",final NRRC,broke the plate
-0,4,21,male,English,AmE,""":""""}",confess,bought a new car
-0,4,21,male,English,AmE,""":""""}",NAI MC,control
-0.74,40,36,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
-1,40,36,female,English,AmE,""":""""}",AI MC,control
-0,40,36,female,English,AmE,""":""""}",NAI MC,control
-0.71,40,36,female,English,AmE,""":""""}",know,ate the last cupcake
-1,40,36,female,English,AmE,""":""""}",confess,stole the money
-0.39,40,36,female,English,AmE,""":""""}",discover,saw the murder
-0.87,40,36,female,English,AmE,""":""""}",final NRRC,bought a new car
-1,40,36,female,English,AmE,""":""""}",confirm,lost his key
-0.89,40,36,female,English,AmE,""":""""}",be right,broke the plate
-0.1,78,45,male,English,AmE,""":""""}",NAI MC,control
-0.75,78,45,male,English,AmE,""":""""}",be right,broke the plate
-0.89,78,45,male,English,AmE,""":""""}",confirm,saw the murder
-0.88,78,45,male,English,AmE,""":""""}",medial NRRC,stole the money
-0.7,78,45,male,English,AmE,""":""""}",confess,bought a new car
-0.87,78,45,male,English,AmE,""":""""}",discover,cheated on his wife
-0.74,78,45,male,English,AmE,""":""""}",know,lost his key
-0.91,78,45,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
-0.89,78,45,male,English,AmE,""":""""}",AI MC,control
-0,54,40,male,English,AmE,""":""""}",NAI MC,control
-0.65,54,40,male,English,AmE,""":""""}",confess,cheated on his wife
-0.28,54,40,male,English,AmE,""":""""}",medial NRRC,bought a new car
-0.71,54,40,male,English,AmE,""":""""}",confirm,lost his key
-0.82,54,40,male,English,AmE,""":""""}",discover,stole the money
-0.16,54,40,male,English,AmE,""":""""}",be right,broke the plate
-0.8,54,40,male,English,AmE,""":""""}",know,ate the last cupcake
-0.89,54,40,male,English,AmE,""":""""}",final NRRC,saw the murder
-1,54,40,male,English,AmE,""":""""}",AI MC,control
-0.67,41,21,male,English,AmE,""":""""}",confirm,saw the murder
-0.75,41,21,male,English,AmE,""":""""}",final NRRC,lost his key
-0.14,41,21,male,English,AmE,""":""""}",confess,bought a new car
-0,41,21,male,English,AmE,""":""""}",NAI MC,control
-1,41,21,male,English,AmE,""":""""}",AI MC,control
-0,41,21,male,English,AmE,""":""""}",discover,stole the money
-0.25,41,21,male,English,AmE,""":""""}",know,ate the last cupcake
-0.19,41,21,male,English,AmE,""":""""}",medial NRRC,cheated on his wife
-0.41,41,21,male,English,AmE,""":""""}",be right,broke the plate
-0.05,31,57,female,English,AmE,""":""""}",NAI MC,control
-0.99,31,57,female,English,AmE,""":""""}",discover,bought a new car
-0.88,31,57,female,English,AmE,""":""""}",confirm,saw the murder
-0.84,31,57,female,English,AmE,""":""""}",be right,broke the plate
-1,31,57,female,English,AmE,""":""""}",AI MC,control
-1,31,57,female,English,AmE,""":""""}",medial NRRC,lost his key
-0.98,31,57,female,English,AmE,""":""""}",confess,cheated on his wife
-0.95,31,57,female,English,AmE,""":""""}",know,stole the money
-0.92,31,57,female,English,AmE,""":""""}",final NRRC,ate the last cupcake
-0.58,22,41,male,English,AmE,""":""""}",confess,broke the plate
-1,22,41,male,English,AmE,""":""""}",AI MC,control
-0.24,22,41,male,English,AmE,""":""""}",NAI MC,control
-0.75,22,41,male,English,AmE,""":""""}",know,lost his key
-0.72,22,41,male,English,AmE,""":""""}",confirm,bought a new car
-0.74,22,41,male,English,AmE,""":""""}",be right,cheated on his wife
-0.58,22,41,male,English,AmE,""":""""}",medial NRRC,saw the murder
-0.59,22,41,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
-0.72,22,41,male,English,AmE,""":""""}",discover,stole the money
-0.72,50,31,female,English,AmE,""":""""}",confess,cheated on his wife
-0.78,50,31,female,English,AmE,""":""""}",know,ate the last cupcake
-0.85,50,31,female,English,AmE,""":""""}",confirm,bought a new car
-0.25,50,31,female,English,AmE,""":""""}",be right,saw the murder
-0.66,50,31,female,English,AmE,""":""""}",medial NRRC,broke the plate
-1,50,31,female,English,AmE,""":""""}",AI MC,control
-0.87,50,31,female,English,AmE,""":""""}",discover,stole the money
-0.67,50,31,female,English,AmE,""":""""}",final NRRC,lost his key
-0.14,50,31,female,English,AmE,""":""""}",NAI MC,control
-0.25,49,24,male,English,AmE,""":""""}",medial NRRC,broke the plate
-0.36,49,24,male,English,AmE,""":""""}",discover,lost his key
-0.86,49,24,male,English,AmE,""":""""}",AI MC,control
-0.16,49,24,male,English,AmE,""":""""}",NAI MC,control
-0.64,49,24,male,English,AmE,""":""""}",know,ate the last cupcake
-0.74,49,24,male,English,AmE,""":""""}",final NRRC,saw the murder
-0.92,49,24,male,English,AmE,""":""""}",confirm,bought a new car
-0.8,49,24,male,English,AmE,""":""""}",confess,stole the money
-0.76,49,24,male,English,AmE,""":""""}",be right,cheated on his wife
-0.33,57,33,female,English,AmE,""":""""}",medial NRRC,stole the money
-0.32,57,33,female,English,AmE,""":""""}",know,broke the plate
-1,57,33,female,English,AmE,""":""""}",AI MC,control
-0.32,57,33,female,English,AmE,""":""""}",be right,lost his key
-0.62,57,33,female,English,AmE,""":""""}",confirm,bought a new car
-0.14,57,33,female,English,AmE,""":""""}",final NRRC,ate the last cupcake
-0.02,57,33,female,English,AmE,""":""""}",confess,saw the murder
-0.7,57,33,female,English,AmE,""":""""}",discover,cheated on his wife
-0,57,33,female,English,AmE,""":""""}",NAI MC,control
-0.8,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",discover,saw the murder
-1,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",AI MC,control
-1,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",confirm,bought a new car
-0,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",NAI MC,control
-0.9,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",know,lost his key
-1,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",final NRRC,ate the last cupcake
-0.9,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",confess,cheated on his wife
-0.71,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",medial NRRC,stole the money
-0.81,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",be right,broke the plate
-0.69,34,48,male,English,AmE,""":""""}",confess,broke the plate
-0.19,34,48,male,English,AmE,""":""""}",discover,saw the murder
-0.06,34,48,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
-1,34,48,male,English,AmE,""":""""}",AI MC,control
-0.16,34,48,male,English,AmE,""":""""}",confirm,stole the money
-0.11,34,48,male,English,AmE,""":""""}",be right,lost his key
-0,34,48,male,English,AmE,""":""""}",NAI MC,control
-1,34,48,male,English,AmE,""":""""}",know,cheated on his wife
-0.12,34,48,male,English,AmE,""":""""}",medial NRRC,bought a new car
-1,13,57,male,English,AmE,""":""Thank you""}",be right,saw the murder
-0.91,13,57,male,English,AmE,""":""Thank you""}",medial NRRC,lost his key
-1,13,57,male,English,AmE,""":""Thank you""}",know,stole the money
-0.92,13,57,male,English,AmE,""":""Thank you""}",final NRRC,broke the plate
-1,13,57,male,English,AmE,""":""Thank you""}",discover,bought a new car
-1,13,57,male,English,AmE,""":""Thank you""}",confirm,ate the last cupcake
-0,13,57,male,English,AmE,""":""Thank you""}",NAI MC,control
-1,13,57,male,English,AmE,""":""Thank you""}",AI MC,control
-0.92,13,57,male,English,AmE,""":""Thank you""}",confess,cheated on his wife
-0,45,44,male,English,AmE,""":""""}",be right,saw the murder
-0.51,45,44,male,English,AmE,""":""""}",confess,ate the last cupcake
-0.94,45,44,male,English,AmE,""":""""}",discover,cheated on his wife
-0.57,45,44,male,English,AmE,""":""""}",know,bought a new car
-0,45,44,male,English,AmE,""":""""}",NAI MC,control
+0,72,63,male,English,AmE,""":""""}",confess,ate the last cupcake
+0,72,63,male,English,AmE,""":""""}",AI MC,control
+0.4,72,63,male,English,AmE,""":""""}",be right,saw the murder
+1,72,63,male,English,AmE,""":""""}",NAI MC,control
+0.06000000000000005,72,63,male,English,AmE,""":""""}",confirm,broke the plate
+0.19999999999999996,72,63,male,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0.28,72,63,male,English,AmE,""":""""}",final NRRC,bought a new car
+0.08999999999999997,72,63,male,English,AmE,""":""""}",discover,lost his key
+0.33999999999999997,72,63,male,English,AmE,""":""""}",know,stole the money
+1,29,37,male,English,AmE,""":""""}",NAI MC,control
+0.9,29,37,male,English,AmE,""":""""}",know,saw the murder
+0,29,37,male,English,AmE,""":""""}",confess,broke the plate
+0,29,37,male,English,AmE,""":""""}",discover,bought a new car
+0,29,37,male,English,AmE,""":""""}",confirm,cheated on his wife
+0,29,37,male,English,AmE,""":""""}",final NRRC,lost his key
+0.20999999999999996,29,37,male,English,AmE,""":""""}",medial NRRC,ate the last cupcake
+0,29,37,male,English,AmE,""":""""}",AI MC,control
+0.09999999999999998,29,37,male,English,AmE,""":""""}",be right,stole the money
+0.09999999999999998,67,37,female,English,AmE,""":""""}",confirm,ate the last cupcake
+0,67,37,female,English,AmE,""":""""}",AI MC,control
+0.17000000000000004,67,37,female,English,AmE,""":""""}",discover,cheated on his wife
+0.31000000000000005,67,37,female,English,AmE,""":""""}",be right,stole the money
+0.26,67,37,female,English,AmE,""":""""}",medial NRRC,lost his key
+0.19999999999999996,67,37,female,English,AmE,""":""""}",confess,broke the plate
+0.36,67,37,female,English,AmE,""":""""}",know,saw the murder
+1,67,37,female,English,AmE,""":""""}",NAI MC,control
+0.63,67,37,female,English,AmE,""":""""}",final NRRC,bought a new car
+0.12,43,50,female,English,AmE,""":""""}",discover,ate the last cupcake
+0,43,50,female,English,AmE,""":""""}",know,cheated on his wife
+0.09999999999999998,43,50,female,English,AmE,""":""""}",confirm,broke the plate
+0.16000000000000003,43,50,female,English,AmE,""":""""}",be right,bought a new car
+0,43,50,female,English,AmE,""":""""}",AI MC,control
+1,43,50,female,English,AmE,""":""""}",NAI MC,control
+0.18000000000000005,43,50,female,English,AmE,""":""""}",medial NRRC,saw the murder
+0.17000000000000004,43,50,female,English,AmE,""":""""}",confess,stole the money
+0.19999999999999996,43,50,female,English,AmE,""":""""}",final NRRC,lost his key
+1,4,21,male,English,AmE,""":""""}",know,cheated on his wife
+0.44999999999999996,4,21,male,English,AmE,""":""""}",medial NRRC,lost his key
+0,4,21,male,English,AmE,""":""""}",confirm,ate the last cupcake
+0,4,21,male,English,AmE,""":""""}",AI MC,control
+0,4,21,male,English,AmE,""":""""}",discover,saw the murder
+0,4,21,male,English,AmE,""":""""}",be right,stole the money
+0.39,4,21,male,English,AmE,""":""""}",final NRRC,broke the plate
+1,4,21,male,English,AmE,""":""""}",confess,bought a new car
+1,4,21,male,English,AmE,""":""""}",NAI MC,control
+0.26,40,36,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0,40,36,female,English,AmE,""":""""}",AI MC,control
+1,40,36,female,English,AmE,""":""""}",NAI MC,control
+0.29000000000000004,40,36,female,English,AmE,""":""""}",know,ate the last cupcake
+0,40,36,female,English,AmE,""":""""}",confess,stole the money
+0.61,40,36,female,English,AmE,""":""""}",discover,saw the murder
+0.13,40,36,female,English,AmE,""":""""}",final NRRC,bought a new car
+0,40,36,female,English,AmE,""":""""}",confirm,lost his key
+0.10999999999999999,40,36,female,English,AmE,""":""""}",be right,broke the plate
+0.9,78,45,male,English,AmE,""":""""}",NAI MC,control
+0.25,78,45,male,English,AmE,""":""""}",be right,broke the plate
+0.10999999999999999,78,45,male,English,AmE,""":""""}",confirm,saw the murder
+0.12,78,45,male,English,AmE,""":""""}",medial NRRC,stole the money
+0.30000000000000004,78,45,male,English,AmE,""":""""}",confess,bought a new car
+0.13,78,45,male,English,AmE,""":""""}",discover,cheated on his wife
+0.26,78,45,male,English,AmE,""":""""}",know,lost his key
+0.08999999999999997,78,45,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0.10999999999999999,78,45,male,English,AmE,""":""""}",AI MC,control
+1,54,40,male,English,AmE,""":""""}",NAI MC,control
+0.35,54,40,male,English,AmE,""":""""}",confess,cheated on his wife
+0.72,54,40,male,English,AmE,""":""""}",medial NRRC,bought a new car
+0.29000000000000004,54,40,male,English,AmE,""":""""}",confirm,lost his key
+0.18000000000000005,54,40,male,English,AmE,""":""""}",discover,stole the money
+0.84,54,40,male,English,AmE,""":""""}",be right,broke the plate
+0.19999999999999996,54,40,male,English,AmE,""":""""}",know,ate the last cupcake
+0.10999999999999999,54,40,male,English,AmE,""":""""}",final NRRC,saw the murder
+0,54,40,male,English,AmE,""":""""}",AI MC,control
+0.32999999999999996,41,21,male,English,AmE,""":""""}",confirm,saw the murder
+0.25,41,21,male,English,AmE,""":""""}",final NRRC,lost his key
+0.86,41,21,male,English,AmE,""":""""}",confess,bought a new car
+1,41,21,male,English,AmE,""":""""}",NAI MC,control
+0,41,21,male,English,AmE,""":""""}",AI MC,control
+1,41,21,male,English,AmE,""":""""}",discover,stole the money
+0.75,41,21,male,English,AmE,""":""""}",know,ate the last cupcake
+0.81,41,21,male,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0.5900000000000001,41,21,male,English,AmE,""":""""}",be right,broke the plate
+0.95,31,57,female,English,AmE,""":""""}",NAI MC,control
+0.010000000000000009,31,57,female,English,AmE,""":""""}",discover,bought a new car
+0.12,31,57,female,English,AmE,""":""""}",confirm,saw the murder
+0.16000000000000003,31,57,female,English,AmE,""":""""}",be right,broke the plate
+0,31,57,female,English,AmE,""":""""}",AI MC,control
+0,31,57,female,English,AmE,""":""""}",medial NRRC,lost his key
+0.020000000000000018,31,57,female,English,AmE,""":""""}",confess,cheated on his wife
+0.050000000000000044,31,57,female,English,AmE,""":""""}",know,stole the money
+0.07999999999999996,31,57,female,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0.42000000000000004,22,41,male,English,AmE,""":""""}",confess,broke the plate
+0,22,41,male,English,AmE,""":""""}",AI MC,control
+0.76,22,41,male,English,AmE,""":""""}",NAI MC,control
+0.25,22,41,male,English,AmE,""":""""}",know,lost his key
+0.28,22,41,male,English,AmE,""":""""}",confirm,bought a new car
+0.26,22,41,male,English,AmE,""":""""}",be right,cheated on his wife
+0.42000000000000004,22,41,male,English,AmE,""":""""}",medial NRRC,saw the murder
+0.41000000000000003,22,41,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0.28,22,41,male,English,AmE,""":""""}",discover,stole the money
+0.28,50,31,female,English,AmE,""":""""}",confess,cheated on his wife
+0.21999999999999997,50,31,female,English,AmE,""":""""}",know,ate the last cupcake
+0.15000000000000002,50,31,female,English,AmE,""":""""}",confirm,bought a new car
+0.75,50,31,female,English,AmE,""":""""}",be right,saw the murder
+0.33999999999999997,50,31,female,English,AmE,""":""""}",medial NRRC,broke the plate
+0,50,31,female,English,AmE,""":""""}",AI MC,control
+0.13,50,31,female,English,AmE,""":""""}",discover,stole the money
+0.32999999999999996,50,31,female,English,AmE,""":""""}",final NRRC,lost his key
+0.86,50,31,female,English,AmE,""":""""}",NAI MC,control
+0.75,49,24,male,English,AmE,""":""""}",medial NRRC,broke the plate
+0.64,49,24,male,English,AmE,""":""""}",discover,lost his key
+0.14,49,24,male,English,AmE,""":""""}",AI MC,control
+0.84,49,24,male,English,AmE,""":""""}",NAI MC,control
+0.36,49,24,male,English,AmE,""":""""}",know,ate the last cupcake
+0.26,49,24,male,English,AmE,""":""""}",final NRRC,saw the murder
+0.07999999999999996,49,24,male,English,AmE,""":""""}",confirm,bought a new car
+0.19999999999999996,49,24,male,English,AmE,""":""""}",confess,stole the money
+0.24,49,24,male,English,AmE,""":""""}",be right,cheated on his wife
+0.6699999999999999,57,33,female,English,AmE,""":""""}",medial NRRC,stole the money
+0.6799999999999999,57,33,female,English,AmE,""":""""}",know,broke the plate
+0,57,33,female,English,AmE,""":""""}",AI MC,control
+0.6799999999999999,57,33,female,English,AmE,""":""""}",be right,lost his key
+0.38,57,33,female,English,AmE,""":""""}",confirm,bought a new car
+0.86,57,33,female,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0.98,57,33,female,English,AmE,""":""""}",confess,saw the murder
+0.30000000000000004,57,33,female,English,AmE,""":""""}",discover,cheated on his wife
+1,57,33,female,English,AmE,""":""""}",NAI MC,control
+0.19999999999999996,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",discover,saw the murder
+0,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",AI MC,control
+0,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",confirm,bought a new car
+1,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",NAI MC,control
+0.09999999999999998,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",know,lost his key
+0,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",final NRRC,ate the last cupcake
+0.09999999999999998,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",confess,cheated on his wife
+0.29000000000000004,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",medial NRRC,stole the money
+0.18999999999999995,15,32,female,English,AmE,""":""Most of the responses were functional, albeit a few sounded really awkward without further context given in the prior conversation the folks were having. It's a little hard to judge how natural or unnatural the sentences sound without a few more lines of prior dialogue to better understand the exact situations being discussed.""}",be right,broke the plate
+0.31000000000000005,34,48,male,English,AmE,""":""""}",confess,broke the plate
+0.81,34,48,male,English,AmE,""":""""}",discover,saw the murder
+0.94,34,48,male,English,AmE,""":""""}",final NRRC,ate the last cupcake
+0,34,48,male,English,AmE,""":""""}",AI MC,control
+0.84,34,48,male,English,AmE,""":""""}",confirm,stole the money
+0.89,34,48,male,English,AmE,""":""""}",be right,lost his key
+1,34,48,male,English,AmE,""":""""}",NAI MC,control
+0,34,48,male,English,AmE,""":""""}",know,cheated on his wife
+0.88,34,48,male,English,AmE,""":""""}",medial NRRC,bought a new car
+0,13,57,male,English,AmE,""":""Thank you""}",be right,saw the murder
+0.08999999999999997,13,57,male,English,AmE,""":""Thank you""}",medial NRRC,lost his key
+0,13,57,male,English,AmE,""":""Thank you""}",know,stole the money
+0.07999999999999996,13,57,male,English,AmE,""":""Thank you""}",final NRRC,broke the plate
+0,13,57,male,English,AmE,""":""Thank you""}",discover,bought a new car
+0,13,57,male,English,AmE,""":""Thank you""}",confirm,ate the last cupcake
+1,13,57,male,English,AmE,""":""Thank you""}",NAI MC,control
+0,13,57,male,English,AmE,""":""Thank you""}",AI MC,control
+0.07999999999999996,13,57,male,English,AmE,""":""Thank you""}",confess,cheated on his wife
+1,45,44,male,English,AmE,""":""""}",be right,saw the murder
+0.49,45,44,male,English,AmE,""":""""}",confess,ate the last cupcake
+0.06000000000000005,45,44,male,English,AmE,""":""""}",discover,cheated on his wife
+0.43000000000000005,45,44,male,English,AmE,""":""""}",know,bought a new car
+1,45,44,male,English,AmE,""":""""}",NAI MC,control
 0.5,45,44,male,English,AmE,""":""""}",medial NRRC,stole the money
 0.5,45,44,male,English,AmE,""":""""}",final NRRC,broke the plate
-1,45,44,male,English,AmE,""":""""}",AI MC,control
-0.65,45,44,male,English,AmE,""":""""}",confirm,lost his key
-0.4,6,29,female,English,AmE,""":""none""}",medial NRRC,ate the last cupcake
-1,6,29,female,English,AmE,""":""none""}",AI MC,control
-0.26,6,29,female,English,AmE,""":""none""}",final NRRC,stole the money
-0,6,29,female,English,AmE,""":""none""}",NAI MC,control
-0.38,6,29,female,English,AmE,""":""none""}",know,bought a new car
-0.59,6,29,female,English,AmE,""":""none""}",discover,cheated on his wife
-0.4,6,29,female,English,AmE,""":""none""}",confirm,saw the murder
-0.39,6,29,female,English,AmE,""":""none""}",be right,lost his key
-0.65,6,29,female,English,AmE,""":""none""}",confess,broke the plate
-0.39,10,39,female,English,AmE,""":""""}",confirm,ate the last cupcake
-1,10,39,female,English,AmE,""":""""}",AI MC,control
-0.81,10,39,female,English,AmE,""":""""}",know,saw the murder
-0,10,39,female,English,AmE,""":""""}",final NRRC,stole the money
-0.87,10,39,female,English,AmE,""":""""}",discover,broke the plate
-0.34,10,39,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
-0.42,10,39,female,English,AmE,""":""""}",be right,bought a new car
-0.32,10,39,female,English,AmE,""":""""}",confess,lost his key
-0,10,39,female,English,AmE,""":""""}",NAI MC,control
-0.81,17,61,female,English,AmE,""":""""}",be right,ate the last cupcake
-0.01,17,61,female,English,AmE,""":""""}",NAI MC,control
-0.96,17,61,female,English,AmE,""":""""}",discover,bought a new car
-0.9,17,61,female,English,AmE,""":""""}",know,saw the murder
-1,17,61,female,English,AmE,""":""""}",medial NRRC,broke the plate
-1,17,61,female,English,AmE,""":""""}",AI MC,control
-1,17,61,female,English,AmE,""":""""}",confirm,stole the money
-1,17,61,female,English,AmE,""":""""}",final NRRC,lost his key
-0.99,17,61,female,English,AmE,""":""""}",confess,cheated on his wife
-0.61,18,77,female,English,AmE,""":""none""}",confess,cheated on his wife
-0.64,18,77,female,English,AmE,""":""none""}",be right,stole the money
-0.74,18,77,female,English,AmE,""":""none""}",final NRRC,saw the murder
-0.82,18,77,female,English,AmE,""":""none""}",know,broke the plate
-0.52,18,77,female,English,AmE,""":""none""}",medial NRRC,bought a new car
-1,18,77,female,English,AmE,""":""none""}",AI MC,control
-1,18,77,female,English,AmE,""":""none""}",discover,lost his key
-1,18,77,female,English,AmE,""":""none""}",confirm,ate the last cupcake
-0,18,77,female,English,AmE,""":""none""}",NAI MC,control
-1,3,37,male,English,AmE,""":""""}",discover,lost his key
-0.32,3,37,male,English,AmE,""":""""}",confess,saw the murder
-0.33,3,37,male,English,AmE,""":""""}",know,ate the last cupcake
-1,3,37,male,English,AmE,""":""""}",AI MC,control
-0,3,37,male,English,AmE,""":""""}",NAI MC,control
+0,45,44,male,English,AmE,""":""""}",AI MC,control
+0.35,45,44,male,English,AmE,""":""""}",confirm,lost his key
+0.6,6,29,female,English,AmE,""":""none""}",medial NRRC,ate the last cupcake
+0,6,29,female,English,AmE,""":""none""}",AI MC,control
+0.74,6,29,female,English,AmE,""":""none""}",final NRRC,stole the money
+1,6,29,female,English,AmE,""":""none""}",NAI MC,control
+0.62,6,29,female,English,AmE,""":""none""}",know,bought a new car
+0.41000000000000003,6,29,female,English,AmE,""":""none""}",discover,cheated on his wife
+0.6,6,29,female,English,AmE,""":""none""}",confirm,saw the murder
+0.61,6,29,female,English,AmE,""":""none""}",be right,lost his key
+0.35,6,29,female,English,AmE,""":""none""}",confess,broke the plate
+0.61,10,39,female,English,AmE,""":""""}",confirm,ate the last cupcake
+0,10,39,female,English,AmE,""":""""}",AI MC,control
+0.18999999999999995,10,39,female,English,AmE,""":""""}",know,saw the murder
+1,10,39,female,English,AmE,""":""""}",final NRRC,stole the money
+0.13,10,39,female,English,AmE,""":""""}",discover,broke the plate
+0.6599999999999999,10,39,female,English,AmE,""":""""}",medial NRRC,cheated on his wife
+0.5800000000000001,10,39,female,English,AmE,""":""""}",be right,bought a new car
+0.6799999999999999,10,39,female,English,AmE,""":""""}",confess,lost his key
+1,10,39,female,English,AmE,""":""""}",NAI MC,control
+0.18999999999999995,17,61,female,English,AmE,""":""""}",be right,ate the last cupcake
+0.99,17,61,female,English,AmE,""":""""}",NAI MC,control
+0.040000000000000036,17,61,female,English,AmE,""":""""}",discover,bought a new car
+0.09999999999999998,17,61,female,English,AmE,""":""""}",know,saw the murder
+0,17,61,female,English,AmE,""":""""}",medial NRRC,broke the plate
+0,17,61,female,English,AmE,""":""""}",AI MC,control
+0,17,61,female,English,AmE,""":""""}",confirm,stole the money
+0,17,61,female,English,AmE,""":""""}",final NRRC,lost his key
+0.010000000000000009,17,61,female,English,AmE,""":""""}",confess,cheated on his wife
+0.39,18,77,female,English,AmE,""":""none""}",confess,cheated on his wife
+0.36,18,77,female,English,AmE,""":""none""}",be right,stole the money
+0.26,18,77,female,English,AmE,""":""none""}",final NRRC,saw the murder
+0.18000000000000005,18,77,female,English,AmE,""":""none""}",know,broke the plate
+0.48,18,77,female,English,AmE,""":""none""}",medial NRRC,bought a new car
+0,18,77,female,English,AmE,""":""none""}",AI MC,control
+0,18,77,female,English,AmE,""":""none""}",discover,lost his key
+0,18,77,female,English,AmE,""":""none""}",confirm,ate the last cupcake
+1,18,77,female,English,AmE,""":""none""}",NAI MC,control
+0,3,37,male,English,AmE,""":""""}",discover,lost his key
+0.6799999999999999,3,37,male,English,AmE,""":""""}",confess,saw the murder
+0.6699999999999999,3,37,male,English,AmE,""":""""}",know,ate the last cupcake
+0,3,37,male,English,AmE,""":""""}",AI MC,control
+1,3,37,male,English,AmE,""":""""}",NAI MC,control
 0.5,3,37,male,English,AmE,""":""""}",final NRRC,broke the plate
-0.54,3,37,male,English,AmE,""":""""}",confirm,cheated on his wife
-0,3,37,male,English,AmE,""":""""}",be right,stole the money
-0.67,3,37,male,English,AmE,""":""""}",medial NRRC,bought a new car
-0.43,39,44,female,English,AmE,""":""""}",final NRRC,saw the murder
-0.58,39,44,female,English,AmE,""":""""}",confess,ate the last cupcake
-0.8,39,44,female,English,AmE,""":""""}",know,stole the money
-0,39,44,female,English,AmE,""":""""}",NAI MC,control
-0.58,39,44,female,English,AmE,""":""""}",discover,lost his key
-1,39,44,female,English,AmE,""":""""}",AI MC,control
-0.79,39,44,female,English,AmE,""":""""}",confirm,broke the plate
-0.58,39,44,female,English,AmE,""":""""}",be right,cheated on his wife
-0.22,39,44,female,English,AmE,""":""""}",medial NRRC,bought a new car
+0.45999999999999996,3,37,male,English,AmE,""":""""}",confirm,cheated on his wife
+1,3,37,male,English,AmE,""":""""}",be right,stole the money
+0.32999999999999996,3,37,male,English,AmE,""":""""}",medial NRRC,bought a new car
+0.5700000000000001,39,44,female,English,AmE,""":""""}",final NRRC,saw the murder
+0.42000000000000004,39,44,female,English,AmE,""":""""}",confess,ate the last cupcake
+0.19999999999999996,39,44,female,English,AmE,""":""""}",know,stole the money
+1,39,44,female,English,AmE,""":""""}",NAI MC,control
+0.42000000000000004,39,44,female,English,AmE,""":""""}",discover,lost his key
+0,39,44,female,English,AmE,""":""""}",AI MC,control
+0.20999999999999996,39,44,female,English,AmE,""":""""}",confirm,broke the plate
+0.42000000000000004,39,44,female,English,AmE,""":""""}",be right,cheated on his wife
+0.78,39,44,female,English,AmE,""":""""}",medial NRRC,bought a new car

@@ -53,8 +53,8 @@ betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
 m.b = brm(formula = betamodel,
           family=Beta(),
           data=t, 
-          cores = 4, iter = 3000, warmup = 500,
-          control = list(adapt_delta = .95,max_treedepth=15))
+          cores = 4, iter = 3500, warmup = 700,
+          control = list(adapt_delta = .99,max_treedepth=15))
 
 # model summary
 summary(m.b)
@@ -87,7 +87,7 @@ pairwise
 # save the pairwise comparison
 write_csv(pairwise,file="../models/pairwise1.csv")
 
-# load the pairwise comparison
+# load the pairwise comparison ----
 pairwise = read_csv(file="../models/pairwise1.csv")
 pairwise
 
@@ -124,21 +124,16 @@ tableInput = pairwise %>%
 tableInput$second = trimws(tableInput$second)
 tableInput
 
-# create separate dataframes for each expression
-predicates = unique(as.character(t$expression))
-predicates
-predicates <- replace(predicates, 4, "be.right") 
-predicates
-
 # make tableInput a dataframe
 tableInput <- as.data.frame(tableInput)
-tableInput = tableInput %>%
-  mutate(first = recode(first,"be right" = "be.right")) %>%
-  mutate(second = recode(second,"be right" = "be.right"))
 tableInput
 
+# create separate dataframes for each expression
+expressions = unique(as.character(t$expression))
+expressions
+
 # create a separate dataframe for each predicate
-for (p in predicates) {
+for (p in expressions) {
   assign(paste("data.", p, sep=""), subset(tableInput, tableInput$first == p | tableInput$second == p))
   assign(paste("data.", p, sep=""), get(paste("data.", p, sep="")) %>% mutate(expression = c(p)))
   write(paste("data.",p,sep=""),file=paste("../models/data.",p,sep=""))
@@ -151,7 +146,7 @@ tableData = data.frame(expression = character(), comparisonExpression = characte
 tableData
 
 # fill tableData with the relevant information from the individual predicates' dataframes
-for (p in predicates) {
+for (p in expressions) {
   for (i in 1:nrow(get(paste("data.",p,sep="")))) {
     print(p)
     # define some expressions
@@ -181,37 +176,34 @@ nrow(exp2)
 means.exp2 = exp2 %>%
   filter(!(expression == "AI MC" | expression == "NAI MC")) %>%
   group_by(expression) %>%
-  summarize(Mean.exp2 = mean(response)) %>%
-  mutate(expression = recode(expression,"be right" = "be.right"))
+  summarize(Mean = mean(response)) 
 means.exp2
+means.exp2$expression = factor(means.exp2$expression, levels=means.exp2$expression[order(means.exp2$Mean)], ordered=TRUE)
+levels(means.exp2$expression)
 
-tableData$expression = factor(tableData$expression, levels=means.exp2$expression[order(means.exp2$expression)], ordered=TRUE)
+tableData$expression = factor(tableData$expression, levels=means.exp2$expression[order(means.exp2$Mean)], ordered=TRUE)
 tableData
 levels(tableData$expression)
-tableData$expression = factor(tableData$expression, ordered = FALSE )
-str(tableData$expression)
-str(tmp$expression)
 
 # join the tmp dataframe with tableData
-tableData = left_join(tableData, tmp)
+tableData = left_join(tableData, means.exp2)
 tableData
 
 # also sort the other header row by Exp 2 means
-tableData$comparisonExpression = factor(tableData$comparisonExpression, levels=means.exp2$expression[order(means.exp2$expression)], ordered=TRUE)
+tableData$comparisonExpression = factor(tableData$comparisonExpression, levels=means.exp2$expression[order(means.exp2$Mean)], ordered=TRUE)
 
 # sort by mean (first column) and comparisonExpression (second column)
 tableData <- tableData %>% arrange(Mean, comparisonExpression)
 tableData
 
-# colorcode the cells (just white = HDI contains 0, gray = HDI doesn't contain 0)
-
+# colorcode the cells (just white = HDI contains 0, red = HDI doesn't contain 0)
 tableData$cellColor = ifelse(tableData$lower <= 0 & tableData$upper >= 0, "\\cellcolor{white}",
-                             ifelse(tableData$lower < 0 & tableData$upper < 0 & tableData$value <= -1.5, "\\cellcolor{gray}",
-                                    ifelse(tableData$lower < 0 & tableData$upper < 0 & -1.5 < tableData$value & tableData$value <= -0.5, "\\cellcolor{gray}",
-                                           ifelse(tableData$lower < 0 & tableData$upper < 0 & -.5 < tableData$value & tableData$value <= 0, "\\cellcolor{gray}",
-                                                  ifelse(tableData$lower > 0 & tableData$upper > 0 & tableData$value >= 1.5, "\\cellcolor{gray}",
-                                                         ifelse(tableData$lower > 0 & tableData$upper > 0 & 1.5 > tableData$value & tableData$value > 0.5, "\\cellcolor{gray}",
-                                                                ifelse(tableData$lower > 0 & tableData$upper > 0 & .5 > tableData$value & tableData$value >= 0, "\\cellcolor{gray}", "error")))))))
+                             ifelse(tableData$lower < 0 & tableData$upper < 0 & tableData$value <= -1.5, "\\cellcolor{blue}",
+                                    ifelse(tableData$lower < 0 & tableData$upper < 0 & -1.5 < tableData$value & tableData$value <= -0.5, "\\cellcolor{blue}",
+                                           ifelse(tableData$lower < 0 & tableData$upper < 0 & -.5 < tableData$value & tableData$value <= 0, "\\cellcolor{blue}",
+                                                  ifelse(tableData$lower > 0 & tableData$upper > 0 & tableData$value >= 1.5, "\\cellcolor{red}",
+                                                         ifelse(tableData$lower > 0 & tableData$upper > 0 & 1.5 > tableData$value & tableData$value > 0.5, "\\cellcolor{red}",
+                                                                ifelse(tableData$lower > 0 & tableData$upper > 0 & .5 > tableData$value & tableData$value >= 0, "\\cellcolor{red}", "error")))))))
 tableData$cellColor
 #view(tableData)
 
@@ -237,6 +229,31 @@ tableData = tableData %>% mutate(across(everything(), ~replace_na(.x, "\\cellcol
 #   ))
 
 #view(tableData)
+
+# turn all lower triangle cells black, by each column
+tmp = tableData %>% 
+  mutate('be right' = case_when('be right' = TRUE ~ "\\cellcolor{black}"))
+tmp = tmp %>% 
+  mutate(confirm = case_when(confirm = TRUE & expression != 'be right' ~ "\\cellcolor{black}",
+                             TRUE ~ confirm))
+tmp = tmp %>% 
+  mutate(discover = case_when(discover = TRUE & (expression != 'be right' & expression != "confirm") ~ "\\cellcolor{black}",
+                              TRUE ~ discover))
+tmp = tmp %>% 
+  mutate(confess = case_when(confess = TRUE & (expression != 'be right' & expression != "confirm" & expression != "discover") ~ "\\cellcolor{black}",
+                             TRUE ~ confess))
+tmp = tmp %>% 
+  mutate(know = case_when(know = TRUE & (expression != 'be right' & expression != "confirm" 
+                                         & expression != "discover" & expression != "confess") ~ "\\cellcolor{black}",
+                          TRUE ~ know))
+tmp = tmp %>% 
+  mutate(`final NRRC` = case_when(`final NRRC` = TRUE & (expression != 'be right' & expression != "confirm" 
+                                                         & expression != "discover" & expression != "confess"
+                                                         & expression != "know") ~ "\\cellcolor{black}",
+                                  TRUE ~ `final NRRC`))
+
+tmp
+tableData = tmp
 
 # now create the table to include in the paper
 table1 = print(xtable(tableData),

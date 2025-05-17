@@ -46,6 +46,24 @@ summary(t$betaresponse)
 prior = get_prior(betaresponse ~ expression + (1|participantID) + (1|cc),family = Beta(),data=t)
 prior
 
+# set priors
+priors = c(set_prior("student_t(2, 0, 10)", class = "b"))
+
+# for prior predictive check
+prior.check = brm(betaresponse ~ expression + (1|participantID) + (1|cc),
+          data=t,
+          prior = priors,
+          sample_prior = "only")
+
+pp_check(prior.check)
+
+m.b = brm(nResponse ~ expression + (1|participantID) + (1|cc),
+          family=bernoulli(),
+          data=t, 
+          #prior = priors,
+
+priors = c(set_prior('normal(0,10)', class = 'b'))
+
 betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
                phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision 
                family = Beta())
@@ -53,8 +71,9 @@ betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
 m.b = brm(formula = betamodel,
           family=Beta(),
           data=t, 
-          cores = 3, iter = 4000, warmup = 700,
-          control = list(adapt_delta = .99,max_treedepth=17))
+          prior = priors,
+          cores = 4, iter = 5000, warmup = 800,
+          control = list(adapt_delta = .97, max_treedepth=20))
 
 # model summary
 summary(m.b)
@@ -127,14 +146,10 @@ tableInput
 # create separate dataframes for each expression
 predicates = unique(as.character(t$expression))
 predicates
-predicates <- replace(predicates, 4, "be.right") 
-predicates
+
 
 # make tableInput a dataframe
 tableInput <- as.data.frame(tableInput)
-tableInput = tableInput %>%
-  mutate(first = recode(first,"be right" = "be.right")) %>%
-  mutate(second = recode(second,"be right" = "be.right"))
 tableInput
 
 # create a separate dataframe for each predicate
@@ -181,26 +196,22 @@ nrow(exp2)
 means.exp2 = exp2 %>%
   filter(!(expression == "AI MC" | expression == "NAI MC")) %>%
   group_by(expression) %>%
-  summarize(Mean.exp2 = mean(response)) %>%
-  mutate(expression = recode(expression,"be right" = "be.right"))
+  summarize(Mean.exp2 = mean(response))
 means.exp2
 
-tableData$expression = factor(tableData$expression, levels=means.exp2$expression[order(means.exp2$expression)], ordered=TRUE)
+tableData$expression = factor(tableData$expression, levels=means.exp2$expression[order(means.exp2$Mean.exp2)], ordered=TRUE)
 tableData
 levels(tableData$expression)
-tableData$expression = factor(tableData$expression, ordered = FALSE )
-str(tableData$expression)
-str(tmp$expression)
 
 # join the tmp dataframe with tableData
-tableData = left_join(tableData, tmp)
+tableData = left_join(tableData, means.exp2)
 tableData
 
 # also sort the other header row by Exp 2 means
-tableData$comparisonExpression = factor(tableData$comparisonExpression, levels=means.exp2$expression[order(means.exp2$expression)], ordered=TRUE)
+tableData$comparisonExpression = factor(tableData$comparisonExpression, levels=means.exp2$expression[order(means.exp2$Mean.exp2)], ordered=TRUE)
 
 # sort by mean (first column) and comparisonExpression (second column)
-tableData <- tableData %>% arrange(Mean, comparisonExpression)
+tableData <- tableData %>% arrange(Mean.exp2, comparisonExpression)
 tableData
 
 # colorcode the cells (just white = HDI contains 0, gray = HDI doesn't contain 0)
@@ -218,6 +229,7 @@ tableData$cellColor
 # select relevant columns to make the latex table
 tableData = tableData %>%
   select(c(expression,comparisonExpression,cellColor))
+tableData
 
 # spread the data wide
 tableData = tableData %>%

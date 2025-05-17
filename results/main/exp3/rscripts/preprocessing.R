@@ -202,8 +202,6 @@ d = d %>%
   filter(!(participantID %in% outliers.bad$participantID))
 length(unique(d$participantID)) # 71 (so 7 participants excluded)
 
-# (conglei thesis: only excluded 5 participants)
-
 # age and gender of remaining participants
 table(d$age) #18-372
 length(which(is.na(d$age))) # 0 missing values
@@ -221,6 +219,16 @@ d %>%
 # 4 preferNoToSay   1
 
 nrow(d)
+
+# code response such that 1 = not-at-issue and 0 = at-issue
+d$response = 1-d$response
+table(d$response)
+
+means = d %>%
+  filter(!(expression == "controlBad" | expression == "controlGood")) %>%
+  group_by(expression) %>%
+  summarize(Mean = mean(response))
+means
 
 write_csv(d, file="../data/cd.csv")
 
