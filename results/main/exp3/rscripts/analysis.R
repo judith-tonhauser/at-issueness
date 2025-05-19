@@ -47,33 +47,29 @@ prior = get_prior(betaresponse ~ expression + (1|participantID) + (1|cc),family 
 prior
 
 # set priors
-priors = c(set_prior("student_t(2, 0, 10)", class = "b"))
+priors = c(set_prior("cauchy(0, .001)", class = "b"))
 
 # for prior predictive check
 prior.check = brm(betaresponse ~ expression + (1|participantID) + (1|cc),
           data=t,
           prior = priors,
+          iter = 7000,
+          control = list(adapt_delta = .97, max_treedepth=20),
           sample_prior = "only")
 
 pp_check(prior.check)
 
-m.b = brm(nResponse ~ expression + (1|participantID) + (1|cc),
-          family=bernoulli(),
-          data=t, 
-          #prior = priors,
-
-priors = c(set_prior('normal(0,10)', class = 'b'))
-
 betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
                phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision 
-               family = Beta())
+               family = Beta(),
+               center = FALSE)
 
 m.b = brm(formula = betamodel,
           family=Beta(),
           data=t, 
           prior = priors,
-          cores = 4, iter = 5000, warmup = 800,
-          control = list(adapt_delta = .97, max_treedepth=20))
+          cores = 4, iter = 3000, warmup = 500,
+          control = list(adapt_delta = .95, max_treedepth=15))
 
 # model summary
 summary(m.b)
@@ -217,12 +213,12 @@ tableData
 # colorcode the cells (just white = HDI contains 0, gray = HDI doesn't contain 0)
 
 tableData$cellColor = ifelse(tableData$lower <= 0 & tableData$upper >= 0, "\\cellcolor{white}",
-                             ifelse(tableData$lower < 0 & tableData$upper < 0 & tableData$value <= -1.5, "\\cellcolor{gray}",
-                                    ifelse(tableData$lower < 0 & tableData$upper < 0 & -1.5 < tableData$value & tableData$value <= -0.5, "\\cellcolor{gray}",
-                                           ifelse(tableData$lower < 0 & tableData$upper < 0 & -.5 < tableData$value & tableData$value <= 0, "\\cellcolor{gray}",
-                                                  ifelse(tableData$lower > 0 & tableData$upper > 0 & tableData$value >= 1.5, "\\cellcolor{gray}",
-                                                         ifelse(tableData$lower > 0 & tableData$upper > 0 & 1.5 > tableData$value & tableData$value > 0.5, "\\cellcolor{gray}",
-                                                                ifelse(tableData$lower > 0 & tableData$upper > 0 & .5 > tableData$value & tableData$value >= 0, "\\cellcolor{gray}", "error")))))))
+                             ifelse(tableData$lower < 0 & tableData$upper < 0, "\\cellcolor{blue}",
+                                    ifelse(tableData$lower < 0 & tableData$upper < 0, "\\cellcolor{blue}",
+                                           ifelse(tableData$lower < 0 & tableData$upper < 0, "\\cellcolor{blue}",
+                                                  ifelse(tableData$lower > 0 & tableData$upper > 0, "\\cellcolor{red}",
+                                                         ifelse(tableData$lower > 0 & tableData$upper > 0, "\\cellcolor{red}",
+                                                                ifelse(tableData$lower > 0 & tableData$upper > 0, "\\cellcolor{red}", "error")))))))
 tableData$cellColor
 #view(tableData)
 
@@ -265,3 +261,167 @@ table1 = print(xtable(tableData),
 
 write(table1, "../models/table1.tex")
 
+# non-Bayesian linear model ----
+
+# set working directory to directory of script
+this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
+setwd(this.dir)
+
+# load helper functions
+source('../../../helpers.R')
+
+# load cleaned data
+d = read_csv("../data/cd.csv")
+nrow(d)
+
+length(unique(d$participantID)) #71 participants
+
+# exclude controls
+t = d %>%
+  filter(!(expression == "controlBad" | expression == "controlGood"))
+table(t$expression)
+
+# set reference level
+t = t %>%
+  mutate(expression = fct_relevel(expression, "be right"))
+levels(t$expression)
+
+m = lm(response ~ expression, data=t)
+m
+
+pc = emmeans(m, pairwise ~ expression)
+pc
+
+#be right - medial NRRC   -0.129859 0.0427 490  -3.042  0.0395
+#know - medial NRRC       -0.130845 0.0427 490  -3.066  0.0369
+
+pairwise = pc
+
+# select needed columns from the pairwise comparison for the table input
+tableInput = pairwise %>%
+  select(c(contrast, .value, .lower, .upper, first, second)) %>%
+  select(-c(contrast))
+tableInput$second = trimws(tableInput$second)
+tableInput
+
+# create separate dataframes for each expression
+predicates = unique(as.character(t$expression))
+predicates
+
+
+# make tableInput a dataframe
+tableInput <- as.data.frame(tableInput)
+tableInput
+
+# create a separate dataframe for each predicate
+for (p in predicates) {
+  assign(paste("data.", p, sep=""), subset(tableInput, tableInput$first == p | tableInput$second == p))
+  assign(paste("data.", p, sep=""), get(paste("data.", p, sep="")) %>% mutate(expression = c(p)))
+  write(paste("data.",p,sep=""),file=paste("../models/data.",p,sep=""))
+}
+
+# change dataframes such that value, lower and upper is consistent by expression in first position
+
+# create a tableData dataframe
+tableData = data.frame(expression = character(), comparisonExpression = character(), value = numeric(), lower = numeric(), upper = numeric())
+tableData
+
+# fill tableData with the relevant information from the individual predicates' dataframes
+for (p in predicates) {
+  for (i in 1:nrow(get(paste("data.",p,sep="")))) {
+    print(p)
+    # define some expressions
+    valueOld = get(paste("data.",p,sep=""))[i,]$.value
+    lowerOld = get(paste("data.",p,sep=""))[i,]$.lower
+    upperOld = get(paste("data.",p,sep=""))[i,]$.upper
+    first = get(paste("data.",p,sep=""))[i,]$first
+    second = get(paste("data.",p,sep=""))[i,]$second
+    expression = get(paste("data.",p,sep=""))[i,]$expression
+    # now fill the dataframe
+    comparisonExpression = ifelse(expression == first, second, first)
+    value = ifelse(expression == first, valueOld, -valueOld)
+    lower = ifelse(expression == first, lowerOld, -upperOld)
+    upper = ifelse(expression == first, upperOld, -lowerOld)
+    tableData = tableData %>%
+      add_row(expression = p, comparisonExpression = comparisonExpression, value = value, lower = lower, upper = upper)
+  }
+}
+
+tableData
+
+# sort expressions in dataframe by mean rating in Exp 2 (asking whether)
+
+exp2 = read.csv("../../exp2/data/cd.csv")
+nrow(exp2)
+
+means.exp2 = exp2 %>%
+  filter(!(expression == "AI MC" | expression == "NAI MC")) %>%
+  group_by(expression) %>%
+  summarize(Mean.exp2 = mean(response))
+means.exp2
+
+tableData$expression = factor(tableData$expression, levels=means.exp2$expression[order(means.exp2$Mean.exp2)], ordered=TRUE)
+tableData
+levels(tableData$expression)
+
+# join the tmp dataframe with tableData
+tableData = left_join(tableData, means.exp2)
+tableData
+
+# also sort the other header row by Exp 2 means
+tableData$comparisonExpression = factor(tableData$comparisonExpression, levels=means.exp2$expression[order(means.exp2$Mean.exp2)], ordered=TRUE)
+
+# sort by mean (first column) and comparisonExpression (second column)
+tableData <- tableData %>% arrange(Mean.exp2, comparisonExpression)
+tableData
+
+# colorcode the cells (just white = HDI contains 0, gray = HDI doesn't contain 0)
+
+tableData$cellColor = ifelse(tableData$lower <= 0 & tableData$upper >= 0, "\\cellcolor{white}",
+                             ifelse(tableData$lower < 0 & tableData$upper < 0, "\\cellcolor{blue}",
+                                    ifelse(tableData$lower < 0 & tableData$upper < 0, "\\cellcolor{blue}",
+                                           ifelse(tableData$lower < 0 & tableData$upper < 0, "\\cellcolor{blue}",
+                                                  ifelse(tableData$lower > 0 & tableData$upper > 0, "\\cellcolor{red}",
+                                                         ifelse(tableData$lower > 0 & tableData$upper > 0, "\\cellcolor{red}",
+                                                                ifelse(tableData$lower > 0 & tableData$upper > 0, "\\cellcolor{red}", "error")))))))
+tableData$cellColor
+#view(tableData)
+
+# select relevant columns to make the latex table
+tableData = tableData %>%
+  select(c(expression,comparisonExpression,cellColor))
+tableData
+
+# spread the data wide
+tableData = tableData %>%
+  spread(comparisonExpression,cellColor)
+
+# replace NA with gray cells and expressions with color coded versions
+tableData = tableData %>% mutate(across(everything(), ~replace_na(.x, "\\cellcolor{black}")))
+# tableData = tableData %>%
+#   mutate(expression = recode(expression,
+#                              "know" = "\\color{orange}{\\bf know}\\color{black}",
+#                              "confess" = "\\color{black}{\\bf confess}\\color{black}",
+#                              "discover" = "\\color{orange}{\\bf discover}\\color{black}",
+#                              "be.right" = "\\color{black}{\\bf be right}\\color{black}",
+#                              "confirm" = "\\color{black}{\\bf confirm}\\color{black}",
+#                              "medial NRRC" = "\\color{black}{\\bf medial NRRC}\\color{black}",
+#                              "final NRRC" = "\\color{black}{\\bf final NRRC}\\color{black}"                             
+#   ))
+
+#view(tableData)
+
+# now create the table to include in the paper
+table1 = print(xtable(tableData),
+               only.contents = T,
+               include.rownames=FALSE,
+               include.colnames=FALSE,
+               floating=FALSE,
+               hline.after = NULL,
+               latex.environments=NULL,
+               booktabs=TRUE,
+               sanitize.text.function = function(x){x},
+               comment = F
+)
+
+write(table1, "../models/table1.tex")
