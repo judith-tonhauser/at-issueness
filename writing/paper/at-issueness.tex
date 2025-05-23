@@ -27,7 +27,27 @@
 % All changes are documented on the github repository 
 % https://github.com/guidovw/Glossalatex.
 
-\documentclass[times,linguex]{glossa}
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[times,linguex,xcolor]{glossa}
+\usepackage{rotating}
+\usepackage{tablefootnote}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{booktabs}
+
+\usepackage{adjustbox}
+\usepackage{array}
+
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+
+\newcommand*\rots{\multicolumn{1}{R{90}{.7em}}}% no optional argument here, please!
+%\usepackage{xcolor}
+
 % possible options:
 % [times] for Times font (default if no option is chosen)
 % [cm] for Computer Modern font
@@ -49,7 +69,8 @@
 \let\B\relax %to resolve a conflict in the definition of these commands between xyling and xunicode (the latter called by fontspec, called by charis)
 \let\T\relax
 \usepackage{xyling} %for trees; the use of xyling with the CharisSIL font produces poor results in the branches. This problem does not arise with the packages qtree or forest.
-\usepackage[linguistics]{forest} %for nice trees!
+%\usepackage[linguistics]{forest} %for nice trees!
+
 
 % \pdf* commands provide metadata for the PDF output. ASCII characters only!
 \pdfauthor{}
@@ -77,6 +98,22 @@
 }
 
 \input{author-added}
+
+% positive coefficients/difference
+\definecolor{purple1}{RGB}{178,24,43}
+\definecolor{purple2}{RGB}{239,138,98} 
+\definecolor{purple3}{RGB}{253,219,199} 
+%\definecolor{yellow4}{RGB}{255,255,204}
+%\definecolor{green1}{RGB}{0, 158, 115} % >.95
+%\definecolor{green2}{RGB}{55, 185, 141} % .85-.95
+%\definecolor{green3}{RGB}{88, 214, 167} % .75-.85
+%\definecolor{green4}{RGB}{119, 242, 194} % <.75
+
+% negative coefficients/difference
+\definecolor{yellow1}{RGB}{33,102,172}
+\definecolor{yellow2}{RGB}{103,169,207}
+\definecolor{yellow3}{RGB}{209,229,240}
+%\definecolor{purple4}{RGB}{236,206,223}
 
 \begin{document}
 
@@ -223,9 +260,14 @@
     To investigate how consistent the diagnostics are, we conducted four experiments measuring the at-issueness of the same contents across diagnostics. Prior research has identified disagreements, potentially arising from diagnostic differences:
 
     \subsubsection{Medial appositives}  
+      To investigate how consistent the diagnostics are, we conducted four experiments measuring the at-issueness of the same contents across diagnostics.
+    
+    {\bf section 1 also needs to say something about how we will compare the diagnostics. my current thinking is: do they distinguish contents that have been distinguished in prior research (in the same direction)? then we can discuss why they might not: because they tap into different properties? because of the way in which the diagnostic was implemented?} 
+
 
     \begin{itemize}
       \item  \citealt{koev_notions_2018}: English medial appositive RCs can be Q-at-issue, but not P-at-issue: they behave as NAI for the direct dissent test, but can address the QUD in the QUD diagnostic (Based on impressionistic judgment data)
+
 
       \item An experimental study in \citealt{syrett_experimental_2015} found that sentence-medial appositives are less at-issue than sentence-final ones using the direct dissent test
       
@@ -261,9 +303,9 @@
     \label{fig:dtglossa}
     \end{figure}
 
-\section{Experiments \label{sec:2_experiments}}
+\section{Experiments 1-4 \label{sec:2_experiments}}
 
-  To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4).\footnote{The experiments, data and R code for generating the figures and analyses of the experiments reported in this paper are available at INSERT URL TO ANONYMOUS GITHUB REPO BEFORE SUBMISSION. All experiments were conducted with approval from the ethics review committee of [university name redacted for review].} To be able to compare the results of the diagnostics, the same seven contents shown in \ref{stims} were investigated under the four diagnostics: the contents of sentence-medial and sentence-final NRRCs \ref{stims.a}-\ref{stims.b}, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right} \ref{stims.c}-\ref{stims.g}. These seven contents were instantiated by the same items across the four experiments.
+  To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4).\footnote{The experiments, data and R code for generating the figures and analyses of the experiments reported in this paper are available at INSERT URL TO ANONYMOUS GITHUB REPO BEFORE SUBMISSION. All experiments were conducted with approval from the ethics review committee of [university name redacted for review].} To be able to compare the results of the diagnostics, the same seven contents, shown in \ref{stims}, were investigated under the four diagnostics: the contents of sentence-medial and sentence-final NRRCs \ref{stims.a}-\ref{stims.b}, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right} \ref{stims.c}-\ref{stims.g}. These seven contents were instantiated by the same items across the four experiments.
 
   \ex.\label{stims}
     \a.\label{stims.a} Content of sentence-medial NRRC \\
@@ -283,9 +325,7 @@
     \z.
   \z.
   
-These seven contents were chosen with two considerations in mind. First, several of the contents were investigated in prior literature, which found differences in at-issueness between the contents. This includes the content of sentence-medial and -final NRRCs as well as the content of the complement of \emph{know, discover} and \emph{confess} (e.g., \citealt{syrett_experimental_2015,tonhauser_how_2018}). Second, the contents of the complements of \emph{be right} and \emph{confirm} were included because \citealt{degen-tonhauser-glossa} observed that they 
-
-
+  These seven contents were chosen because prior literature observed differences in at-issueness between two or more of these contents using a particular diagnostic for at-issueness.  Specifically, as discussed in section \S1, \citealt{syrett_experimental_2015} observed differences between sentence-medial and -final NRRCs using a variant of the direct dissent diagnostic, \citealt{tonhauser_how_2018} observed differences between sentence-final NRRCs and the contents of the complements of \emph{know, discover} and \emph{confess} using the `asking whether' diagnostic, and \citealt{degen-tonhauser-glossa} observed differences between \emph{know, discover, confess, confirm} and \emph{be right}, also using the `asking whether' diagnostic. Thus, comparing these seven contents across the four diagnostics in Exps.~1-4 will allow us to assess whether the differences that emerge from one diagnostic also emerge from others. 
 
   In each experiment, participants read the stimuli and gave ratings corresponding to the diagnostics.
 
@@ -311,24 +351,24 @@ These seven contents were chosen with two considerations in mind. First, several
 
   \subsubsection{Materials and procedure}
   
-The four experiments measured the at-issueness of the seven contents in \ref{stims} with a different at-issueness diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4). As illustrated in \ref{diag} for the content of sentence-medial NRRCs (here: Lucy broke the plate), each diagnostic was implemented as is standard in the literature: In Exp.~1 \ref{diag.a}, which implemented the QUD diagnostic, participants read a dialogue between two named speakers, where the first utters an interrogative sentence (the presumed QUD) that is about the content to be diagnosed and the second responds with a declarative that contributes the content to be diagnosed. In Exp.~2 \ref{diag.b}, which implemented the `asking whether' diagnostic, participants read an interrogative sentence uttered by a named speaker, where the interrogative sentence contributes the content to be diagnosed. In Exp.~3 \ref{diag.c}, which implemented the `direct dissent' diagnostic, participants read a dialogue between two named speakers, where the first utters a declarative sentence with the content to be diagnosed and the second directly dissents with the content to be diagnosed. Finally, in Exp.~4 \ref{diag.d}, which implemented the `yes, but' diagnostic, participants read a dialogue between two named speakers where the first utters a declarative sentence that contributes the content to be diagnosed and the second responds with one of two indirect dissent variants (\emph{yes, but..}, \emph{yes, and...}) or with a direct dissent.
+  The four experiments measured the at-issueness of the seven contents in \ref{stims} with a different at-issueness diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4). The examples in \ref{diag} illustrate how each diagnostic was implemented using the content of sentence-medial NRRCs (with the item `Lucy broke the plate'). In Exp.~1 (QUD diagnostic, \ref{diag.a}), participants read a dialogue between two named speakers, where the first utters an interrogative sentence (the presumed QUD) that is about the content to be diagnosed and the second responds with a declarative sentence that contributes the content to be diagnosed. In Exp.~2 (`asking whether' diagnostic, \ref{diag.b}), participants read an interrogative sentence uttered by a named speaker, where the interrogative sentence contributes the content to be diagnosed. In Exp.~3 (`direct dissent' diagnostic, \ref{diag.c}), participants read a dialogue between two named speakers, where the first utters a declarative sentence with the content to be diagnosed and the second directly dissents with the content to be diagnosed. Finally, in Exp.~4 (`yes, but' diagnostic, \ref{diag.d}), participants read a dialogue between two named speakers where the first utters a declarative sentence that contributes the content to be diagnosed and the second responds with one of two indirect dissent variants (\emph{yes, but..}, \emph{yes, and...}) or with a direct dissent.
 
-\ex.\label{diag} Implementations of the diagnostics in Exps.~1-4
-\a.\label{diag.a} Exp.~1 (QUD diagnostic)
-\\ {\bf Nora:} \emph{What did Lucy break?}
-\\ {\bf Leo:} \emph{Lucy, who broke the plate, apologized.}
-\b.\label{diag.b} Exp.~2 (`asking whether' diagnostic )
-\\ {\bf Nora:} \emph{Did Lucy, who broke the plate, apologize?}
-\c.\label{diag.c} Exp.~3 (`direct dissent' diagnostic)
-\\ {\bf Nora:} \emph{Lucy, who broke the plate, apologized.}
-\\ {\bf Leo:} \emph{No, she didn't break the plate.}
-\d.\label{diag.d} Exp.~4 (`yes, but' diagnostic)
-\\ {\bf Nora:} \emph{Lucy, who broke the plate, apologized.}
-\\ {\bf Nina:} \emph{Yes, but she didn't break the plate.}
-\\ \hspace*{1cm} \emph{Yes, and she didn't break the plate.}
-\\ \hspace*{1cm} \emph{No, she didn't break the plate.}
+  \ex.\label{diag} Implementations of the diagnostics in Exps.~1-4
+  \a.\label{diag.a} Exp.~1 (QUD diagnostic)
+  \\ {\bf Nora:} \emph{What did Lucy break?}
+  \\ {\bf Leo:} \emph{Lucy, who broke the plate, apologized.}
+  \b.\label{diag.b} Exp.~2 (`asking whether' diagnostic )
+  \\ {\bf Nora:} \emph{Did Lucy, who broke the plate, apologize?}
+  \c.\label{diag.c} Exp.~3 (`direct dissent' diagnostic)
+  \\ {\bf Nora:} \emph{Lucy, who broke the plate, apologized.}
+  \\ {\bf Leo:} \emph{No, she didn't break the plate.}
+  \d.\label{diag.d} Exp.~4 (`yes, but' diagnostic)
+  \\ {\bf Nora:} \emph{Lucy, who broke the plate, apologized.}
+  \\ {\bf Nina:} \emph{Yes, but she didn't break the plate.}
+  \\ \hspace*{1cm} \emph{Yes, and she didn't break the plate.}
+  \\ \hspace*{1cm} \emph{No, she didn't break the plate.}
 
-As shown in Fig.~\ref{fig:trials}, the response options in each of the four experiments also differed depending on the diagnostic: In Exp.~1 (QUD diagnostic), shown in panel (a), participants were asked how well the response fits the question and they gave their response on a slider marked `totally doesn't fit' on one end (coded 0) and `totally fits' on the other end (coded as 1). In Exp.~2 (`asking whether' diagnostic), shown in panel (b), participants were asked whether the question is about the content to be diagnosed and they gave their response on a slider marked `no' on one end (coded as 1) and `yes' on the other (coded as 0). In Exp.~3 (direct dissent diagnostic), participants were asked how natural the direct dissent and participants gave their response on a slider marked `totally unnatural' (coded as 0) on one end and `totally natural' on the other (coded as 1). Finally, in Exp.~4 (`yes, but' diagnostic), participants were asked to choose the response that sounded best; the two indirect dissents were coded as 1 and the direct one as 0. Across the four experiments, the responses were coded as 0 or 1 such that 0 meant that the content to be diagnosed was rated as at-issue and 1 meant that the content was rated as not-at-issue.
+  As shown in Fig.~\ref{fig:trials}, the response options in each of the four experiments differed depending on the diagnostic. In Exp.~1 (QUD diagnostic, panel (a)), participants were asked how well the response fits the question and they gave their response on a slider marked `totally doesn't fit' on one end (coded 0) and `totally fits' on the other end (coded as 1). In Exp.~2 (`asking whether' diagnostic, panel (b)), participants were asked whether the question is about the content to be diagnosed and they gave their response on a slider marked `no' on one end (coded as 1) and `yes' on the other (coded as 0). In Exp.~3 (direct dissent diagnostic, panel (c)), participants were asked how natural the direct dissent and participants gave their response on a slider marked `totally unnatural' (coded as 0) on one end and `totally natural' on the other (coded as 1). Finally, in Exp.~4 (`yes, but' diagnostic, panel (d)), participants were asked to choose the response that sounded best; the two indirect dissents were coded as 1 and the direct one as 0. Across the four experiments, the responses were coded as 0 or 1 in such a way that 0 meant that the content to be diagnosed was rated as at-issue and 1 meant that the content was rated as not-at-issue.
 
 
  \begin{figure}[h!]
@@ -373,7 +413,7 @@ As shown in Fig.~\ref{fig:trials}, the response options in each of the four expe
  \b. Greg bought a new car.
  \z.
  
- Each experiment also included two control items each, which functioned as attention checks: one item was expected to be at-issue and the other one not-at-issue. See Supplement \ref{supp:stims} for the control items used in each experiment.
+ Each experiment also included two control stimuli, which functioned as attention checks: one stimulus was expected to receive a response at one end of the slider (Exps.~1-3) or a `no' response (Exp.~4); the other control stimulus was expected tor receive a response at the other end of the slider (Exps.~1-3) or a `yes' response (Exp.~4). See Supplement \ref{supp:stims} for the control stimuli used in Exps.~1-4.
  
  In each of the four experiments, each participant's set of items was generated by randomly combining each of the seven contents in \ref{stims} with a unique content in \ref{items}. Participants completed a total of 9 trials, namely 7 target trials and the same 2 control trials. Trial order was randomized.
  
@@ -400,54 +440,135 @@ After completing the experiment, participants filled out a short optional demogr
 
   \subsection{Results}
   
-  The four panels of Fig.~\ref{fig:results} show the results of the four experiments for the seven target contents and the two controls, that is, the mean naturalness ratings in Exp.~1 (QUD diagnostic), the mean `asking whether' ratings in Exp.~2 (`asking whether' diagnostic), the mean naturalness ratings in Exp.~3 (`direct dissent' diagnostic) and the proportion of `no' choices in Exp.~4 (`yes, but' diagnostic). As shown, the results of the four experiments exhibit differences in the absolute rating of the seven target contents compared to the two controls, which received ratings at floor and at ceiling across the four experiments: In Exp.~2 (`asking whether' diagnostic), the seven target contents received a broad range of ratings between the two extremes, whereas they all received relatively high ratings in Exp.~3 (`direct dissent' diagnostic). The results of the other two experiments fall in-between. 
+  Fig.~\ref{fig:results} plots the results of the four experiments by the expression that is associated with the seven target contents {\bf and the two controls}\footnote{given that the controls do not all tell us something useful about at-issueness, I suggest we remove them from the plots; we also don't need them to discuss the results; need to make the expressions identical across the four panels}: panel (a) shows the mean naturalness ratings in Exp.~1 (QUD diagnostic), panel (b) the mean `asking whether' ratings in Exp.~2 (`asking whether' diagnostic), panel (c) the mean naturalness ratings in Exp.~3 (`direct dissent' diagnostic) and panel (d) the proportion of `no' choices in Exp.~4 (`yes, but' diagnostic). Two differences between the results of the four experiments concern the relative rankings between the seven contents in each experiment and the extent to which the experiments differentiate between the seven contents. 
   
-  The results of the four experiments also exhibit differences in the relative ratings of the seven target contents with respect to one another.
+  Regarding the first difference, we observe that the relative ranking of the seven contents differs between the four experiments. The only pair of contents that are ranked the same way across all four experiments are the content of the complement of \emph{discover}, which received higher ratings (at least numerically) across all four experiments than that of \emph{confess}. There is no other pair of expressions for which that is the case. For instance, whereas the content of the complement of \emph{confirm} received (numerically) higher ratings than that of \emph{know} in Exps.~1 and 2, the opposite pattern is observed in Exps.~3 and 4. This difference between the experiments is quantified in the Spearman rank correlations in Table \ref{t:spearman},\footnote{The Spearman rank correlation coefficient, a value between -1 and 1, is a nonparametric measure of rank correlation: the higher the coefficient, the more the relation between the the two variables can be described using a monotonic function. If the coefficient is positive, the value of one variable tends to increase with an increase in the other. In the case of our experiments, a coefficient of 1 for two experiments would mean that there is a perfectly monotone increasing relation between the mean ratings of the seven contents in the two experiments: for any two contents c1 and c2, if c1 ranks below c2 in one experiment (that is, the mean rating of c1 is lower than that of c2), then that ranking is preserved in the other experiment.} which are particularly low for Exp.~1 compared to the other three experiments. This is due, to some extent, to the content of the complement of \emph{be right} being ranked the lowest in Exp.~1 but among the highest in Exps.~2-4.\footnote{When \emph{be right} is excluded, the Spearman rank correlations are:
   
-
+ \begin{tabular}{l | c c c c}
+ & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
+ Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .77 & .09 & .31 \\
+ Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .66 & .66 \\
+ Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .77  \\
+ \hline
+% Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
+ \end{tabular}} {\bf discuss be right here!} This result suggests that the four diagnostics as implemented in Exps.~1-4 interact differently with the seven contents investigated.
+ 
+ \begin{table}[ht!]
+ \centering
+ \begin{tabular}{l | c c c c}
+ & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
+ Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .11 & -.29 & -.18 \\
+ Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .64 &.79 \\
+ Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .79  \\
+ \hline
+% Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
+ \end{tabular}
+ \caption{Spearman rank correlations between the results of Exps.~1-4.}\label{t:spearman}
+ \end{table}
+  
+ 
   \begin{figure}[h!]
     \centering
 
     % Top row
-    \subfigure[Exp.~1: QUD diagnostic]{%
+    \subfigure[Exp.~1 (QUD diagnostic)]{%
       \includegraphics[width=0.48\linewidth]{../../results/main/exp1/graphs/mean-ratings.pdf}%
       \label{fig:qud}
     }
     \hfill
-    \subfigure[Exp.~2: `asking whether' diagnostic]{%
+    \subfigure[Exp.~2 (`asking whether' diagnostic)]{%
       \includegraphics[width=0.48\linewidth]{../../results/main/exp2/graphs/mean-ratings.pdf}%
       \label{fig:AK}
     }
 
-    \vspace{1em}
+%    \vspace{1em}
 
     % Bottom row
-    \subfigure[Exp.~3: `direct dissent' diagnostic]{%
+    \subfigure[Exp.~3 (`direct dissent' diagnostic)]{%
       \includegraphics[width=0.48\textwidth]{../../results/main/exp3/graphs/mean-ratings.pdf}%
       \label{fig:dd}
     }
     \hfill
-    \subfigure[Exp.~4: `yes, but' diagnostic]{%
+    \subfigure[Exp.~4 (`yes, but' diagnostic)]{%
       \includegraphics[width=0.48\textwidth]{../../results/main/exp4/graphs/mean-ratings.pdf}%
       \label{fig:yb}
     }
 
-    \caption{Results of Exps.~1--4. Panels (a)--(c) show the mean responses by content for the QUD diagnostic in Exp.~1 (a), the `asking whether' diagnostic in Exp.~2 (b), and the `direct dissent' diagnostic in Exp.~3 (c). Panel (d) shows the proportion of `no' choices by content for the `yes, but' diagnostic in Exp.~4. Error bars indicate 95\% bootstrapped confidence intervals. Violin plots in panels (a)--(c) show the kernel probability density of individual participants’ ratings. Gray dots in panel (d) represent individual participant responses (either ‘no’ or one of the ‘yes’-responses, jittered vertically and horizontally for legibility).}
+    \caption{Results of Exps.~1--4. Panels (a)--(c) show the mean responses by expression for (a) Exp.~1 (QUD diagnostic),  (b) Exp.~2 (`asking whether' diagnostic), and (c) Exp.~3 (`direct dissent' diagnostic); panel (d) shows the proportion of `no' choices by expression in Exp.~4 (`yes, but' diagnostic). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots in panels (a)-(c) show the kernel probability density of individual participants' ratings. Gray dots in panel (d) represent individual participant responses (`no' vs.\ `yes', jittered vertically and horizontally for legibility).}
     \label{fig:results}
   \end{figure}
+  
+Regarding the second difference, we consider the range of (mean or proportion of) ratings, that is, the difference between the largest and smallest ratings. The range is largest in Exp.~2 (`asking whether' diagnostic), at .74 (.01 to .83) and smallest in Exp.~3 (`direct dissent' diagnostic), at .13 (.64 to .78). The results of Exp.~1 (QUD diagnostic, with a range of .27 (.51 to .77) and Exp.~4 (`yes, but' diagnostic), with a range of .46 (.5 to .96), fall in-between. This result suggests that the four diagnostics as implemented in Exps.~1-4 differ in how much they differentiate between the seven contents investigated, with the `asking whether' diagnostic showing the most differentiation and the `direct dissent' and the QUD diagnostic showing the least differentiation.
+  
+ %Exp 1
+ %min: 0.5055072
+ %max: 0.7713043
+ %range: 0.2657971
+ 
+ %Exp 2
+ %min: 0.09364865
+ %max: 0.8332432
+ %range: 0.7395946
+ 
+ %Exp 3
+ %min: 0.6443662
+ %max: 0.7752113
+ %range: 0.1308451
+  
+ %Exp 4
+ %min: .5
+ %max: 0.958
+ %range: 0.458
+ 
+This observation is supported by the results of post hoc pairwise comparisons using Tukey's method (allowing for by-participant variability), using the `lsmeans' package (\citealt{tukey}) in R.
 
-   Second, the content manipulation affects the ratings differently across the four diagnostics, sometimes in opposite directions. This results in a different order of predicates by response means between experiments.
-    \begin{itemize}
-      \item For instance, \emph{be right} ranks highest under the `asking whether' diagnostic (\Cref{fig:AK}), and the `yes, but' test (\Cref{fig:yb}), but ranks lowest under the QUD-diagnostic (\Cref{fig:qud}), and shows no clear effect in the direct dissent diagnostic (\Cref{fig:dd}).
-    \end{itemize}
-    
-    \begin{itemize}
-      \item Analysis similar to what we did in projection study? -- Interaction effects
-      \item How about something similar to the rank-analysis that Yvonne Kilian did for comparing diagnostics?
+{\bf NEED Different colors because directions of differences vary!}
 
-    \end{itemize}
+\addtolength{\tabcolsep}{-.19em}
 
-  \subsection{Discussion}
+\begin{figure}[!h]
+\centering
+
+\subfigure[Exp.~1 (QUD diagnostic)]{%
+\begin{tabular}{r | ccccccc}
+& \rots{be right} & \rots{confess} & \rots{confirm} & \rots{discover} & \rots{final NRRC} & \rots{know} & \rots{medial NRRC} \\
+% \hline
+\input{../../results/main/exp1/models/table1}
+% \hline
+\end{tabular}}
+\hfillca
+\subfigure[Exp.~2 (`asking whether' diagnostic)]{%
+\begin{tabular}{r | ccccccc}
+& \rots{be right} & \rots{confess} & \rots{confirm} & \rots{discover} & \rots{final NRRC} & \rots{know} & \rots{medial NRRC} \\
+% \hline
+\input{../../results/main/exp2/models/table1}
+% \hline
+\end{tabular}}
+
+\subfigure[Exp.~3 (`direct dissent' diagnostic)]{%
+\begin{tabular}{r | ccccccc}
+& \rots{be right} & \rots{confess} & \rots{confirm} & \rots{discover} & \rots{final NRRC} & \rots{know} & \rots{medial NRRC} \\
+% \hline
+\input{../../results/main/exp1/models/table1}
+% \hline
+\end{tabular}}
+% \hfill
+\subfigure[Exp.~4 (`yes, but' diagnostic)]{%
+\begin{tabular}{r | ccccccc}
+& \rots{be right} & \rots{confess} & \rots{confirm} & \rots{discover} & \rots{final NRRC} & \rots{know} & \rots{medial NRRC} \\
+% \hline
+\input{../../results/main/exp2/models/table1}
+% \hline
+\end{tabular}}
+
+\caption{Pairwise differences between expressions (ordered from top to bottom and left to right by increasing mean in Exp.~2 (`asking whether' diagnostic). A gray cell for a pair means that the 95\% HDI did not include 0; a white cell means that the 95\% HDI included 0.}\label{fig:pairwise}
+\end{figure}
+
+
+\subsection{Discussion}
+
+Confound wrt be right should be discussed here
+
     The differening results between diagnostics suggest that they are not interchangeable.
 
     \subsubsection{Sensitivity}
@@ -466,8 +587,19 @@ After completing the experiment, participants filled out a short optional demogr
       \begin{itemize}
         \item In particular, the varying relative order of by-content means across diagnostics provide an initial argument that they target distinct properties of the content.
       \end{itemize}
+      
+      
+\section{Experiments 5-6}
 
-\section{Theoretical implications}
+\subsection{Methods}
+
+\subsection{Results}
+
+\subsection{Discussion}
+
+\section{General discussion}
+
+
 
 \section{Conclusion}
 
@@ -526,9 +658,45 @@ A sentence or a short paragraph detailing the roles that each author held to con
 \bibliography{../at-issueness} %for use with natbib; comment out if you use biblatex, and change 'sample' by the name of your bib-file
 
 
+\appendix
+
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{A\arabic{figure}}
+
+\setcounter{ExNo}{0}
+
+
+\section*{Supplements}
+
+\section{Control stimuli in Exps.~1-4}\label{supp:stims}
+
+The examples in \ref{control1}-\ref{control4} provide the two control stimuli used in each of Exps.~1-4. For the a.-examples, participants were expected to give a `totally fits' response (Exp.~1), a `yes' response (Exp.~2), a `totally natural' response (Exp.~3), and a `no' response (Exp.~4); for the b.-examples, the opposite response was expected. The numbers  after each example identify the mean ratings (Exps.~1-3) or the proportion of `no' responses (Exp.~4) after excluding participants who did not self-identify as native speakers of American English (but before excluding participants on the basis of these controls), showing that the control stimuli worked as intended.
+
+\ex.\label{control1} Control stimuli in Exp.~1 (QUD diagnostic)
+\a. Mary: Which course did Ava take?
+\\ John: She took the French course. (.97)
+\b. Jennifer: What does Betsy have?
+\\ Robert: She loves dancing salsa. (.07)
+
+\ex.\label{control2} Control stimuli in Exp.~2 (`asking whether' diagnostic)
+\a. Mary: Did Arthur take a French course?
+\\ Question to participants: Is Mary asking whether Arthur took a French course? (.96)
+\b. Robert: Does Betsy have a cat?
+\\ Question to participants: Is Robert asking whether Betsy loves apples? (.02)
+
+\ex.\label{control3} Control stimuli in Exp.~3 (`direct dissent' diagnostic)
+\a. Mary: Arthur took a French course.
+\\ Lily: No, he took a Spanish course. (.87)
+\b. Robert: Betsy has a cat.
+\\ Maximilian: No, she doesn't like apples. (.05)
+
+\ex.\label{control4} Control stimuli in Exp.~4 (`yes, but' diagnostic)
+\a. Mary: Arthur took a French course.
+\\ Lily: Yes, but Lisa loves cats. / Yes, and he didn't take a French course. / No, he didn't take a French course. (.95)
+\b. Robert: Betsy has a cat.
+\\ Maximilian: Yes, but she is good at math. / Yes, and she loves it so much. / No, she doesn't like apples. (0)
+
 \end{document}
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: t
-%%% TeX-engine: luatex
-%%% End:
