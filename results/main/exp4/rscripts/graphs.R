@@ -40,13 +40,13 @@ max(means$Mean) - min(means$Mean)
 
 # plot 
 ggplot(data=means, aes(x=expression, y=Mean)) +
-  geom_jitter(data=d, aes(x=expression,y=nResponse), alpha = .2, width=.2, height=.2) +
+  geom_jitter(data=t, aes(x=expression,y=nResponse), alpha = .2, width=.2, height=.2) +
   geom_point(size=3,color="black") +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=0.1,color="black") +
   scale_y_continuous(limits = c(-0.2,1.2),breaks = c(0,0.2,0.4,0.6,0.8,1)) +
   theme(text = element_text(size=12), axis.text.x = element_text(size = 12, angle = 45, hjust = 1)) +
   theme(legend.position="none") +
   theme(panel.grid.major.x = element_blank()) +
-  ylab("Proportion of \"no\" choice \n \"yes, but\" diagnostic") +
+  ylab("Proportion of \"no\" choice \n (higher response = more not-at-issue") +
   xlab("Expression") 
 ggsave("../graphs/mean-ratings.pdf",height=4.5,width=7)

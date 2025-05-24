@@ -1,649 +1,649 @@
 participantID,age,gender,language,amE,comments,expression,choice,nResponse,cc
-41,23,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-41,23,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,lost his key
-41,23,female,English,AmE,""":""""}",confirm,"Yes, but",0,bought a new car
-41,23,female,English,AmE,""":""""}",AI MC,"No,",1,control
-41,23,female,English,AmE,""":""""}",confess,"Yes, but",0,ate the last cupcake
-41,23,female,English,AmE,""":""""}",know,"No,",1,stole the money
-41,23,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,cheated on his wife
-41,23,female,English,AmE,""":""""}",discover,"Yes, but",0,broke the plate
-41,23,female,English,AmE,""":""""}",be right,"No,",1,saw the murder
-74,30,male,English,AmE,""":""none""}",be right,"No,",1,lost his key
-74,30,male,English,AmE,""":""none""}",discover,"No,",1,broke the plate
-74,30,male,English,AmE,""":""none""}",AI MC,"No,",1,control
-74,30,male,English,AmE,""":""none""}",medial NRRC,"No,",1,bought a new car
-74,30,male,English,AmE,""":""none""}",NAI MC,"Yes, and",0,control
-74,30,male,English,AmE,""":""none""}",final NRRC,"No,",1,stole the money
-74,30,male,English,AmE,""":""none""}",confirm,"No,",1,saw the murder
-74,30,male,English,AmE,""":""none""}",know,"No,",1,ate the last cupcake
-74,30,male,English,AmE,""":""none""}",confess,"No,",1,cheated on his wife
-42,34,female,English,AmE,""":""""}",AI MC,"No,",1,control
-42,34,female,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-42,34,female,English,AmE,""":""""}",know,"Yes, but",0,broke the plate
-42,34,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-42,34,female,English,AmE,""":""""}",confess,"No,",1,saw the murder
-42,34,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-42,34,female,English,AmE,""":""""}",final NRRC,"No,",1,bought a new car
-42,34,female,English,AmE,""":""""}",discover,"No,",1,lost his key
-42,34,female,English,AmE,""":""""}",medial NRRC,"No,",1,stole the money
-72,32,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,stole the money
-72,32,female,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
-72,32,female,English,AmE,""":""""}",discover,"No,",1,lost his key
-72,32,female,English,AmE,""":""""}",know,"No,",1,cheated on his wife
-72,32,female,English,AmE,""":""""}",AI MC,"No,",1,control
-72,32,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-72,32,female,English,AmE,""":""""}",confirm,"No,",1,saw the murder
-72,32,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
-72,32,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,broke the plate
-21,34,female,English,AmE,""":""no idea""}",NAI MC,"Yes, and",0,control
-21,34,female,English,AmE,""":""no idea""}",discover,"No,",1,bought a new car
-21,34,female,English,AmE,""":""no idea""}",confess,"No,",1,cheated on his wife
-21,34,female,English,AmE,""":""no idea""}",AI MC,"No,",1,control
-21,34,female,English,AmE,""":""no idea""}",know,"No,",1,broke the plate
-21,34,female,English,AmE,""":""no idea""}",confirm,"No,",1,ate the last cupcake
-21,34,female,English,AmE,""":""no idea""}",medial NRRC,"No,",1,lost his key
-21,34,female,English,AmE,""":""no idea""}",final NRRC,"Yes, but",0,saw the murder
-21,34,female,English,AmE,""":""no idea""}",be right,"No,",1,stole the money
-36,28,female,English,AmE,""":""""}",confess,"Yes, but",0,saw the murder
-36,28,female,English,AmE,""":""""}",be right,"No,",1,broke the plate
-36,28,female,English,AmE,""":""""}",AI MC,"No,",1,control
-36,28,female,English,AmE,""":""""}",know,"No,",1,stole the money
-36,28,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
-36,28,female,English,AmE,""":""""}",medial NRRC,"No,",1,lost his key
-36,28,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,cheated on his wife
-36,28,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-36,28,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-50,37,female,English,AmE,""":""""}",confirm,"No,",1,stole the money
-50,37,female,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
-50,37,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-50,37,female,English,AmE,""":""""}",AI MC,"No,",1,control
-50,37,female,English,AmE,""":""""}",medial NRRC,"No,",1,broke the plate
-50,37,female,English,AmE,""":""""}",know,"No,",1,lost his key
-50,37,female,English,AmE,""":""""}",confess,"No,",1,saw the murder
-50,37,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-50,37,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,bought a new car
-75,19,male,English,AmE,""":""""}",AI MC,"No,",1,control
-75,19,male,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-75,19,male,English,AmE,""":""""}",know,"No,",1,bought a new car
-75,19,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
-75,19,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
-75,19,male,English,AmE,""":""""}",be right,"No,",1,stole the money
-75,19,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-75,19,male,English,AmE,""":""""}",final NRRC,"No,",1,lost his key
-75,19,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-32,47,male,English,AmE,""":""""}",AI MC,"No,",1,control
-32,47,male,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
-32,47,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-32,47,male,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-32,47,male,English,AmE,""":""""}",be right,"No,",1,lost his key
-32,47,male,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-32,47,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
-32,47,male,English,AmE,""":""""}",know,"No,",1,saw the murder
-32,47,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,stole the money
-6,50,female,English,AmE,""":""""}",confess,"No,",1,stole the money
-6,50,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,cheated on his wife
-6,50,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-6,50,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
-6,50,female,English,AmE,""":""""}",know,"No,",1,saw the murder
-6,50,female,English,AmE,""":""""}",AI MC,"No,",1,control
-6,50,female,English,AmE,""":""""}",be right,"No,",1,lost his key
-6,50,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,broke the plate
-6,50,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-16,32,male,English,AmE,""":""""}",discover,"No,",1,lost his key
-16,32,male,English,AmE,""":""""}",confess,"Yes, but",0,ate the last cupcake
-16,32,male,English,AmE,""":""""}",AI MC,"No,",1,control
-16,32,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,bought a new car
-16,32,male,English,AmE,""":""""}",medial NRRC,"Yes, but",0,broke the plate
-16,32,male,English,AmE,""":""""}",know,"Yes, but",0,cheated on his wife
-16,32,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-16,32,male,English,AmE,""":""""}",be right,"No,",1,stole the money
-16,32,male,English,AmE,""":""""}",confirm,"Yes, but",0,saw the murder
-10,22,female,English,AmE,""":""""}",be right,"Yes, and",0,saw the murder
-10,22,female,English,AmE,""":""""}",discover,"Yes, but",0,bought a new car
-10,22,female,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
-10,22,female,English,AmE,""":""""}",confess,"No,",1,stole the money
-10,22,female,English,AmE,""":""""}",medial NRRC,"No,",1,broke the plate
-10,22,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-10,22,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
-10,22,female,English,AmE,""":""""}",AI MC,"No,",1,control
-10,22,female,English,AmE,""":""""}",final NRRC,"No,",1,lost his key
-69,29,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-69,29,female,English,AmE,""":""""}",AI MC,"No,",1,control
-69,29,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
-69,29,female,English,AmE,""":""""}",confirm,"No,",1,stole the money
-69,29,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,cheated on his wife
-69,29,female,English,AmE,""":""""}",confess,"Yes, but",0,broke the plate
-69,29,female,English,AmE,""":""""}",medial NRRC,"No,",1,lost his key
-69,29,female,English,AmE,""":""""}",discover,"Yes, but",0,saw the murder
-69,29,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
-39,26,male,English,AmE,""":""""}",confess,"Yes, but",0,cheated on his wife
-39,26,male,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
-39,26,male,English,AmE,""":""""}",confirm,"No,",1,saw the murder
-39,26,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,bought a new car
-39,26,male,English,AmE,""":""""}",medial NRRC,"Yes, but",0,broke the plate
-39,26,male,English,AmE,""":""""}",be right,"No,",1,stole the money
-39,26,male,English,AmE,""":""""}",AI MC,"No,",1,control
-39,26,male,English,AmE,""":""""}",discover,"No,",1,lost his key
-39,26,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-22,45,female,English,AmE,""":""""}",confirm,"No,",1,broke the plate
-22,45,female,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
-22,45,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
-22,45,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-22,45,female,English,AmE,""":""""}",confess,"No,",1,stole the money
-22,45,female,English,AmE,""":""""}",final NRRC,"No,",1,saw the murder
-22,45,female,English,AmE,""":""""}",AI MC,"No,",1,control
-22,45,female,English,AmE,""":""""}",medial NRRC,"No,",1,lost his key
-22,45,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
-47,38,male,English,AmE,""":""no issues""}",confess,"No,",1,lost his key
-47,38,male,English,AmE,""":""no issues""}",know,"No,",1,ate the last cupcake
-47,38,male,English,AmE,""":""no issues""}",medial NRRC,"No,",1,bought a new car
-47,38,male,English,AmE,""":""no issues""}",be right,"No,",1,stole the money
-47,38,male,English,AmE,""":""no issues""}",final NRRC,"Yes, but",0,broke the plate
-47,38,male,English,AmE,""":""no issues""}",discover,"No,",1,cheated on his wife
-47,38,male,English,AmE,""":""no issues""}",AI MC,"No,",1,control
-47,38,male,English,AmE,""":""no issues""}",NAI MC,"Yes, and",0,control
-47,38,male,English,AmE,""":""no issues""}",confirm,"No,",1,saw the murder
-38,34,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-38,34,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,saw the murder
-38,34,male,English,AmE,""":""""}",AI MC,"No,",1,control
-38,34,male,English,AmE,""":""""}",confess,"No,",1,bought a new car
-38,34,male,English,AmE,""":""""}",know,"No,",1,broke the plate
-38,34,male,English,AmE,""":""""}",be right,"No,",1,stole the money
-38,34,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-38,34,male,English,AmE,""":""""}",medial NRRC,"No,",1,lost his key
-38,34,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
-13,36,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-13,36,male,English,AmE,""":""""}",confirm,"No,",1,lost his key
-13,36,male,English,AmE,""":""""}",discover,"No,",1,stole the money
-13,36,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,broke the plate
-13,36,male,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
-13,36,male,English,AmE,""":""""}",know,"No,",1,bought a new car
-13,36,male,English,AmE,""":""""}",AI MC,"No,",1,control
-13,36,male,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-13,36,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-14,25,male,English,AmE,""":""I have an English BA.""}",be right,"No,",1,lost his key
-14,25,male,English,AmE,""":""I have an English BA.""}",confirm,"No,",1,ate the last cupcake
-14,25,male,English,AmE,""":""I have an English BA.""}",final NRRC,"No,",1,cheated on his wife
-14,25,male,English,AmE,""":""I have an English BA.""}",NAI MC,"Yes, and",0,control
-14,25,male,English,AmE,""":""I have an English BA.""}",AI MC,"No,",1,control
-14,25,male,English,AmE,""":""I have an English BA.""}",know,"No,",1,stole the money
-14,25,male,English,AmE,""":""I have an English BA.""}",confess,"No,",1,bought a new car
-14,25,male,English,AmE,""":""I have an English BA.""}",medial NRRC,"No,",1,saw the murder
-14,25,male,English,AmE,""":""I have an English BA.""}",discover,"No,",1,broke the plate
-63,63,male,English,AmE,""":""""}",confirm,"No,",1,lost his key
-63,63,male,English,AmE,""":""""}",AI MC,"No,",1,control
-63,63,male,English,AmE,""":""""}",confess,"No,",1,cheated on his wife
-63,63,male,English,AmE,""":""""}",discover,"No,",1,stole the money
-63,63,male,English,AmE,""":""""}",be right,"No,",1,saw the murder
-63,63,male,English,AmE,""":""""}",medial NRRC,"No,",1,broke the plate
-63,63,male,English,AmE,""":""""}",final NRRC,"No,",1,bought a new car
-63,63,male,English,AmE,""":""""}",know,"Yes, but",0,ate the last cupcake
-63,63,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-51,28,female,English,AmE,""":""""}",final NRRC,"No,",1,ate the last cupcake
-51,28,female,English,AmE,""":""""}",confess,"No,",1,bought a new car
-51,28,female,English,AmE,""":""""}",AI MC,"No,",1,control
-51,28,female,English,AmE,""":""""}",be right,"No,",1,stole the money
-51,28,female,English,AmE,""":""""}",discover,"No,",1,saw the murder
-51,28,female,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
-51,28,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-51,28,female,English,AmE,""":""""}",medial NRRC,"No,",1,lost his key
-51,28,female,English,AmE,""":""""}",know,"No,",1,broke the plate
-28,33,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,saw the murder
-28,33,female,English,AmE,""":""""}",know,"No,",1,stole the money
-28,33,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
-28,33,female,English,AmE,""":""""}",confess,"Yes, but",0,lost his key
-28,33,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,cheated on his wife
-28,33,female,English,AmE,""":""""}",AI MC,"No,",1,control
-28,33,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
-28,33,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-28,33,female,English,AmE,""":""""}",confirm,"Yes, but",0,broke the plate
-70,30,female,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-70,30,female,English,AmE,""":""""}",AI MC,"No,",1,control
-70,30,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
-70,30,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-70,30,female,English,AmE,""":""""}",be right,"No,",1,lost his key
-70,30,female,English,AmE,""":""""}",final NRRC,"No,",1,bought a new car
-70,30,female,English,AmE,""":""""}",confess,"No,",1,stole the money
-70,30,female,English,AmE,""":""""}",discover,"No,",1,broke the plate
-70,30,female,English,AmE,""":""""}",confirm,"No,",1,saw the murder
-4,51,female,English,AmE,""":""Thanks!""}",confess,"No,",1,stole the money
-4,51,female,English,AmE,""":""Thanks!""}",confirm,"No,",1,saw the murder
-4,51,female,English,AmE,""":""Thanks!""}",NAI MC,"Yes, and",0,control
-4,51,female,English,AmE,""":""Thanks!""}",final NRRC,"No,",1,cheated on his wife
-4,51,female,English,AmE,""":""Thanks!""}",know,"No,",1,ate the last cupcake
-4,51,female,English,AmE,""":""Thanks!""}",be right,"No,",1,bought a new car
-4,51,female,English,AmE,""":""Thanks!""}",medial NRRC,"Yes, but",0,broke the plate
-4,51,female,English,AmE,""":""Thanks!""}",AI MC,"No,",1,control
-4,51,female,English,AmE,""":""Thanks!""}",discover,"No,",1,lost his key
-7,54,male,English,AmE,""":""""}",AI MC,"No,",1,control
-7,54,male,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-7,54,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-7,54,male,English,AmE,""":""""}",confess,"No,",1,lost his key
-7,54,male,English,AmE,""":""""}",final NRRC,"No,",1,bought a new car
-7,54,male,English,AmE,""":""""}",know,"Yes, but",0,ate the last cupcake
-7,54,male,English,AmE,""":""""}",confirm,"No,",1,saw the murder
-7,54,male,English,AmE,""":""""}",discover,"No,",1,stole the money
-7,54,male,English,AmE,""":""""}",be right,"No,",1,broke the plate
-49,28,non-binary,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-49,28,non-binary,English,AmE,""":""""}",AI MC,"No,",1,control
-49,28,non-binary,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-49,28,non-binary,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-49,28,non-binary,English,AmE,""":""""}",final NRRC,"No,",1,ate the last cupcake
-49,28,non-binary,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-49,28,non-binary,English,AmE,""":""""}",discover,"No,",1,broke the plate
-49,28,non-binary,English,AmE,""":""""}",confess,"No,",1,lost his key
-49,28,non-binary,English,AmE,""":""""}",know,"No,",1,stole the money
-25,56,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-25,56,female,English,AmE,""":""""}",know,"Yes, but",0,lost his key
-25,56,female,English,AmE,""":""""}",confirm,"Yes, but",0,saw the murder
-25,56,female,English,AmE,""":""""}",final NRRC,"No,",1,cheated on his wife
-25,56,female,English,AmE,""":""""}",AI MC,"No,",1,control
-25,56,female,English,AmE,""":""""}",discover,"No,",1,broke the plate
-25,56,female,English,AmE,""":""""}",confess,"No,",1,bought a new car
-25,56,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-25,56,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,stole the money
-54,43,female,English,AmE,""":""""}",know,"No,",1,broke the plate
-54,43,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-54,43,female,English,AmE,""":""""}",final NRRC,"No,",1,lost his key
-54,43,female,English,AmE,""":""""}",AI MC,"No,",1,control
-54,43,female,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-54,43,female,English,AmE,""":""""}",discover,"No,",1,stole the money
-54,43,female,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
-54,43,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-54,43,female,English,AmE,""":""""}",be right,"No,",1,saw the murder
-37,23,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-37,23,male,English,AmE,""":""""}",know,"No,",1,saw the murder
-37,23,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-37,23,male,English,AmE,""":""""}",confess,"Yes, but",0,broke the plate
-37,23,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,stole the money
-37,23,male,English,AmE,""":""""}",discover,"No,",1,lost his key
-37,23,male,English,AmE,""":""""}",AI MC,"No,",1,control
-37,23,male,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-37,23,male,English,AmE,""":""""}",medial NRRC,"Yes, but",0,ate the last cupcake
-56,20,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,saw the murder
-56,20,female,English,AmE,""":""""}",confirm,"Yes, but",0,bought a new car
-56,20,female,English,AmE,""":""""}",AI MC,"No,",1,control
-56,20,female,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
-56,20,female,English,AmE,""":""""}",know,"Yes, but",0,stole the money
-56,20,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-56,20,female,English,AmE,""":""""}",discover,"No,",1,lost his key
-56,20,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-56,20,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,broke the plate
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",confirm,"Yes, but",0,lost his key
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",know,"No,",1,saw the murder
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",AI MC,"No,",1,control
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",final NRRC,"Yes, but",0,bought a new car
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",discover,"No,",1,broke the plate
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",medial NRRC,"Yes, but",0,ate the last cupcake
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",be right,"No,",1,stole the money
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",NAI MC,"Yes, and",0,control
-80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",confess,"Yes, but",0,cheated on his wife
-58,36,female,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-58,36,female,English,AmE,""":""""}",be right,"No,",1,stole the money
-58,36,female,English,AmE,""":""""}",AI MC,"No,",1,control
-58,36,female,English,AmE,""":""""}",know,"No,",1,cheated on his wife
-58,36,female,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-58,36,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-58,36,female,English,AmE,""":""""}",discover,"No,",1,broke the plate
-58,36,female,English,AmE,""":""""}",final NRRC,"No,",1,bought a new car
-58,36,female,English,AmE,""":""""}",confess,"No,",1,lost his key
-24,57,female,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-24,57,female,English,AmE,""":""""}",discover,"No,",1,stole the money
-24,57,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-24,57,female,English,AmE,""":""""}",know,"No,",1,saw the murder
-24,57,female,English,AmE,""":""""}",AI MC,"No,",1,control
-24,57,female,English,AmE,""":""""}",be right,"No,",1,broke the plate
-24,57,female,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-24,57,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,lost his key
-24,57,female,English,AmE,""":""""}",confess,"No,",1,bought a new car
-19,29,male,English,AmE,""":""""}",confirm,"No,",1,lost his key
-19,29,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
-19,29,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-19,29,male,English,AmE,""":""""}",final NRRC,"No,",1,stole the money
-19,29,male,English,AmE,""":""""}",AI MC,"No,",1,control
-19,29,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
-19,29,male,English,AmE,""":""""}",know,"No,",1,bought a new car
-19,29,male,English,AmE,""":""""}",medial NRRC,"No,",1,ate the last cupcake
-19,29,male,English,AmE,""":""""}",be right,"No,",1,saw the murder
-73,25,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-73,25,female,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-73,25,female,English,AmE,""":""""}",confirm,"No,",1,broke the plate
-73,25,female,English,AmE,""":""""}",discover,"No,",1,bought a new car
-73,25,female,English,AmE,""":""""}",final NRRC,"No,",1,saw the murder
-73,25,female,English,AmE,""":""""}",confess,"No,",1,lost his key
-73,25,female,English,AmE,""":""""}",AI MC,"No,",1,control
-73,25,female,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
-73,25,female,English,AmE,""":""""}",be right,"No,",1,stole the money
-79,40,female,English,AmE,""":""""}",confess,"No,",1,broke the plate
-79,40,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-79,40,female,English,AmE,""":""""}",discover,"No,",1,lost his key
-79,40,female,English,AmE,""":""""}",AI MC,"No,",1,control
-79,40,female,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-79,40,female,English,AmE,""":""""}",final NRRC,"No,",1,stole the money
-79,40,female,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
-79,40,female,English,AmE,""":""""}",know,"No,",1,bought a new car
-79,40,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-3,33,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,ate the last cupcake
-3,33,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-3,33,female,English,AmE,""":""""}",know,"No,",1,stole the money
-3,33,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-3,33,female,English,AmE,""":""""}",AI MC,"No,",1,control
-3,33,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-3,33,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,broke the plate
-3,33,female,English,AmE,""":""""}",discover,"No,",1,saw the murder
-3,33,female,English,AmE,""":""""}",confess,"Yes, but",0,lost his key
-57,24,female,English,AmE,""":""""}",confirm,"Yes, but",0,ate the last cupcake
-57,24,female,English,AmE,""":""""}",final NRRC,"No,",1,stole the money
-57,24,female,English,AmE,""":""""}",be right,"Yes, but",0,bought a new car
-57,24,female,English,AmE,""":""""}",know,"No,",1,lost his key
-57,24,female,English,AmE,""":""""}",confess,"No,",1,cheated on his wife
-57,24,female,English,AmE,""":""""}",medial NRRC,"No,",1,broke the plate
-57,24,female,English,AmE,""":""""}",AI MC,"No,",1,control
-57,24,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-57,24,female,English,AmE,""":""""}",discover,"No,",1,saw the murder
-66,44,female,English,AmE,""":""""}",discover,"Yes, but",0,bought a new car
-66,44,female,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-66,44,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-66,44,female,English,AmE,""":""""}",know,"No,",1,cheated on his wife
-66,44,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-66,44,female,English,AmE,""":""""}",confirm,"Yes, but",0,stole the money
-66,44,female,English,AmE,""":""""}",confess,"Yes, but",0,broke the plate
-66,44,female,English,AmE,""":""""}",AI MC,"No,",1,control
-66,44,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,lost his key
-26,41,male,English,AmE,""":""""}",be right,"No,",1,bought a new car
-26,41,male,English,AmE,""":""""}",discover,"Yes, but",0,lost his key
-26,41,male,English,AmE,""":""""}",confess,"No,",1,stole the money
-26,41,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-26,41,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,saw the murder
-26,41,male,English,AmE,""":""""}",AI MC,"No,",1,control
-26,41,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-26,41,male,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-26,41,male,English,AmE,""":""""}",know,"No,",1,broke the plate
-55,42,male,English,AmE,""":""""}",medial NRRC,"Yes, but",0,stole the money
-55,42,male,English,AmE,""":""""}",know,"No,",1,saw the murder
-55,42,male,English,AmE,""":""""}",be right,"No,",1,lost his key
-55,42,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-55,42,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,cheated on his wife
-55,42,male,English,AmE,""":""""}",AI MC,"No,",1,control
-55,42,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
-55,42,male,English,AmE,""":""""}",discover,"No,",1,bought a new car
-55,42,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-31,34,male,English,AmE,""":""""}",medial NRRC,"No,",1,lost his key
-31,34,male,English,AmE,""":""""}",discover,"No,",1,stole the money
-31,34,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,saw the murder
-31,34,male,English,AmE,""":""""}",know,"No,",1,ate the last cupcake
-31,34,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-31,34,male,English,AmE,""":""""}",AI MC,"No,",1,control
-31,34,male,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
-31,34,male,English,AmE,""":""""}",be right,"No,",1,broke the plate
-31,34,male,English,AmE,""":""""}",confess,"No,",1,bought a new car
-59,44,male,English,AmE,""":""Thank you""}",medial NRRC,"Yes, but",0,saw the murder
-59,44,male,English,AmE,""":""Thank you""}",confirm,"No,",1,lost his key
-59,44,male,English,AmE,""":""Thank you""}",confess,"Yes, but",0,broke the plate
-59,44,male,English,AmE,""":""Thank you""}",know,"No,",1,ate the last cupcake
-59,44,male,English,AmE,""":""Thank you""}",final NRRC,"No,",1,cheated on his wife
-59,44,male,English,AmE,""":""Thank you""}",discover,"No,",1,stole the money
-59,44,male,English,AmE,""":""Thank you""}",AI MC,"No,",1,control
-59,44,male,English,AmE,""":""Thank you""}",NAI MC,"Yes, and",0,control
-59,44,male,English,AmE,""":""Thank you""}",be right,"No,",1,bought a new car
-11,37,male,English,AmE,""":""""}",confess,"No,",1,lost his key
-11,37,male,English,AmE,""":""""}",discover,"No,",1,stole the money
-11,37,male,English,AmE,""":""""}",know,"No,",1,bought a new car
-11,37,male,English,AmE,""":""""}",confirm,"No,",1,saw the murder
-11,37,male,English,AmE,""":""""}",medial NRRC,"No,",1,broke the plate
-11,37,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-11,37,male,English,AmE,""":""""}",final NRRC,"No,",1,ate the last cupcake
-11,37,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-11,37,male,English,AmE,""":""""}",AI MC,"No,",1,control
-35,37,non-binary,English,AmE,""":""""}",discover,"No,",1,broke the plate
-35,37,non-binary,English,AmE,""":""""}",final NRRC,"Yes, but",0,ate the last cupcake
-35,37,non-binary,English,AmE,""":""""}",know,"Yes, but",0,stole the money
-35,37,non-binary,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-35,37,non-binary,English,AmE,""":""""}",confess,"No,",1,lost his key
-35,37,non-binary,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
-35,37,non-binary,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-35,37,non-binary,English,AmE,""":""""}",AI MC,"No,",1,control
-35,37,non-binary,English,AmE,""":""""}",be right,"No,",1,bought a new car
-29,48,female,English,AmE,""":""""}",AI MC,"No,",1,control
-29,48,female,English,AmE,""":""""}",confess,"Yes, but",0,lost his key
-29,48,female,English,AmE,""":""""}",confirm,"Yes, but",0,cheated on his wife
-29,48,female,English,AmE,""":""""}",know,"No,",1,saw the murder
-29,48,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
-29,48,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,stole the money
-29,48,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-29,48,female,English,AmE,""":""""}",be right,"No,",1,broke the plate
-29,48,female,English,AmE,""":""""}",medial NRRC,"No,",1,bought a new car
-64,25,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,broke the plate
-64,25,male,English,AmE,""":""""}",medial NRRC,"Yes, but",0,stole the money
-64,25,male,English,AmE,""":""""}",AI MC,"No,",1,control
-64,25,male,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-64,25,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-64,25,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-64,25,male,English,AmE,""":""""}",discover,"No,",1,lost his key
-64,25,male,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
-64,25,male,English,AmE,""":""""}",know,"Yes, but",0,saw the murder
-5,32,male,English,AmE,""":""""}",confirm,"Yes, but",0,bought a new car
-5,32,male,English,AmE,""":""""}",medial NRRC,"No,",1,stole the money
-5,32,male,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
-5,32,male,English,AmE,""":""""}",know,"No,",1,saw the murder
-5,32,male,English,AmE,""":""""}",final NRRC,"No,",1,lost his key
-5,32,male,English,AmE,""":""""}",AI MC,"No,",1,control
-5,32,male,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-5,32,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-5,32,male,English,AmE,""":""""}",confess,"No,",1,broke the plate
-1,26,male,English,AmE,""":""""}",confess,"Yes, but",0,saw the murder
-1,26,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-1,26,male,English,AmE,""":""""}",AI MC,"No,",1,control
-1,26,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
-1,26,male,English,AmE,""":""""}",know,"No,",1,lost his key
-1,26,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,broke the plate
-1,26,male,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-1,26,male,English,AmE,""":""""}",medial NRRC,"Yes, but",0,bought a new car
-1,26,male,English,AmE,""":""""}",confirm,"No,",1,stole the money
-44,31,female,English,AmE,""":""""}",AI MC,"No,",1,control
-44,31,female,English,AmE,""":""""}",final NRRC,"No,",1,cheated on his wife
-44,31,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-44,31,female,English,AmE,""":""""}",confirm,"No,",1,lost his key
-44,31,female,English,AmE,""":""""}",know,"No,",1,stole the money
-44,31,female,English,AmE,""":""""}",discover,"No,",1,bought a new car
-44,31,female,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-44,31,female,English,AmE,""":""""}",confess,"No,",1,broke the plate
-44,31,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-46,51,female,English,AmE,"""}",NAI MC,"Yes, and",0,control
-46,51,female,English,AmE,"""}",final NRRC,"No,",1,lost his key
-46,51,female,English,AmE,"""}",AI MC,"No,",1,control
-46,51,female,English,AmE,"""}",be right,"No,",1,cheated on his wife
-46,51,female,English,AmE,"""}",confess,"No,",1,saw the murder
-46,51,female,English,AmE,"""}",medial NRRC,"Yes, but",0,bought a new car
-46,51,female,English,AmE,"""}",discover,"No,",1,broke the plate
-46,51,female,English,AmE,"""}",confirm,"No,",1,ate the last cupcake
-46,51,female,English,AmE,"""}",know,"No,",1,stole the money
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",confirm,"No,",1,lost his key
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",final NRRC,"Yes, but",0,ate the last cupcake
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",AI MC,"No,",1,control
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",be right,"No,",1,stole the money
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",discover,"No,",1,saw the murder
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",confess,"No,",1,cheated on his wife
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",know,"No,",1,broke the plate
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",NAI MC,"Yes, and",0,control
-52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",medial NRRC,"Yes, but",0,bought a new car
-48,28,male,English,AmE,""":""""}",know,"No,",1,cheated on his wife
-48,28,male,English,AmE,""":""""}",confess,"Yes, but",0,stole the money
-48,28,male,English,AmE,""":""""}",medial NRRC,"Yes, but",0,saw the murder
-48,28,male,English,AmE,""":""""}",AI MC,"No,",1,control
-48,28,male,English,AmE,""":""""}",be right,"No,",1,broke the plate
-48,28,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,bought a new car
-48,28,male,English,AmE,""":""""}",discover,"No,",1,lost his key
-48,28,male,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-48,28,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-8,27,male,English,AmE,""":""no comment""}",confess,"No,",1,bought a new car
-8,27,male,English,AmE,""":""no comment""}",AI MC,"No,",1,control
-8,27,male,English,AmE,""":""no comment""}",confirm,"No,",1,lost his key
-8,27,male,English,AmE,""":""no comment""}",medial NRRC,"No,",1,saw the murder
-8,27,male,English,AmE,""":""no comment""}",be right,"No,",1,broke the plate
-8,27,male,English,AmE,""":""no comment""}",final NRRC,"No,",1,ate the last cupcake
-8,27,male,English,AmE,""":""no comment""}",know,"No,",1,cheated on his wife
-8,27,male,English,AmE,""":""no comment""}",discover,"No,",1,stole the money
-8,27,male,English,AmE,""":""no comment""}",NAI MC,"Yes, and",0,control
-9,29,female,English,AmE,""":""n/a""}",confirm,"No,",1,cheated on his wife
-9,29,female,English,AmE,""":""n/a""}",AI MC,"No,",1,control
-9,29,female,English,AmE,""":""n/a""}",medial NRRC,"No,",1,lost his key
-9,29,female,English,AmE,""":""n/a""}",know,"No,",1,bought a new car
-9,29,female,English,AmE,""":""n/a""}",discover,"No,",1,ate the last cupcake
-9,29,female,English,AmE,""":""n/a""}",NAI MC,"Yes, and",0,control
-9,29,female,English,AmE,""":""n/a""}",final NRRC,"Yes, but",0,broke the plate
-9,29,female,English,AmE,""":""n/a""}",be right,"No,",1,stole the money
-9,29,female,English,AmE,""":""n/a""}",confess,"Yes, but",0,saw the murder
-33,36,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-33,36,female,English,AmE,""":""""}",be right,"No,",1,stole the money
-33,36,female,English,AmE,""":""""}",AI MC,"No,",1,control
-33,36,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-33,36,female,English,AmE,""":""""}",final NRRC,"No,",1,cheated on his wife
-33,36,female,English,AmE,""":""""}",know,"No,",1,broke the plate
-33,36,female,English,AmE,""":""""}",medial NRRC,"No,",1,saw the murder
-33,36,female,English,AmE,""":""""}",discover,"No,",1,lost his key
-33,36,female,English,AmE,""":""""}",confess,"No,",1,ate the last cupcake
-76,54,female,English,AmE,""":""""}",confess,"No,",1,broke the plate
-76,54,female,English,AmE,""":""""}",AI MC,"No,",1,control
-76,54,female,English,AmE,""":""""}",know,"No,",1,cheated on his wife
-76,54,female,English,AmE,""":""""}",discover,"No,",1,bought a new car
-76,54,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-76,54,female,English,AmE,""":""""}",final NRRC,"No,",1,lost his key
-76,54,female,English,AmE,""":""""}",confirm,"No,",1,stole the money
-76,54,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,saw the murder
-76,54,female,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-34,39,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-34,39,female,English,AmE,""":""""}",know,"No,",1,lost his key
-34,39,female,English,AmE,""":""""}",confess,"Yes, but",0,broke the plate
-34,39,female,English,AmE,""":""""}",AI MC,"No,",1,control
-34,39,female,English,AmE,""":""""}",confirm,"No,",1,cheated on his wife
-34,39,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
-34,39,female,English,AmE,""":""""}",medial NRRC,"No,",1,stole the money
-34,39,female,English,AmE,""":""""}",be right,"No,",1,saw the murder
-34,39,female,English,AmE,""":""""}",final NRRC,"No,",1,bought a new car
-15,52,male,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-15,52,male,English,AmE,""":""""}",AI MC,"No,",1,control
-15,52,male,English,AmE,""":""""}",discover,"No,",1,stole the money
-15,52,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-15,52,male,English,AmE,""":""""}",know,"No,",1,lost his key
-15,52,male,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-15,52,male,English,AmE,""":""""}",confirm,"No,",1,broke the plate
-15,52,male,English,AmE,""":""""}",final NRRC,"No,",1,saw the murder
-15,52,male,English,AmE,""":""""}",confess,"No,",1,bought a new car
-40,48,female,English,AmE,""":""""}",discover,"Yes, but",0,bought a new car
-40,48,female,English,AmE,""":""""}",confess,"Yes, but",0,cheated on his wife
-40,48,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,ate the last cupcake
-40,48,female,English,AmE,""":""""}",confirm,"Yes, but",0,saw the murder
-40,48,female,English,AmE,""":""""}",know,"Yes, but",0,broke the plate
-40,48,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-40,48,female,English,AmE,""":""""}",AI MC,"No,",1,control
-40,48,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,stole the money
-40,48,female,English,AmE,""":""""}",be right,"No,",1,lost his key
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",confirm,"No,",1,broke the plate
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",know,"No,",1,ate the last cupcake
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",be right,"No,",1,stole the money
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",medial NRRC,"No,",1,lost his key
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",AI MC,"No,",1,control
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",NAI MC,"Yes, and",0,control
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",discover,"No,",1,saw the murder
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",final NRRC,"No,",1,cheated on his wife
-71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",confess,"No,",1,bought a new car
-18,41,female,English,AmE,""":""""}",confess,"No,",1,cheated on his wife
-18,41,female,English,AmE,""":""""}",discover,"No,",1,stole the money
-18,41,female,English,AmE,""":""""}",be right,"No,",1,bought a new car
-18,41,female,English,AmE,""":""""}",know,"No,",1,saw the murder
-18,41,female,English,AmE,""":""""}",final NRRC,"No,",1,lost his key
-18,41,female,English,AmE,""":""""}",AI MC,"No,",1,control
-18,41,female,English,AmE,""":""""}",confirm,"No,",1,broke the plate
-18,41,female,English,AmE,""":""""}",medial NRRC,"No,",1,ate the last cupcake
-18,41,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-67,57,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,bought a new car
-67,57,female,English,AmE,""":""""}",know,"Yes, but",0,ate the last cupcake
-67,57,female,English,AmE,""":""""}",AI MC,"No,",1,control
-67,57,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-67,57,female,English,AmE,""":""""}",be right,"No,",1,saw the murder
-67,57,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,broke the plate
-67,57,female,English,AmE,""":""""}",confirm,"Yes, but",0,stole the money
-67,57,female,English,AmE,""":""""}",confess,"No,",1,cheated on his wife
-67,57,female,English,AmE,""":""""}",discover,"Yes, but",0,lost his key
-23,67,female,English,AmE,""":""""}",AI MC,"No,",1,control
-23,67,female,English,AmE,""":""""}",know,"No,",1,broke the plate
-23,67,female,English,AmE,""":""""}",discover,"No,",1,ate the last cupcake
-23,67,female,English,AmE,""":""""}",be right,"No,",1,lost his key
-23,67,female,English,AmE,""":""""}",final NRRC,"No,",1,cheated on his wife
-23,67,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-23,67,female,English,AmE,""":""""}",confirm,"No,",1,stole the money
-23,67,female,English,AmE,""":""""}",confess,"Yes, but",0,saw the murder
-23,67,female,English,AmE,""":""""}",medial NRRC,"No,",1,bought a new car
-62,30,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-62,30,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-62,30,female,English,AmE,""":""""}",medial NRRC,"No,",1,ate the last cupcake
-62,30,female,English,AmE,""":""""}",confess,"No,",1,stole the money
-62,30,female,English,AmE,""":""""}",discover,"No,",1,saw the murder
-62,30,female,English,AmE,""":""""}",AI MC,"No,",1,control
-62,30,female,English,AmE,""":""""}",know,"No,",1,broke the plate
-62,30,female,English,AmE,""":""""}",confirm,"No,",1,bought a new car
-62,30,female,English,AmE,""":""""}",final NRRC,"No,",1,lost his key
-61,44,female,English,AmE,""":""""}",final NRRC,"Yes, but",0,ate the last cupcake
-61,44,female,English,AmE,""":""""}",confirm,"No,",1,broke the plate
-61,44,female,English,AmE,""":""""}",know,"No,",1,stole the money
-61,44,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,saw the murder
-61,44,female,English,AmE,""":""""}",AI MC,"No,",1,control
-61,44,female,English,AmE,""":""""}",confess,"No,",1,bought a new car
-61,44,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-61,44,female,English,AmE,""":""""}",discover,"No,",1,lost his key
-61,44,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-27,29,male,English,AmE,""":""""}",confirm,"Yes, but",0,saw the murder
-27,29,male,English,AmE,""":""""}",medial NRRC,"Yes, but",0,broke the plate
-27,29,male,English,AmE,""":""""}",final NRRC,"Yes, but",0,cheated on his wife
-27,29,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-27,29,male,English,AmE,""":""""}",AI MC,"No,",1,control
-27,29,male,English,AmE,""":""""}",be right,"No,",1,ate the last cupcake
-27,29,male,English,AmE,""":""""}",discover,"No,",1,lost his key
-27,29,male,English,AmE,""":""""}",confess,"Yes, but",0,stole the money
-27,29,male,English,AmE,""":""""}",know,"No,",1,bought a new car
-45,62,female,English,AmE,""":""None""}",be right,"No,",1,bought a new car
-45,62,female,English,AmE,""":""None""}",NAI MC,"Yes, and",0,control
-45,62,female,English,AmE,""":""None""}",confirm,"No,",1,saw the murder
-45,62,female,English,AmE,""":""None""}",know,"No,",1,lost his key
-45,62,female,English,AmE,""":""None""}",medial NRRC,"No,",1,ate the last cupcake
-45,62,female,English,AmE,""":""None""}",final NRRC,"Yes, but",0,broke the plate
-45,62,female,English,AmE,""":""None""}",discover,"No,",1,cheated on his wife
-45,62,female,English,AmE,""":""None""}",AI MC,"No,",1,control
-45,62,female,English,AmE,""":""None""}",confess,"Yes, but",0,stole the money
-77,40,male,English,AmE,""":""""}",final NRRC,"No,",1,ate the last cupcake
-77,40,male,English,AmE,""":""""}",know,"No,",1,saw the murder
-77,40,male,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-77,40,male,English,AmE,""":""""}",discover,"No,",1,cheated on his wife
-77,40,male,English,AmE,""":""""}",medial NRRC,"No,",1,broke the plate
-77,40,male,English,AmE,""":""""}",confess,"No,",1,bought a new car
-77,40,male,English,AmE,""":""""}",AI MC,"No,",1,control
-77,40,male,English,AmE,""":""""}",be right,"No,",1,stole the money
-77,40,male,English,AmE,""":""""}",confirm,"No,",1,lost his key
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",AI MC,"No,",1,control
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",discover,"No,",1,saw the murder
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",know,"Yes, but",0,bought a new car
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",confirm,"No,",1,stole the money
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",confess,"Yes, but",0,cheated on his wife
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",NAI MC,"Yes, and",0,control
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",medial NRRC,"Yes, but",0,ate the last cupcake
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",be right,"Yes, but",0,broke the plate
-2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",final NRRC,"Yes, but",0,lost his key
-43,43,female,English,AmE,""":""""}",AI MC,"No,",1,control
-43,43,female,English,AmE,""":""""}",discover,"No,",1,lost his key
-43,43,female,English,AmE,""":""""}",know,"Yes, but",0,saw the murder
-43,43,female,English,AmE,""":""""}",medial NRRC,"No,",1,cheated on his wife
-43,43,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
-43,43,female,English,AmE,""":""""}",confess,"Yes, but",0,stole the money
-43,43,female,English,AmE,""":""""}",final NRRC,"No,",1,bought a new car
-43,43,female,English,AmE,""":""""}",be right,"No,",1,broke the plate
-43,43,female,English,AmE,""":""""}",confirm,"No,",1,ate the last cupcake
-60,45,female,English,AmE,""":""""}",be right,"No,",1,cheated on his wife
-60,45,female,English,AmE,""":""""}",final NRRC,"No,",1,lost his key
-60,45,female,English,AmE,""":""""}",confess,"Yes, but",0,saw the murder
-60,45,female,English,AmE,""":""""}",medial NRRC,"Yes, but",0,broke the plate
-60,45,female,English,AmE,""":""""}",confirm,"Yes, but",0,ate the last cupcake
-60,45,female,English,AmE,""":""""}",know,"No,",1,stole the money
-60,45,female,English,AmE,""":""""}",AI MC,"No,",1,control
-60,45,female,English,AmE,""":""""}",discover,"No,",1,bought a new car
-60,45,female,English,AmE,""":""""}",NAI MC,"Yes, and",0,control
+41,23,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+41,23,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,lost his key
+41,23,female,English,AmE,""":""""}",confirm,"Yes, but",1,bought a new car
+41,23,female,English,AmE,""":""""}",AI MC,No,0,control
+41,23,female,English,AmE,""":""""}",confess,"Yes, but",1,ate the last cupcake
+41,23,female,English,AmE,""":""""}",know,No,0,stole the money
+41,23,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,cheated on his wife
+41,23,female,English,AmE,""":""""}",discover,"Yes, but",1,broke the plate
+41,23,female,English,AmE,""":""""}",be right,No,0,saw the murder
+74,30,male,English,AmE,""":""none""}",be right,No,0,lost his key
+74,30,male,English,AmE,""":""none""}",discover,No,0,broke the plate
+74,30,male,English,AmE,""":""none""}",AI MC,No,0,control
+74,30,male,English,AmE,""":""none""}",medial NRRC,No,0,bought a new car
+74,30,male,English,AmE,""":""none""}",NAI MC,"Yes, and",1,control
+74,30,male,English,AmE,""":""none""}",final NRRC,No,0,stole the money
+74,30,male,English,AmE,""":""none""}",confirm,No,0,saw the murder
+74,30,male,English,AmE,""":""none""}",know,No,0,ate the last cupcake
+74,30,male,English,AmE,""":""none""}",confess,No,0,cheated on his wife
+42,34,female,English,AmE,""":""""}",AI MC,No,0,control
+42,34,female,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+42,34,female,English,AmE,""":""""}",know,"Yes, but",1,broke the plate
+42,34,female,English,AmE,""":""""}",be right,No,0,cheated on his wife
+42,34,female,English,AmE,""":""""}",confess,No,0,saw the murder
+42,34,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+42,34,female,English,AmE,""":""""}",final NRRC,No,0,bought a new car
+42,34,female,English,AmE,""":""""}",discover,No,0,lost his key
+42,34,female,English,AmE,""":""""}",medial NRRC,No,0,stole the money
+72,32,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,stole the money
+72,32,female,English,AmE,""":""""}",confess,No,0,ate the last cupcake
+72,32,female,English,AmE,""":""""}",discover,No,0,lost his key
+72,32,female,English,AmE,""":""""}",know,No,0,cheated on his wife
+72,32,female,English,AmE,""":""""}",AI MC,No,0,control
+72,32,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+72,32,female,English,AmE,""":""""}",confirm,No,0,saw the murder
+72,32,female,English,AmE,""":""""}",be right,No,0,bought a new car
+72,32,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,broke the plate
+21,34,female,English,AmE,""":""no idea""}",NAI MC,"Yes, and",1,control
+21,34,female,English,AmE,""":""no idea""}",discover,No,0,bought a new car
+21,34,female,English,AmE,""":""no idea""}",confess,No,0,cheated on his wife
+21,34,female,English,AmE,""":""no idea""}",AI MC,No,0,control
+21,34,female,English,AmE,""":""no idea""}",know,No,0,broke the plate
+21,34,female,English,AmE,""":""no idea""}",confirm,No,0,ate the last cupcake
+21,34,female,English,AmE,""":""no idea""}",medial NRRC,No,0,lost his key
+21,34,female,English,AmE,""":""no idea""}",final NRRC,"Yes, but",1,saw the murder
+21,34,female,English,AmE,""":""no idea""}",be right,No,0,stole the money
+36,28,female,English,AmE,""":""""}",confess,"Yes, but",1,saw the murder
+36,28,female,English,AmE,""":""""}",be right,No,0,broke the plate
+36,28,female,English,AmE,""":""""}",AI MC,No,0,control
+36,28,female,English,AmE,""":""""}",know,No,0,stole the money
+36,28,female,English,AmE,""":""""}",discover,No,0,ate the last cupcake
+36,28,female,English,AmE,""":""""}",medial NRRC,No,0,lost his key
+36,28,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,cheated on his wife
+36,28,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+36,28,female,English,AmE,""":""""}",confirm,No,0,bought a new car
+50,37,female,English,AmE,""":""""}",confirm,No,0,stole the money
+50,37,female,English,AmE,""":""""}",discover,No,0,cheated on his wife
+50,37,female,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+50,37,female,English,AmE,""":""""}",AI MC,No,0,control
+50,37,female,English,AmE,""":""""}",medial NRRC,No,0,broke the plate
+50,37,female,English,AmE,""":""""}",know,No,0,lost his key
+50,37,female,English,AmE,""":""""}",confess,No,0,saw the murder
+50,37,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+50,37,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,bought a new car
+75,19,male,English,AmE,""":""""}",AI MC,No,0,control
+75,19,male,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+75,19,male,English,AmE,""":""""}",know,No,0,bought a new car
+75,19,male,English,AmE,""":""""}",confess,No,0,broke the plate
+75,19,male,English,AmE,""":""""}",discover,No,0,cheated on his wife
+75,19,male,English,AmE,""":""""}",be right,No,0,stole the money
+75,19,male,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+75,19,male,English,AmE,""":""""}",final NRRC,No,0,lost his key
+75,19,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+32,47,male,English,AmE,""":""""}",AI MC,No,0,control
+32,47,male,English,AmE,""":""""}",discover,No,0,ate the last cupcake
+32,47,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+32,47,male,English,AmE,""":""""}",confirm,No,0,bought a new car
+32,47,male,English,AmE,""":""""}",be right,No,0,lost his key
+32,47,male,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+32,47,male,English,AmE,""":""""}",confess,No,0,broke the plate
+32,47,male,English,AmE,""":""""}",know,No,0,saw the murder
+32,47,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,stole the money
+6,50,female,English,AmE,""":""""}",confess,No,0,stole the money
+6,50,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,cheated on his wife
+6,50,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+6,50,female,English,AmE,""":""""}",discover,No,0,ate the last cupcake
+6,50,female,English,AmE,""":""""}",know,No,0,saw the murder
+6,50,female,English,AmE,""":""""}",AI MC,No,0,control
+6,50,female,English,AmE,""":""""}",be right,No,0,lost his key
+6,50,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,broke the plate
+6,50,female,English,AmE,""":""""}",confirm,No,0,bought a new car
+16,32,male,English,AmE,""":""""}",discover,No,0,lost his key
+16,32,male,English,AmE,""":""""}",confess,"Yes, but",1,ate the last cupcake
+16,32,male,English,AmE,""":""""}",AI MC,No,0,control
+16,32,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,bought a new car
+16,32,male,English,AmE,""":""""}",medial NRRC,"Yes, but",1,broke the plate
+16,32,male,English,AmE,""":""""}",know,"Yes, but",1,cheated on his wife
+16,32,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+16,32,male,English,AmE,""":""""}",be right,No,0,stole the money
+16,32,male,English,AmE,""":""""}",confirm,"Yes, but",1,saw the murder
+10,22,female,English,AmE,""":""""}",be right,"Yes, and",1,saw the murder
+10,22,female,English,AmE,""":""""}",discover,"Yes, but",1,bought a new car
+10,22,female,English,AmE,""":""""}",confirm,No,0,cheated on his wife
+10,22,female,English,AmE,""":""""}",confess,No,0,stole the money
+10,22,female,English,AmE,""":""""}",medial NRRC,No,0,broke the plate
+10,22,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+10,22,female,English,AmE,""":""""}",know,No,0,ate the last cupcake
+10,22,female,English,AmE,""":""""}",AI MC,No,0,control
+10,22,female,English,AmE,""":""""}",final NRRC,No,0,lost his key
+69,29,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+69,29,female,English,AmE,""":""""}",AI MC,No,0,control
+69,29,female,English,AmE,""":""""}",know,No,0,ate the last cupcake
+69,29,female,English,AmE,""":""""}",confirm,No,0,stole the money
+69,29,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,cheated on his wife
+69,29,female,English,AmE,""":""""}",confess,"Yes, but",1,broke the plate
+69,29,female,English,AmE,""":""""}",medial NRRC,No,0,lost his key
+69,29,female,English,AmE,""":""""}",discover,"Yes, but",1,saw the murder
+69,29,female,English,AmE,""":""""}",be right,No,0,bought a new car
+39,26,male,English,AmE,""":""""}",confess,"Yes, but",1,cheated on his wife
+39,26,male,English,AmE,""":""""}",know,No,0,ate the last cupcake
+39,26,male,English,AmE,""":""""}",confirm,No,0,saw the murder
+39,26,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,bought a new car
+39,26,male,English,AmE,""":""""}",medial NRRC,"Yes, but",1,broke the plate
+39,26,male,English,AmE,""":""""}",be right,No,0,stole the money
+39,26,male,English,AmE,""":""""}",AI MC,No,0,control
+39,26,male,English,AmE,""":""""}",discover,No,0,lost his key
+39,26,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+22,45,female,English,AmE,""":""""}",confirm,No,0,broke the plate
+22,45,female,English,AmE,""":""""}",discover,No,0,cheated on his wife
+22,45,female,English,AmE,""":""""}",be right,No,0,bought a new car
+22,45,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+22,45,female,English,AmE,""":""""}",confess,No,0,stole the money
+22,45,female,English,AmE,""":""""}",final NRRC,No,0,saw the murder
+22,45,female,English,AmE,""":""""}",AI MC,No,0,control
+22,45,female,English,AmE,""":""""}",medial NRRC,No,0,lost his key
+22,45,female,English,AmE,""":""""}",know,No,0,ate the last cupcake
+47,38,male,English,AmE,""":""no issues""}",confess,No,0,lost his key
+47,38,male,English,AmE,""":""no issues""}",know,No,0,ate the last cupcake
+47,38,male,English,AmE,""":""no issues""}",medial NRRC,No,0,bought a new car
+47,38,male,English,AmE,""":""no issues""}",be right,No,0,stole the money
+47,38,male,English,AmE,""":""no issues""}",final NRRC,"Yes, but",1,broke the plate
+47,38,male,English,AmE,""":""no issues""}",discover,No,0,cheated on his wife
+47,38,male,English,AmE,""":""no issues""}",AI MC,No,0,control
+47,38,male,English,AmE,""":""no issues""}",NAI MC,"Yes, and",1,control
+47,38,male,English,AmE,""":""no issues""}",confirm,No,0,saw the murder
+38,34,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+38,34,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,saw the murder
+38,34,male,English,AmE,""":""""}",AI MC,No,0,control
+38,34,male,English,AmE,""":""""}",confess,No,0,bought a new car
+38,34,male,English,AmE,""":""""}",know,No,0,broke the plate
+38,34,male,English,AmE,""":""""}",be right,No,0,stole the money
+38,34,male,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+38,34,male,English,AmE,""":""""}",medial NRRC,No,0,lost his key
+38,34,male,English,AmE,""":""""}",discover,No,0,cheated on his wife
+13,36,male,English,AmE,""":""""}",be right,No,0,cheated on his wife
+13,36,male,English,AmE,""":""""}",confirm,No,0,lost his key
+13,36,male,English,AmE,""":""""}",discover,No,0,stole the money
+13,36,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,broke the plate
+13,36,male,English,AmE,""":""""}",confess,No,0,ate the last cupcake
+13,36,male,English,AmE,""":""""}",know,No,0,bought a new car
+13,36,male,English,AmE,""":""""}",AI MC,No,0,control
+13,36,male,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+13,36,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+14,25,male,English,AmE,""":""I have an English BA.""}",be right,No,0,lost his key
+14,25,male,English,AmE,""":""I have an English BA.""}",confirm,No,0,ate the last cupcake
+14,25,male,English,AmE,""":""I have an English BA.""}",final NRRC,No,0,cheated on his wife
+14,25,male,English,AmE,""":""I have an English BA.""}",NAI MC,"Yes, and",1,control
+14,25,male,English,AmE,""":""I have an English BA.""}",AI MC,No,0,control
+14,25,male,English,AmE,""":""I have an English BA.""}",know,No,0,stole the money
+14,25,male,English,AmE,""":""I have an English BA.""}",confess,No,0,bought a new car
+14,25,male,English,AmE,""":""I have an English BA.""}",medial NRRC,No,0,saw the murder
+14,25,male,English,AmE,""":""I have an English BA.""}",discover,No,0,broke the plate
+63,63,male,English,AmE,""":""""}",confirm,No,0,lost his key
+63,63,male,English,AmE,""":""""}",AI MC,No,0,control
+63,63,male,English,AmE,""":""""}",confess,No,0,cheated on his wife
+63,63,male,English,AmE,""":""""}",discover,No,0,stole the money
+63,63,male,English,AmE,""":""""}",be right,No,0,saw the murder
+63,63,male,English,AmE,""":""""}",medial NRRC,No,0,broke the plate
+63,63,male,English,AmE,""":""""}",final NRRC,No,0,bought a new car
+63,63,male,English,AmE,""":""""}",know,"Yes, but",1,ate the last cupcake
+63,63,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+51,28,female,English,AmE,""":""""}",final NRRC,No,0,ate the last cupcake
+51,28,female,English,AmE,""":""""}",confess,No,0,bought a new car
+51,28,female,English,AmE,""":""""}",AI MC,No,0,control
+51,28,female,English,AmE,""":""""}",be right,No,0,stole the money
+51,28,female,English,AmE,""":""""}",discover,No,0,saw the murder
+51,28,female,English,AmE,""":""""}",confirm,No,0,cheated on his wife
+51,28,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+51,28,female,English,AmE,""":""""}",medial NRRC,No,0,lost his key
+51,28,female,English,AmE,""":""""}",know,No,0,broke the plate
+28,33,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,saw the murder
+28,33,female,English,AmE,""":""""}",know,No,0,stole the money
+28,33,female,English,AmE,""":""""}",discover,No,0,ate the last cupcake
+28,33,female,English,AmE,""":""""}",confess,"Yes, but",1,lost his key
+28,33,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,cheated on his wife
+28,33,female,English,AmE,""":""""}",AI MC,No,0,control
+28,33,female,English,AmE,""":""""}",be right,No,0,bought a new car
+28,33,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+28,33,female,English,AmE,""":""""}",confirm,"Yes, but",1,broke the plate
+70,30,female,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+70,30,female,English,AmE,""":""""}",AI MC,No,0,control
+70,30,female,English,AmE,""":""""}",know,No,0,ate the last cupcake
+70,30,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+70,30,female,English,AmE,""":""""}",be right,No,0,lost his key
+70,30,female,English,AmE,""":""""}",final NRRC,No,0,bought a new car
+70,30,female,English,AmE,""":""""}",confess,No,0,stole the money
+70,30,female,English,AmE,""":""""}",discover,No,0,broke the plate
+70,30,female,English,AmE,""":""""}",confirm,No,0,saw the murder
+4,51,female,English,AmE,""":""Thanks!""}",confess,No,0,stole the money
+4,51,female,English,AmE,""":""Thanks!""}",confirm,No,0,saw the murder
+4,51,female,English,AmE,""":""Thanks!""}",NAI MC,"Yes, and",1,control
+4,51,female,English,AmE,""":""Thanks!""}",final NRRC,No,0,cheated on his wife
+4,51,female,English,AmE,""":""Thanks!""}",know,No,0,ate the last cupcake
+4,51,female,English,AmE,""":""Thanks!""}",be right,No,0,bought a new car
+4,51,female,English,AmE,""":""Thanks!""}",medial NRRC,"Yes, but",1,broke the plate
+4,51,female,English,AmE,""":""Thanks!""}",AI MC,No,0,control
+4,51,female,English,AmE,""":""Thanks!""}",discover,No,0,lost his key
+7,54,male,English,AmE,""":""""}",AI MC,No,0,control
+7,54,male,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+7,54,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+7,54,male,English,AmE,""":""""}",confess,No,0,lost his key
+7,54,male,English,AmE,""":""""}",final NRRC,No,0,bought a new car
+7,54,male,English,AmE,""":""""}",know,"Yes, but",1,ate the last cupcake
+7,54,male,English,AmE,""":""""}",confirm,No,0,saw the murder
+7,54,male,English,AmE,""":""""}",discover,No,0,stole the money
+7,54,male,English,AmE,""":""""}",be right,No,0,broke the plate
+49,28,non-binary,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+49,28,non-binary,English,AmE,""":""""}",AI MC,No,0,control
+49,28,non-binary,English,AmE,""":""""}",confirm,No,0,bought a new car
+49,28,non-binary,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+49,28,non-binary,English,AmE,""":""""}",final NRRC,No,0,ate the last cupcake
+49,28,non-binary,English,AmE,""":""""}",be right,No,0,cheated on his wife
+49,28,non-binary,English,AmE,""":""""}",discover,No,0,broke the plate
+49,28,non-binary,English,AmE,""":""""}",confess,No,0,lost his key
+49,28,non-binary,English,AmE,""":""""}",know,No,0,stole the money
+25,56,female,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+25,56,female,English,AmE,""":""""}",know,"Yes, but",1,lost his key
+25,56,female,English,AmE,""":""""}",confirm,"Yes, but",1,saw the murder
+25,56,female,English,AmE,""":""""}",final NRRC,No,0,cheated on his wife
+25,56,female,English,AmE,""":""""}",AI MC,No,0,control
+25,56,female,English,AmE,""":""""}",discover,No,0,broke the plate
+25,56,female,English,AmE,""":""""}",confess,No,0,bought a new car
+25,56,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+25,56,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,stole the money
+54,43,female,English,AmE,""":""""}",know,No,0,broke the plate
+54,43,female,English,AmE,""":""""}",confirm,No,0,bought a new car
+54,43,female,English,AmE,""":""""}",final NRRC,No,0,lost his key
+54,43,female,English,AmE,""":""""}",AI MC,No,0,control
+54,43,female,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+54,43,female,English,AmE,""":""""}",discover,No,0,stole the money
+54,43,female,English,AmE,""":""""}",confess,No,0,ate the last cupcake
+54,43,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+54,43,female,English,AmE,""":""""}",be right,No,0,saw the murder
+37,23,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+37,23,male,English,AmE,""":""""}",know,No,0,saw the murder
+37,23,male,English,AmE,""":""""}",be right,No,0,cheated on his wife
+37,23,male,English,AmE,""":""""}",confess,"Yes, but",1,broke the plate
+37,23,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,stole the money
+37,23,male,English,AmE,""":""""}",discover,No,0,lost his key
+37,23,male,English,AmE,""":""""}",AI MC,No,0,control
+37,23,male,English,AmE,""":""""}",confirm,No,0,bought a new car
+37,23,male,English,AmE,""":""""}",medial NRRC,"Yes, but",1,ate the last cupcake
+56,20,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,saw the murder
+56,20,female,English,AmE,""":""""}",confirm,"Yes, but",1,bought a new car
+56,20,female,English,AmE,""":""""}",AI MC,No,0,control
+56,20,female,English,AmE,""":""""}",confess,No,0,ate the last cupcake
+56,20,female,English,AmE,""":""""}",know,"Yes, but",1,stole the money
+56,20,female,English,AmE,""":""""}",be right,No,0,cheated on his wife
+56,20,female,English,AmE,""":""""}",discover,No,0,lost his key
+56,20,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+56,20,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,broke the plate
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",confirm,"Yes, but",1,lost his key
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",know,No,0,saw the murder
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",AI MC,No,0,control
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",final NRRC,"Yes, but",1,bought a new car
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",discover,No,0,broke the plate
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",medial NRRC,"Yes, but",1,ate the last cupcake
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",be right,No,0,stole the money
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",NAI MC,"Yes, and",1,control
+80,56,male,English,AmE,""":""Thank you for the opportunity to participate.""}",confess,"Yes, but",1,cheated on his wife
+58,36,female,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+58,36,female,English,AmE,""":""""}",be right,No,0,stole the money
+58,36,female,English,AmE,""":""""}",AI MC,No,0,control
+58,36,female,English,AmE,""":""""}",know,No,0,cheated on his wife
+58,36,female,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+58,36,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+58,36,female,English,AmE,""":""""}",discover,No,0,broke the plate
+58,36,female,English,AmE,""":""""}",final NRRC,No,0,bought a new car
+58,36,female,English,AmE,""":""""}",confess,No,0,lost his key
+24,57,female,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+24,57,female,English,AmE,""":""""}",discover,No,0,stole the money
+24,57,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+24,57,female,English,AmE,""":""""}",know,No,0,saw the murder
+24,57,female,English,AmE,""":""""}",AI MC,No,0,control
+24,57,female,English,AmE,""":""""}",be right,No,0,broke the plate
+24,57,female,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+24,57,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,lost his key
+24,57,female,English,AmE,""":""""}",confess,No,0,bought a new car
+19,29,male,English,AmE,""":""""}",confirm,No,0,lost his key
+19,29,male,English,AmE,""":""""}",confess,No,0,broke the plate
+19,29,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+19,29,male,English,AmE,""":""""}",final NRRC,No,0,stole the money
+19,29,male,English,AmE,""":""""}",AI MC,No,0,control
+19,29,male,English,AmE,""":""""}",discover,No,0,cheated on his wife
+19,29,male,English,AmE,""":""""}",know,No,0,bought a new car
+19,29,male,English,AmE,""":""""}",medial NRRC,No,0,ate the last cupcake
+19,29,male,English,AmE,""":""""}",be right,No,0,saw the murder
+73,25,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+73,25,female,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+73,25,female,English,AmE,""":""""}",confirm,No,0,broke the plate
+73,25,female,English,AmE,""":""""}",discover,No,0,bought a new car
+73,25,female,English,AmE,""":""""}",final NRRC,No,0,saw the murder
+73,25,female,English,AmE,""":""""}",confess,No,0,lost his key
+73,25,female,English,AmE,""":""""}",AI MC,No,0,control
+73,25,female,English,AmE,""":""""}",know,No,0,ate the last cupcake
+73,25,female,English,AmE,""":""""}",be right,No,0,stole the money
+79,40,female,English,AmE,""":""""}",confess,No,0,broke the plate
+79,40,female,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+79,40,female,English,AmE,""":""""}",discover,No,0,lost his key
+79,40,female,English,AmE,""":""""}",AI MC,No,0,control
+79,40,female,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+79,40,female,English,AmE,""":""""}",final NRRC,No,0,stole the money
+79,40,female,English,AmE,""":""""}",confirm,No,0,cheated on his wife
+79,40,female,English,AmE,""":""""}",know,No,0,bought a new car
+79,40,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+3,33,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,ate the last cupcake
+3,33,female,English,AmE,""":""""}",confirm,No,0,bought a new car
+3,33,female,English,AmE,""":""""}",know,No,0,stole the money
+3,33,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+3,33,female,English,AmE,""":""""}",AI MC,No,0,control
+3,33,female,English,AmE,""":""""}",be right,No,0,cheated on his wife
+3,33,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,broke the plate
+3,33,female,English,AmE,""":""""}",discover,No,0,saw the murder
+3,33,female,English,AmE,""":""""}",confess,"Yes, but",1,lost his key
+57,24,female,English,AmE,""":""""}",confirm,"Yes, but",1,ate the last cupcake
+57,24,female,English,AmE,""":""""}",final NRRC,No,0,stole the money
+57,24,female,English,AmE,""":""""}",be right,"Yes, but",1,bought a new car
+57,24,female,English,AmE,""":""""}",know,No,0,lost his key
+57,24,female,English,AmE,""":""""}",confess,No,0,cheated on his wife
+57,24,female,English,AmE,""":""""}",medial NRRC,No,0,broke the plate
+57,24,female,English,AmE,""":""""}",AI MC,No,0,control
+57,24,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+57,24,female,English,AmE,""":""""}",discover,No,0,saw the murder
+66,44,female,English,AmE,""":""""}",discover,"Yes, but",1,bought a new car
+66,44,female,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+66,44,female,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+66,44,female,English,AmE,""":""""}",know,No,0,cheated on his wife
+66,44,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+66,44,female,English,AmE,""":""""}",confirm,"Yes, but",1,stole the money
+66,44,female,English,AmE,""":""""}",confess,"Yes, but",1,broke the plate
+66,44,female,English,AmE,""":""""}",AI MC,No,0,control
+66,44,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,lost his key
+26,41,male,English,AmE,""":""""}",be right,No,0,bought a new car
+26,41,male,English,AmE,""":""""}",discover,"Yes, but",1,lost his key
+26,41,male,English,AmE,""":""""}",confess,No,0,stole the money
+26,41,male,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+26,41,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,saw the murder
+26,41,male,English,AmE,""":""""}",AI MC,No,0,control
+26,41,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+26,41,male,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+26,41,male,English,AmE,""":""""}",know,No,0,broke the plate
+55,42,male,English,AmE,""":""""}",medial NRRC,"Yes, but",1,stole the money
+55,42,male,English,AmE,""":""""}",know,No,0,saw the murder
+55,42,male,English,AmE,""":""""}",be right,No,0,lost his key
+55,42,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+55,42,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,cheated on his wife
+55,42,male,English,AmE,""":""""}",AI MC,No,0,control
+55,42,male,English,AmE,""":""""}",confess,No,0,broke the plate
+55,42,male,English,AmE,""":""""}",discover,No,0,bought a new car
+55,42,male,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+31,34,male,English,AmE,""":""""}",medial NRRC,No,0,lost his key
+31,34,male,English,AmE,""":""""}",discover,No,0,stole the money
+31,34,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,saw the murder
+31,34,male,English,AmE,""":""""}",know,No,0,ate the last cupcake
+31,34,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+31,34,male,English,AmE,""":""""}",AI MC,No,0,control
+31,34,male,English,AmE,""":""""}",confirm,No,0,cheated on his wife
+31,34,male,English,AmE,""":""""}",be right,No,0,broke the plate
+31,34,male,English,AmE,""":""""}",confess,No,0,bought a new car
+59,44,male,English,AmE,""":""Thank you""}",medial NRRC,"Yes, but",1,saw the murder
+59,44,male,English,AmE,""":""Thank you""}",confirm,No,0,lost his key
+59,44,male,English,AmE,""":""Thank you""}",confess,"Yes, but",1,broke the plate
+59,44,male,English,AmE,""":""Thank you""}",know,No,0,ate the last cupcake
+59,44,male,English,AmE,""":""Thank you""}",final NRRC,No,0,cheated on his wife
+59,44,male,English,AmE,""":""Thank you""}",discover,No,0,stole the money
+59,44,male,English,AmE,""":""Thank you""}",AI MC,No,0,control
+59,44,male,English,AmE,""":""Thank you""}",NAI MC,"Yes, and",1,control
+59,44,male,English,AmE,""":""Thank you""}",be right,No,0,bought a new car
+11,37,male,English,AmE,""":""""}",confess,No,0,lost his key
+11,37,male,English,AmE,""":""""}",discover,No,0,stole the money
+11,37,male,English,AmE,""":""""}",know,No,0,bought a new car
+11,37,male,English,AmE,""":""""}",confirm,No,0,saw the murder
+11,37,male,English,AmE,""":""""}",medial NRRC,No,0,broke the plate
+11,37,male,English,AmE,""":""""}",be right,No,0,cheated on his wife
+11,37,male,English,AmE,""":""""}",final NRRC,No,0,ate the last cupcake
+11,37,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+11,37,male,English,AmE,""":""""}",AI MC,No,0,control
+35,37,non-binary,English,AmE,""":""""}",discover,No,0,broke the plate
+35,37,non-binary,English,AmE,""":""""}",final NRRC,"Yes, but",1,ate the last cupcake
+35,37,non-binary,English,AmE,""":""""}",know,"Yes, but",1,stole the money
+35,37,non-binary,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+35,37,non-binary,English,AmE,""":""""}",confess,No,0,lost his key
+35,37,non-binary,English,AmE,""":""""}",confirm,No,0,cheated on his wife
+35,37,non-binary,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+35,37,non-binary,English,AmE,""":""""}",AI MC,No,0,control
+35,37,non-binary,English,AmE,""":""""}",be right,No,0,bought a new car
+29,48,female,English,AmE,""":""""}",AI MC,No,0,control
+29,48,female,English,AmE,""":""""}",confess,"Yes, but",1,lost his key
+29,48,female,English,AmE,""":""""}",confirm,"Yes, but",1,cheated on his wife
+29,48,female,English,AmE,""":""""}",know,No,0,saw the murder
+29,48,female,English,AmE,""":""""}",discover,No,0,ate the last cupcake
+29,48,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,stole the money
+29,48,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+29,48,female,English,AmE,""":""""}",be right,No,0,broke the plate
+29,48,female,English,AmE,""":""""}",medial NRRC,No,0,bought a new car
+64,25,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,broke the plate
+64,25,male,English,AmE,""":""""}",medial NRRC,"Yes, but",1,stole the money
+64,25,male,English,AmE,""":""""}",AI MC,No,0,control
+64,25,male,English,AmE,""":""""}",confirm,No,0,bought a new car
+64,25,male,English,AmE,""":""""}",be right,No,0,cheated on his wife
+64,25,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+64,25,male,English,AmE,""":""""}",discover,No,0,lost his key
+64,25,male,English,AmE,""":""""}",confess,No,0,ate the last cupcake
+64,25,male,English,AmE,""":""""}",know,"Yes, but",1,saw the murder
+5,32,male,English,AmE,""":""""}",confirm,"Yes, but",1,bought a new car
+5,32,male,English,AmE,""":""""}",medial NRRC,No,0,stole the money
+5,32,male,English,AmE,""":""""}",discover,No,0,ate the last cupcake
+5,32,male,English,AmE,""":""""}",know,No,0,saw the murder
+5,32,male,English,AmE,""":""""}",final NRRC,No,0,lost his key
+5,32,male,English,AmE,""":""""}",AI MC,No,0,control
+5,32,male,English,AmE,""":""""}",be right,No,0,cheated on his wife
+5,32,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+5,32,male,English,AmE,""":""""}",confess,No,0,broke the plate
+1,26,male,English,AmE,""":""""}",confess,"Yes, but",1,saw the murder
+1,26,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+1,26,male,English,AmE,""":""""}",AI MC,No,0,control
+1,26,male,English,AmE,""":""""}",discover,No,0,cheated on his wife
+1,26,male,English,AmE,""":""""}",know,No,0,lost his key
+1,26,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,broke the plate
+1,26,male,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+1,26,male,English,AmE,""":""""}",medial NRRC,"Yes, but",1,bought a new car
+1,26,male,English,AmE,""":""""}",confirm,No,0,stole the money
+44,31,female,English,AmE,""":""""}",AI MC,No,0,control
+44,31,female,English,AmE,""":""""}",final NRRC,No,0,cheated on his wife
+44,31,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+44,31,female,English,AmE,""":""""}",confirm,No,0,lost his key
+44,31,female,English,AmE,""":""""}",know,No,0,stole the money
+44,31,female,English,AmE,""":""""}",discover,No,0,bought a new car
+44,31,female,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+44,31,female,English,AmE,""":""""}",confess,No,0,broke the plate
+44,31,female,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+46,51,female,English,AmE,"""}",NAI MC,"Yes, and",1,control
+46,51,female,English,AmE,"""}",final NRRC,No,0,lost his key
+46,51,female,English,AmE,"""}",AI MC,No,0,control
+46,51,female,English,AmE,"""}",be right,No,0,cheated on his wife
+46,51,female,English,AmE,"""}",confess,No,0,saw the murder
+46,51,female,English,AmE,"""}",medial NRRC,"Yes, but",1,bought a new car
+46,51,female,English,AmE,"""}",discover,No,0,broke the plate
+46,51,female,English,AmE,"""}",confirm,No,0,ate the last cupcake
+46,51,female,English,AmE,"""}",know,No,0,stole the money
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",confirm,No,0,lost his key
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",final NRRC,"Yes, but",1,ate the last cupcake
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",AI MC,No,0,control
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",be right,No,0,stole the money
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",discover,No,0,saw the murder
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",confess,No,0,cheated on his wife
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",know,No,0,broke the plate
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",NAI MC,"Yes, and",1,control
+52,48,female,English,AmE,""":""on some there was NO correct answer without  calling the speaker a LIAR""}",medial NRRC,"Yes, but",1,bought a new car
+48,28,male,English,AmE,""":""""}",know,No,0,cheated on his wife
+48,28,male,English,AmE,""":""""}",confess,"Yes, but",1,stole the money
+48,28,male,English,AmE,""":""""}",medial NRRC,"Yes, but",1,saw the murder
+48,28,male,English,AmE,""":""""}",AI MC,No,0,control
+48,28,male,English,AmE,""":""""}",be right,No,0,broke the plate
+48,28,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,bought a new car
+48,28,male,English,AmE,""":""""}",discover,No,0,lost his key
+48,28,male,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+48,28,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+8,27,male,English,AmE,""":""no comment""}",confess,No,0,bought a new car
+8,27,male,English,AmE,""":""no comment""}",AI MC,No,0,control
+8,27,male,English,AmE,""":""no comment""}",confirm,No,0,lost his key
+8,27,male,English,AmE,""":""no comment""}",medial NRRC,No,0,saw the murder
+8,27,male,English,AmE,""":""no comment""}",be right,No,0,broke the plate
+8,27,male,English,AmE,""":""no comment""}",final NRRC,No,0,ate the last cupcake
+8,27,male,English,AmE,""":""no comment""}",know,No,0,cheated on his wife
+8,27,male,English,AmE,""":""no comment""}",discover,No,0,stole the money
+8,27,male,English,AmE,""":""no comment""}",NAI MC,"Yes, and",1,control
+9,29,female,English,AmE,""":""n/a""}",confirm,No,0,cheated on his wife
+9,29,female,English,AmE,""":""n/a""}",AI MC,No,0,control
+9,29,female,English,AmE,""":""n/a""}",medial NRRC,No,0,lost his key
+9,29,female,English,AmE,""":""n/a""}",know,No,0,bought a new car
+9,29,female,English,AmE,""":""n/a""}",discover,No,0,ate the last cupcake
+9,29,female,English,AmE,""":""n/a""}",NAI MC,"Yes, and",1,control
+9,29,female,English,AmE,""":""n/a""}",final NRRC,"Yes, but",1,broke the plate
+9,29,female,English,AmE,""":""n/a""}",be right,No,0,stole the money
+9,29,female,English,AmE,""":""n/a""}",confess,"Yes, but",1,saw the murder
+33,36,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+33,36,female,English,AmE,""":""""}",be right,No,0,stole the money
+33,36,female,English,AmE,""":""""}",AI MC,No,0,control
+33,36,female,English,AmE,""":""""}",confirm,No,0,bought a new car
+33,36,female,English,AmE,""":""""}",final NRRC,No,0,cheated on his wife
+33,36,female,English,AmE,""":""""}",know,No,0,broke the plate
+33,36,female,English,AmE,""":""""}",medial NRRC,No,0,saw the murder
+33,36,female,English,AmE,""":""""}",discover,No,0,lost his key
+33,36,female,English,AmE,""":""""}",confess,No,0,ate the last cupcake
+76,54,female,English,AmE,""":""""}",confess,No,0,broke the plate
+76,54,female,English,AmE,""":""""}",AI MC,No,0,control
+76,54,female,English,AmE,""":""""}",know,No,0,cheated on his wife
+76,54,female,English,AmE,""":""""}",discover,No,0,bought a new car
+76,54,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+76,54,female,English,AmE,""":""""}",final NRRC,No,0,lost his key
+76,54,female,English,AmE,""":""""}",confirm,No,0,stole the money
+76,54,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,saw the murder
+76,54,female,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+34,39,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+34,39,female,English,AmE,""":""""}",know,No,0,lost his key
+34,39,female,English,AmE,""":""""}",confess,"Yes, but",1,broke the plate
+34,39,female,English,AmE,""":""""}",AI MC,No,0,control
+34,39,female,English,AmE,""":""""}",confirm,No,0,cheated on his wife
+34,39,female,English,AmE,""":""""}",discover,No,0,ate the last cupcake
+34,39,female,English,AmE,""":""""}",medial NRRC,No,0,stole the money
+34,39,female,English,AmE,""":""""}",be right,No,0,saw the murder
+34,39,female,English,AmE,""":""""}",final NRRC,No,0,bought a new car
+15,52,male,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+15,52,male,English,AmE,""":""""}",AI MC,No,0,control
+15,52,male,English,AmE,""":""""}",discover,No,0,stole the money
+15,52,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+15,52,male,English,AmE,""":""""}",know,No,0,lost his key
+15,52,male,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+15,52,male,English,AmE,""":""""}",confirm,No,0,broke the plate
+15,52,male,English,AmE,""":""""}",final NRRC,No,0,saw the murder
+15,52,male,English,AmE,""":""""}",confess,No,0,bought a new car
+40,48,female,English,AmE,""":""""}",discover,"Yes, but",1,bought a new car
+40,48,female,English,AmE,""":""""}",confess,"Yes, but",1,cheated on his wife
+40,48,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,ate the last cupcake
+40,48,female,English,AmE,""":""""}",confirm,"Yes, but",1,saw the murder
+40,48,female,English,AmE,""":""""}",know,"Yes, but",1,broke the plate
+40,48,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+40,48,female,English,AmE,""":""""}",AI MC,No,0,control
+40,48,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,stole the money
+40,48,female,English,AmE,""":""""}",be right,No,0,lost his key
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",confirm,No,0,broke the plate
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",know,No,0,ate the last cupcake
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",be right,No,0,stole the money
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",medial NRRC,No,0,lost his key
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",AI MC,No,0,control
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",NAI MC,"Yes, and",1,control
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",discover,No,0,saw the murder
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",final NRRC,No,0,cheated on his wife
+71,50,female,English,AmE,""":""Love this type of survey. Thanks!""}",confess,No,0,bought a new car
+18,41,female,English,AmE,""":""""}",confess,No,0,cheated on his wife
+18,41,female,English,AmE,""":""""}",discover,No,0,stole the money
+18,41,female,English,AmE,""":""""}",be right,No,0,bought a new car
+18,41,female,English,AmE,""":""""}",know,No,0,saw the murder
+18,41,female,English,AmE,""":""""}",final NRRC,No,0,lost his key
+18,41,female,English,AmE,""":""""}",AI MC,No,0,control
+18,41,female,English,AmE,""":""""}",confirm,No,0,broke the plate
+18,41,female,English,AmE,""":""""}",medial NRRC,No,0,ate the last cupcake
+18,41,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+67,57,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,bought a new car
+67,57,female,English,AmE,""":""""}",know,"Yes, but",1,ate the last cupcake
+67,57,female,English,AmE,""":""""}",AI MC,No,0,control
+67,57,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+67,57,female,English,AmE,""":""""}",be right,No,0,saw the murder
+67,57,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,broke the plate
+67,57,female,English,AmE,""":""""}",confirm,"Yes, but",1,stole the money
+67,57,female,English,AmE,""":""""}",confess,No,0,cheated on his wife
+67,57,female,English,AmE,""":""""}",discover,"Yes, but",1,lost his key
+23,67,female,English,AmE,""":""""}",AI MC,No,0,control
+23,67,female,English,AmE,""":""""}",know,No,0,broke the plate
+23,67,female,English,AmE,""":""""}",discover,No,0,ate the last cupcake
+23,67,female,English,AmE,""":""""}",be right,No,0,lost his key
+23,67,female,English,AmE,""":""""}",final NRRC,No,0,cheated on his wife
+23,67,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+23,67,female,English,AmE,""":""""}",confirm,No,0,stole the money
+23,67,female,English,AmE,""":""""}",confess,"Yes, but",1,saw the murder
+23,67,female,English,AmE,""":""""}",medial NRRC,No,0,bought a new car
+62,30,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+62,30,female,English,AmE,""":""""}",be right,No,0,cheated on his wife
+62,30,female,English,AmE,""":""""}",medial NRRC,No,0,ate the last cupcake
+62,30,female,English,AmE,""":""""}",confess,No,0,stole the money
+62,30,female,English,AmE,""":""""}",discover,No,0,saw the murder
+62,30,female,English,AmE,""":""""}",AI MC,No,0,control
+62,30,female,English,AmE,""":""""}",know,No,0,broke the plate
+62,30,female,English,AmE,""":""""}",confirm,No,0,bought a new car
+62,30,female,English,AmE,""":""""}",final NRRC,No,0,lost his key
+61,44,female,English,AmE,""":""""}",final NRRC,"Yes, but",1,ate the last cupcake
+61,44,female,English,AmE,""":""""}",confirm,No,0,broke the plate
+61,44,female,English,AmE,""":""""}",know,No,0,stole the money
+61,44,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,saw the murder
+61,44,female,English,AmE,""":""""}",AI MC,No,0,control
+61,44,female,English,AmE,""":""""}",confess,No,0,bought a new car
+61,44,female,English,AmE,""":""""}",be right,No,0,cheated on his wife
+61,44,female,English,AmE,""":""""}",discover,No,0,lost his key
+61,44,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+27,29,male,English,AmE,""":""""}",confirm,"Yes, but",1,saw the murder
+27,29,male,English,AmE,""":""""}",medial NRRC,"Yes, but",1,broke the plate
+27,29,male,English,AmE,""":""""}",final NRRC,"Yes, but",1,cheated on his wife
+27,29,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+27,29,male,English,AmE,""":""""}",AI MC,No,0,control
+27,29,male,English,AmE,""":""""}",be right,No,0,ate the last cupcake
+27,29,male,English,AmE,""":""""}",discover,No,0,lost his key
+27,29,male,English,AmE,""":""""}",confess,"Yes, but",1,stole the money
+27,29,male,English,AmE,""":""""}",know,No,0,bought a new car
+45,62,female,English,AmE,""":""None""}",be right,No,0,bought a new car
+45,62,female,English,AmE,""":""None""}",NAI MC,"Yes, and",1,control
+45,62,female,English,AmE,""":""None""}",confirm,No,0,saw the murder
+45,62,female,English,AmE,""":""None""}",know,No,0,lost his key
+45,62,female,English,AmE,""":""None""}",medial NRRC,No,0,ate the last cupcake
+45,62,female,English,AmE,""":""None""}",final NRRC,"Yes, but",1,broke the plate
+45,62,female,English,AmE,""":""None""}",discover,No,0,cheated on his wife
+45,62,female,English,AmE,""":""None""}",AI MC,No,0,control
+45,62,female,English,AmE,""":""None""}",confess,"Yes, but",1,stole the money
+77,40,male,English,AmE,""":""""}",final NRRC,No,0,ate the last cupcake
+77,40,male,English,AmE,""":""""}",know,No,0,saw the murder
+77,40,male,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+77,40,male,English,AmE,""":""""}",discover,No,0,cheated on his wife
+77,40,male,English,AmE,""":""""}",medial NRRC,No,0,broke the plate
+77,40,male,English,AmE,""":""""}",confess,No,0,bought a new car
+77,40,male,English,AmE,""":""""}",AI MC,No,0,control
+77,40,male,English,AmE,""":""""}",be right,No,0,stole the money
+77,40,male,English,AmE,""":""""}",confirm,No,0,lost his key
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",AI MC,No,0,control
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",discover,No,0,saw the murder
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",know,"Yes, but",1,bought a new car
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",confirm,No,0,stole the money
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",confess,"Yes, but",1,cheated on his wife
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",NAI MC,"Yes, and",1,control
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",medial NRRC,"Yes, but",1,ate the last cupcake
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",be right,"Yes, but",1,broke the plate
+2,59,female,English,AmE,""":""This was a fun study to take. One answer seemed more negative to me than the other so I changed my perspective. I prefer to look on the positive side.""}",final NRRC,"Yes, but",1,lost his key
+43,43,female,English,AmE,""":""""}",AI MC,No,0,control
+43,43,female,English,AmE,""":""""}",discover,No,0,lost his key
+43,43,female,English,AmE,""":""""}",know,"Yes, but",1,saw the murder
+43,43,female,English,AmE,""":""""}",medial NRRC,No,0,cheated on his wife
+43,43,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control
+43,43,female,English,AmE,""":""""}",confess,"Yes, but",1,stole the money
+43,43,female,English,AmE,""":""""}",final NRRC,No,0,bought a new car
+43,43,female,English,AmE,""":""""}",be right,No,0,broke the plate
+43,43,female,English,AmE,""":""""}",confirm,No,0,ate the last cupcake
+60,45,female,English,AmE,""":""""}",be right,No,0,cheated on his wife
+60,45,female,English,AmE,""":""""}",final NRRC,No,0,lost his key
+60,45,female,English,AmE,""":""""}",confess,"Yes, but",1,saw the murder
+60,45,female,English,AmE,""":""""}",medial NRRC,"Yes, but",1,broke the plate
+60,45,female,English,AmE,""":""""}",confirm,"Yes, but",1,ate the last cupcake
+60,45,female,English,AmE,""":""""}",know,No,0,stole the money
+60,45,female,English,AmE,""":""""}",AI MC,No,0,control
+60,45,female,English,AmE,""":""""}",discover,No,0,bought a new car
+60,45,female,English,AmE,""":""""}",NAI MC,"Yes, and",1,control

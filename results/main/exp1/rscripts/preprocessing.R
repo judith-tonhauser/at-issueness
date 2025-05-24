@@ -188,8 +188,6 @@ d = d %>%
   filter(!(participantID %in% outliers.bad$participantID))
 length(unique(d$participantID)) # 69 (so 10 participants excluded based on the controls)
 
-# (conglei thesis: only excluded 4 participants)
-
 # adjust the names of the expressions
 d = d %>%
   mutate(expression = recode(expression, "right" = "be right", "controlBad" = "NAI MC", "controlGood" = "AI MC",
@@ -212,6 +210,15 @@ d %>%
 
 # number of data points that entered into the analysis
 nrow(d)
-  
+
+# code response such that 1 = not-at-issue and 0 = at-issue
+d$response = 1-d$response
+table(d$response)
+
+means = d %>%
+  filter(!(expression == "AI MC" | expression == "NAI MC")) %>%
+  group_by(expression) %>%
+  summarize(Mean = mean(response))
+means  
 
 write_csv(d, file="../data/cd.csv")
