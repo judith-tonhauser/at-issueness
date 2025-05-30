@@ -3,7 +3,7 @@
 ## Folders in this directory:
 ### Conglei-thesis: experiments reported on in Conglei's thesis and analysis of the results (pilots and main experiments)
 ### preliminary-exps: experimentss that were run before Conglei's thesis
-### results/main: directory with the analyses of the data. The data for Exps 1-4 come from Conglei's thesis (see folder Conglei-thesis); the data for Exps 5-6 come from the the repository https://github.com/judith-tonhauser/CommitmentBankPlus, where Exp 5 is 1_projaiQ and Exp 6 is 5_projaiQ
+### results: directory with the analyses of the data. The data for Exps 1-4 come from Conglei's thesis (see folder Conglei-thesis); the data for Exps 5-6 come from the the repository https://github.com/judith-tonhauser/CommitmentBankPlus, where Exp 5 is 1_projaiQ and Exp 6 is 5_projaiQ
 ### writing: preparing for journal publication
 
 ## To do
