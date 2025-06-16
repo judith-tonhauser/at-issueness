@@ -15,7 +15,7 @@ this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(this.dir)
 
 # load helper functions
-source('../../../helpers.R')
+source('../../helpers.R')
 
 # load cleaned data
 d = read_csv("../data/cd.csv")
@@ -50,17 +50,17 @@ prior
 priors = c(set_prior("cauchy(0, .001)", class = "b"))
 
 # for prior predictive check
-prior.check = brm(betaresponse ~ expression + (1|participantID) + (1|cc),
-          data=t,
-          prior = priors,
-          iter = 7000,
-          control = list(adapt_delta = .97, max_treedepth=20),
-          sample_prior = "only")
-
-pp_check(prior.check)
+# prior.check = brm(betaresponse ~ expression + (1|participantID) + (1|cc),
+#           data=t,
+#           prior = priors,
+#           iter = 7000,
+#           control = list(adapt_delta = .97, max_treedepth=20),
+#           sample_prior = "only")
+# 
+# pp_check(prior.check)
 
 betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
-               phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision 
+               phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision
                family = Beta(),
                center = FALSE)
 

@@ -18,7 +18,7 @@ setwd(this.dir)
 
 theme_set(theme_bw()) 
 
-source('../../../helpers.R')
+source('../../helpers.R')
 
 # color-blind-friendly palette
 cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
