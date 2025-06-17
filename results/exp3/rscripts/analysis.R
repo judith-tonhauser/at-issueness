@@ -60,7 +60,7 @@ priors = c(set_prior("cauchy(0, .001)", class = "b"))
 # pp_check(prior.check)
 
 betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
-               phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision
+               phi ~ expression, # beta distribution's precision
                family = Beta(),
                center = FALSE)
 
@@ -68,7 +68,7 @@ m.b = brm(formula = betamodel,
           family=Beta(),
           data=t, 
           prior = priors,
-          cores = 4, iter = 3000, warmup = 500,
+          cores = 1, iter = 3000, warmup = 500,
           control = list(adapt_delta = .95, max_treedepth=15))
 
 # model summary
