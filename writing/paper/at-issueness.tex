@@ -127,6 +127,56 @@
 
 \section{Introduction \label{sec:1_introduction}}
   
+  At-issueness is a key concept in theoretical semantics and pragmatics, used in the analysis of a wide range of phenomena, including presupposition, conventional implicature, evidentials, expressives, and NPI licensing (e.g., \citealt{karttunen_conventional_1979,horton_presuppositions_1988,abbott_presuppositions_2000,faller_semantics_2003,potts_logic_2005,tonhauser_diagnosing_2012,horn_licensing_2016}). Although at-issuness is widely understood as distinguishing propositions expressing the main point of an utterance (at-issue content) from those conveying background information (not-at-issue content), there is no consensus on how to define this distinction. Multiple competing definitions and diagnostics exist, each grounded in different assumptions about the nature of the distinction.
+
+  Four commonly used diagnostics are illustrated in (\pref{qud}--\pref{yesbut}) for sentence-medial appositive non-restrictive relative clauses (NRRCs), which are typically taken to contribute not-at-issue content (\citealt{potts_logic_2005}). Accordingly, participants are expected to: give low question-answer-match ratings under the QUD diagnostic \ref{qud}; not interpret the speaker to be asking about the NRRC content under the `asking-whether' diagnostic \ref{aw}; give low naturalness ratings under the direct-dissent diagnostic \ref{dd}; and prefer a \emph{yes}-response under the `yes, but' diagnostic in \ref{yesbut}.
+
+  \ex. \label{qud}%
+    QUD diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,chen_presuppositions_2024})
+    \a.[A:] \emph{What did Greg buy?}
+    \b.[B:] \emph{Greg, who bought a new car, is envied by his neighbor.}
+    \z.
+    Question to participants: How well does B's response fit A's question?
+  \z.
+
+  \ex. \label{aw}%
+    `asking whether' diagnostic (e.g., \citealt{tonhauser_how_2018,solstad_cataphoric_2024})\smallskip\\
+      \emph{Is Greg, who bought a new car, envied by his neighbor?}\smallskip
+  \\ Question to participants: Is the speaker asking whether Greg bought a new car?
+  \z.
+
+  \ex. \label{dd} Direct dissent diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,syrett_experimental_2015})
+    \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
+    \b.[B:]\emph{No, that's not true, he didn't buy a new car.}
+    \z.
+  Question to participants: How natural is B's rejection of A's utterance?
+  \z.
+
+  \ex. \label{yesbut}%
+    `yes, but' diagnostic (e.g., \citealt{xue_correlation_2011,destruel_cross-linguistic_2015})
+    \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
+    \b.[B:] \emph{Yes, but he didn't buy a new car.} /
+    \b.[] \emph{Yes, and he didn't buy a new car.} /
+    \b.[] \emph{No, he didn't buy a new car.}
+    \z.
+    Task for participants: Choose the response that sounds best.
+  \z.
+
+  The QUD diagnostic \ref{qud} and the ‘asking-whether’ diagnostic \ref{aw} assume that discourse is structured around addressing a question under discussion (QUD, \citealt{roberts_information_1996,ginzburg_interrogatives_1996}), and that at-issue content is the part of an utterance that interacts with the current QUD (\citealt{amaral_review_2007,simons_what_2010}). Specifically, the QUD diagnostic (\citealt{tonhauser_diagnosing_2012}) assumes that only at-issue content can respond to a QUD established in prior discourse, and the `asking whether' diagnostic (\citealt{tonhauser_how_2018}) assumes that the at-issue content of questions explicitly raises a QUD, whereas their not-at-issue content does not contribute to what the QUD is.
+
+  Research about at-issueness diagnostics has pointed out that the assumptions behind the question-based diagnostics are quite different from the the assent/dissent-based diagnostics (\pref{dd}+\pref{yesbut}), which are not usually interpreted within a QUD-framework (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}).
+  %
+  Snider argues that the latter kind of diagnostics may not reflect at-issueness at all, but rather target the anaphoric availability of propositional content for response particles (e.g., English \emph{yes/no}).
+  %
+  On another view, these diagnostics target a distinct notion of at-issueness (see \citealt{koev_notions_2018} and discussion in \citealt{faller_discourse_2019,korotkova_evidential_2020}), under which the at-issue content of an assertion constitues a proposal to update the common ground (based on \citealt{farkas_reacting_2010}). Accordingly such content can be directly affirmed or denied using default discourse moves that include response particles. Conversely, not-at-issue content is either presupposed (already entailed in the common ground; \citealt{stalnaker_presuppositions_1973,stalnaker_common_2002}), or newly imposed on the common ground (\citealt{murray_varieties_2014,anderbois_at-issue_2015}), and requires special discourse moves for rejection (\citealt{potts_logic_2005}).
+
+  Consequently, we are currently faced with a landscape where there is no agreed-upon definition of at-issueness and where different diagnostics may not be tapping into the same underlying phenomenon. This raises two critical questions:
+
+  \begin{enumerate}
+    \item Do the various diagnostics yield the same results?
+    \item Do the existing definitions of at-issueness describe the same underlying phenomenon?
+  \end{enumerate}
+
 \noindent Some research has suggested that the answers to both of these questions may be ``no''.
 
   On the empirical side, the often reported tendency for adnominal appositives to contribute not-at-issue content (following \citealt{potts_logic_2005}) is supported by several studies, however, findings vary based on their position in the sentence (sentence-medial or sentence-final) and which diagnostic is used:
@@ -273,13 +323,7 @@ To date, there has been no systematic comparison of diagnostics to investigate w
 \section{Experiments 1-4 \label{sec:2_experiments}}
 
   To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct-dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4).\footnote{The experiments, data and R code for generating the figures and analyses of the experiments reported in this paper are available at INSERT URL TO ANONYMOUS GITHUB REPO BEFORE SUBMISSION. All experiments were conducted with approval from the ethics review committee of [university name redacted for review].}
-  % To be able to compare the results of the diagnostics, the same seven kinds of contents, shown in \ref{stims}, were investigated under the four diagnostics:
-  Each experiment itested the same manipulation, comparing seven types of contents, introduced by the embeddings shown in \ref{stims}:
-  %
-  the contents of sentence-medial and sentence-final NRRCs \ref{stims.a}-\ref{stims.b}, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right} \ref{stims.c}-\ref{stims.g}. These seven contents were
-  % instantiated by the same items across the four experiments.
-  %
-  randomly paired with one from a set of items shared across all four experiments.
+  Each experiment itested the same manipulation, comparing seven types of contents, introduced by the embeddings shown in \ref{stims}: the contents of sentence-medial and sentence-final NRRCs \ref{stims.a}-\ref{stims.b}, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right} \ref{stims.c}-\ref{stims.g}. These seven contents were randomly paired with one from a set of items shared across all four experiments.
 
 
   \ex.\label{stims}
@@ -393,7 +437,7 @@ To date, there has been no systematic comparison of diagnostics to investigate w
   After completing the experiment, participants filled out a short optional demographic survey. To encourage truthful responses, participants were told that they would be paid no matter what answers they gave in the survey. 
 
   \subsubsection{Data exclusion}
-    
+
   We excluded the data of participants who did not self-identify as native speakers of
   American English and of participants whose responses to either one of the two control trials was more than 2 sd away from the group mean (Exps.~1-3) or whose responses to either one of the two control trials was wrong (Exp.~4).   Table \ref{t:excluded} shows how many participants were excluded in each experiment, the properties of the remaining participants, and the number of data points that entered into the analyses.
 
@@ -419,15 +463,15 @@ To date, there has been no systematic comparison of diagnostics to investigate w
    
   
    \begin{table}[ht!]
-   \centering
-   \begin{tabular}{l | c c c c}
-   & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
-   Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .11 & -.29 & -.18 \\
-   Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .64 &.79 \\
-   Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .79  \\
-   \hline
-  % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
-   \end{tabular}
+     \centering
+     \begin{tabular}{l | c c c c}
+     & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
+     Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .11 & -.29 & -.18 \\
+     Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .64 &.79 \\
+     Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .79  \\
+     \hline
+    % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
+     \end{tabular}
    \caption{Spearman rank correlations between the results of Exps.~1-4.}\label{t:spearman}
    \end{table}
   
@@ -445,7 +489,7 @@ To date, there has been no systematic comparison of diagnostics to investigate w
       \label{fig:AK}
     }
 
-  % \vspace{1em}
+    % \vspace{1em}
 
     % Bottom row
     \subfigure[Exp.~3 (`direct dissent' diagnostic)]{%
@@ -457,8 +501,8 @@ To date, there has been no systematic comparison of diagnostics to investigate w
       % \includegraphics[width=0.48\textwidth]{../../results/exp4/graphs/mean-ratings.pdf}%
       \label{fig:yb}
     }
-
-    \caption{Results of Exps.~1--4. Panels (a)--(c) show the mean responses by expression for (a) Exp.~1 (QUD diagnostic),  (b) Exp.~2 (`asking whether' diagnostic), and (c) Exp.~3 (`direct dissent' diagnostic); panel (d) shows the proportion of `no' choices by expression in Exp.~4 (`yes, but' diagnostic). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots in panels (a)-(c) show the kernel probability density of individual participants' ratings. Gray dots in panel (d) represent individual participant responses (`no' vs.\ `yes', jittered vertically and horizontally for legibility).}
+  \caption{Results of Exps.~1--4.
+    Panels (a)--(c) show the mean responses by expression for (a) Exp.~1 (QUD diagnostic),  (b) Exp.~2 (`asking whether' diagnostic), and (c) Exp.~3 (`direct dissent' diagnostic); panel (d) shows the proportion of `no' choices by expression in Exp.~4 (`yes, but' diagnostic). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots in panels (a)-(c) show the kernel probability density of individual participants' ratings. Gray dots in panel (d) represent individual participant responses (`no' vs.\ `yes', jittered vertically and horizontally for legibility).}
     \label{fig:results}
   \end{figure}
   
@@ -504,7 +548,7 @@ To date, there has been no systematic comparison of diagnostics to investigate w
   \subfigure[Exp.~2 (`asking whether' diagnostic)]{%
   \begin{tabular}{r | ccccccc}
   & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
-\hline
+  \hline
   \input{../../results/exp2/models/table1}
  \hline
   \end{tabular}}
@@ -512,17 +556,17 @@ To date, there has been no systematic comparison of diagnostics to investigate w
   \subfigure[Exp.~3 (`direct dissent' diagnostic)]{%
   \begin{tabular}{r | ccccccc}
   & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
-\hline
+  \hline
   \input{../../results/exp4/models/table1}
-\hline
+  \hline
   \end{tabular}}
-\hfill
+  \hfill
   \subfigure[Exp.~4 (`yes, but' diagnostic)]{%
   \begin{tabular}{r | ccccccc}
   & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
-\hline
+  \hline
   \input{../../results/exp4/models/table1}
-\hline
+  \hline
   \end{tabular}}
 
   \caption{Pairwise differences between expressions, ordered from top to bottom and left to right by increasing mean in Exp.~2 (`asking whether' diagnostic). A white cell means that the 95\% HDI of the pair of the row expression and the column expression includes 0, a red cell means that the 95\% HDI does not include 0 and that the coefficient is positive (the row expression received a higher rating than the column expression), and a blue cell means that the 95\% HDI does not include 0 and the coefficient is negative (the row expression received a lower rating than the column expression).}\label{fig:pairwise}
@@ -575,118 +619,118 @@ To date, there has been no systematic comparison of diagnostics to investigate w
         
 \section{Experiments 5-6 \label{sec:3_more-experiments}}
 
-Exps.~5 and 6 allow us to investigate the question of whether the great differentiation observed in Exp.~2 (`asking whether' diagnostic) is due to the fact that the contents were embedded in a polar interrogative or due to the response task. The design of Exp.~5 is like that of Exp.~2 except that it measures at-issueness for the contents of the complements of the 20 clause-embedding predicates of \citealt{tonhauser_how_2018} and \citealt{degen-tonhauser-glossa}. Exp.~6 also investigates these contents, but uses a version of the  `direct assent' diagnostic where the contents are embedded in a polar interrogative. As shown in \ref{exp6}, the expression/content occurs in a polar question and the response directly assents with the content. 
+  Exps.~5 and 6 allow us to investigate the question of whether the great differentiation observed in Exp.~2 (`asking whether' diagnostic) is due to the fact that the contents were embedded in a polar interrogative or due to the response task. The design of Exp.~5 is like that of Exp.~2 except that it measures at-issueness for the contents of the complements of the 20 clause-embedding predicates of \citealt{tonhauser_how_2018} and \citealt{degen-tonhauser-glossa}. Exp.~6 also investigates these contents, but uses a version of the  `direct assent' diagnostic where the contents are embedded in a polar interrogative. As shown in \ref{exp6}, the expression/content occurs in a polar question and the response directly assents with the content. 
 
-  \ex.
-  \a.\label{exp5} Exp.~5 (`asking whether' diagnostic )
-  \\ {\bf Nora:} \emph{Is xx right that Lucy broke the plate?}
-  \\ Question to participants: Is Nora asking whether Lucy broke the plate?
-  \b.\label{exp6} Exp.~6 (`direct dissent' diagnostic)
-  \\ {\bf Nora:} \emph{Is XX right that Lucy broke the plate?}
-  \\ {\bf Leo:} \emph{Yes, she didn't break the plate.}
-  \\ Question to participants: How natural is Leo's response to Nora's question?
-  
-Both experiments measured not just at-issueness but also projection. The projection data were reported in \citealt{hofmann-etal2024}); here we focus on the at-issueness data, which have not yet been reported.
+    \ex.
+    \a.\label{exp5} Exp.~5 (`asking whether' diagnostic )
+    \\ {\bf Nora:} \emph{Is xx right that Lucy broke the plate?}
+    \\ Question to participants: Is Nora asking whether Lucy broke the plate?
+    \b.\label{exp6} Exp.~6 (`direct dissent' diagnostic)
+    \\ {\bf Nora:} \emph{Is XX right that Lucy broke the plate?}
+    \\ {\bf Leo:} \emph{Yes, she didn't break the plate.}
+    \\ Question to participants: How natural is Leo's response to Nora's question?
+    
+  Both experiments measured not just at-issueness but also projection. The projection data were reported in \citealt{hofmann-etal2024}); here we focus on the at-issueness data, which have not yet been reported.
 
-  \subsection{Methods}
-  
-  \subsubsection{Participants}
+    \subsection{Methods}
+    
+    \subsubsection{Participants}
 
-We recruited 300 participants on Amazon's Mechanical Turk platform for Exp.~5 and 250 participants on Prolific for Exp.~6.\footnote{Exp.~5 was run in August 2019 and Exp.~6 in August 2021.} Participants recruited on Amazon's Mechanical Turk platform had U.S.\ IP addresses and at least 99\% of previous HITs approved. Participants recruited on Prolific had registered on the platform as living in the USA, to be born in the USA and as having English as their first language. They had an approval rate of at least 99\%.  Table \ref{t:recruited2} shows the age and gender distributions of the recruited participants.
+  We recruited 300 participants on Amazon's Mechanical Turk platform for Exp.~5 and 250 participants on Prolific for Exp.~6.\footnote{Exp.~5 was run in August 2019 and Exp.~6 in August 2021.} Participants recruited on Amazon's Mechanical Turk platform had U.S.\ IP addresses and at least 99\% of previous HITs approved. Participants recruited on Prolific had registered on the platform as living in the USA, to be born in the USA and as having English as their first language. They had an approval rate of at least 99\%.  Table \ref{t:recruited2} shows the age and gender distributions of the recruited participants.
 
-    \begin{table}[h!]
+      \begin{table}[h!]
+      \centering
+      \begin{tabular}{l | c | r r r }
+                  & recruited & ages (mean age) & f/m/nb/dnd \\ \hline
+      Exp.~5 (asking whether) & 300 & 19-74 (38.2) & --/--/--/--  \\
+      Exp.~6 (direct assent) & 250 & 18-58 (25.5)  & 201/43/6/0  \\
+      \hline
+      \end{tabular}
+
+      \caption{Information about the participants recruited in Exps.~5-6 (f = female, m = male, nb = nonbinary, dnd = did not disclose; gender information was not collected in Exp.~5).}\label{t:recruited2}
+      \end{table}
+
+    \subsubsection{Materials and procedure}
+    
+  The target stimuli in both Exps.~4-5 were 400 polar interrogatives that consisted of one of the 20 clause-embedding predicates in \ref{ex:predicates} and one of 20 embedded clauses (provided in Supplement A). 
+    
+    
+    The at-issueness and projection blocks also included 6 control trials each, which functioned as attention checks: The contents of these items were expected to be at-issue and not to project. The same 6 contents were also used to form 6 filler trials in the prior block. These filler items were not used to assess participants' attention. For the full set of control and filler items see Supplement \ref{a-stim}.
+
+              Each participant saw a random set of 26 stimuli: Each set contained one target stimulus for each of the 20 clause-embedding predicates (each with a unique complement clause) and the same six control stimuli.\footnote{Each participant saw their set of 26 stimuli twice, once in the projection block and once in the at-issueness block. Block order was randomized. As mentioned above, we focus here on the projection ratings.} Trial order was randomized.
+  	
+              Participants were asked to imagine that they are at a party and that, when walking into the kitchen, they overhear somebody say something to somebody else.
+              
+              On each trial, they read an utterance and gave a response to the `certain that' question on a slider marked `no' (coded as 0) at one end and `yes' (coded as 1) at the other. A sample trial %from Exps.~1
+              is shown in Figure~\ref{fig:trial}.            
+              Following \citealt{tonhauser_how_2018}, higher ratings of speaker certainty could reflect one of two things. First, higher certainty ratings could reflect greater speaker commitment towards the CC, and therefore greater projection. This assumes that speaker commitment is interpreted in a gradient way. Second, higher certainty ratings could reflect a higher probability that an interpreter takes the speaker to be committed to the CC.  On this interpretation, speaker commitment may be a binary, categorical property and projection variation is a result of uncertainty about speaker commitment. In this paper, we remain agnostic about the underlying interpretation of projectivity as a gradient property (for discussion, see  \citealt{grove_factivity_2023}).
+              
+   After completing the experiment, participants filled out a short optional demographic survey. To encourage truthful responses, participants were told that they would be paid no matter what answers they gave in the survey.
+
+    \subsubsection{Data exclusion}
+    
+  We excluded the data of participants who did not self-identify as native speakers of American
+  English, of participants whose responses to the projection or at-issueness controls were more than 2 sd away from the group mean, and of participants who always selected roughly the same point on the response scale for the target stimuli. To identify such participants, we first identified participants whose mean variance on the target stimuli was more than 2 sd below the group mean variance and then manually inspecting their response patterns. Due to a programming error, 5 participants took Exp.~5 more than once. Since we were not able to identify which submission was their first submission, the data of these participants was also excluded. Table \ref{t:excluded2} shows how many participants were excluded in each experiment, the properties of the remaining participants, and the number of data points that entered into the analyses.
+
+  {\bf table should show final number of participants, exp 5: 242; exp 6: }
+    
+  \begin{table}[h!]
     \centering
-    \begin{tabular}{l | c | r r r }
-                & recruited & ages (mean age) & f/m/nb/dnd \\ \hline
-    Exp.~5 (asking whether) & 300 & 19-74 (38.2) & --/--/--/--  \\
-    Exp.~6 (direct assent) & 250 & 18-58 (25.5)  & 201/43/6/0  \\
+    \begin{tabular}{l | r r r | r r  | r }
+                 & \multicolumn{3}{c|}{\bf exclusion criterion} & \multicolumn{2}{c|}{\bf remaining participants} & data \\ 
+                & language & controls & variance & ages (mean age) & f/m/nb/dnd &  points \\ \hline
+    Exp.~5 (asking whether)  & 7 &  35 & 0 &  21-74 (39.2) & --/--/--/-- & 6292 \\ 
+    Exp.~6 (direct assent) &  5 &  24 & 1 & 18-58 (24.9) & 187/28/5/0 & 5720 \\ 
     \hline
     \end{tabular}
-
-    \caption{Information about the participants recruited in Exps.~5-6 (f = female, m = male, nb = nonbinary, dnd = did not disclose; gender information was not collected in Exp.~5).}\label{t:recruited2}
+    \caption{Information from Exps.~5-6 about the number of participants whose data was excluded based on their self-declared language and language variety (`language'), the controls, and the variance of their responses, about the remaining participants, and about the number of at-issueness data points that entered into the analysis.}\label{t:excluded2}
     \end{table}
 
-  \subsubsection{Materials and procedure}
-  
-The target stimuli in both Exps.~4-5 were 400 polar interrogatives that consisted of one of the 20 clause-embedding predicates in \ref{ex:predicates} and one of 20 embedded clauses (provided in Supplement A). 
-  
-  
-  The at-issueness and projection blocks also included 6 control trials each, which functioned as attention checks: The contents of these items were expected to be at-issue and not to project. The same 6 contents were also used to form 6 filler trials in the prior block. These filler items were not used to assess participants' attention. For the full set of control and filler items see Supplement \ref{a-stim}.
-
-            Each participant saw a random set of 26 stimuli: Each set contained one target stimulus for each of the 20 clause-embedding predicates (each with a unique complement clause) and the same six control stimuli.\footnote{Each participant saw their set of 26 stimuli twice, once in the projection block and once in the at-issueness block. Block order was randomized. As mentioned above, we focus here on the projection ratings.} Trial order was randomized.
-	
-            Participants were asked to imagine that they are at a party and that, when walking into the kitchen, they overhear somebody say something to somebody else.
-            
-            On each trial, they read an utterance and gave a response to the `certain that' question on a slider marked `no' (coded as 0) at one end and `yes' (coded as 1) at the other. A sample trial %from Exps.~1
-            is shown in Figure~\ref{fig:trial}.            
-            Following \citealt{tonhauser_how_2018}, higher ratings of speaker certainty could reflect one of two things. First, higher certainty ratings could reflect greater speaker commitment towards the CC, and therefore greater projection. This assumes that speaker commitment is interpreted in a gradient way. Second, higher certainty ratings could reflect a higher probability that an interpreter takes the speaker to be committed to the CC.  On this interpretation, speaker commitment may be a binary, categorical property and projection variation is a result of uncertainty about speaker commitment. In this paper, we remain agnostic about the underlying interpretation of projectivity as a gradient property (for discussion, see  \citealt{grove_factivity_2023}).
-            
- After completing the experiment, participants filled out a short optional demographic survey. To encourage truthful responses, participants were told that they would be paid no matter what answers they gave in the survey.
-
-  \subsubsection{Data exclusion}
-  
-We excluded the data of participants who did not self-identify as native speakers of American
-English, of participants whose responses to the projection or at-issueness controls were more than 2 sd away from the group mean, and of participants who always selected roughly the same point on the response scale for the target stimuli. To identify such participants, we first identified participants whose mean variance on the target stimuli was more than 2 sd below the group mean variance and then manually inspecting their response patterns. Due to a programming error, 5 participants took Exp.~5 more than once. Since we were not able to identify which submission was their first submission, the data of these participants was also excluded. Table \ref{t:excluded2} shows how many participants were excluded in each experiment, the properties of the remaining participants, and the number of data points that entered into the analyses.
-
-{\bf table should show final number of participants, exp 5: 242; exp 6: }
-  
-\begin{table}[h!]
-  \centering
-  \begin{tabular}{l | r r r | r r  | r }
-               & \multicolumn{3}{c|}{\bf exclusion criterion} & \multicolumn{2}{c|}{\bf remaining participants} & data \\ 
-              & language & controls & variance & ages (mean age) & f/m/nb/dnd &  points \\ \hline
-  Exp.~5 (asking whether)  & 7 &  35 & 0 &  21-74 (39.2) & --/--/--/-- & 6292 \\ 
-  Exp.~6 (direct assent) &  5 &  24 & 1 & 18-58 (24.9) & 187/28/5/0 & 5720 \\ 
-  \hline
-  \end{tabular}
-  \caption{Information from Exps.~5-6 about the number of participants whose data was excluded based on their self-declared language and language variety (`language'), the controls, and the variance of their responses, about the remaining participants, and about the number of at-issueness data points that entered into the analysis.}\label{t:excluded2}
-  \end{table}
-
-  \subsection{Results}
-  
-  Spearman rank = .93
-
-  \begin{figure}[h!]
-    \centering
+    \subsection{Results}
     
+    Spearman rank = .93
+
+    \begin{figure}[h!]
+      \centering
+      
+      \subfigure[Exp.~5 (`asking whether' diagnostic)]{%
+        % \includegraphics[width=0.7\linewidth]{../../results/exp5/graphs/mean-ratings.pdf}%
+        \label{fig}
+      }
+
+      \subfigure[Exp.~6 (`direct assent' diagnostic)]{%
+        % \includegraphics[width=0.7\linewidth]{../../results/exp6/graphs/mean-ratings.pdf}%
+        \label{fig}
+      }
+
+      \caption{Results of Exps.~5-6. The panels show the mean ratings by expression for (a) Exp.~5 (asking whether diagnostic) and (b) Exp.~2 (direct assent diagnostic). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots show the kernel probability density of individual participants' ratings.}
+      \label{fig:results2}
+    \end{figure}
+    
+  % \addtolength{\tabcolsep}{-.19em}
+
+    \begin{figure}[!h]
+    \centering
+
     \subfigure[Exp.~5 (`asking whether' diagnostic)]{%
-      % \includegraphics[width=0.7\linewidth]{../../results/exp5/graphs/mean-ratings.pdf}%
-      \label{fig}
-    }
+    \begin{tabular}{r | ccccc ccccc ccccc ccccc}
+    & \rots{be right} & \rots{confirm} & \rots{say} & \rots{establish} & \rots{prove} & \rots{suggest} & \rots{demonstrate} & \rots{announce} & \rots{reveal} & \rots{admit} & \rots{confess} & \rots{think} & \rots{acknowledge} & \rots{pretend} & \rots{see} & \rots{discover} & \rots{hear} & \rots{inform} & \rots{know} & \rots{be annoyed} \\
+   \hline
+    \input{../../results/exp5/models/table1}
+   \hline
+    \end{tabular}}
 
     \subfigure[Exp.~6 (`direct assent' diagnostic)]{%
-      % \includegraphics[width=0.7\linewidth]{../../results/exp6/graphs/mean-ratings.pdf}%
-      \label{fig}
-    }
-
-    \caption{Results of Exps.~5-6. The panels show the mean ratings by expression for (a) Exp.~5 (asking whether diagnostic) and (b) Exp.~2 (direct assent diagnostic). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots show the kernel probability density of individual participants' ratings.}
-    \label{fig:results2}
-  \end{figure}
-  
-% \addtolength{\tabcolsep}{-.19em}
-
-  \begin{figure}[!h]
-  \centering
-
-  \subfigure[Exp.~5 (`asking whether' diagnostic)]{%
-  \begin{tabular}{r | ccccc ccccc ccccc ccccc}
-  & \rots{be right} & \rots{confirm} & \rots{say} & \rots{establish} & \rots{prove} & \rots{suggest} & \rots{demonstrate} & \rots{announce} & \rots{reveal} & \rots{admit} & \rots{confess} & \rots{think} & \rots{acknowledge} & \rots{pretend} & \rots{see} & \rots{discover} & \rots{hear} & \rots{inform} & \rots{know} & \rots{be annoyed} \\
- \hline
-  \input{../../results/exp5/models/table1}
- \hline
-  \end{tabular}}
-
-  \subfigure[Exp.~6 (`direct assent' diagnostic)]{%
-  \begin{tabular}{r | ccccc ccccc ccccc ccccc}
-  & \rots{be right} & \rots{confirm} & \rots{say} & \rots{establish} & \rots{prove} & \rots{suggest} & \rots{demonstrate} & \rots{announce} & \rots{reveal} & \rots{admit} & \rots{confess} & \rots{think} & \rots{acknowledge} & \rots{pretend} & \rots{see} & \rots{discover} & \rots{hear} & \rots{inform} & \rots{know} & \rots{be annoyed} \\
-\hline
-  \input{../../results/exp6/models/table1}
- \hline
-  \end{tabular}}
+    \begin{tabular}{r | ccccc ccccc ccccc ccccc}
+    & \rots{be right} & \rots{confirm} & \rots{say} & \rots{establish} & \rots{prove} & \rots{suggest} & \rots{demonstrate} & \rots{announce} & \rots{reveal} & \rots{admit} & \rots{confess} & \rots{think} & \rots{acknowledge} & \rots{pretend} & \rots{see} & \rots{discover} & \rots{hear} & \rots{inform} & \rots{know} & \rots{be annoyed} \\
+  \hline
+    \input{../../results/exp6/models/table1}
+   \hline
+    \end{tabular}}
 
 
-  \caption{Pairwise differences between expressions, ordered from top to bottom and left to right by increasing mean in Exp.~5 (`asking whether' diagnostic). A white cell means that the 95\% HDI of the pair of the row expression and the column expression includes 0, a red cell means that the 95\% HDI does not include 0 and that the coefficient is positive (the row expression received a higher rating than the column expression), and a blue cell means that the 95\% HDI does not include 0 and the coefficient is negative (the row expression received a lower rating than the column expression).}\label{fig:pairwise2}
-  \end{figure}
+    \caption{Pairwise differences between expressions, ordered from top to bottom and left to right by increasing mean in Exp.~5 (`asking whether' diagnostic). A white cell means that the 95\% HDI of the pair of the row expression and the column expression includes 0, a red cell means that the 95\% HDI does not include 0 and that the coefficient is positive (the row expression received a higher rating than the column expression), and a blue cell means that the 95\% HDI does not include 0 and the coefficient is negative (the row expression received a lower rating than the column expression).}\label{fig:pairwise2}
+    \end{figure}
 
   \subsection{Discussion}
 
