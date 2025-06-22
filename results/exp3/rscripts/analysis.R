@@ -60,7 +60,7 @@ priors = c(set_prior("cauchy(0, .001)", class = "b"))
 # pp_check(prior.check)
 
 betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
-               phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision
+               phi ~ expression , # beta distribution's precision
                family = Beta(),
                center = FALSE)
 
