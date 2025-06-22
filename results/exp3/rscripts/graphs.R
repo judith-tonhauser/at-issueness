@@ -13,6 +13,9 @@ cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00",
 
 theme_set(theme_bw())
 
+# load helper functions
+source('../../helpers.R')
+
 # load cleaned data
 d = read_csv("../data/cd.csv")
 length(unique(d$participantID)) #71 participants
