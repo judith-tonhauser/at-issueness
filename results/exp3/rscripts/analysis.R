@@ -68,7 +68,7 @@ m.b = brm(formula = betamodel,
           family=Beta(),
           data=t, 
           prior = priors,
-          cores = 4, iter = 3000, warmup = 500,
+          cores = 1, iter = 3000, warmup = 500,
           control = list(adapt_delta = .95, max_treedepth=15))
 
 # model summary
