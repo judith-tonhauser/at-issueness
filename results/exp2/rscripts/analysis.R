@@ -196,6 +196,11 @@ tableData$comparisonExpression = factor(tableData$comparisonExpression, levels=m
 tableData <- tableData %>% arrange(Mean, comparisonExpression)
 tableData
 
+# remove last rows (medial NRRCs) because no new information
+tableData = tableData %>%
+  filter(expression != "medial NRRC")
+tableData
+
 # colorcode the cells (just white = HDI contains 0, red = HDI doesn't contain 0)
 tableData$cellColor = ifelse(tableData$lower <= 0 & tableData$upper >= 0, "\\cellcolor{white}",
                              ifelse(tableData$lower < 0 & tableData$upper < 0 & tableData$value <= -1.5, "\\cellcolor{blue}",
