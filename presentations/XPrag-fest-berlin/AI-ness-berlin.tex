@@ -1,0 +1,288 @@
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 UnicodeWhat is at-issueness? An experimental comparison of diagnostics
+
+\documentclass[compress, xcolor = dvipsnames, aspectratio=169]{beamer}
+
+%fonts
+	\usepackage{fontspec}
+	\setmainfont[Scale=MatchLowercase,Mapping=tex-text]{Linux Biolinum}
+	\setsansfont[Scale=MatchLowercase,Mapping=tex-text, BoldItalicFeatures={FakeBold=3}]{Linux Biolinum}
+	\newfontfamily\opt{Optima}
+	\usepackage{pifont}% http://ctan.org/pkg/pifont
+	\newcommand{\cmark}{\ding{51}}%
+	\newcommand{\xmark}{\ding{55}}%
+
+%metadata
+	\title{{\bfseries What is at-issueness? An experimental comparison of diagnostics}}
+	\author{Conglei Xu, Lisa Hofmann, Judith Tonhauser\\[.5\baselineskip]
+		\scriptsize lisa.hofmann@ling.uni-stuttgart.de}
+	\institute{\includegraphics[width=.3\textwidth]{../uni-logo-b.png}}
+	\date{\small Experiments on the semantics/pragmatics interface (XPrag fest 2025)\\
+	    	July 18st, 2025}
+
+%theme
+	\usetheme{default}
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamertemplate{headline}{
+		\begin{beamercolorbox}{section in head/foot}
+			\opt\vskip2pt\insertnavigation{\paperwidth}\vskip2pt\\\
+			\opt\vskip2pt\hskip8pt\insertsubsection
+		\end{beamercolorbox}
+	}
+	\setbeamertemplate{footline}[frame number]
+
+	\setbeamerfont{title}{family = \opt, series = \bfseries}
+	\setbeamerfont{frametitle}{family = \opt, series = \bfseries}
+	\setbeamerfont{headline}{family = \opt}
+
+%color scheme
+	% screen template
+	\definecolor{bgyellow}{HTML}{FFFCF7}
+	\definecolor{normaltext}{HTML}{505050}
+	\definecolor{highlights}{HTML}{2a6d8c}
+
+	\setbeamercolor{background canvas}{bg=bgyellow}
+	\setbeamercolor{normal text}{fg=normaltext}
+	\setbeamercolor{palette primary}{fg=highlights}
+    \setbeamercolor{palette secondary}{fg=highlights}
+    \setbeamercolor{palette tertiary}{fg=highlights}
+    \setbeamercolor{palette quaternary}{fg=highlights}
+    \setbeamercolor{structure}{fg=highlights}
+
+    \setbeamertemplate{enumerate items}[circle]
+
+\input{lisa-extra}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+
+\end{frame}
+
+\section{Introduction}
+	\begin{frame}[t]\frametitle{Different at-issueness diagnostics}\scriptsize
+		\vspace{-1\baselineskip}
+		\ex. \label{qud}%
+		    QUD diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,chen_presuppositions_2024})
+		    \a.[A:] \emph{What did Greg buy?}
+		    \b.[B:] \emph{Greg, who bought a new car, is envied by his neighbor.}
+		    \z.
+		    Question to participants: How well does B's response fit A's question?
+		  \z.
+		  %
+		  \vspace{-1.5\baselineskip}
+		  %
+		  \ex. \label{aw}%
+		    `asking whether' diagnostic (e.g., \citealt{tonhauser_how_2018,solstad_cataphoric_2024})\smallskip\\
+		      \emph{Is Greg, who bought a new car, envied by his neighbor?}\smallskip
+		  \\ Question to participants: Is the speaker asking whether Greg bought a new car?
+		  \z.
+		  \vspace{-1.5\baselineskip}
+
+		  \ex. \label{dd} Direct dissent diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,syrett_experimental_2015})
+		    \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
+		    \b.[B:]\emph{No, that's not true, he didn't buy a new car.}
+		    \z.
+		  Question to participants: How natural is B's rejection of A's utterance?
+		  \z.
+		  \vspace{-1.5\baselineskip}
+
+		  \ex. \label{yesbut}%
+		    `yes, but' diagnostic (e.g., \citealt{xue_correlation_2011,destruel_cross-linguistic_2015})
+		    \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
+		    \b.[B:] \emph{Yes, but he didn't buy a new car.} /
+		    \b.[] \emph{Yes, and he didn't buy a new car.} /
+		    \b.[] \emph{No, he didn't buy a new car.}
+		    \z.
+		    Task for participants: Choose the response that sounds best.
+		  \z.
+
+		\begin{itemize}
+			\item Four diagnostics
+			\item Conceptual differences: at-issueness relative to QUD or relative to assertive proposal
+		\end{itemize}
+	
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Differences}\scriptsize
+	
+		\begin{itemize}
+			\item Question-based vs. assertion-based diagnostics: Assumptions are different (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})
+			\item Medial appositive RCs usually not-at-issue on all four diagnostics (\citealt{potts_logic_2005,amaral_review_2007,tonhauser_diagnosing_2012,syrett_experimental_2015,destruel_cross-linguistic_2015,tonhauser_how_2018,solstad_cataphoric_2024})
+
+			\item BUT final appositive RCs have been argued that sentence-final appositive NRRCs can be interpreted as at-issue, based on findings from the direct-dissent diagnostic (\citealt{syrett_experimental_2015,anderbois_at-issue_2015})
+
+			
+			\item Fine-grained lexical differences for the at-issueness of the embedded content of clause-embedding predicates \citealt{tonhauser_how_2018,degen-tonhauser-glossa}: e.g., $A$ \emph{knows} $p$ and $A$ \emph{is right} that $p$ are usually thought to come with inference that $p$ is true, but they differ in at-issueness ratings for propositional content $p$
+
+			% \includegraphics[width=0.5\textwidth]{../../results/degen-tonhauser-glossa/graphs/mean-asking-whether-ratings.pdf}
+
+			\item Can we find these differences?
+		\end{itemize}
+	
+	\end{frame}
+
+\section{Experiments 1--4}
+
+	\begin{frame}\frametitle{Method}
+		\framesubtitle{Comparing diagnostics}
+
+			Manipulating diagnostic used to assess the at-issueness status of the same types of contents across four experiments:
+			\begin{itemize}
+				\item Four experiments: each with one of the four diagnostics shown in \ref{qud}--\ref{yesbut}
+
+				\item Seven conditions (type of content): sentence-medial and sentence-final NRRCs, and the embedded complements of selected clause-embedding predicates
+				
+			\end{itemize}
+			
+		    \medskip %\pause
+
+		    In each experiment, 80 participants saw each of 7 conditions once, each randomly paired with a clause to instantiate it (item), e.g. \emph{Greg bought a new car}, + 2 controls (1 AI main clause, 1 unrelated) 
+		
+		\end{frame}
+
+		\begin{frame}[t]\frametitle{Materials}\scriptsize
+		
+			Operationalize each diagnostic through its established empirical task:
+			\begin{itemize}
+				\item question-answer match ratings for the QUD diagnostic
+				\item speaker intention judgments for the asking-whether diagnostic
+				\item naturalness ratings for direct dissent
+				\item and forced-choice responses for the ‘yes, but’ diagnostic
+			\end{itemize}
+			
+			\includegraphics[width=0.47\textwidth]{../../writing/paper/figures/trialExp2}
+		\end{frame}
+
+	\begin{frame}[t]
+		\scriptsize\centering
+		\vspace{-1.3\baselineskip}
+		\begin{tabular}{p{.4\linewidth} p{.4\linewidth}}
+			{\centering Exp.~1 (QUD diagnostic)} &
+			{\centering Exp.~2 (`asking whether' diagnostic)} \\
+      		\includegraphics[width=\linewidth]{../../results/exp1/graphs/mean-ratings.pdf}
+      		&
+      		\includegraphics[width=\linewidth]{../../results/exp2/graphs/mean-ratings.pdf}
+      		\\
+      		{\centering Exp.~3 (`direct dissent' diagnostic)} &
+			{\centering Exp.~4 (`yes, but' diagnostic)} \\
+      		\includegraphics[width=\linewidth]{../../results/exp3/graphs/mean-ratings.pdf}
+      		&
+      		\includegraphics[width=\linewidth]{../../results/exp4/graphs/mean-ratings.pdf}
+      		\\
+		\end{tabular}
+	
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Some observations}\scriptsize
+		\begin{itemize}
+			\item Experiment 2 (asking whether) shows the greatest differentiation between the contents, Experiment 2 (`direct dissent') showing the least; (range of means, and significant differences between them)
+
+			\item No difference between medial and final NRRCs
+
+			\item  (posthoc pairwise comparisons of the estimated means/proportions for each content using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4))
+
+		\end{itemize}
+	
+		Spearman rank correlations between the results of Exps.~1-4.:
+		\begin{center}
+			\begin{tabular}{l | c c c c}
+		    & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
+		    Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .11 & -.29 & -.18 \\
+		    Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .64 &.79 \\
+		    Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .79  \\
+		    \hline
+		    % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
+		    \end{tabular}
+		\end{center}
+		
+		  
+	
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Some points}
+	
+		- we do see differences between diagnostics, not all show the differences
+		- points we could make:
+		1. Exp 1 is so different from the others (be right)
+		2. what the results might tell us about whether the diagnostics diagnose a shared underlying property
+		3. and why Exp 2 shows this great differentiation, but that we only have time for one
+	
+	\end{frame}
+
+\section{Experiments 5--6}
+	\begin{frame}[t]\frametitle{Q-at-issueness or question-embedding?}\scriptsize
+		
+		Why is asking wehter different from all others, when the QUD-one should be like the aw test based on Q-AI-ness?
+
+		In experiments 5 and 6, we test whether the fine-grained differences among clause-embedding predicates observed with one diagnostic (asking-whether) are replicated with other diagnostics.
+		  \begin{itemize}
+		    \item CCs of clause-embedding predicates because one diagnostic found fine-grained differences
+		    \item Are these differences between contents replicated by the use of other diagnostics?
+		  \end{itemize}
+
+		\ex.
+	    \a.\label{exp5} Exp.~5 (`asking whether' diagnostic )
+	    \\ {\bf Nora:} \emph{Is xx right that Lucy broke the plate?}
+	    \\ Question to participants: Is Nora asking whether Lucy broke the plate?
+	    \b.\label{exp6} Exp.~6 (`direct dissent' diagnostic)
+	    \\ {\bf Nora:} \emph{Is XX right that Lucy broke the plate?}
+	    \\ {\bf Leo:} \emph{Yes, she didn't break the plate.}
+	    \\ Question to participants: How natural is Leo's response to Nora's question?
+	
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Results}\scriptsize
+
+	      \centering
+	      \begin{tabular}{p{.48\linewidth} p{.48\linewidth}}
+	      	Exp.~5 (`asking whether' diagnostic)
+	      	&
+	      	Exp.~6 (`direct assent' diagnostic)\\ 
+	      	\includegraphics[width=\linewidth]{../../results/exp5/graphs/mean-ratings.pdf}%
+	      	&
+	      	\includegraphics[width=\linewidth]{../../results/exp6/graphs/mean-ratings.pdf}
+	      	\\
+	      \end{tabular}
+
+	      Results of Exps.~5-6. The panels show the mean ratings by expression for (a) Exp.~5 (asking whether diagnostic) and (b) Exp.~2 (direct assent diagnostic). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots show the kernel probability density of individual participants' ratings.
+
+	      \begin{itemize}
+	      	\item Spearman rank = .93
+	      \end{itemize}
+	
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Analysis/discussion}
+
+	\end{frame}
+
+\section{Discussion}
+	
+	\begin{frame}[t]\frametitle{Takeaways}
+	
+		\begin{itemize}
+			\item no replication of Syrett + koev
+			\item it matters which diagnostic you use (experimental confirmation for snider, korotkova)
+			\item difference between Q-at-issuenes doesnt seem to be the most important difference, but more where is the content embedded 
+			\item Interaction of lexical semantics and pragmatics: Q
+		\end{itemize}
+	
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Interrogatives}
+	
+		why are interrogatives like that?
+	
+	\end{frame}
+
+\begin{frame}[allowframebreaks]{\bfseries\opt References}
+	\footnotesize
+	\bibliographystyle{../cslipubs-natbib}
+	\bibliography{../at-issueness}
+
+\end{frame}
+
+\end{document}
