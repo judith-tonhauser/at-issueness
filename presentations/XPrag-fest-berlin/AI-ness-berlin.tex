@@ -26,8 +26,7 @@
 	\setbeamertemplate{navigation symbols}{}
 	\setbeamertemplate{headline}{
 		\begin{beamercolorbox}{section in head/foot}
-			\opt\vskip2pt\insertnavigation{\paperwidth}\vskip2pt\\\
-			\opt\vskip2pt\hskip8pt\insertsubsection
+			\opt\vskip3pt\insertnavigation{\paperwidth}
 		\end{beamercolorbox}
 	}
 	\setbeamertemplate{footline}[frame number]
@@ -62,42 +61,82 @@
 \end{frame}
 
 \section{Introduction}
-	\begin{frame}[t]\frametitle{Different at-issueness diagnostics}\scriptsize
-		\vspace{-1\baselineskip}
+	\begin{frame}\frametitle{At-issueness}\small
+
+		% Central concept in semantics \& pragmatics:\\ 
+		Distinguish propositional content expressing the main point of an utterance (at-issue content) from those conveying background information (not-at-issue content) \pause
+
+		\ex. \emph{Greg, who bought a new car, is envied by his neighbor.}
+			\a. At-issue content: \emph{Greg is envied by his neighbor}
+			\b. Not-at-issue content: \emph{Greg bought a new car}\pause
+			\z.\z.
+		
+		\begin{itemize}
+			\item Several definitions and diagnostics have been proposed in the literature\pause
+
+			\item Very little discussion of whether definitions and diagnostics target the same underlying phenomenon (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})\pause
+
+			\item This work: take a step in adressing this question, compare whether four commonly used diagnostics yield the same results for propositional contents introduced by the same kinds of expressions
+
+			% \item exp 1--4 overview
+
+		\end{itemize}
+	
+	\end{frame}
+
+	\begin{frame}\frametitle{Experiments 1–4}
+		\begin{itemize}
+			\item Across four experiments, we manipulated the diagnostic used to assess the at-issueness status of the same contents\pause
+
+			\item We chose four diagnostics that have been suggested to target different notions of at-issueness and show different empirical patterns (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})\pause
+
+			\item We offer a systematic experimental comparison
+
+		\end{itemize}
+			
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Question-based at-issueness diagnostics}\small
+
+		Question-based diagnostics assume a conception of at-issueness relative to the QUD: At-issue content is the part of an utterance that interacts with the current QUD (\citealt{amaral_review_2007,simons_what_2010})\pause
+
 		\ex. \label{qud}%
 		    QUD diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,chen_presuppositions_2024})
 		    \a.[A:] \emph{What did Greg buy?}
 		    \b.[B:] \emph{Greg, who bought a new car, is envied by his neighbor.}
 		    \z.
-		    Question to participants: How well does B's response fit A's question?
+		    Question to participants: How well does B's response fit A's question?\pause
 		  \z.
 		  %
-		  \vspace{-1.5\baselineskip}
+		  % \vspace{-1.5\baselineskip}
+
 		  %
 		  \ex. \label{aw}%
 		    `asking whether' diagnostic (e.g., \citealt{tonhauser_how_2018,solstad_cataphoric_2024})\smallskip\\
 		      \emph{Is Greg, who bought a new car, envied by his neighbor?}\smallskip
-		  \\ Question to participants: Is the speaker asking whether Greg bought a new car?
+		  \\ Question to participants: Is the speaker asking whether Greg bought a new car?\pause
 		  \z.
-		  \vspace{-1.5\baselineskip}
+		  % \vspace{-1.5\baselineskip}
 
 
 		\begin{itemize}
 			% \item Four diagnostics
-			\item Diagnostics sensitive to a notion of at-issueness relative to the QUD, based on \citealt{amaral_review_2007,simons_what_2010}
-			\item Conceptual differences: at-issueness relative to QUD or relative to assertive proposal (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})
+			\item Other diagnostics make other assumptions
+			(\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})
 		\end{itemize}
 	
 	\end{frame}
 
-	\begin{frame}[t]\frametitle{Different at-issueness diagnostics}\scriptsize
+	\begin{frame}[t]\frametitle{Assertion-based at-issueness diagnostics}\small
 		% \vspace{-1\baselineskip}
+
+		Assertion-based diagnostics assume that the at-issue content of an assertion constitues a proposal to update the common ground that can be affirmed or denied (\citealt{farkas_reacting_2010,murray_varieties_2014,anderbois_at-issue_2015})\pause
 
 		  \ex. \label{dd} Direct dissent diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,syrett_experimental_2015})
 		    \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
 		    \b.[B:]\emph{No, that's not true, he didn't buy a new car.}
 		    \z.
-		  Question to participants: How natural is B's rejection of A's utterance?
+		  Question to participants: How natural is B's rejection of A's utterance?\pause
 		  \z.
 		  \vspace{-1.5\baselineskip}
 
@@ -111,81 +150,101 @@
 		    Task for participants: Choose the response that sounds best.
 		  \z.
 
-		\begin{itemize}
-			\item these are not relative to a QUD-notion of at-issueness \citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}
-			\item Snider: not about at-issueness at all
-			\item Murray: p-at-issueness
-		\end{itemize}
+		% \begin{itemize}
+		% 	\item these are not relative to a QUD-notion of at-issueness \citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}
+		% 	\item Snider: not about at-issueness at all
+		% 	\item Murray: p-at-issueness
+		% \end{itemize}
 	
 	\end{frame}
 
-	\begin{frame}[t]\frametitle{Differences}\scriptsize
-	
+	\begin{frame}\frametitle{Experiments 1–4: contents}\small
+		In seven conditions, each experiment tested propositional contents which previous literature leads us to expect show differences in at-issueness status\medskip\\ \pause
+
+		Propositional contents associated with:
 		\begin{itemize}
-			\item Question-based vs. assertion-based diagnostics: Assumptions are different (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})
-			\item Medial appositive RCs usually not-at-issue on all four diagnostics (\citealt{potts_logic_2005,amaral_review_2007,tonhauser_diagnosing_2012,syrett_experimental_2015,destruel_cross-linguistic_2015,tonhauser_how_2018,solstad_cataphoric_2024})
+			\item Sentence-medial and sentence-final appositive NRRCs (non-restrictive relative clauses): \citealt{syrett_experimental_2015} found that final appositives are more at-issue than medial ones under a version of the direct-dissent diagnostic\pause
 
-			\item BUT final appositive RCs have been argued that sentence-final appositive NRRCs can be interpreted as at-issue, based on findings from the direct-dissent diagnostic (\citealt{syrett_experimental_2015,anderbois_at-issue_2015})
-
-			
-			\item Fine-grained lexical differences for the at-issueness of the embedded content of clause-embedding predicates \citealt{tonhauser_how_2018,degen-tonhauser-glossa}: e.g., $A$ \emph{knows} $p$ and $A$ \emph{is right} that $p$ are usually thought to come with inference that $p$ is true, but they differ in at-issueness ratings for propositional content $p$
-
-			% \includegraphics[width=0.5\textwidth]{../../results/degen-tonhauser-glossa/graphs/mean-asking-whether-ratings.pdf}
-
-			\item Can we find these differences?
+			\item Clauses embedded by \emph{be right, confirm, discover, confess,} and \emph{know}: \citealt{degen-tonhauser-glossa} found fine-grained differences in how at-issue these are under the `asking-whether' diagnostic\pause
 		\end{itemize}
-	
+
+		In each experiment, 80 participants saw each of 7 conditions once, each randomly paired with a clause to instantiate it (item), e.g. \emph{Greg bought a new car}, + 2 controls (attention checks)
+		
 	\end{frame}
 
-\section{Experiments 1--4}
+	\begin{frame}[t]\frametitle{Materials}\scriptsize
+			% all four screenshots, no words on slide, only say
 
-	\begin{frame}\frametitle{Method}
-		\framesubtitle{Comparing diagnostics}
-
-			Manipulating diagnostic used to assess the at-issueness status of the same types of contents across four experiments:
-			\begin{itemize}
-				\item Four experiments: each with one of the four diagnostics shown in \ref{qud}--\ref{yesbut}
-
-				\item Seven conditions (type of content): sentence-medial and sentence-final NRRCs, and the embedded complements of selected clause-embedding predicates
-				
-			\end{itemize}
+			% Operationalize each diagnostic through its established empirical task:
+			% \begin{itemize}
+			% 	\item question-answer match ratings for the QUD diagnostic
+			% 	\item speaker intention judgments for the asking-whether diagnostic
+			% 	\item naturalness ratings for direct dissent
+			% 	\item and forced-choice responses for the ‘yes, but’ diagnostic
+			% \end{itemize}
 			
-		    \medskip %\pause
-
-		    In each experiment, 80 participants saw each of 7 conditions once, each randomly paired with a clause to instantiate it (item), e.g. \emph{Greg bought a new car}, + 2 controls (1 AI main clause, 1 unrelated) 
-		
-		\end{frame}
-
-		\begin{frame}[t]\frametitle{Materials}\scriptsize
-		
-			Operationalize each diagnostic through its established empirical task:
-			\begin{itemize}
-				\item question-answer match ratings for the QUD diagnostic
-				\item speaker intention judgments for the asking-whether diagnostic
-				\item naturalness ratings for direct dissent
-				\item and forced-choice responses for the ‘yes, but’ diagnostic
-			\end{itemize}
+			\vspace{-2\baselineskip}
+			\begin{center}
+				\begin{tabular}{p{.3\linewidth} p{.3\linewidth}}	
+					{\visible<1->{\centering Exp.~1 (QUD diagnostic)}} &
+					{\visible<2->{\centering Exp.~2 (`asking whether' diagnostic)}} \\
+					%
+					\visible<1->{\includegraphics[width=\linewidth]{../../writing/paper/figures/trialExp1}}
+					&
+					\visible<2->{\includegraphics[width=\linewidth]{../../writing/paper/figures/trialExp2}}
+					\\
+					%
+					{\visible<3->{\centering Exp.~3 (`direct dissent' diagnostic)}} &
+					{\visible<4->{\centering Exp.~4 (`yes, but' diagnostic)}} \\
+					%
+					\visible<3->{\includegraphics[width=\linewidth]{../../writing/paper/figures/trialExp3}}
+					&
+					\visible<4->{\includegraphics[width=\linewidth]{../../writing/paper/figures/trialExp4}}
+					\\
+				\end{tabular}
+			\end{center}
 			
-			\includegraphics[width=0.47\textwidth]{../../writing/paper/figures/trialExp2}
-		\end{frame}
+	\end{frame}
 
-	\begin{frame}[t]
-		\scriptsize\centering
-		\vspace{-1.3\baselineskip}
-		\begin{tabular}{p{.4\linewidth} p{.4\linewidth}}
-			{\centering Exp.~1 (QUD diagnostic)} &
-			{\centering Exp.~2 (`asking whether' diagnostic)} \\
-      		\includegraphics[width=\linewidth]{../../results/exp1/graphs/mean-ratings.pdf}
-      		&
-      		\includegraphics[width=\linewidth]{../../results/exp2/graphs/mean-ratings.pdf}
-      		\\
-      		{\centering Exp.~3 (`direct dissent' diagnostic)} &
-			{\centering Exp.~4 (`yes, but' diagnostic)} \\
-      		\includegraphics[width=\linewidth]{../../results/exp3/graphs/mean-ratings.pdf}
-      		&
-      		\includegraphics[width=\linewidth]{../../results/exp4/graphs/mean-ratings.pdf}
-      		\\
-		\end{tabular}
+	% \begin{frame}[t]\frametitle{Differences}\scriptsize
+	
+	% 	\begin{itemize}
+	% 		\item Question-based vs. assertion-based diagnostics: Assumptions are different (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})
+	% 		\item Medial appositive RCs usually not-at-issue on all four diagnostics (\citealt{potts_logic_2005,amaral_review_2007,tonhauser_diagnosing_2012,syrett_experimental_2015,destruel_cross-linguistic_2015,tonhauser_how_2018,solstad_cataphoric_2024})
+
+	% 		\item BUT final appositive RCs have been argued that sentence-final appositive NRRCs can be interpreted as at-issue, based on findings from the direct-dissent diagnostic (\citealt{syrett_experimental_2015,anderbois_at-issue_2015})
+
+			
+	% 		\item Fine-grained lexical differences for the at-issueness of the embedded content of clause-embedding predicates \citealt{tonhauser_how_2018,degen-tonhauser-glossa}: e.g., $A$ \emph{knows} $p$ and $A$ \emph{is right} that $p$ are usually thought to come with inference that $p$ is true, but they differ in at-issueness ratings for propositional content $p$
+
+	% 		% \includegraphics[width=0.5\textwidth]{../../results/degen-tonhauser-glossa/graphs/mean-asking-whether-ratings.pdf}
+
+	% 		\item Can we find these differences?
+	% 	\end{itemize}
+	
+	% \end{frame}
+
+
+\section{Experiments 1–4: Results}
+
+	\begin{frame}[t]\frametitle{Results}\scriptsize
+		\vspace{-2\baselineskip}
+			\begin{center}
+			\begin{tabular}{p{.4\linewidth} p{.4\linewidth}}
+				{\centering Exp.~1 (QUD diagnostic)} &
+				{\centering Exp.~2 (`asking whether' diagnostic)} \\
+	      		\includegraphics[width=\linewidth]{../../results/exp1/graphs/mean-ratings.pdf}
+	      		&
+	      		\includegraphics[width=\linewidth]{../../results/exp2/graphs/mean-ratings.pdf}
+	      		\\
+	      		{\centering Exp.~3 (`direct dissent' diagnostic)} &
+				{\centering Exp.~4 (`yes, but' diagnostic)} \\
+	      		\includegraphics[width=\linewidth]{../../results/exp3/graphs/mean-ratings.pdf}
+	      		&
+	      		\includegraphics[width=\linewidth]{../../results/exp4/graphs/mean-ratings.pdf}
+	      		\\
+			\end{tabular}
+		\end{center}
 	
 	\end{frame}
 
@@ -193,39 +252,44 @@
 		\begin{itemize}
 			\item Experiment 2 (asking whether) shows the greatest differentiation between the contents, Experiment 2 (`direct dissent') showing the least; (range of means, and significant differences between them)
 
+			\item rankings are very different (confirm always lower than discover)
+			\item start w exp 2 / overlay w other diagrams that show statistical analysis
+
 			\item No difference between medial and final NRRCs
 
 			\item  (posthoc pairwise comparisons of the estimated means/proportions for each content using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4))
 
 		\end{itemize}
 	
-		Spearman rank correlations between the results of Exps.~1-4.:
-		\begin{center}
-			\begin{tabular}{l | c c c c}
-		    & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
-		    Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .11 & -.29 & -.18 \\
-		    Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .64 &.79 \\
-		    Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .79  \\
-		    \hline
-		    % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
-		    \end{tabular}
-		\end{center}
+		% Spearman rank correlations between the results of Exps.~1-4.:
+		% \begin{center}
+		% 	\begin{tabular}{l | c c c c}
+		%     & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
+		%     Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .11 & -.29 & -.18 \\
+		%     Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .64 &.79 \\
+		%     Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .79  \\
+		%     \hline
+		%     % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
+		%     \end{tabular}
+		% \end{center}
 		
-		  \begin{itemize}
-		  	\item High correlation of 2 and 3 with 4 $.79$, and between 2 and 3 $.64$, but Exp.~1 shows low correlation with the rest
-		  \end{itemize}
+		%   \begin{itemize}
+		%   	\item High correlation of 2 and 3 with 4 $.79$, and between 2 and 3 $.64$, but Exp.~1 shows low correlation with the rest
+		%   \end{itemize}
 	
 	\end{frame}
 
 	\begin{frame}[t]\frametitle{Some points}
 		\begin{itemize}
-			\item We do see differences between diagnostics, importantly not all show the differences between contents 
+			\item We do see differences between diagnostics, importantly not all show the same differences between contents 
+			\item none of our diagnostics replicate the finding from S+K that final appositives are more at issue than medial ones
+			\item only one replciate degen + tonhauser
 		\end{itemize}	
 
 		We could make some points here
 		\begin{enumerate}
-			\item Why Exp.~1 is so different from the others (\emph{be right})
-			\item What the results might tell us about whether the diagnostics diagnose a shared underlying property
+			% \item Why Exp.~1 is so different from the others (\emph{be right})
+			% \item 
 			\item And why Exp.~2 shows a greater differentiation than the others
 		\end{enumerate}
 		
@@ -234,15 +298,32 @@
 	\end{frame}
 
 \section{Experiments 5--6}
+	\begin{frame}[t]\frametitle{Two hypotheses}
+		why is asking whether so different
+		\begin{itemize}
+			\item q-at-issuenes (thats not it)
+			\item question embedding  (hypotheses)
+			\item response task
+			
+		\end{itemize}
+	
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Materials + procedure}
+	
+		screenshots
+	
+	\end{frame}
+
 	\begin{frame}[t]\frametitle{Q-at-issueness or question-embedding?}\scriptsize
 		
 		Why is `asking whether' different from all others, when the QUD-one should be like the `asking whether' test based on Q-AI-ness?
 
 		In experiments 5 and 6, we test whether the fine-grained differences among clause-embedding predicates observed with one diagnostic (asking-whether) are replicated with other diagnostics.
-		  \begin{itemize}
-		    \item CCs of clause-embedding predicates because one diagnostic found fine-grained differences
-		    \item Are these differences between contents replicated by the use of other diagnostics?
-		  \end{itemize}
+		  % \begin{itemize}
+		  %   \item CCs of clause-embedding predicates because one diagnostic found fine-grained differences
+		  %   \item Are these differences between contents replicated by the use of other diagnostics?
+		  % \end{itemize}
 
 		\ex.
 	    \a.\label{exp5} Exp.~5 (`asking whether' diagnostic )
@@ -280,18 +361,23 @@
 		
 		\begin{itemize}
 			\item These two are highly correlated 
+			\item Answer to quesiton. not about response task, but interrogative embedding
+			\item in relation to previous literature which is about q-at-issueness
+
+			
 		\end{itemize}
 
 	\end{frame}	
 
-\section{Discussion}
+\section{General discussion}
 	
 	\begin{frame}[t]\frametitle{Takeaways}
 	
 		\begin{itemize}
-			\item no replication of Syrett + koev
 			\item it matters which diagnostic you use (experimental confirmation for snider, korotkova)
 			\item difference between Q-at-issuenes doesnt seem to be the most important difference, but more where is the content embedded 
+			\item no replication of Syrett + koev
+			\item What the results might tell us about whether the diagnostics diagnose a shared underlying property
 			\item Interaction of lexical semantics and pragmatics: Q
 		\end{itemize}
 	
@@ -300,6 +386,10 @@
 	\begin{frame}[t]\frametitle{Interrogatives}
 	
 		why are interrogatives like that?
+
+		\begin{itemize}
+			\item 
+		\end{itemize}
 	
 	\end{frame}
 
