@@ -1,11 +1,9 @@
-% !TeX root = asymmetries-local-contexts.tex
+% !TeX root = AI-ness-berlin.tex
 %layout, formatting
 	\usepackage[round]{natbib}
 	\usepackage{multicol}
 	\usepackage{linguex}
 	\usepackage{multirow}
-	\usepackage{colortbl}
-	\usepackage{booktabs}
 	\usepackage{array}
 
 %text features
@@ -19,4 +17,21 @@
 
 
 
+% tables
+	\usepackage{colortbl}
+	\usepackage{booktabs}
 
+	\usepackage{adjustbox}
+	\usepackage{array}
+
+	\newcolumntype{R}[2]{%
+	    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+	    l%
+	    <{\egroup}%
+	}
+	\newcommand*\rots{\multicolumn{1}{R{90}{.1em}}}% no optional argument here, please!
+	% positive coefficients/difference
+	\definecolor{red}{RGB}{178,24,43}
+
+	% negative coefficients/difference
+	\definecolor{blue}{RGB}{33,102,172}

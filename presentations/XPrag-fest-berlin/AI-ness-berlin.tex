@@ -2,7 +2,7 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 UnicodeWhat is at-issueness? An experimental comparison of diagnostics
 
-\documentclass[compress, xcolor = dvipsnames, aspectratio=169, handout]{beamer}
+\documentclass[compress, xcolor = dvipsnames, aspectratio=169]{beamer}
 
 %fonts
 	\usepackage{fontspec}
@@ -184,9 +184,60 @@
 \section{Experiments 1–4: Results}
 
 	\begin{frame}[t]\frametitle{Results}\scriptsize
+		\vspace{-.5\baselineskip}
+		\begin{minipage}{\textwidth}
 		\hspace{-1.18cm}
 		\begin{minipage}{\textwidth}
-			\fbox{\begin{tabular}{p{.77\textwidth} p{.31\textwidth}}
+			% \fbox{
+			\begin{tabular}{p{.77\textwidth} p{.31\textwidth}}
+				\begin{tabular}{p{.37\textwidth} p{.37\textwidth}}
+					{\centering Exp.~1 (QUD diagnostic)} &
+					{\centering Exp.~2 (`asking whether' diagnostic)} \\
+		      		\includegraphics[width=\linewidth]{../../results/exp1/graphs/mean-ratings.pdf}
+		      		&
+		      		\includegraphics[width=\linewidth]{../../results/exp2/graphs/mean-ratings.pdf}
+		      		\\
+		      		{\centering Exp.~3 (`direct dissent' diagnostic)} &
+					{\centering Exp.~4 (`yes, but' diagnostic)} \\
+		      		\includegraphics[width=\linewidth]{../../results/exp3/graphs/mean-ratings.pdf}
+		      		&
+		      		\includegraphics[width=\linewidth]{../../results/exp4/graphs/mean-ratings.pdf}
+		      		\\
+				\end{tabular}\pause
+
+				&
+				\parbox{\linewidth}{
+				\parbox{\linewidth}{\scriptsize
+				Exp.~2 (`asking whether'): greatest differentiation between contents
+				\begin{itemize}
+					\item Range of means
+					\item More pairwise differences between contents\smallskip
+				\end{itemize}
+
+				\uncover<0>{Content rankings always different
+				\begin{itemize}
+					\item Embedded content of \emph{confirm} and \emph{discover} always more at-issue than NRRCs
+					\item No other pairwise difference is found for all diagnostics\smallskip
+				\end{itemize}
+
+				Final NRRCs are not more at issue than medial NRRCs\medskip
+				}
+				\uncover<0>{\fbox{\parbox{\linewidth}{\tiny Posthoc pairwise comparisons of the estimated means/proportions for each content using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were bayesian mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4)}}\\ \vfill \phantom. }}
+				}
+			\end{tabular}
+			% }
+		\end{minipage}
+		\end{minipage}
+	
+	\end{frame}
+
+	\begin{frame}[t]\frametitle{Results}\scriptsize
+		\vspace{-.5\baselineskip}
+		\begin{minipage}{\textwidth}
+		\hspace{-1.18cm}
+		\begin{minipage}{\textwidth}
+			% \fbox{
+			\begin{tabular}{p{.77\textwidth} p{.31\textwidth}}
 				\begin{tabular}{p{.37\textwidth} p{.37\textwidth}}
 					{\centering Exp.~1 (QUD diagnostic)} &
 					{\centering Exp.~2 (`asking whether' diagnostic)} \\
@@ -208,57 +259,103 @@
 				Exp.~2 (`asking whether'): greatest differentiation between contents
 				\begin{itemize}
 					\item Range of means
-					\item More differences between contents\smallskip
+					\item More pairwise differences between contents\smallskip
 				\end{itemize}
 
-				Rankings between contents always different
+
+				\uncover<2->{Content rankings always different
 				\begin{itemize}
-					% \item Embedded content of \emph{confirm} always more at-issue than \emph{discover}
-					\item No pairwise difference is found for all diagnostics\smallskip
-				\end{itemize}
+					\item Embedded content of \emph{confirm} and \emph{discover} always more at-issue than NRRCs
+					\item No other pairwise difference is found for all diagnostics\smallskip
+				\end{itemize}}
 
-				No difference between medial and final NRRCs\bigskip
+				\uncover<3->{Final NRRCs are not more at issue than medial NRRCs\medskip}
 				}
-				\fbox{\parbox{\linewidth}{\tiny Posthoc pairwise comparisons of the estimated means/proportions for each content using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were bayesian mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4)}}
+				\fbox{\parbox{\linewidth}{\tiny Posthoc pairwise comparisons of the estimated means/proportions for each content using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were bayesian mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4)}}\\ \vfill \phantom. 
 				}
-			\end{tabular}}
+			\end{tabular}
+			% }
 		\end{minipage}
 
-		.
+		\phantom.
 		\hspace{-1.18cm}\begin{minipage}{\textwidth}
-			\vspace{-14.3cm}
-			\fbox{\begin{tabular}{p{.77\textwidth} p{.31\textwidth}}
-				\begin{tabular}{p{.37\textwidth} p{.37\textwidth}}
+			\vspace{-8cm}
+			% \fbox{
+			\begin{tabular}{p{.77\textwidth} p{.31\textwidth}}
+				\begin{tabular}{p{.37\textwidth} p{.35\textwidth}}
 					\phantom{\centering Exp.~1 (QUD diagnostic)} &
 					\phantom{\centering Exp.~2 (`asking whether' diagnostic)} \\
-		      		test
+					%	
+						\cellcolor{bgyellow}
+						\parbox{\linewidth}{
+						\vspace{.2cm}
+						\scalebox{.75}{
+			      		\begin{tabular}{r | ccccccc}
+						    & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
+						    \hline
+						    \input{../../results/exp1/models/table1}
+						    \hline
+					    \end{tabular}}}
 		      		&
-		      		test
+		      			\cellcolor{bgyellow}
+		      			\parbox{\linewidth}{
+						\vspace{.2cm}
+						\scalebox{.75}{
+			      		\begin{tabular}{r | ccccccc}
+						    & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
+						    \hline
+						    \input{../../results/exp2/models/table1}
+						    \hline
+					    \end{tabular}}
+					    \vspace{.1cm}
+					    }
 		      		\\
 		      		\phantom{\centering Exp.~3 (`direct dissent' diagnostic)} &
-					\phantom{\centering Exp.~4 (`yes, but' diagnostic)} \\
-		      		test
+					\phantom{\centering Exp.~4 (`yes, but' diagnostic)} \vspace{.05cm} \\
+		      		%	
+						\cellcolor{bgyellow}
+						\parbox{\linewidth}{
+						\vspace{.2cm}
+						\scalebox{.75}{
+			      		\begin{tabular}{r | ccccccc}
+						    & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
+						    \hline
+						    \input{../../results/exp3/models/table1}
+						    \hline
+					    \end{tabular}} \vspace{.1cm}}
 		      		&
-		      		test
+		      		%	
+						\cellcolor{bgyellow}
+						\parbox{\linewidth}{
+						\vspace{.2cm}
+						\scalebox{.75}{
+			      		\begin{tabular}{r | ccccccc}
+						    & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
+						    \hline
+						    \input{../../results/exp4/models/table1}
+						    \hline
+					    \end{tabular}}\vspace{.1cm}}
 		      		\\
 				\end{tabular}
 
 				&
 				\\ 
-			\end{tabular}}
+			\end{tabular}
+			% }
+		\end{minipage}
 		\end{minipage}
 	
 	\end{frame}
 
 	\begin{frame}\frametitle{Takeaways and quesions}
 		\begin{itemize}
-			\item We do see differences between diagnostics, importantly not all show the same differences between contents
+			\item We do see differences between diagnostics, importantly not all show the same differences between contents\pause
 
-			\item None of our diagnostics replicate finding from \citet{syrett_experimental_2015} that final appositives are more at issue than medial ones
+			\item None of our diagnostics replicate finding from \citet{syrett_experimental_2015} that final appositives are more at issue than medial ones\pause
 
-			\item Only the `asking whether' diagnostic replicates finding from \citealt{degen-tonhauser-glossa} that clause-embedding predicates show fine-grained lexical differences in how at-issue the embedding clause is
+			\item Only the `asking whether' diagnostic replicates finding from \citealt{degen-tonhauser-glossa} that clause-embedding predicates show fine-grained lexical differences in how at-issue the embedding clause is\pause
 
-		\end{itemize}	\bigskip
+		\end{itemize}	\bigskip 
 
 		We further explore this question:
 
@@ -273,13 +370,14 @@
 		\begin{itemize}
 			\item \textbf{Question-based vs. assertion-based at-issueness} diagnostics:\\
 				The question-based diagnostics (QUD, `asking whether') are about whether a proposition is at issue relative to a QUD introduced in the previous discourse, wheras assertion-based diagnostics (direct dissent, `yes but') target a different underlying notion
-		\end{itemize}
+
+		\end{itemize}\pause
 		\vfill 
 
 		Two other hypotheses: When testing a range of contents, the differentiation between contents (in terms of range of means, significant differences) is greater:
 		\begin{enumerate}
 			\item \textbf{Question embedding:} \\ 
-				\dots when contents are embedded in a question vs. a declarative assertion.
+				\dots when contents are embedded in a question vs. a declarative assertion.\pause
 				
 			\item \textbf{Response task:} \\ \dots when participants are more directly asked what the utterance was about vs. when giving acceptability judgment or forced-choice continuation responses.
 			
@@ -304,11 +402,11 @@
 		    \\ Question to participants: How natural is Leo's response to Nora's question?
 		    \z. \z. 
 	
-		\vfill
-		20 clause-embedding predicates: \emph{be right, confirm, say, establish, prove, suggest, demonstrate, announce, reveal, admit, confess, think, acknowledge, pretend, see, discover, hear, inform, know} and \emph{be annoyed}\vfill
+		\vfill \pause
+		Similar to Exps.~1–4, use 20 clause-embedding predicates of \citet{tonhauser_how_2018} and \citealt{degen-tonhauser-glossa}: \emph{be right, confirm, say, establish, prove, suggest, demonstrate, announce, reveal, admit, confess, think, acknowledge, pretend, see, discover, hear, inform, know} and \emph{be annoyed}\vfill\pause
 
 		\begin{enumerate}
-			\item If \textbf{question embedding} is what allows for greater differentiation between contents, results from Exp.~5 and Exp.~6 should be \textbf{\underline{very similar}}
+			\item If \textbf{question embedding} is what allows for greater differentiation between contents, results from Exp.~5 and Exp.~6 should be \textbf{\underline{very similar}}\pause
 
 			\item If \textbf{response task} is what allows for greater differentiation between contents, results from Exp.~5 and Exp.~6 should be \textbf{\underline{rather different}}
 		\end{enumerate}
@@ -318,7 +416,7 @@
 
 	\begin{frame}[t]\frametitle{Materials + procedure}\scriptsize
 		
-		Similar to Exps.~1–4, but measure at-issueness for contents of complements for the 20 clause-embedding predicates of \citealt{tonhauser_how_2018} and \citealt{degen-tonhauser-glossa}
+		
 
 		\vspace{-\baselineskip}
 		\begin{center}
@@ -332,7 +430,7 @@
 				\\
 				
 			\end{tabular}
-		\end{center}
+		\end{center}\pause
 
 		Across both experiments, 550 participants saw each of 20 conditions once, each randomly paired with a clause to instantiate it (item), e.g. \emph{Julian dances salsa} + 6 control trials (attention checks)
 
@@ -350,12 +448,15 @@
 	      	&
 	      	\includegraphics[width=\linewidth]{../../results/exp6/graphs/mean-ratings.pdf}
 	      	\\
-	      \end{tabular}
+	      \end{tabular}\pause
 
-	      Results of Exps.~5-6. The panels show the mean ratings by expression for (a) Exp.~5 (asking whether diagnostic) and (b) Exp.~2 (direct assent diagnostic). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots show the kernel probability density of individual participants' ratings.
+	      % Results of Exps.~5-6. The panels show the mean ratings by expression for (a) Exp.~5 (asking whether diagnostic) and (b) Exp.~2 (direct assent diagnostic). Error bars indicate 95\% bootstrapped confidence intervals. Violin plots show the kernel probability density of individual participants' ratings.
+	      \vfill
 
 	      \begin{itemize}
-	      	\item Spearman rank = .93
+	      	\item Results look very similar here
+	      	\item Pairwise differences bteween many of the same contents (?)\pause
+	      	\item By-content means from the two experiments are highly correlated (Spearman rank correlation = .93)
 	      \end{itemize}
 	
 	\end{frame}
@@ -369,7 +470,7 @@
 				\item More than response task
 				\item More than question-based vs. assertion-based diagnostics
 			\end{itemize}
-		\end{itemize} \vfill 
+		\end{itemize} \vfill \pause
 
 		{\scriptsize Different from previous literature suggesting that different diagnostics show different empirical results:\\
 		Mostly higlighted difference between QUD at-issueness, and assertion-based diagnostics, which are either argued not to be about at-issueness at all (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018}), or about a separate assertion-based notion of at-issueness (\citealt{koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})}
@@ -378,10 +479,10 @@
 
 \section{General discussion}
 
-	\begin{frame}\frametitle{Question embeddings}\small 
-		So why are question embeddings so different from assertions? Some speculation:
+	\begin{frame}[t]\frametitle{Question embeddings}\small 
+		So why are question embeddings so different from assertions? Some speculation:\pause
 
-		\begin{itemize}
+		\begin{itemize}[<+->]
 			\item \textbf{Literal meaning} of appositives / lexical semantics of clause-embedding verbs affects how much/likely the embedded content is interpreted as at issue\\ 
 			{\scriptsize Big question here: which lexical properties can affect this how? Look to literature on presupposition triggering? (\citealt{abrusan_predicting_2011,schlenker_triggering_2021,anand_facts_2024}, Scontras \& Tonhauser to appear)}
 
@@ -400,17 +501,16 @@
 	
 	\end{frame}
 	
-	\begin{frame}[t]\frametitle{Takeaways}
+	\begin{frame}\frametitle{Takeaways}
 	
-		\begin{itemize}
-			\item Experimental confirmation for claims that there are empirical differences between at-issueness diagnostics (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})\\ \smallskip
-
+		\begin{itemize}[<+->]
+			\item Experimental confirmation for claims that there are empirical differences between at-issueness diagnostics (\citealt{snider_anaphoric_2017,snider_at-issuenessne_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})
 			\begin{center}
 				\textbf{It matters which diagnostic is used.}\bigskip
 			\end{center}
 
 
-			\item But: difference between QUD at-issueness and assertion-based diagnostics does not seem to be the most important; more important is the \textbf{speech act} where the target content is embedded \medskip
+			\item But: difference between QUD at-issueness and assertion-based diagnostics does not seem to be the most important; \textbf{speech act} where the target content is embedded is more important \medskip
 
 			\item No replication of \citealt{syrett_experimental_2015}: We did not find that final appositives are more at-issue than medial ones
 			\medskip
