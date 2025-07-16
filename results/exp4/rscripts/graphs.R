@@ -25,6 +25,12 @@ length(unique(d$participantID)) #72 participants
 t = d %>%
   filter(!(expression == "AI MC" | expression == "NAI MC"))
 table(t$expression)
+
+# code response such that 1 = at-issue and 0 = not-at-issue
+table(d$nResponse)
+t = t %>%
+  mutate(nResponse = ifelse(choice == "No", 1, 0))
+table(d$nResponse)
   
 # mean rating by expression
 means = t %>%
@@ -47,6 +53,6 @@ ggplot(data=means, aes(x=expression, y=Mean)) +
   theme(text = element_text(size=12), axis.text.x = element_text(size = 12, angle = 45, hjust = 1)) +
   theme(legend.position="none") +
   theme(panel.grid.major.x = element_blank()) +
-  ylab("Proportion of \"no\" choice \n (higher response = more not-at-issue") +
+  ylab("Proportion of \"no\" choice \n (higher response = more at-issue") +
   xlab("Expression") 
 ggsave("../graphs/mean-ratings.pdf",height=4.5,width=7)

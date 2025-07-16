@@ -39,6 +39,7 @@ max(means$Mean)
 max(means$Mean) - min(means$Mean)
 
 # plot 
+
 ggplot(data=means, aes(x=expression, y=Mean)) +
   geom_violin(data=t, aes(x=expression, y=response), scale="width", fill = "grey", linewidth=0, alpha=.4) +
   geom_point(size=2.5,color="black") +
@@ -47,7 +48,7 @@ ggplot(data=means, aes(x=expression, y=Mean)) +
   theme(text = element_text(size=12), axis.text.x = element_text(size = 12, angle = 45, hjust = 1)) +
   theme(legend.position="none") +
   theme(panel.grid.major.x = element_blank()) +
-  ylab("Mean naturalness ratings \n (higher rating = more not-at-issue)") +
+  ylab("Mean naturalness ratings \n (higher rating = more at-issue)") +
   xlab("Expression") 
 ggsave("../graphs/mean-ratings.pdf",height=4.5,width=7)
 

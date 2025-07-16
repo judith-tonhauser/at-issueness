@@ -47,7 +47,7 @@ ggplot(data=means, aes(x=expression, y=Mean)) +
   theme(text = element_text(size=12), axis.text.x = element_text(size = 12, angle = 45, hjust = 1)) +
   theme(legend.position="none") +
   theme(panel.grid.major.x = element_blank()) +
-  ylab("Mean 'asking whether' rating \n (higher rating = more not-at-issue)") +
+  ylab("Mean 'asking whether' rating \n (higher rating = more at-issue)") +
   xlab("Expression") 
 ggsave("../graphs/mean-ratings.pdf",height=4.5,width=7)
 

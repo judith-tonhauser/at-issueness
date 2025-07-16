@@ -28,10 +28,15 @@ cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00",
 d <- read_csv("https://raw.githubusercontent.com/judith-tonhauser/projection-interactions/refs/heads/main/results/exp1/data/d.csv")
 nrow(d) #10100
 
+# code response such that 1 = at-issue and 0 = not-at-issue
+d$ai = 1-d$ai
+table(d$ai)
+
 # Fig. X: by-predicate not-at-issueness ----
 
 # sort predicates by not-at-issueness mean
 nai.means = d %>%
+  filter(short_trigger != "MC") %>%
   group_by(short_trigger) %>%
   summarize(Mean_nai = mean(ai), CILow=ci.low(ai),CIHigh=ci.high(ai)) %>%
   mutate(YMin=Mean_nai-CILow,YMax=Mean_nai+CIHigh) %>%
@@ -40,11 +45,12 @@ nai.means = d %>%
 nai.means
 
 d = d %>%
+  filter(short_trigger != "MC") %>%
   mutate(short_trigger = fct_relevel(short_trigger,levels(nai.means$short_trigger)))
 levels(d$short_trigger)
 
-ggplot(means, aes(x=verb, y=Mean, fill=VeridicalityGroup)) +
-  geom_violin(data=subjmeans,scale="width",linewidth = 0, alpha = .4)
+# ggplot(means, aes(x=verb, y=Mean, fill=VeridicalityGroup)) +
+#   geom_violin(data=subjmeans,scale="width",linewidth = 0, alpha = .4)
 
 # plot
 ggplot() +
@@ -55,7 +61,7 @@ ggplot() +
   theme(text = element_text(size=12), axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   theme(legend.position="bottom") +
   theme(panel.grid.major.x = element_blank()) +
-  ylab("Mean 'asking whether' rating \n (higher rating indicates more not-at-issue)") +
+  ylab("Mean 'asking whether' rating \n (higher rating indicates more at-issue)") +
   xlab("Predicate")
 ggsave("../graphs/mean-asking-whether-ratings.pdf",height=4.5,width=7)
 

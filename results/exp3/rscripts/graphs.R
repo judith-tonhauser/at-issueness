@@ -25,6 +25,10 @@ t = d %>%
   filter(!(expression == "controlBad" | expression == "controlGood"))
 table(t$expression)
 
+# code response such that 1 = at-issue and 0 = not-at-issue
+t$response = 1-t$response
+table(t$response)
+
 # mean rating by expression
 means = t %>%
   group_by(expression) %>%
@@ -46,7 +50,7 @@ ggplot(data=means, aes(x=expression, y=Mean)) +
   theme(text = element_text(size=12), axis.text.x = element_text(size = 12, angle = 45, hjust = 1)) +
   theme(legend.position="none") +
   theme(panel.grid.major.x = element_blank()) +
-  ylab("Mean naturalness rating \n (higher rating = more not-at-issue)") +
+  ylab("Mean naturalness rating \n (higher rating = more at-issue)") +
   xlab("Expression") 
 ggsave("../graphs/mean-ratings.pdf",height=4.5,width=7)
 

@@ -221,7 +221,7 @@ d %>%
 nrow(d)
 
 # code response such that 1 = not-at-issue and 0 = at-issue
-d$response = 1-d$response
+# d$response = 1-d$response
 table(d$response)
 
 means = d %>%

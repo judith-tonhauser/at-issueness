@@ -34,6 +34,10 @@ table(t$trigger)
 # rename trigger into expression
 t$expression = t$trigger
 
+# code response such that 1 = at-issue and 0 = not-at-issue
+t$response = 1-t$response
+table(t$response)
+
 means = t %>%
   group_by(expression) %>%
   summarize(Mean = mean(response), CILow = ci.low(response), CIHigh = ci.high(response)) %>%
