@@ -18,7 +18,7 @@
 ### experiments:
   - exps1-4: experiments reported on in Conglei's thesis and analysis of the results (pilots and main experiments)
   - exps5-6: 
-  - preliminary-exps: experimentss that were run before Conglei's thesis
+  - preliminary-exps: experiments that were run before Conglei's thesis
 ### presentations: slides for workshop presentation
 ### results+analysis: directory with the analyses of the data
 - exps1-4: The data for Exps 1-4 come from Conglei's thesis (see folder experiments > exps1-4)
