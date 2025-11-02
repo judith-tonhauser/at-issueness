@@ -409,8 +409,28 @@
         %max: 0.958
         %range: 0.458
 
-    \subsubsection{Pairwise differences between expressions.}
-      Finally, the experiments differ in whether they reproduce distinctions between contents reported in prior literature. Fig.~\ref{fig:pairwise} presents the results of posthoc pairwise comparisons of the estimated means/proportions for each content, using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4). All models were fit using the `brms' package (\citealt{buerkner2017}) using weakly informative priors. The models predicted the ratings\footnote{To model the ratings in Exps.~1-3 using a beta regression, the ratings were first transformed from the interval [0,1] to the interval (0,1) using the method proposed in \citealt{smithson-verkuilen2006}.} from a fixed effect of expression (with treatment coding and `be right' as reference level) and included random by-participant and by-item intercepts. The output of the pairwise comparison were 95\% highest density intervals (HDIs) of estimated marginal mean differences between each of the expressions. We assume that two contents differ if their HDI does not include 0.\footnote{The full model outputs are available in the folder {\bf where?} in the repository linked in footnote \ref{f:github}.}
+    \subsubsection{Rank order and Spearman rank correlations} 
+      We also find that the four experiments differ in the relative ratings assigned to the seven contents, with only limited overlap. Across all experiments, \emph{confirm} and \emph{discover} consistently received higher ratings (at least numerically) than \emph{confess}, which in turn received higher ratings than medial and final NRRCs. For all other pairs of expressions, however, the ordering was not consistent. In particular, the relative ranking of \emph{be right} and \emph{know} is inconsitent across experiments:  The embedded content of \emph{be right} received the lowest ratings in Exp.~1, but was among the most at-issue in the other three experiments. The embedded content of \emph{know} was rated (numerically) lower than that of \emph{confirm} in Exps.~1 and 2, but higher in Exps.~3 and 4.
+
+      This difference between the results of the experiments is quantified in the Spearman rank correlations in Table \ref{t:spearman}.\footnote{The Spearman rank correlation coefficient, a value between -1 and 1, is a nonparametric measure of rank correlation: the higher the absolute value of the coefficient, the more the relation between the the two variables can be described using a monotonic function. If the coefficient is positive, the value of one variable tends to increase with an increase in the other. In the case of our experiments, a coefficient of 1 for two experiments would mean that there is a perfectly monotone increasing relation between the mean ratings of the seven contents in the two experiments: for any two contents c1 and c2, if c1 ranks below c2 in one experiment (that is, the mean rating of c1 is lower than that of c2), then that ranking is preserved in the other experiment.}
+
+      \begin{table}[ht!]
+        \centering
+        \begin{tabular}{l | c c c c}
+        & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
+        Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .11 & -.29 & -.18 \\
+        Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .64 &.79 \\
+        Exp.~3 (direct-dissent diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .79  \\
+        \hline
+        % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
+        \end{tabular}
+      \caption{Spearman rank correlations between the results of Exps.~1-4.}\label{t:spearman}
+      \end{table}
+
+      The rank correlations are particularly low for for Exp.~1 compared to the other three experiments, at least partly because of the low relative ranking of \emph{be right}. These results suggests that the four diagnostics as implemented in Exps.~1-4 interact differently with the seven contents investigated.
+
+    \subsubsection{Pairwise differences between expressions}
+      Finally, the experiments differ in whether they reproduce distinctions between contents reported in prior literature. Fig.~\ref{fig:pairwise} presents the results of posthoc pairwise comparisons of the estimated means/proportions for each content, using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4). All models were fit using the `brms' package (\citealt{buerkner2017}) using weakly informative priors. The models predicted the ratings\footnote{To model the ratings in Exps.~1-3 using a beta regression, the ratings were first transformed from the interval [0,1] to the interval (0,1) using the method proposed in \citealt{smithson-verkuilen2006}.} from a fixed effect of expression (with treatment coding and `be right' as reference level) and included random by-participant and by-item intercepts. The output of the pairwise comparison were 95\% highest density intervals (HDIs) of estimated marginal mean differences between each of the expressions. We assume that two contents differ if their HDI does not include 0.\footnote{The full model outputs are available in the folder \texttt{results+analysis/exps1-4/} in the repository linked in footnote \ref{f:github}.}
 
       Recall that \citealt{syrett_experimental_2015}, using a variant of the direct-dissent diagnostic, found that sentence-medial NRRCs are more not-at-issue than sentence-final ones. In contrast, as shown in Figs.~\ref{fig:results} and \ref{fig:pairwise}, no such difference is observed in Exps.~1-3; and in Exp.~4 (`yes, but' diagnostic), we find the opposite: sentence-final NRRCs are rated less at-issue than sentence-medial ones. Thus, none of the diagnostics as implemented in Exps.~1-4 replicate \citeauthor{syrett_experimental_2015}'s finding.
 
@@ -462,33 +482,13 @@
 
       These results also lend further support to the above reported finding that the four diagnostics, as implemented here, differ in how much they differentiate between the seven contents investigated. In particular, while none of the experiments found differences between medial and final NRRCs, the results of Exp.~2 (`asking whether' diagnostic) distinguished between most of the contents of the complements of the five clause-embedding predicates, whereas the results of Exp.~3 (direct-dissent diagnostic) distinguished between the least of these contents. In line with the range of means/proportions reported above, the pattern of differences between contents suggests that the `asking whether' diagnostic showed the most differentiation, while the direct-dissent and QUD diagnostics showed the least.
 
-    \subsubsection{Rank order and Spearman rank correlations.} 
-      We also find that the four experiments differ in the relative ratings assigned to the seven contents, with only limited overlap. Across all experiments, \emph{confirm} and \emph{discover} consistently received higher ratings (at least numerically) than \emph{confess}, which in turn received higher ratings than medial and final NRRCs. For all other pairs of expressions, however, the ordering was not consistent. In particular, the relative ranking of \emph{be right} and \emph{know} is inconsitent across experiments:  The embedded content of \emph{be right} received the lowest ratings in Exp.~1, but was among the most at-issue in the other three experiments. The embedded content of \emph{know} was rated (numerically) lower than that of \emph{confirm} in Exps.~1 and 2, but higher in Exps.~3 and 4.
-
-      This difference between the results of the experiments is quantified in the Spearman rank correlations in {\bf JT: redo}  Table \ref{t:spearman}.\footnote{The Spearman rank correlation coefficient, a value between -1 and 1, is a nonparametric measure of rank correlation: the higher the absolute value of the coefficient, the more the relation between the the two variables can be described using a monotonic function. If the coefficient is positive, the value of one variable tends to increase with an increase in the other. In the case of our experiments, a coefficient of 1 for two experiments would mean that there is a perfectly monotone increasing relation between the mean ratings of the seven contents in the two experiments: for any two contents c1 and c2, if c1 ranks below c2 in one experiment (that is, the mean rating of c1 is lower than that of c2), then that ranking is preserved in the other experiment.}
-
-      \begin{table}[ht!]
-        \centering
-        \begin{tabular}{l | c c c c}
-        & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
-        Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .11 & -.29 & -.18 \\
-        Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .64 &.79 \\
-        Exp.~3 (direct-dissent diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .79  \\
-        \hline
-        % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
-        \end{tabular}
-      \caption{Spearman rank correlations between the results of Exps.~1-4.}\label{t:spearman}
-      \end{table}
-
-      The rank correlations are particularly low for for Exp.~1 compared to the other three experiments, at least partly because of the low relative ranking of \emph{be right}. These results suggests that the four diagnostics as implemented in Exps.~1-4 interact differently with the seven contents investigated.
-
-
+    
 
   \subsection{Discussion}
 
     Exps.~1-4 were designed to compared the results of four different diagnostics of at-issueness that have been used in prior literature. The results of the experiments suggest that the diagnostics, in the particular way in which they were implemented in the experiments, differ on several dimensions.
     \begin{enumerate}
-      \item They differ in the extent to which they differentiate between the seven contents investigated. with the `asking whether' diagnostic of Exp.~2 showing the most differentiation (as evidenced by the range of means and amound of pairwise differences) and the direct-dissent diagnostic of Exp.~3 showing the least.
+      \item They differ in the extent to which they differentiate between the seven contents investigated. with the `asking whether' diagnostic of Exp.~2 showing the most differentiation and the direct-dissent diagnostic of Exp.~3 showing the least, as evidenced by the range of means and amount of pairwise differences.
 
       \item They differ in the relative order of the seven contents. In particular, the relative ranking of \emph{be right} and \emph{know} differs across Exps.~1--4.
 
@@ -531,7 +531,7 @@
 
         \begin{tabular}{l | c c c c}
         & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
-        Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .77 & .09 & .31 \\
+        Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .77 & -.09 & -.31 \\
         Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .66 & .66 \\
         Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .77  \\
         \hline
@@ -543,24 +543,19 @@
     \subsubsection{Medial vs. final appositive NRRCs}
         As mentioned above, none of our experiments replicated the effect reported in \citealt{syrett_experimental_2015}, that sentence-final NRRCs were more at-issue than sentence-medial ones. This includes Exp.~3, which implemented a variant of the `direct dissent' diagnostic that was used in \citealt{syrett_experimental_2015}. A difference between our Exp.~3 and Exp.~2 in \citealt{syrett_experimental_2015}, aside from the stimuli, is that we asked for naturalness ratings and they implemented it as a forced choice: do you choose to dissent with the main clause content or the content of the NRRC. An interesting follow-up would be to see whether our stimuli with the forced choice can reproduce their result. However, our Exp.~4 in which we implemented an assent/dissent-based forced-choice task shows the opposite effect: Here, medial NRRCs were more at-issue than final ones.
 
-        This suggests that even small changes like the response task might matter and also that the diagnostics differ in whether they predict a differences in at-issueness between sentence-medial and -final NRRCs.
+        These different findings suggest that even small changes in the response task might matter and also that the diagnostics differ in whether they detect differences in at-issueness between sentence-medial and -final NRRCs.
 
 
-    \subsubsection{Different underlying notions?}
-      \begin{itemize}
-        \item Correlation between Exp. 1 and Exp. 2 is .77, suggesting that higher QUD-match ratings were strongly associated with higher asking-whether ratings.
+    \subsubsection{Interim summary}
+      The findings from Exps.~1--4 show that the four diagnostics are not interchangeable: they differ in how strongly they differentiate among the tested contents, in the relative ranking between them, and in how they interact with discourse requirements imposed by particular expressions (as illustrated by the \emph{be right} case under the QUD diagnostic).
 
-        \item Correlation between Exp. 3 and Exp. 4 is .77, suggesting that higher accptability ratings in the direct-dissent task were strongly associated with higher proportions of `yes'-answers.
+      Most strikingly, the `asking whether' diagnostic stands out for producing greater differentiation across contents than the others. Two factors emerge as plausible explanations for this pattern: (i) the target content appears inside a question rather than an assertion, and (ii) the response task directly probes what the utterance is about, rather than relying on indirect measures such as naturalness judgments or choosing the most natural response.
 
-        \item However, the correlation between Exp. 1 and Exps. 3/4, respectively, is only weak to moderate, while the corratlation between Exp. 2 and Exps. 3/4, respectively, would be characterized as strong, but again, is lower than when comparing the question-based and assertion-based diagnostics to each other. Is there any way to quantify this, or do significance testing on that?
-
-        \item The correlation between all diagnostics suggests that there is an underlying property that they all are sensitive to, but the fact that the correlation is higher between those diagnostics that share theoretical assumptions about at-issueness should tell us something too. (what exactly? this is hard to say on an appropriate level of abstraction; I think concluding that they are sensitive to different underlying phenomena would be too strong here)
-
-      \end{itemize}
+      The next section reports on Exps.~ 5 and 6, which compare the `asking whether' test to diagnostic that also embeds the target content in a question but uses naturalness ratings for a direct response to assess at-issueness. Since both experiments yielded similarly fine-grained distinctions among contents, we take this as evidence that the greater variation observed with asking whether' stems from question embedding rather than the response task.
 
     
         
-\section{Experiments 5-6 \label{sec:3_more-experiments}}
+\section{Experiments 5 and 6 \label{sec:3_more-experiments}}
   %
     Exps.~5 and 6 investigate whether the greater differentiation observed in Exp.~2 (`asking whether') was due to (i) embedding target contents in polar interrogatives or (ii) the response task, testing two hypotheses:
     \begin{enumerate}
@@ -760,6 +755,13 @@
 
     \subsubsection{Differences}
 
+     \subsubsection{Medial and final appositives: no replication of S+K}
+        \begin{itemize}
+          \item we were not  able to reproduce \citepos{syrett_experimental_2015} finding that final appositive NRRCs are more at-issue than medial ones under any of the diagnostics. in fact, the assertion-based `yes but' test shows the opposite effect.
+          \item no evidence that there is a notion of at-issueness under which final appositives are more at-issue than medial ones.
+          \item some more comparison between direct dissent, some more detail maybe for the yes-but test may potentially allow us to say more here, but I don't think that this is urgent to do before the presentation
+        \end{itemize}
+
       \begin{itemize}
         \item range + sensitvity: differences in how the diagnostics differentiate between contents; why is this? ceiling effects? compare to NAI control means // there is a question here of whether there would be a significant difference between the AI-control, and the other contents. someone who believes in binary at-issueness could say that all it needs for the test to work is that the tested contents lead to less acceptability compared to AI control.
 
@@ -810,12 +812,19 @@
 
       \end{itemize}
 
-    \subsubsection{Medial and final appositives: no replication of S+K}
-    \begin{itemize}
-      \item we were not  able to reproduce \citepos{syrett_experimental_2015} finding that final appositive NRRCs are more at-issue than medial ones under any of the diagnostics. in fact, the assertion-based `yes but' test shows the opposite effect.
-      \item no evidence that there is a notion of at-issueness under which final appositives are more at-issue than medial ones.
-      \item some more comparison between direct dissent, some more detail maybe for the yes-but test may potentially allow us to say more here, but I don't think that this is urgent to do before the presentation
-    \end{itemize}
+     \subsubsection{Different underlying notions?}
+      \begin{itemize}
+        \item Correlation between Exp. 1 and Exp. 2 is .77, suggesting that higher QUD-match ratings were strongly associated with higher asking-whether ratings.
+
+        \item Correlation between Exp. 3 and Exp. 4 is .77, suggesting that higher accptability ratings in the direct-dissent task were strongly associated with higher proportions of `yes'-answers.
+
+        \item However, the correlation between Exp. 1 and Exps. 3/4, respectively, is only weak to moderate, while the corratlation between Exp. 2 and Exps. 3/4, respectively, would be characterized as strong, but again, is lower than when comparing the question-based and assertion-based diagnostics to each other. Is there any way to quantify this, or do significance testing on that?
+
+        \item The correlation between all diagnostics suggests that there is an underlying property that they all are sensitive to, but the fact that the correlation is higher between those diagnostics that share theoretical assumptions about at-issueness should tell us something too. (what exactly? this is hard to say on an appropriate level of abstraction; I think concluding that they are sensitive to different underlying phenomena would be too strong here)
+
+      \end{itemize}
+
+   
 
   \subsection{Speech act, commitment, and at-issueness}
     %
