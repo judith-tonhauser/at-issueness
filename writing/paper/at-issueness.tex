@@ -113,69 +113,72 @@
 \begin{document}
 
 \maketitle
-
+Word count (including references, excluding abstract and supplements): 11,780 words
+%TC:ignore
 \begin{abstract}
-  At-issueness is a central concept in theoretical semantics and pragmatics, but there is no consensus about how it should be defined or diagnosed (e.g., \citealt{tonhauser_diagnosing_2012,snider_anaphoric_2017,snider_distinguishing_2018,tonhauser_how_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). We present experimental data from a series of six experiments, investigating whether four widely used diagnostics for at-issueness yield consistent results. Our findings reveal substantial differences across diagnostics, indicating they are not interchangeable. Our study also suggests that diagnostics that assess the at-issueness of contents embedded in questions show the greatest variability across expressions, suggesting that speech act embedding plays a key role. However, our results are inconclusive as to whether some differences between diagnostics arise from distinct response tasks, different underlying notions of at-issueness, or other discourse factors.
-
+  At-issueness is a central concept in theoretical semantics and pragmatics, but there is no consensus about how it should be defined or diagnosed (e.g., \citealt{tonhauser_diagnosing_2012,snider_anaphoric_2017,snider_distinguishing_2018,tonhauser_how_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). We present experimental data from a series of six experiments, investigating whether four widely used diagnostics for at-issueness yield consistent results. Our findings reveal substantial differences across diagnostics, indicating they are not interchangeable and that the choice and implementation of diagnostics matter for empirical generalizations about at-issueness.
+  %
+  Diagnostics that assess the at-issueness of contents embedded in questions show the greatest variability across expressions, indicating that speech act embedding plays a key role. However, the theoretical divide between QUD-based and assertion-based diagnostics assumed in previous literature does not appear to be the primary source of divergence. Instead, we argue that the crucial difference lies in how questions and assertions relate at-issue and not-at-issue content to speaker commitments.
 \end{abstract}
+%TC:endignore
 
-% \begin{keywords}
-%   at-issueness, experimental pragmatics, discourse interpretation
-% \end{keywords}
+\begin{keywords}
+  at-issueness, experimental pragmatics, discourse interpretation
+\end{keywords}
 
 \section{Introduction \label{sec:1_introduction}}
   
-  At-issueness is a key concept in theoretical semantics and pragmatics, used in the analysis of a range of phenomena, including presupposition, conventional implicature, evidentials, and expressives (e.g., \citealt{karttunen_conventional_1979,horton_presuppositions_1988,abbott_presuppositions_2000,faller_semantics_2003,potts_logic_2005,tonhauser_diagnosing_2012}). Although it is generally understood as distinguishing propositions expressing the main point of an utterance (at-issue content) from those conveying background information (not-at-issue content), there is no consensus on how to define this distinction, and multiple competing definitions and diagnostics reflect different assumptions about its underlying nature.
+  At-issueness is a key concept in theoretical semantics and pragmatics, used in the analysis of various phenomena, including presupposition, conventional implicature, evidentials, and expressives (e.g., \citealt{karttunen_conventional_1979,horton_presuppositions_1988,abbott_presuppositions_2000,faller_semantics_2003,potts_logic_2005,tonhauser_diagnosing_2012}). Although it is generally understood as distinguishing propositions expressing the main point of an utterance (at-issue content) from those conveying background information (not-at-issue content), there is no consensus on how to define this distinction, and multiple competing definitions and diagnostics reflect different assumptions about its underlying nature.
 
   Four commonly used diagnostics are illustrated in (\pref{qud}--\pref{yesbut}) for sentence-medial appositive non-restrictive relative clauses (NRRCs), which are typically taken to contribute not-at-issue content (\citealt{potts_logic_2005}). Accordingly, participants are expected to: give low question-answer-match ratings under the QUD diagnostic \ref{qud}; judge that the speaker is not asking about the  NRRC content under the `asking-whether' diagnostic \ref{aw}; give low naturalness ratings under the direct-dissent diagnostic \ref{dd}; and prefer a \emph{yes}-response under the `yes, but' diagnostic in \ref{yesbut}.
 
   \ex. \label{qud}%
     QUD diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,chen_presuppositions_2024})
-    \a.[A:] \emph{What did Greg buy?}
-    \b.[B:] \emph{Greg, who bought a new car, is envied by his neighbor.}
+    \a.[{\bf Nora: }] \emph{What did Greg buy?}
+    \b.[{\bf Leo: }] \emph{Greg, who bought a new car, is envied by his neighbor.}
     \z.
-    Question to participants: How well does B's response fit A's question?
+    Question to participants: How well does B's response fit A's question?\smallskip
   \z.
 
   \ex. \label{aw}%
     `asking whether' diagnostic (e.g., \citealt{tonhauser_how_2018,solstad_cataphoric_2024})\smallskip\\
       \emph{Is Greg, who bought a new car, envied by his neighbor?}\smallskip
-  \\ Question to participants: Is the speaker asking whether Greg bought a new car?
+  \\ Question to participants: Is the speaker asking whether Greg bought a new car?\smallskip
   \z.
 
   \ex. \label{dd} Direct-dissent diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,syrett_experimental_2015})
-    \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
-    \b.[B:]\emph{No, that's not true, he didn't buy a new car.}
+    \a.[{\bf Nora: }] \emph{Greg, who bought a new car, is envied by his neighbor.}
+    \b.[{\bf Leo: }] \emph{No, that's not true, he didn't buy a new car.}
     \z.
-  Question to participants: How natural is B's rejection of A's utterance?
+  Question to participants: How natural is B's rejection of A's utterance?\smallskip
   \z.
 
   \ex. \label{yesbut}%
     `yes, but' diagnostic (e.g., \citealt{xue_correlation_2011,destruel_cross-linguistic_2015})
-    \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
-    \b.[B:] \emph{Yes, but he didn't buy a new car.} /
-    \b.[] \emph{Yes, and he didn't buy a new car.} /
-    \b.[] \emph{No, he didn't buy a new car.}
+    \a.[{\bf Nora: }] \emph{Greg, who bought a new car, is envied by his neighbor.}
+    \b.[{\bf Leo: }] \emph{Yes, but he didn't buy a new car.} /
+    \b.[] \hspace*{0em} \emph{Yes, and he didn't buy a new car.} /
+    \b.[] \hspace*{0em} \emph{No, he didn't buy a new car.}
     \z.
     Task for participants: Choose the response that sounds best.
   \z.
 
   The QUD diagnostic \ref{qud} and the `asking whether' diagnostic \ref{aw} assume that discourse is structured around addressing a Question Under Discussion (QUD) (\citealt{roberts_information_1996,ginzburg_interrogatives_1996}), and that the at-issue content of an utterance interacts with the QUD (\citealt{amaral_review_2007,simons_what_2010}). Specifically, the QUD diagnostic (\citealt{tonhauser_diagnosing_2012,chen_presuppositions_2024}) assumes that only at-issue content can address a previously established QUD, while the `asking whether' diagnostic (\citealt{tonhauser_how_2018,solstad_cataphoric_2024,degen-tonhauser-glossa}) assumes that the at-issue content of a question explicitly raises a QUD, whereas its not-at-issue content does not contribute to determining that QUD.
 
-  In contrast, the direct-dissent diagnostic \ref{dd} and the `yes but' diagnostic \ref{yesbut} are usually not interpreted within a QUD-framework (\citealt{snider_at-issueness_2017,snider_anaphoric_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). Previous research has emphasized that these assent/dissent-based diagnostics are based on different assumptions: \citet{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018} has argued that they do not reflect at-issueness at all, but rather target the anaphoric availability of propositional content for response particles like English \emph{yes/no}. On another view, these diagnostics target a distinct notion of at-issueness (see \citealt{koev_notions_2018} and discussion in \citealt{faller_discourse_2019,korotkova_evidential_2020}), under which the at-issue content of an assertion constitutes a proposal to update the common ground (based on \citealt{farkas_reacting_2010}). Accordingly, such content can be directly affirmed or denied using default discourse moves that include response particles. Not-at-issue content is either presupposed (already entailed in the common ground; \citealt{stalnaker_presuppositions_1973,stalnaker_common_2002}), or newly imposed on the common ground (\citealt{murray_varieties_2014,anderbois_at-issue_2015}), and requires special discourse moves for rejection (\citealt{potts_logic_2005}).
+  In contrast, the direct-dissent diagnostic \ref{dd} and the `yes but' diagnostic \ref{yesbut} are usually not interpreted within a QUD-framework (\citealt{snider_at-issueness_2017,snider_anaphoric_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). Previous research has emphasized that these assent/dissent-based diagnostics are based on different assumptions: \citet{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018} has argued that they do not reflect at-issueness at all, but rather target the anaphoric availability of propositional content for response particles like English \emph{yes/no}. On another view, these diagnostics target a distinct notion of at-issueness (see \citealt{koev_notions_2018} and discussion in \citealt{faller_discourse_2019,korotkova_evidential_2020}), under which the at-issue content of an assertion constitutes a proposal to update the common ground (based on \citealt{farkas_reacting_2010}). Accordingly, such content can be directly affirmed or denied using default discourse moves that include response particles. On this view, not-at-issue content is either presupposed (already entailed in the common ground; \citealt{stalnaker_presuppositions_1973,stalnaker_common_2002}), or newly imposed on the common ground (\citealt{murray_varieties_2014,anderbois_at-issue_2015}), and requires special discourse moves for rejection (\citealt{potts_logic_2005}).
 
   Consequently, there is currently no agreed-upon definition of at-issueness, and existing diagnostics may not be probing the same underlying phenomenon. This raises two central questions:
 
   \begin{enumerate}
     \item Do the various diagnostics yield the same results?
-    \item Do the existing definitions of at-issueness describe the same underlying phenomenon?
+    \item Do the existing definitions of at-issueness target the same underlying phenomenon?
   \end{enumerate}
 
   \noindent Initial research on these questions has yielded mixed answers.
 
-  While adnominal appositives are widely taken to contribute not-at-issue content (\citealt{potts_logic_2005,amaral_review_2007,tonhauser_diagnosing_2012,destruel_cross-linguistic_2015,tonhauser_how_2018,solstad_cataphoric_2024}), a forced-choice continuation task in \citet{syrett_experimental_2015} suggested that sentence-final appositive NRRCs pattern as more at-issue than medial ones, under a version of the direct-dissent diagnostic. This finding has been interpreted as evidence that final appositive NRRCs are more at-issue at the point in discourse when participants select a response (\citealt{syrett_experimental_2015,jasinskaja_not_2016}). \citealt{koev_notions_2018} further argued that the direct-dissent diagnostic is sensitive to this medial/final distinction, while other tests are not.
+  While adnominal appositives are widely taken to contribute not-at-issue content (\citealt{potts_logic_2005,amaral_review_2007,tonhauser_diagnosing_2012,destruel_cross-linguistic_2015,tonhauser_how_2018,solstad_cataphoric_2024}), a forced-choice continuation task in \citet{syrett_experimental_2015} suggested that sentence-final appositive NRRCs pattern as more at-issue than medial ones, under a version of the direct-dissent diagnostic. This finding has been interpreted as evidence that final appositive NRRCs are more at-issue at the point in discourse when participants select a response (\citealt{syrett_experimental_2015,jasinskaja_not_2016}). \citet{snider_at-issueness_2017} further argued that the direct-dissent diagnostic is sensitive to this medial/final distinction, while other tests are not.
 
-  Beyond appositives, \citealt{tonhauser_how_2018} compared at-issueness measures for a range of 19 English expressions including sentence-medial appositives and the clause-embedding predicates \emph{know, discover} and \emph{annoyed}, using two diagnostics: the question-based `asking whether' diagnostic and the `Are you sure?' diagnostic (p.526ff). They found that contents received lower overall at-issueness ratings with the `asking whether' diagnostic, and the `Are you sure?' diagnostic showed greater variability across expressions. Despite these differences, ratings from both diagnostics correlated with measures of projection inferences, suggesting that they may nonetheless be sensitive to a shared underlying phenomenon.
+  Beyond appositives, \citealt{tonhauser_how_2018} compared at-issueness measures for a range of 19 English expressions including sentence-medial appositives and the clause-embedding predicates \emph{discover, know,} and \emph{annoyed}, using two diagnostics of at-issueness: the question-based `asking whether' diagnostic and the `Are you sure?' diagnostic (p.526ff). They found that contents received lower overall at-issueness ratings with the `asking whether' diagnostic, and the `Are you sure?' diagnostic showed greater variability across expressions. Despite these differences, ratings from both diagnostics correlated with measures of projection inferences, suggesting that they may nonetheless be sensitive to a shared underlying phenomenon.
 
   To date, however, there has been no systematic experimental comparison of diagnostics to investigate whether the diagnostics yield consistent results. This paper takes a first step toward addressing the above questions (i+ii) in a systematic way. Specifically, we assess whether the four widely used diagnostics in (\pref{qud}--\pref{yesbut}) give rise to the same pattern of results when applied to the same target contents. Our findings reveal significant differences across diagnostics, indicating they are not interchangeable. Because each diagnostic is grounded in distinct theoretical assumptions about what it means for content to be at-issue, this comparison also bears on whether currently available conceptions of at-issueness converge on a common underlying notion.
 
@@ -193,11 +196,11 @@
     \label{fig:dtglossa}
   \end{figure}
 
-  By directly comparing how each diagnostic evaluates these contents, our study provides the first systematic assessment of how comparable and interchangeable at-issueness diagnostics are. Experiments 1--4 applied the four diagnostics in \ref{qud}--\ref{yesbut} to to NRRCs and to complements of our selected clause-embedding predicates. Only Exp.~2 (`asking whether') comes close to observing the differences between the clause-embedding predicates observed in \citet{degen-tonhauser-glossa}, suggesting that diagnostics do vary in whether they detect at-issueness differences between particular expressions. Notably, the `asking whether' diagnostic, as implemented in Exp.~2, which showed the greatest differentiation between contents, is the only diagnostic where the target content is embedded in a polar question.
+  By directly comparing how each diagnostic evaluates these contents, our study provides the first systematic assessment of how comparable and interchangeable at-issueness diagnostics are. Experiments 1--4 applied the four diagnostics in \ref{qud}--\ref{yesbut} to to NRRCs and to the complements of our selected clause-embedding predicates. Only Exp.~2 (`asking whether') comes close to observing the differences between the clause-embedding predicates observed in \citet{degen-tonhauser-glossa}, suggesting that diagnostics do vary in whether they detect at-issueness differences between particular expressions. Notably, the `asking whether' diagnostic, as implemented in Exp.~2, which showed the greatest differentiation between contents, is the only diagnostic where the target content is embedded in a polar question.
 
   To test whether this greater differentiation was due to the interrogative embedding or from the response task itself, we compared the `asking whether' diagnostic (Exp.~5) with a diagnostic that also embeds content in a polar question (Exp.~6), embeds the target content in a polar question but elicits acceptability judgments for a direct response, like in the direct-dissent diagnostic, using the same 20 clause-embedding predicates from \citet{degen-tonhauser-glossa}. The two experiments yielded highly correlated results, indicating that the observed increased differentiation is driven by the interrogative embedding, not the response task. Finally, none of our experiments observed the positional effect found by \citet{syrett_experimental_2015}, suggesting that even small task differences can affect outcomes.
 
-  Overall, our findings show that the four diagnostics are not interchangeable: they differ in how strongly they differentiate among the contents tested. While our results do not conclusively establish whether all differences stem from the response tasks, from distinct underlying notions of at-issueness, or from other discourse factors, we do find evidence that the speech act used to present the target content matters. A key takeaway is that future empirical work on at-issueness should continue to employ multiple diagnostics, to avoid results that are tied to a single diagnostics. Moreover, because the interrogative embedding appears to play an important role, speech act type should be taken into account when diagnosing at-issueness.
+  Overall, our findings show that the four diagnostics are not interchangeable: they differ in how strongly they differentiate among the contents tested. Our results provide evidence that the speech act used to present the target content plays an important role: embedding the target content in questions yield results with greater by-content variability than embedding it in assertions. However, we find no clear split corresponding to the theoretical divide assumed in prior literature, between diagnostics targeting at-issueness relative to the QUD \ref{qud}+\ref{aw} on the one hand, and those targeting at-issueness relative to an assertive proposal \ref{dd}+\ref{yesbut} on the other. Instead, we argue that the relevant speech-act difference we do find lies in how questions and assertions relate at-issue and not-at-issue content to speaker commitments. Our findings also suggest that differences in how the diagnostics interact with contextual requirements of particular expressions, and the choice and implementation of the response task may affect results. A key takeaway is that future empirical work on at-issueness should continue to employ multiple diagnostics, to avoid results that are tied to a single diagnostics. Moreover, given the role of question embeddings, speech act type should be explicitly taken into account when diagnosing at-issueness.
 
   We operationalize each diagnostic through its established empirical task: question-answer match ratings for the QUD diagnostic, speaker intention judgments for the asking-whether diagnostic, naturalness ratings for direct dissent, and forced-choice responses for the `yes, but' diagnostic. For each of the contents, we collect ratings across multiple items and participants, and compare the mean responses. Given that we are aggregating over multiple items and participants, we may say that the mean rating for one content is higher/lower than that of another, or that they do not differ. Following prior work (e.g., \citealt{tonhauser_how_2018}), we interpret higher mean/lower ratings as indicating that content is more/less at-issue under a given diagnostic, with two caveats:
 
@@ -206,12 +209,10 @@
   Second, we use the term \enquote{at-issueness diagnostic} descriptively throughout the paper, even though our findings may ultimately suggest that these diagnostics track distinct theoretical constructs. We return to this issue in the general discussion.
 
 
-
 \section{Experiments 1-4 \label{sec:2_experiments}}
-  % 
-    To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct-dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4).\footnote{The experiments, data and R code for generating the figures and analyses of the experiments reported in this paper are available at INSERT URL TO ANONYMOUS GITHUB REPO BEFORE SUBMISSION. All experiments were conducted with approval from the ethics review committee of [university name redacted for review]. \label{f:github}}
-    %    
-    Each experiment tested the same manipulation, comparing the propositional contents of the seven types of expressions (contents) illustrated in \ref{stims}: the contents of sentence-medial and sentence-final NRRCs \ref{stims.a}-\ref{stims.b}, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right} \ref{stims.c}-\ref{stims.g}. Contents were randomly paired with items from a set of items shared across all four experiments (see example pairings in \Next).
+  To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct-dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4).\footnote{See the ‘Data accessibility statement’ for a link to the Github repository that provides access to the two experiments, the data,
+and the analysis scripts.}
+  Each experiment tested the same manipulation, comparing the propositional contents of the seven types of expressions (contents) illustrated in \ref{stims}: the contents of sentence-medial and sentence-final NRRCs \ref{stims.a}-\ref{stims.b}, as well as the contents of the clausal complements of \emph{know, discover, confess, confirm} and \emph{be right} \ref{stims.c}-\ref{stims.g}. Contents were randomly paired with items from a set of items shared across all four experiments (see example pairings in \Next).
 
     \ex.\label{stims}
     \a.\label{stims.a} Content of sentence-medial NRRC \\
@@ -426,7 +427,7 @@
       The rank correlations are particularly low for for Exp.~1 compared to the other three experiments, at least partly because of the low relative ranking of \emph{be right}. These results suggests that the four diagnostics as implemented in Exps.~1-4 interact differently with the seven contents investigated.
 
     \subsubsection{Pairwise differences between expressions}
-      Finally, the experiments differ in whether they reproduce distinctions between contents reported in prior literature. Fig.~\ref{fig:pairwise} presents the results of post-hoc pairwise comparisons of the estimated means/proportions for each content, using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4). All models were fit using the `brms' package (\citealt{buerkner2017}) using weakly informative priors. The models predicted the ratings\footnote{To model the ratings in Exps.~1-3 using a beta regression, the ratings were first transformed from the interval [0,1] to the interval (0,1) using the method proposed in \citealt{smithson-verkuilen2006}.} from a fixed effect of expression (with treatment coding and `be right' as reference level) and included random by-participant and by-item intercepts. The output of the pairwise comparison were 95\% highest density intervals (HDIs) of estimated marginal mean differences between each of the expressions. We assume that two contents differ if their HDI does not include 0.\footnote{The full model outputs are available in the folder \texttt{results+analysis/exps1-4/} in the repository linked in footnote \ref{f:github}.}
+      Finally, the experiments differ in whether they reproduce distinctions between contents reported in prior literature. Fig.~\ref{fig:pairwise} presents the results of post-hoc pairwise comparisons of the estimated means/proportions for each content, using the `emmeans' package (\citealt{emmeans}) in R (\citealt{r}). The input to the pairwise comparisons were mixed-effects beta regression models (Exps.~1-3) or a mixed-effects logistic regression model (Exp.~4). All models were fit using the `brms' package (\citealt{buerkner2017}) using weakly informative priors. The models predicted the ratings\footnote{To model the ratings in Exps.~1-3 using a beta regression, the ratings were first transformed from the interval [0,1] to the interval (0,1) using the method proposed in \citealt{smithson-verkuilen2006}.} from a fixed effect of expression (with treatment coding and `be right' as reference level) and included random by-participant and by-item intercepts. The output of the pairwise comparison were 95\% highest density intervals (HDIs) of estimated marginal mean differences between each of the expressions. We assume that two contents differ if their HDI does not include 0.\footnote{The full model outputs are available in the folder \texttt{results+analysis/exps1-4/} in the repository linked in the Data accessibility statement.}
 
       Recall that \citealt{syrett_experimental_2015}, using a variant of the direct-dissent diagnostic, found that sentence-medial NRRCs are more not-at-issue than sentence-final ones. In contrast, as shown in Figs.~\ref{fig:results} and \ref{fig:pairwise}, no such difference is observed in Exps.~1-3; and in Exp.~4 (`yes, but' diagnostic), we find the opposite: sentence-final NRRCs are rated less at-issue than sentence-medial ones. Thus, none of the diagnostics as implemented in Exps.~1-4 replicate \citeauthor{syrett_experimental_2015}'s finding.
 
@@ -434,7 +435,7 @@
       % \citealt{tonhauser_how_2018} and
       \citealt{degen-tonhauser-glossa}, using the `asking whether' diagnostic, observed  the following at-issueness differences among the content of the complement of clause-embedding predicates: \emph{know} < \emph{discover} < \emph{confess} < \emph{confirm} < \emph{be right} (where the embedded content of \emph{know} is least at-issue, and that of \emph{be right} is most at-issue). As shown in Figs.~\ref{fig:results} and \ref{fig:pairwise}, Exp.~2 (`asking whether') largely replicates this pattern, except that \emph{confess} and \emph{discover} do not differ.
 
-      In Exp.~1 (QUD diagnostic), the embedded content of \emph{confirm} is more at-issue than that of \emph{confess, know,}, but the only other difference observed (among clause-embedding predicates) is that the embedded content of \emph{be right} is less at-issue than those of the other predicates --- the direction of this difference is the opposite from that observed in prior literature and the other experiments. In Exp.~3, no differences between the embedded contents of clause-embedding predicates are found. Finally, in Exp.~4, the content of the complement of \emph{be right} is more at-issue than those of \emph{confirm, confess,} and \emph{know}, that of \emph{confirm} is more at-issue than that of \emph{confess}, and that of \emph{discover} is more at-issue than that of \emph{confess}. These results suggest that the diagnostics, as implemented in Exps.~1-4, differ in whether they indicate differences in at-issueness between the contents of the complements of the five clause-embedding predicates included in the experiments.
+      In Exp.~1 (QUD diagnostic), the embedded content of \emph{confirm} is more at-issue than that of \emph{confess, know,}, but the only other difference observed (among clause-embedding predicates) is that the embedded content of \emph{be right} is less at-issue than those of the other predicates -- the direction of this difference is the opposite from that observed in prior literature and the other experiments. In Exp.~3, no differences between the embedded contents of clause-embedding predicates are found. Finally, in Exp.~4, the content of the complement of \emph{be right} is more at-issue than those of \emph{confirm, confess,} and \emph{know}, that of \emph{confirm} is more at-issue than that of \emph{confess}, and that of \emph{discover} is more at-issue than that of \emph{confess}. These results suggest that the diagnostics, as implemented in Exps.~1-4, differ in whether they indicate differences in at-issueness between the contents of the complements of the five clause-embedding predicates included in the experiments.
 
       \addtolength{\tabcolsep}{-.19em}
       %
@@ -521,9 +522,9 @@
     \subsubsection{Why does the `asking whether' diagnostic show greater differentiation? \label{ssub:differentiation}}
       One of the most noticeable differences between the results of the experiments is that Exp.~2 (`asking whether') showed the greatest differentiation between contents, whereas the other three experiments exhibited a smaller range of means, and fewer statistically reliable differences between investigated contents. Among the first 4 experiments, Exp.~2 was the only one that came close to differentiating fine-grained by-predicate differences as reported in \cite{degen-tonhauser-glossa}.
 
-      To explain this difference, we might look to previous literature, which has emphasized the divide between question-based diagnostics (QUD, `asking whether') and assertion-based diagnostics (direct-dissent, `yes, but'): Question-based tests are taken to probe whether a proposition is at issue relative to a QUD introduced in the discourse, whereas assertion-based tests are assumed to target a different underlying notion (\citealt{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). However, this distinction could not explain why the `asking whether' diagnostic behaves differently from the QUD diagnostic, since both are considered question-based.
+      To explain this difference, appeal to the divide emphasized in prior work between question-based diagnostics (QUD, `asking whether') and assertion-based diagnostics (direct-dissent, `yes, but'): Question-based tests are typically taken to probe whether a proposition is at issue relative to a QUD introduced in the discourse, whereas assertion-based diagnostics are assumed to rely on different assumptions: \citet{snider_at-issueness_2017,snider_anaphoric_2017,snider_distinguishing_2018} suggests that they reflect the anaphoric availability of propositional content to be antecedents for response particles, which may be independent of at-issueness, while others suggest that these diagnostics target a distinct notion of at-issueness relative to the proposal made by an assertion (\citealt{koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). However, this distinction could not explain why the `asking whether' diagnostic behaves differently from the QUD diagnostic, since both are considered question-based.
 
-      Instead, we must look to something that is present in the `asking whether' test, but not the other three to explain the greater by-content differentiation. Two crucial differences set apart the `asking whether' test from the other three: First, it is the only diagnostic where the target content itself occurs inside a polar question, whereas the other diagnostics test content embedded in declarative assertions. Second, it is the only diagnostic in which participants are asked directly about the intentions of the speaker, whereas the other ones collect measures that are more indirectly tied to semantic interpretation, such as acceptability ratings and continuation choices. Either of these distinctive characteristics could account for the greater differentiation. This yields two hypotheses, which we tested in Exps.~5--6, presented in the next section.
+      Instead, we must look to something that is present in the `asking whether' test, but not the others to explain the greater by-content differentiation. Two crucial differences set apart the `asking whether' test from the other three: First, it is the only diagnostic where the target content itself occurs inside a polar question, whereas the other diagnostics test content embedded in declarative assertions. Second, it is the only diagnostic in which participants are asked directly about the intentions of the speaker, whereas the other ones collect measures that are more indirectly tied to semantic interpretation, such as acceptability ratings and continuation choices. Either of these distinctive characteristics could account for the greater differentiation. This yields two hypotheses, which we tested in Exps.~5--6, presented in \Cref{sec:3_more-experiments}.
 
 
        %  Embedding the target content in a question, or the response task, asking participants to judge speaker intentions were what we identified as likely explanatory factors.
@@ -552,7 +553,7 @@
       %
       In contrast, the preceding question in the QUD-diagnostic \Last[a] conflicts with the presupposition, making it difficult to accommodate. Specifically, we hypothesize that \emph{be right} signals that the question \enquote{whether Lucy broke the plate} is salient in the preceding discourse. This allows us to understand the ill-formedness based on QUD-based discourse structure, because this presupposed question is a subquestion (in the sense of \citealt{roberts_information_1996}) of the question in \Last[a] \enquote{What did Lucy break}, since every complete answer to the latter entails an answer to the former. The progression from the presupposed subquestion question to the explicitly given superquestion violates Roberts' constraint on QUD stacks (p. 6:15, (10giii)), which allows only the reverse order (from superquestions to subquestions).
 
-      As a result, low QUD-match ratings for \Last[a] arise not because the embedded clause fails to be at-issue, but because the utterance presupposes an incoherent discourse context.%
+      As a result, low QUD-match ratings for \Last[a] are predicted, not because the embedded clause fails to be at-issue, but because the utterance presupposes an incoherent discourse context.%
         \footnote{\label{fn:w-o-be-right}
           When \emph{be right} is excluded, the Spearman rank correlations are:
 
@@ -566,24 +567,36 @@
         \end{tabular}}
       This highlights that diagnostics may interact with contextual requirements independently of at-issueness, and such interactions must be taken into account when interpreting the results.
 
-      Turning to other ranking differences, Fig.~\ref{fig:pairwise} shows that \emph{know} was less at-issue than \emph{confess} in Exp.~2 (`asking whether'), but more at-issue than \emph{confess} in Exp.~4 (`yes but'). We can, again, ask whether this distinction can be attributed to different underlying theoretical notions of at-issueness, such as between question-based and assertion-based conceptions of at-issueness. This interpretation is not ruled out by our data---Exps.~1 (QUD) and 3 (direct dissent) did not detect a difference between \emph{know} and \emph{confess}, but higher-powered studies might reveal that the question-based diagnostics on the one hand and the assertion-based diagnostics on the other come to the same results. However, it is not clear how the presumed theoretical distinction would predict why \emph{confess} and \emph{know} in particular should diverge in this way.
+      Turning to other ranking differences, Fig.~\ref{fig:pairwise} shows that \emph{know} was less at-issue than \emph{confess} in Exp.~2 (`asking whether'), but more at-issue than \emph{confess} in Exp.~4 (`yes but'). We can, again, ask whether this distinction can be attributed to different underlying theoretical notions of at-issueness, such as between question-based and assertion-based conceptions of at-issueness. This interpretation is not ruled out by our data -- Exps.~1 (QUD) and 3 (direct dissent) did not detect a difference between \emph{know} and \emph{confess}, but higher-powered studies might reveal that the question-based diagnostics on the one hand and the assertion-based diagnostics on the other come to the same results. However, it is not clear how the presumed theoretical distinction would predict why \emph{confess} and \emph{know} in particular should diverge in this way.
 
-      Ultimately, whether the by-content rank differences in Exps.~1--4 provide evidence for distinct underlying notions of at-issueness remains inconclusive, while the different behaviors found for \emph{be right} show that diagnostics may interact differently with the contextual requirements of the target contents.
+      Ultimately, the by-content rank differences in Exps.~1--4 do not provide conclusive evidence about whether there are distinct underlying notions of at-issueness, while the different behaviors found for \emph{be right} show that diagnostics may interact differently with the contextual requirements of the target contents in ways that may be independent from at-issueness.
 
     \subsubsection{Positional effects for appositive NRRCs? \label{ssub:appositives}}
         As mentioned above, none of our experiments replicated the positional effect reported in \citeposs{syrett_experimental_2015} Exp.~2, which found that sentence-final appositive NRRCs were judged more at-issue than sentence-medial ones under a variant of the direct-dissent diagnostic. They used a forced-choice task asking participants to choose a directly dissenting response that dissented with either the main clause or the target NRRC content, illustrated in \Next.
 
         \ex. \citealt{syrett_experimental_2015}: (20)
           \a.[A:] My friend Sophie, a classical violinist, performed a piece by Mozart.
-          \b.[B1:] No, she’s not. (target: appositive)
-          \b.[B2:] No, she didn’t. (target: main clause)
+          \b.[B1:] No, she's not. (target: appositive)
+          \b.[B2:] No, she didn't. (target: main clause)
           \z. \z. 
 
-        In our Exp.~3, which also used a version of the `direct dissent' diagnostic, no difference between medial and final appositive NRRCs was found, and Exp.~4 (`yes but') found the opposite effect to Syrett \& Koev: here, medial NRRCs were more at-issue than final ones.
+        In our Exp.~3, which also used a version of the `direct dissent' diagnostic, no difference between medial and final appositive NRRCs was found, and Exp.~4 (`yes but') found the opposite effect to Syrett \& Koev: here, medial NRRCs were more at-issue than final ones. For comparison, consider again how the diagnostics were implemented in Exps.~3 and 4: 
 
-        Although the diagnostics implemented in Exps.~3 and 4 were dissent/assent-based tasks, one notable difference between our experiments and the Syrett \& Koev study, aside from the stimuli, is the response task. Exp.~3 (direct-dissent) elicited naturalness ratings for a direct-dissent response rejecting the target content, rather than asking whether it would be preferred over rejecting the main clause content. Exp.~4 (`yes but') collected forced-choice continuation judgments for direct-dissent responses, like S\&K, but the alternative choices were different: For a response contradicting the target content, participants chose between expressing dissent (\emph{no}), expressing assent and contrast (\emph{yes, but}), or expressing assent and no contrast (\emph{yes, and}).
+        \ex.[\ref{dd}] Exp.~3 (`direct dissent' diagnostic)
+          \a.[{\bf Nora: }] \emph{Greg, who bought a new car, is envied by his neighbor.}
+          \b.[{\bf Leo: }] \emph{No, that's not true, he didn't buy a new car.}
+        \z. \z.
+      
+        \ex.[\ref{yesbut}] Exp.~4 (`yes, but' diagnostic)
+        \a.[{\bf Nora: }] \emph{Greg, who bought a new car, is envied by his neighbor.}
+        \b.[{\bf Leo: }] \emph{Yes, but he didn't buy a new car.} /
+        \b.[] \hspace*{0em} \emph{Yes, and he didn't buy a new car.} /
+        \b.[] \hspace*{0em} \emph{No, he didn't buy a new car.}
+        \z. \z.
 
-        Taken together, these findings suggest that positional effects for appositive NRRCs may not be robust across diagnostics, and even small changes in the response task, such as alternative choices in a forced-choice continuation study, might reverse the observed pattern, and different diagnostics vary in whether they detect any positional difference for appositive NRRCs at all. This suggests that previously reported effects may reflect task- or diagnostic-specific artifacts rather than stable properties of NRRC interpretation. A natural follow-up would be to test whether applying their particular forced-choice schema to our stimuli would reproduces their effect.
+        Although the diagnostics implemented in Exps.~3 and 4 were dissent/assent-based tasks, one notable difference between our experiments and the Syrett \& Koev study, aside from the stimuli, is the response task. Exp.~3 (direct-dissent) elicited naturalness ratings for a direct-dissent response rejecting the target content \ref{dd}, rather than asking whether it would be preferred over rejecting the main clause content. Exp.~4 (`yes but') collected forced-choice continuation judgments for direct-dissent responses, like Syrett \& Koev, but the alternative choices were different: For a response contradicting the target content, participants chose between expressing dissent (\emph{no}), expressing assent and contrast (\emph{yes, but}), or expressing assent and no contrast (\emph{yes, and}).
+
+        Taken together, these findings suggest that positional effects for appositive NRRCs may not be robust across diagnostics, and even small changes in the response task used to operationalize a diagnostic, such as alternative choices in a forced-choice continuation study, might reverse the observed pattern, and different diagnostics vary in whether they detect any positional difference for appositive NRRCs at all. This suggests that previously reported effects may reflect task- or diagnostic-specific artifacts rather than stable properties of NRRC interpretation. A natural follow-up would be to test whether applying their particular forced-choice schema to our stimuli would reproduces their effect.
 
 
     \subsubsection{Interim conclusion}
@@ -597,7 +610,7 @@
 
       Finally, the largest source of diagnostic differences among Exps.~1--4 concerns the `asking whether' diagnostic (Exp.~2), which showed strikingly greater differentiation among contents than the other three diagnostics. As discussed in discussed in Section \ref{ssub:differentiation}, it yielded a wider range of mean ratings and a greater number of reliable contrasts than the other three diagnostics, and it was the only test that approached the fine-grained predicate-level differences reported in \citet{degen-tonhauser-glossa}. This raised the question of whether the increased sensitivity is due to interrogative embedding or to the specific response task.
 
-      The next section addresses this question directly, reporting on two further experiments, which compare the asking-whether diagnostic to a diagnostic that also embeds the target content in a polar question but uses naturalness ratings for a direct response to assess at-issueness. Both experiments yielded similarly fine-grained distinctions among contents---a finding we take as evidence that the greater variation observed in Exp.~2 is driven primarily by interrogative embedding rather than the response task.
+      The next section addresses this question directly, reporting on two further experiments, which compare the asking-whether diagnostic to a diagnostic that also embeds the target content in a polar question but uses naturalness ratings for a direct response to assess at-issueness. Both experiments yielded similarly fine-grained distinctions among contents -- a finding we take as evidence that the greater variation observed in Exp.~2 is driven primarily by interrogative embedding rather than the response task.
 
          
 \section{Experiments 5 and 6 \label{sec:3_more-experiments}}
@@ -612,9 +625,9 @@
 
     To test these hypotheses, we compared two diagnostics that both embed the target content in a polar question but differ in the response task. Exp.~5 used the `asking whether' diagnostic as in Exp.~2 \Next[a] and Exp.~6 uses a `direct response' diagnostic, shown in \Next[b], where participants read a dialogue between two named speakers, where the first utters a polar question, which contributed the target content. Like in the direct-assent/dissent diagnostic, the second speaker utters `yes' answer and affirms the target content.
 
-    Question-Answer direct response diagnostic
 
-    \ex. Implementation of the diagnostics in Exps.~  5--6
+  
+    \ex. Implementation of the diagnostics in Exps.~  5--6 
       \a.\label{exp5} Exp.~5 (`asking whether' diagnostic )
       \\ {\bf Nora:} \emph{Is Tom right that Lucy broke the plate?}
       \\ Question to participants: Is Nora asking whether Lucy broke the plate?
@@ -623,6 +636,7 @@
       \\ {\bf Leo:} \emph{Yes, she didn't break the plate.}
       \\ Question to participants: How natural is Leo's response to Nora's question?
 
+  
 
     Both experiments measured at-issueness for the contents of the complements of the 20 clause-embedding predicates from \citealt{tonhauser_how_2018} and \citealt{degen-tonhauser-glossa}, listed in \Next.
 
@@ -633,7 +647,7 @@
       
     Both experiments also measured projection data for the embedded contents of the 20 clause-embedding predicates, which were reported in \citealt{hofmann-etal2024}. Here we focus on the at-issueness data, which have not yet been reported.
 
-    If the greater differentiation between contents found in Exp.~2 (compared to Exps.~1, 3,  and 4) was due to presenting the target content in a polar question, we expect that results from Exps.~5 and 6 both show a similar differentiation between contents---namely comparable range of means and comparable sensitivity to differences between contents. In contrast, if the `asking whether' diagnostic again shows greater differentiation between contents than the direct-response diagnostic, this would support the response-task hypothesis, suggesting that the task, rather the question embedding, drives the effect.
+    If the greater differentiation between contents found in Exp.~2 (compared to Exps.~1, 3,  and 4) was due to presenting the target content in a polar question, we expect that results from Exps.~5 and 6 both show a similar differentiation between contents -- namely comparable range of means and comparable sensitivity to differences between contents. In contrast, if the `asking whether' diagnostic again shows greater differentiation between contents than the direct-response diagnostic, this would support the response-task hypothesis, suggesting that the task, rather the question embedding, drives the effect.
 
   \subsection{Methods}
     
@@ -814,6 +828,7 @@
 
     Nonetheless, small differences remain, for example in which by-content contrasts reached significance and in the precise rank ordering of contents. Since both tests used identical embedding contexts and both reflect a QUD-based conception of at-issueness, these differences may stem from the distinct response tasks used: judging what a question is about versus (Exp.~5) evaluating the naturalness of a response (Exp.~6). This suggests that differences in response task affect at-issueness judgments in subtle ways.
 
+
 \section{General discussion \label{sec:4_discussion}}
   %
     Different diagnostics of at-issueness yield different results. Some of the differences between the diagnostics as implemented here appear to be due to presenting the target expressions embedded in questions, some of them have to do with how the diagnostics interact differently with the discourse requirements imposed by the tested expressions, and others may have to do with response task differences, or different underlying notions of at-issueness. In our investigation, the factor leading to the most striking differences was whether or not the tested target content is embedded in a question, so the speech act in which it appears needs to be taken into consideration when considering what at-issueness is and how it is diagnosed. In the following, we discuss in some more detail the questions of why question embeddings matter for diagnosing at-issueness (\Cref{ssec:discussion-questions}); what are factors that may affect the diagnostic differences, and what this can tell us about different underlying notions of at-issueness (\Cref{ssec:discussion-differences}); then we discuss methodological implications of our findings (\Cref{ssec:discussion-methodological}).
@@ -885,7 +900,7 @@ This finding can be understood if we assume that participants are better able to
   
 
 \section{Conclusion \label{sec:5_conclusion}}
-  In a series of six experiments, this study investigated how different diagnostics for at-issueness behave when applied to the same linguistic stimuli, using two sets of stimuli, and five different diagnostics: the QUD diagnostic, the `asking whether' diagnostic, the direct-dissent diagnostic, and the `yes, but' diagnostic, and the direct-answer diagnostic. Our findings provide experimental confirmation for claims that there are empirical differences between at-issueness diagnostics (\citealt{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). The diagnostics yielded different results, with some diagnostics showing greater differentiation among contents than others.
+  In a series of six experiments, this study investigated how different diagnostics for at-issueness behave when applied to the same linguistic stimuli, using two sets of stimuli, and five different diagnostics: the QUD diagnostic, the `asking whether' diagnostic, the direct-dissent diagnostic, and the `yes, but' diagnostic, and the `direct response' diagnostic. Our findings provide experimental confirmation for claims that there are empirical differences between at-issueness diagnostics (\citealt{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). The diagnostics yielded different results, with some diagnostics showing greater differentiation among contents than others.
   
   We identified several factors contributing to these differences, including the speech act in which the target content is presented, interactions with contextual requirements imposed by specific expressions, and properties of the response task. Although our results suggest that the choice and implementation a diagnostic matter for empirical generalizations about at-issueness, the theoretical divide between QUD-based and assertion-based diagnostics assumed in previous literature does not appear to be the primary source of divergence. Instead, the speech act context plays a central role: embedding the target content in questions leads to greater differentiation among contents than embedding it in assertions. This finding highlights the need to consider the speech act context when interpreting results from at-issueness diagnostics.
   
@@ -896,52 +911,30 @@ This finding can be understood if we assume that participants are better able to
 
   NRRC = non-restrictive relative clause, QUD = question under discussion
 
-\section*{Data availability/Supplementary files (if applicable)}
+\section*{Data accessibility statement}
+      The experiments, data and R code for generating the figures and analyses of the experiments reported in this paper are available at INSERT URL TO ANONYMOUS GITHUB REPO BEFORE SUBMISSION.
 
-  The journal encourages authors to make all data associated with their submission openly available, according to the FAIR principles (Findable, Accessible, Interoperable, Reusable). More information can be found \href{https://www.glossa-journal.org/site/editorial-policies/#data-policy}{here}.
-
-  If data/supplementary files are to be associated with the accepted paper, one of the options below should be followed:
-  \begin{enumerate}
-  \item upload the files to your chosen open repository and make note of the DOI that they will provide (most suitable for datasets or information that act as foundations to the research being published. This option makes the files more findable and more citable). We recommend an open repository such as osf.io, which allows you to create a "project" under which you can upload relevant files (datasets, analysis scripts, experimental materials, etc.). The project will be associated with a unique DOI. You can then include in your manuscript a citation of the OSF entry and/or a link to the project page on OSF, to direct interested readers to the supplementary materials. During review, please be sure that the link to the repository is anonymized to maintain a fully double masked review process. Instructions for doing this on the OSF may be found \href{https://help.osf.io/hc/en-us/articles/360019930333-Create-a-View-only-Link-for-a-Project}{here}. If you'd like to learn more about best practices for ensuring reproducibility, see \href{https://psyarxiv.com/hf297/}{Laurinavichyute and Vasishth (2021)}. Please contact us if you would like more information or advice about hosting your data on an open repository.
-  \item upload the files to the journal system during the submission process, as `data files'. The journal will then host them as part of the publication and provide them with a DOI (most suitable for non-data files or very short pieces of information, although option 1 is also suitable for these if the author prefers).
-  \end{enumerate}
-
-  \noindent In both cases, a `Data availability' or `Supplementary files' section must be added prior to the reference list that provides a title and very short summary of the files for each file. If option 1 was selected, you should also provide the DOI in this section. For example:
-
-  \noindent Supplementary file 1: Appendix. Scientific data related to the experiments. DOI: \doi{10.5334/gjgl.310.s1}
-
-  Ideally, supplementary files are also cited in the main text.
-
-  Please note that neither of the above two options will result in the files being typeset, so please ensure that they are in publishable format when you upload the accepted paper.
+\section*{Ethics and consent}
+      All experiments were conducted with approval from the ethics review committee of [university name redacted for review].
 
 
-\section*{Ethics and consent (if applicable)}
+% \section*{Funding information (if applicable)}
+%   We gratefully acknowledge the National Science Foundation grant BCS #1452674 (to Marie-Catherine de Marneffe,
+% Craige Roberts, and Judith Tonhauser), which provided financial support for the data collection in Exps.~5 and 6.
 
-  Research involving human subjects, human material, or human data, must have been performed in accordance with the Declaration of Helsinki. Studies must have been approved by an appropriate ethics committee and the authors should include a statement in the article text detailing this approval, including the name of the ethics committee and reference number of the approval, or mention any exemptions to ethical approval that apply to their research. The identity of research subjects should be anonymized whenever possible. For research involving human subjects, informed consent to participate in the study must be obtained from participants (or their legal guardian).
+% \section*{Acknowledgements (optional)}
+%   We thank Taylor Mahler for assistance in collecting the data in Exps.~5 and 6 as well as valuable comments. 
+
+% \section*{Competing interests}
+%   The authors declare that they have no competing interests.
 
 
-\section*{Funding information (if applicable)}
 
-  Should the research have received a funding grant then the grant provider and grant number should be detailed.
-
-\section*{Acknowledgements (optional)}
-
-  The authors wish to thank Martin Haspelmath for providing the generic style sheet for linguistics, and Kai von Fintel for giving permission to use and modify the \textit{Semantics \& Pragmatics} Latex template, bibliography style, and document class.
-
-\section*{Competing interests (required)}
-
-  If any of the authors have any competing interests then these must be declared. Guidelines for competing interests can be found \href{https://www.glossa-journal.org/site/competing-interests/}{here}. If there are no competing interests to declare then the following statement should be present: `The author(s) has/have no competing interests to declare'.
-
-\section*{Authors' contributions (optional)}\label{contrib}
-
-  A sentence or a short paragraph detailing the roles that each author held to contribute to the authorship of the submission.  Individuals listed must fit within the definition of an author, as per our \href{https://www.glossa-journal.org/site/author-guidelines/}{Author Guidelines}.
-
-\nocite{*} %this is to get all the entries of the sample bibliography; delete this line for an actual Glossa submission
-
+% \nocite{*} %this is to get all the entries of the sample bibliography; delete this line for an actual Glossa submission
 %\printbibliography %for use with biblatex; comment out if you use natbib
 \bibliography{at-issueness} %for use with natbib; comment out if you use biblatex, and change 'sample' by the name of your bib-file
 
-
+%TC:ignore
 \appendix
 
 \setcounter{table}{0}
@@ -1029,7 +1022,7 @@ This finding can be understood if we assume that participants are better able to
 
   We expected participants to give low responses on the at-issueness diagnostics for the control stimuli in \Last, indicating that the main clause content is at-issue.
 
-
+%TC:endignore
 \end{document}
 %%% Local Variables:
 %%% mode: latex
