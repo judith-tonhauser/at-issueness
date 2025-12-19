@@ -277,3 +277,9 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+## Ignore vscode settings and github files
+.vscode/*
+.cspell/*
+.github/*
+cspell.json

@@ -1,4 +1,4 @@
-% !TEX TS-program = lualatexmk
+% !TEX program = lualatex
 % glossa-template.tex
 % Copyright 2016 Guido Vanden Wyngaerd
 %
@@ -112,12 +112,10 @@
 
 \begin{document}
 
-
 \maketitle
 
-
 \begin{abstract}
-  At-issueness is a central concept in theoretical semantics and pragmatics, but there is no consensus about how it should be defined or diagnosed (e.g., \citealt{tonhauser_diagnosing_2012,snider_anaphoric_2017,snider_distinguishing_2018,tonhauser_how_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). We present experimental data from a series of six experiments, investigating whether four widely used diagnostics for at-issueness yield consistent results. Our findings reveal substantial differences across diagnostics, indicating they are not interchangeable. Our study also susggests that diagnostics that assess the at-issueness of contents embedded in questions show the greatest variability across expressions, suggesting that speech act embedding plays a key role. However, our results are inconclusive as to whether some differences between diagnostics arise from distinct response tasks, different underlying notions of at-issueness, or other discourse factors.
+  At-issueness is a central concept in theoretical semantics and pragmatics, but there is no consensus about how it should be defined or diagnosed (e.g., \citealt{tonhauser_diagnosing_2012,snider_anaphoric_2017,snider_distinguishing_2018,tonhauser_how_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). We present experimental data from a series of six experiments, investigating whether four widely used diagnostics for at-issueness yield consistent results. Our findings reveal substantial differences across diagnostics, indicating they are not interchangeable. Our study also suggests that diagnostics that assess the at-issueness of contents embedded in questions show the greatest variability across expressions, suggesting that speech act embedding plays a key role. However, our results are inconclusive as to whether some differences between diagnostics arise from distinct response tasks, different underlying notions of at-issueness, or other discourse factors.
 
 \end{abstract}
 
@@ -164,7 +162,7 @@
 
   The QUD diagnostic \ref{qud} and the `asking whether' diagnostic \ref{aw} assume that discourse is structured around addressing a Question Under Discussion (QUD) (\citealt{roberts_information_1996,ginzburg_interrogatives_1996}), and that the at-issue content of an utterance interacts with the QUD (\citealt{amaral_review_2007,simons_what_2010}). Specifically, the QUD diagnostic (\citealt{tonhauser_diagnosing_2012,chen_presuppositions_2024}) assumes that only at-issue content can address a previously established QUD, while the `asking whether' diagnostic (\citealt{tonhauser_how_2018,solstad_cataphoric_2024,degen-tonhauser-glossa}) assumes that the at-issue content of a question explicitly raises a QUD, whereas its not-at-issue content does not contribute to determining that QUD.
 
-  In contrast, the direct-dissent diagnostic \ref{dd} and the `yes but' diagnostic \ref{yesbut} are usually not interpreted within a QUD-framework (\citealt{snider_at-issueness_2017,snider_anaphoric_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). Previous research has emphasized that these assent/dissent-based diagnostics are based on different assumptions: \citet{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018} has argued that they do not reflect at-issueness at all, but rather target the anaphoric availability of propositional content for response particles like English \emph{yes/no}. On another view, these diagnostics target a distinct notion of at-issueness (see \citealt{koev_notions_2018} and discussion in \citealt{faller_discourse_2019,korotkova_evidential_2020}), under which the at-issue content of an assertion constitues a proposal to update the common ground (based on \citealt{farkas_reacting_2010}). Accordingly, such content can be directly affirmed or denied using default discourse moves that include response particles. Not-at-issue content is either presupposed (already entailed in the common ground; \citealt{stalnaker_presuppositions_1973,stalnaker_common_2002}), or newly imposed on the common ground (\citealt{murray_varieties_2014,anderbois_at-issue_2015}), and requires special discourse moves for rejection (\citealt{potts_logic_2005}).
+  In contrast, the direct-dissent diagnostic \ref{dd} and the `yes but' diagnostic \ref{yesbut} are usually not interpreted within a QUD-framework (\citealt{snider_at-issueness_2017,snider_anaphoric_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). Previous research has emphasized that these assent/dissent-based diagnostics are based on different assumptions: \citet{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018} has argued that they do not reflect at-issueness at all, but rather target the anaphoric availability of propositional content for response particles like English \emph{yes/no}. On another view, these diagnostics target a distinct notion of at-issueness (see \citealt{koev_notions_2018} and discussion in \citealt{faller_discourse_2019,korotkova_evidential_2020}), under which the at-issue content of an assertion constitutes a proposal to update the common ground (based on \citealt{farkas_reacting_2010}). Accordingly, such content can be directly affirmed or denied using default discourse moves that include response particles. Not-at-issue content is either presupposed (already entailed in the common ground; \citealt{stalnaker_presuppositions_1973,stalnaker_common_2002}), or newly imposed on the common ground (\citealt{murray_varieties_2014,anderbois_at-issue_2015}), and requires special discourse moves for rejection (\citealt{potts_logic_2005}).
 
   Consequently, there is currently no agreed-upon definition of at-issueness, and existing diagnostics may not be probing the same underlying phenomenon. This raises two central questions:
 
@@ -210,7 +208,6 @@
 
 
 \section{Experiments 1-4 \label{sec:2_experiments}}
-
   % 
     To compare the results of at-issueness diagnostics, we conducted four experiments that each measured at-issueness with a different diagnostic, namely the QUD diagnostic (Exp.~1), the `asking whether' diagnostic (Exp.~2), the direct-dissent diagnostic (Exp.~3) and the `yes, but' diagnostic (Exp.~4).\footnote{The experiments, data and R code for generating the figures and analyses of the experiments reported in this paper are available at INSERT URL TO ANONYMOUS GITHUB REPO BEFORE SUBMISSION. All experiments were conducted with approval from the ethics review committee of [university name redacted for review]. \label{f:github}}
     %    
@@ -218,7 +215,7 @@
 
     \ex.\label{stims}
     \a.\label{stims.a} Content of sentence-medial NRRC \\
-      \emph{Lucy, who broke the plate, apologised.} $\leadsto$ Lucy broke the plate\smallskip
+      \emph{Lucy, who broke the plate, apologized.} $\leadsto$ Lucy broke the plate\smallskip
     \b.\label{stims.b} Content of sentence-final NRRC \\
     \emph{The police found Jack, who saw the murder.} $\leadsto$ Jack saw the murder\smallskip
     \b.\label{stims.c} Content of the clausal complement of \emph{know} \\
@@ -242,8 +239,7 @@
   \subsection{Methods}
     
     \subsubsection{Participants}
-
-      For each of the four experiments, we recruited 80 unique participants on Prolific. These participants had registered on the platform as living in the USA and as having English as their primary language. They had at least 50 previous submissions and an approval rate of at least 97\%.  Table \ref{t:recruited} shows the age and gender distributions of the recruited participants.
+    For each of the four experiments, we recruited 80 unique participants on Prolific. These participants had registered on the platform as living in the USA and as having English as their primary language. They had at least 50 previous submissions and an approval rate of at least 97\%. Table \ref{t:recruited} shows the age and gender distributions of the recruited participants.
 
       \begin{table}[h!]
       \centering
@@ -337,7 +333,7 @@
 
     \subsubsection{Data exclusion}
 
-      We excluded the data of participants that were not self-reporteded native speakers of American English and of participants whose responses to one of the two control trials was more than 2 sd away from the group mean (Exps.~1--3) or whose responses to one of the two control trials was wrong (Exp.~4). Table \ref{t:excluded} shows how many participants were excluded in each experiment, demographic information for the remaining participants, and the number of data points that entered into the analyses.
+      We excluded the data of participants that were not self-reported native speakers of American English and of participants whose responses to one of the two control trials was more than 2 sd away from the group mean (Exps.~1--3) or whose responses to one of the two control trials was wrong (Exp.~4). Table \ref{t:excluded} shows how many participants were excluded in each experiment, demographic information for the remaining participants, and the number of data points that entered into the analyses.
 
       \begin{table}[h!]
         \centering
@@ -445,36 +441,60 @@
       \begin{figure}[!h]
         \centering
         \subfigure[Exp.~1 (QUD diagnostic)]{%
-        \begin{tabular}{r | ccccccc}
+        \mbox{\begin{tabular}{r | ccccccc}
         & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
         \hline
-        \input{../../results+analysis/exps1-4/exp1/models/table1}
+         be right & \cellcolor{black} & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\ 
+  confirm & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  discover & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confess & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} \\ 
+  know & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} \\ 
+  final NRRC & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} \\ 
+  medial NRRC & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} \\ 
         \hline
-        \end{tabular}}
+        \end{tabular}}}
         \hfill
         \subfigure[Exp.~2 (`asking whether' diagnostic)]{%
-        \begin{tabular}{r | ccccccc}
+        \mbox{\begin{tabular}{r | ccccccc}
         & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
         \hline
-        \input{../../results+analysis/exps1-4/exp2/models/table1}
+         be right & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confirm & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  discover & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confess & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  know & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  final NRRC & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} \\ 
+  medial NRRC & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} \\ 
         \hline
-        \end{tabular}}
+        \end{tabular}}}
 
         \subfigure[Exp.~3 (direct-dissent diagnostic)]{%
-        \begin{tabular}{r | ccccccc}
+        \mbox{\begin{tabular}{r | ccccccc}
         & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
         \hline
-        \input{../../results+analysis/exps1-4/exp3/models/table1}
+         be right & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confirm & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  discover & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confess & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} \\ 
+  know & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  final NRRC & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} \\ 
+  medial NRRC & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} \\ 
         \hline
-        \end{tabular}}
+        \end{tabular}}}
         \hfill
         \subfigure[Exp.~4 (`yes, but' diagnostic)]{%
-        \begin{tabular}{r | ccccccc}
+        \mbox{\begin{tabular}{r | ccccccc}
         & \rots{be right} & \rots{confirm} & \rots{discover} & \rots{confess} & \rots{know} & \rots{final NRRC} & \rots{medial NRRC} \\
         \hline
-        \input{../../results+analysis/exps1-4/exp4/models/table1}
+         be right & \cellcolor{black} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confirm & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  discover & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confess & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{red} & \cellcolor{blue} & \cellcolor{white} \\ 
+  know & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  final NRRC & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{red} \\ 
+  medial NRRC & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} \\
         \hline
-        \end{tabular}}
+        \end{tabular}}}
       \caption{Pairwise differences between expressions,
         ordered from top to bottom and left to right by increasing mean in Exp.~2 (`asking whether' diagnostic). A white cell means that the 95\% HDI of the pair of the row expression and the column expression includes 0, a red cell means that the 95\% HDI does not include 0 and that the coefficient is positive (the row expression received a higher rating than the column expression), and a blue cell means that the 95\% HDI does not include 0 and the coefficient is negative (the row expression received a lower rating than the column expression).}
         \label{fig:pairwise}
@@ -610,7 +630,7 @@
       
     Both experiments also measured projection data for the embedded contents of the 20 clause-embedding predicates, which were reported in \citealt{hofmann-etal2024}. Here we focus on the at-issueness data, which have not yet been reported.
 
-    If the greater differentiation between contents found in Exp.~2 (compared to Exps.~1, 3,  and 4) was due to presenting the target content in a polar question, we expect that results from Exps.~5 and 6 both show a similar differentiation between contents---namely comparable range of means and comparable sensitivity to differences between contents. In contrast, if the `asking whether' diagnostic again shows greater differentiatiation between contents than the direct-response diagnostic, this would support the response-task hypothesis, suggesting that the task, rather the question embedding, drives the effect.
+    If the greater differentiation between contents found in Exp.~2 (compared to Exps.~1, 3,  and 4) was due to presenting the target content in a polar question, we expect that results from Exps.~5 and 6 both show a similar differentiation between contents---namely comparable range of means and comparable sensitivity to differences between contents. In contrast, if the `asking whether' diagnostic again shows greater differentiation between contents than the direct-response diagnostic, this would support the response-task hypothesis, suggesting that the task, rather the question embedding, drives the effect.
 
   \subsection{Methods}
     
@@ -678,8 +698,6 @@
 
   \subsection{Results}
     Fig.~\ref{fig:results2} plots the results of the two experiments by embedding predicate: panel (a) shows the mean `asking whether' ratings in Exp.~5 (`asking whether' diagnostic) and panel (b) shows the mean acceptability ratings in Exp.~6 (direct-response diagnostic).
-  
-
 
     \begin{figure}[h!]
       \centering
@@ -719,7 +737,25 @@
       \begin{tabular}{r | ccccc ccccc ccccc ccccc}
       & \rots{be right} & \rots{confirm} & \rots{say} & \rots{establish} & \rots{prove} & \rots{suggest} & \rots{demonstrate} & \rots{announce} & \rots{reveal} & \rots{admit} & \rots{confess} & \rots{think} & \rots{acknowledge} & \rots{pretend} & \rots{see} & \rots{discover} & \rots{hear} & \rots{inform} & \rots{know} & \rots{be annoyed} \\
       \hline
-      \input{../../results+analysis/exps5-6/exp5/models/table1}
+       be right & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confirm & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  say & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  establish & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  prove & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  suggest & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  demonstrate & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  announce & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  reveal & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  admit & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confess & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  think & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  acknowledge & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  pretend & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  see & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  discover & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  hear & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  inform & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} \\ 
+  know & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} \\ 
       \hline
       \end{tabular}}}
 
@@ -728,7 +764,25 @@
       \begin{tabular}{r | ccccc ccccc ccccc ccccc}
       & \rots{be right} & \rots{confirm} & \rots{say} & \rots{establish} & \rots{prove} & \rots{suggest} & \rots{demonstrate} & \rots{announce} & \rots{reveal} & \rots{admit} & \rots{confess} & \rots{think} & \rots{acknowledge} & \rots{pretend} & \rots{see} & \rots{discover} & \rots{hear} & \rots{inform} & \rots{know} & \rots{be annoyed} \\
       \hline
-      \input{../../results+analysis/exps5-6/exp6/models/table1}
+       be right & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confirm & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  say & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  establish & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  prove & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  suggest & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  demonstrate & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{red} & \cellcolor{red} & \cellcolor{white} & \cellcolor{red} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  announce & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  reveal & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  admit & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  confess & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  think & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  acknowledge & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  pretend & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{red} & \cellcolor{red} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} \\ 
+  see & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{red} & \cellcolor{white} & \cellcolor{white} & \cellcolor{white} & \cellcolor{blue} \\ 
+  discover & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  hear & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\ 
+  inform & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{white} & \cellcolor{blue} \\ 
+  know & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} & \cellcolor{blue} \\ 
       \hline
       \end{tabular}}}
 
@@ -751,255 +805,80 @@
 
     
 
-  \subsection{Discussion}
+  \subsection{Discussion \label{ssec:5-6-discussion}}
 
-    Our results suggest that the `asking whether' and direct response diagnostic, as implemented in Exps.~5 and 6 yielded highly similar results for the 20 contents investigated: both showed comparable ranges of by-content means, a particularly strong Spearman rank correlation ($r_s = .93$), and fine-grained differentiation among the 20 contents tested. This sipports the idea that their shared feature of presenting the target content embedded in a question is what drives the high by-content differentiation observed in Exps.~2, 5, and 6 compared to Exps.~1, 3, and 4.
+    Our results suggest that the `asking whether' and direct response diagnostic, as implemented in Exps.~5 and 6 yielded highly similar results for the 20 contents investigated: both showed comparable ranges of by-content means, a particularly strong Spearman rank correlation ($r_s = .93$), and fine-grained differentiation among the 20 contents tested. This supports the idea that their shared feature of presenting the target content embedded in a question is what drives the high by-content differentiation observed in Exps.~2, 5, and 6 compared to Exps.~1, 3, and 4.
 
     Nonetheless, small differences remain, for example in which by-content contrasts reached significance and in the precise rank ordering of contents. Since both tests used identical embedding contexts and both reflect a QUD-based conception of at-issueness, these differences may stem from the distinct response tasks used: judging what a question is about versus (Exp.~5) evaluating the naturalness of a response (Exp.~6). This suggests that differences in response task affect at-issueness judgments in subtle ways.
 
 \section{General discussion \label{sec:4_discussion}}
   %
-    Different diagnostics of at-issueness yield different results. Some of the differences between the diagnostics as implemented here appear to be due to presenting the target expressions embedded in questions, some of them have to do with how the diagnostics interact differently with the discourse requirements imposed by the tested expressions, and others may have to do with response task differences, or different underlying notions of at-issueness.
-    %
-    In our investigation, the most central factor turned out to be whether or not the tested target content is embedded in a question, so the speech act in which it appears needs to be taken into consideration when considering what at-issueness is and how it is diagnosed.
-    %
-    This diagnostic differences also have methodological implications: future research will need to make sure that results may only be due to the speech act, particular response task used, other discourse factors, empirical investigations should continue path of using multiple diagnostics 
-
-    In the following, we discuss in some more detail the questions of why question embeddings matter for diagnosing at-issueness (\Cref{ssec:discussion-questions}); what are factors that may affect the diagnostic differences, and what this can tell us about different underlying notions of at-issueness (\Cref{ssec:discussion-differences}).
-
+    Different diagnostics of at-issueness yield different results. Some of the differences between the diagnostics as implemented here appear to be due to presenting the target expressions embedded in questions, some of them have to do with how the diagnostics interact differently with the discourse requirements imposed by the tested expressions, and others may have to do with response task differences, or different underlying notions of at-issueness. In our investigation, the factor leading to the most striking differences was whether or not the tested target content is embedded in a question, so the speech act in which it appears needs to be taken into consideration when considering what at-issueness is and how it is diagnosed. In the following, we discuss in some more detail the questions of why question embeddings matter for diagnosing at-issueness (\Cref{ssec:discussion-questions}); what are factors that may affect the diagnostic differences, and what this can tell us about different underlying notions of at-issueness (\Cref{ssec:discussion-differences}); then we discuss methodological implications of our findings (\Cref{ssec:discussion-methodological}).
   
   \subsection{Speech act, at-issueness, and projection \label{ssec:discussion-questions}}
-    We found that the speech act in which the tested content appears makes a difference: presenting the target expression in a question leads to greater by-content differentiation than presenting it in an assertion.
+    We found that the speech act in which the tested content appears makes a difference: presenting the target expression in a question leads to greater by-content differentiation than presenting it in an assertion. As discussed briefly in \Cref{ssub:differentiation}, this contrast may seem to reflect the contrast highlighted in previous literature between question-based and assertion-based diagnostics for at-issueness. Recall that question-based diagnostics (such as the QUD-diagnostic and `asking whether' test) have been taken to assess whether a proposition is at issue relative to a question under discussion (\citealt{amaral_review_2007,simons_what_2010,tonhauser_diagnosing_2012,tonhauser_how_2018}). In contrast, assertion-based diagnostics (such as the direct-dissent and `yes, but' tests) have been suggested to target a different notion of at-issueness, tied to the speech act of assertion (\citealt{koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). Here, the assumption is that only at-issue content can contribute an assertive proposal that may be accepted or rejected, while not-at-issue content is presupposed or automatically added to the common ground (\citealt{potts_logic_2005,murray_varieties_2014,anderbois_at-issue_2015}).
 
-    As discussed briefly in \Cref{ssub:differentiation}, this contrast may seem to reflect the contrast highlighted in previous literature between question-based and assertion-based diagnostics for at-issueness.  
-    %
-    Recall that question-based diagnostics (such as the QUD and `asking whether' tests) have been taken to assess whether a proposition is at issue relative to a question under discussion (\citealt{amaral_review_2007,simons_what_2010,tonhauser_diagnosing_2012,tonhauser_how_2018}).
-    %
-    % The QUD diagnostic, illustrated in \ref{qud}, repeated here, tests whether some propositional content ($p:$ \emph{Greg bought a new car}) introduced by a particular type of expression (e.g., sentence-medial appositive NRRCs) can be felicitously used to answer an explicit QUD. The `asking whether' diagnostic, illustrated in \ref{aw}, also repeated below, tests whether the content $p$ introduced by some expression can contribute to determining what the QUD is.
-    %
-    % \ex.[\ref{qud}]%
-    %   % QUD diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,chen_presuppositions_2024})
-    %   \a.[A:] \emph{What did Greg buy?}
-    %   \b.[B:] \emph{Greg, who bought a new car, is envied by his neighbor.}
-    %   \z.
-    %   Question to participants: How well does B's response fit A's question?
-    % \z.
-    %
-    % \ex.[\ref{aw}]%
-    %   % `asking whether' diagnostic (e.g., \citealt{tonhauser_how_2018,solstad_cataphoric_2024})\smallskip\\
-    %     \emph{Is Greg, who bought a new car, envied by his neighbor?}\smallskip
-    % \\ Question to participants: Is the speaker asking whether Greg bought a new car?
-    % \z.
-    %
-    In contrast, assertion-based diagnostics (such as the direct-dissent and `yes, but' tests) have been suggested to target a different notion of at-issueness, tied to the speech act of assertion (\citealt{koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020}). The assumption is that only at-issue content can contribute an assertive proposal that may be accepted or rejected, while not-at-issue content is presupposed or automatically added to the common ground (\citealt{potts_logic_2005,murray_varieties_2014,anderbois_at-issue_2015}).
-    %
-    % In the direct-dissent diagnostic illustrated in \ref{dd}, repeated here, it is tested whether the target content $p$ introduced by some expression can be felicitously targeted by a dissenting direct response that includes \emph{no}. The `yes but' test, \ref{yesbut}, repeated below, tests whether the proposal can be accepted with a direct response using \emph{yes}, while challenging the not-at-issue content, which is assumed to be independent of the at-issue proposal.
-    %
-    % \ex.[\ref{dd}]
-    %   % Direct-dissent diagnostic (e.g., \citealt{tonhauser_diagnosing_2012,syrett_experimental_2015})
-    %   \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
-    %   \b.[B:]\emph{No, that's not true, he didn't buy a new car.}
-    %   \z.
-    % Question to participants: How natural is B's rejection of A's utterance?
-    % \z.
-    %
-    % \ex.[\ref{yesbut}]%
-    %   % `yes, but' diagnostic (e.g., \citealt{xue_correlation_2011,destruel_cross-linguistic_2015})
-    %   \a.[A:] \emph{Greg, who bought a new car, is envied by his neighbor.}
-    %   \b.[B:] \emph{Yes, but he didn't buy a new car.} /
-    %   \b.[] \emph{Yes, and he didn't buy a new car.} /
-    %   \b.[] \emph{No, he didn't buy a new car.}
-    %   \z.
-    %   Task for participants: Choose the response that sounds best.
-    % \z.
+    Our generalization, however, is not about whether the target content can be understood as at-issue relative to a QUD versus an assertion made by the utterance. Rather, it concerns the speech act in which the content is presented. When target contents were presented in questions, as in the `asking whether' diagnostic (Exps.~2, 5) and the direct-response diagnostic used in Exp.~6, we observed high by-content differentiation. In contrast, when the same contents were presented in declarative assertions, as in the QUD diagnostic (Exps.~1), and the assertion-based diagnostics (Exps.~3, 4), the resulting ratings showed less differentiation. This pattern suggests that at-issueness diagnostics which embed target content in questions are suited to reveal more differentiated by-content differences than those embedding content in assertions.
+    
+This finding can be understood if we assume that participants are better able to distinguish at-issue from not-at-issue content when these two contents have more distinct pragmatic roles, and questions provide an environment where that is the case. We hypothesize the relevant contrast lies in how at-issue and not-at-issue content relate to speaker commitments: In assertions, but not in questions, the speaker commits to the truth of the at-issue proposition. Not-at-issue content, in contrast, projects and thus contributes to speaker commitment regardless of speech act (see \citealt{potts_logic_2005,abusch_presupposition_2010,simons_what_2010,abrusan_predicting_2011,tonhauser_how_2018,degen-tonhauser-glossa}). As a result, at-issue and not-at-issue content are pragmatically more distinct in questions, making it easier for participants to distinguish the two levels of meaning. Embedding target content in questions therefore allows for detection of more fine-grained differences in at-issueness associated with the conventional meaning of particular expressions, whereas assertions introduce a confounding factor: the speaker commits to both levels of content, reducing differentiation in at-issueness judgments.
 
-
-    Our generalization, however, is not about whether the target content can be understood as at-issue relative to a QUD or an assertive proposal. Rather, it concerns the speech act in which the content is presented. Although both the `asking whether' and QUD diagnostics are based on QUD-based conceptions of at-issueness, they differ in this crucial respect: only the former presents the target content inside an interrogative, while the latter embeds it in a declarative.
-
-    This distinction helps explain our findings. The high differentiation observed with the `asking whether' diagnostic (Exps.~2, 5) as well as the direct-response diagnostic used in Exp.~6 appears to arise from the question embedding itself. When the same contents are presented in a declarative assertion, as in the QUD diagnostic, the resulting ratings show less differentiation. This suggests that what matters for the differentiation is not the distinction between QUD-at-issueness and assertion-based notions, but the speech act in which the content is interpreted.
-
-    We hypothesize that the greater differentiation in questions arises from how speech act type and not-at-issue content both interact with speaker commitments. The argument goes as follows: (i) When propositional content is not-at-issue, it projects and and we understand the speaker to be committed to its truth. (ii) In assertions, but not in questions, the speaker is also committed to the at-issue content. (iii) As a result, it is easier for participants to distinguish at-issue from not-at-issue content in questions, when the speaker is not committed to the at-issue proposition, making the two levels of meaning pragmatically more distinct.
-
-    To illustrate this suggestion in more detail, consider how at-issue and not-at-issue content in questions have distinct epistemic status relative to speaker commitments: \Next illustrates how the at-issue content of a question introduces question alternatives and partitions the context set without committing the speaker to any particular alternative (\citealt{groenendijk_studies_1984,ginzburg_interrogatives_1996,roberts_information_1996}). In contrast, the not-at-issue content is assumed to be true throughout all question alternatives \citep{abusch_presupposition_2010,abrusan_predicting_2011,tonhauser_how_2018}.
+    For concreteness, \Next illustrates how the at-issue content of a polar question introduces a set of question alternatives and partitions the context set without committing the speaker to any particular alternative (\citealt{groenendijk_studies_1984,ginzburg_interrogatives_1996,roberts_information_1996}). In contrast, the not-at-issue content expressed by the appositive NRRC (\emph{Greg bought a car}) is assumed to be true across all question alternatives, and thus throughout the entire context set, giving rise to projection \citep{abusch_presupposition_2010,simons_what_2010,abrusan_predicting_2011,tonhauser_how_2018}.
 
     \ex. $\llbracket\textit{Is Greg, who bought a car, envied by his neighbor?}\rrbracket =$\\
       \phantom. \hfill$\{\textnormal{Greg, who bought a car, is envied by his neighbor},$\\
       \phantom. \hfill$\textnormal{Greg, who bought a car, is not envied by his neighbor}\}$
     \z.
 
-    Because the not-at-issue proposition (\emph{Greg bought a car}) projects and is treated as part of the speaker's commitments (see \citealt{potts_logic_2005,abusch_presupposition_2010,tonhauser_how_2018,degen-tonhauser-glossa}). Because the speaker is not committed to the at-issue proposition, the two contents differ sharply in epistemic status, making it easier for listeners to distinguish between the two levels of meaning. Questions therefore provide a particularly a good environment to test fine-grained at-issueness differences associated with the overt forms or literal meanings of particular expressions.
+    Because the not-at-issue proposition projects, it is treated as part of the speaker's commitments, while the at-issue proposition is not. We suggest that this sharp epistemic contrast between the two contents may make it easier for listeners to distinguish between levels of meaning. Questions therefore provide a particularly a good environment for detecting fine-grained differences in at-issueness associated with the conventional meaning of particular expressions.
 
-    The assumption that the conventional meaning of linguistic expressions affects their at-issueness can be made more explicit, for instance, under a conception of at-issueness as a gradient property, by assuming that the lexical or compositional meaning of an expression influences how strongly a particular propositional content is interpreted as at issue. Then, how strongly an embedded clause is interpreted as at-issue can depend on the literal meaning of, for example, appositives or the lexical semantics of clause-embedding predicates.
-
-    used in Exp.~2 (`asking whether', see \ref{aw}): 
-
-    for some content $p$ introduced by some expression, such as the proposition that \emph{Tony had a drink last night} introduced by the complement of \emph{discover} in \Next.
-
+    This reasoning helps explain why the two question-based diagnostics yielded highly similar results. Both the asking whether diagnostic used in Exps.~2 and 5 and the direct-response diagnostic used in Exp.~6 embed the target content $p$ in a polar question, as in \Next, where $p$ is the proposition that \emph{Tony had a drink last night} introduced by the complement of \emph{discover}.
+  
     \ex. \emph{Did Helen confirm that Tony had a drink last night?} \z. 
-    
-    
+  
+  In the `asking whether' diagnostic, ratings of how much participants take the question to be about \emph{whether} $p$ (in this case: about whether \emph{Tony had a drink last night}) are taken to reflect whether $p$ is delineates the question partition introduced by the at-issue content of \Last, and thus how readily $p$ is interpreted as at-issue. Similarly, Exp.~6 assessed how naturally a direct response to \Last with \emph{yes} $p$ or \emph{no, not} $p$ is taken as an answer to the question, that is, how naturally they are construed as selecting among the question alternatives. Both diagnostics therefore probe how central $p$ is to the question raised by the utterance.
+  
+  Thus, if certain constructions or expressions bias their associated content toward being interpreted as at-issue or not-at-issue, interrogatives provide a clear window onto these by-content differences. For instance, since the complement of \emph{confirm} received higher asking-whether ratings in Exp.~2 than the content of appositive NRRCs, we can say that the complement of \emph{confirm} is more at-issue than the content of appositive NRRCs (or more likely to be interpreted as at-issue under a categorical conception of at-issueness). An important question for research on at-issueness is why certain expressions lead to their associated content being interpreted as more or less at-issue, which lexical properties can affect this and how (e.g., \citealt{abrusan_predicting_2011,anand_factivity_2014,schlenker_triggering_2021,anand_facts_2024,bade_new_2024,bade_word_2024}).
 
-    how much participants take the question to be about \emph{whether} $p$, how naturally a direct response such as \emph{yes} $p$ or \emph{no, not} $p$ is taken as an answer to the question, i.e., as differentiating between the question alternatives.
+    In contrast, when the same contents are presented in declarative assertions, shown \Next and \NNext, as in the QUD diagnostic (Exp.~1) and the assertion-based diagnostics (Exps.~3 and 4), the utterance signals that speaker is committed to the main clause at-issue content. 
 
-    then, we can say that the complement of \emph{confirm} is more (likely) to be at issue than the content of NRRCs
+    \ex. \emph{Greg, who bought a car, is envied by his neighbor.}
+      \a. $\rightarrow$ \emph{Greg bought a car.} (target content)
+      \b. $\rightarrow$ \emph{Greg is envied by his neighbor.} (main clause content)
+    \z.\z.
 
+    \ex. \emph{Helen confirmed that Tony had a drink last night.} 
+      \a. $\rightarrow$ \emph{Tony had a drink last night.} (target content)
+      \b. $\rightarrow$ \emph{Helen confirmed that Tony had a drink last night.} (main clause content) 
+    \z.\z.
 
-    
-    Under a categorical conception of at-issueness, the conventional meaning of an expression would be assumed to influence how likely a particular propositional content is interpreted as at-issue. 
+  At the same time, not-at-issue content, like that expressed by appositive NRRCs or certain embedded propositions, projects and thus also becomes part of the speaker's commitments. In assertions, the speaker is thus committed to both the main at-issue and the not-at-issue content. As a result, at-issue and not-at-issue content are pragmatically more similar in assertions, and we suggest that this makes it harder for participants to distinguish the two levels of meaning. This assumption could helps explain why these diagnostics yielded less by-content differentiation than the question-based diagnostics: they might be overall less sensitive to the difference between at-issue and not-at-issue content, essentially creating a ceiling effect.
 
-    Certain predicates more readily contribute their complements as not-at-issue content, 
-
-    That is, certain constructions bias their associated content toward being treated as at-issue, while others bias it toward being not-at-issue. Interrogatives provide a particularly clear window onto these conventional differences because the speaker’s lack of commitment to the at-issue proposition sharpens the contrast between levels of meaning.
-
-    Big question here: which lexical properties can affect this and how? Look to literature on presupposition triggering? (\citealt{abrusan_predicting_2011,schlenker_triggering_2021,anand_facts_2024,scontras_projection_2025})
-
-
-
-    While the question meaning in \Last can be expressed without committing the speaker to any particular alternative, declarative assertions usually involve speaker commitment that the at-issue content is true. \textbf{Assertions:} Signal that speaker is committed to the at-issue content, and therefore at-issue content and not-at-issue content are harder to distinguish 
-    Testing at-issueness of contents in declarative assertions muddles the picture, making at-issue and not-at-issue content harder to distinguish; especially when the test itself invokes commitment (like those using assent/dissent)
-
-    % \ex. $\llbracket$\emph{Is Greg, who bought a car, envied by his neighbor?}$\rrbracket = \{$Greg, who bought a car, is envied by his neighbor$,$\\ \hspace*{7.2em}$Greg, who bought a car, is not envied by his neighbor$\}$  
-
-    \textbf{Assertions:} In declarative assertions, by contrast, the speaker commits to the at-issue proposition itself, and not-at-issue content projects alongside it as a pragmatic entailment. Because both kinds of content end up as parts of the speaker’s commitments, they are harder to tease apart experimentally. Diagnostics that rely on assent or dissent (e.g., “yes,” “no,” “yes, but”) may thus blur distinctions between the main assertion and its associated presuppositions or entailments.  
-    \ex. \a. Cole didn’t admit that Julian dances salsa.\\
-         \b. Yes, that’s true—Julian dances salsa.\\
-
-
-    This example illustrates how the logical relation between the matrix clause and its complement complicates assent/dissent judgments: saying “yes” may express agreement with the matrix, the embedded content, or both.  
-
-
-    \textbf{Theoretical implication:} Because questions suspend speaker commitment, they more transparently reveal how different contents can function as at-issue or not-at-issue. Assertions, by contrast, conflate commitment with projection, obscuring these distinctions. Consequently, question-based diagnostics—especially those embedding the target content directly in a polar question—provide a particularly sensitive test of at-issueness.  
-
-    the most sensitive test for at-issueness involve question embeddings
-
-
-    
-    \begin{itemize}
-        \item therefore, it is not clear what it means to agree with an assertive utterance as a whole by saying \emph{yes/no} to that utterance, when we are agreeing/disagreeing with the non-at-issue content.
-
-        \item when we say yes, we might want to say yes to the main assertion, and to some extent its other inferences, and the logical relationship between them plays a role as well
-
-        \item recall the direct assent test with negated assertions (I should go back to my notes there, to make this point about the confound with assertion and commitment clearer again)
-
-        \ex. \a. Cole didn't admit that Julian dances salsa.
-          \b. Yes, that's true, Julian dances salsa.
-          \z.
-        \z. 
-
-        \item it is important, what's the logical relationship between the main clause content, and embedded content (entailment, non-entailment, negation)
-
-    \end{itemize}
-
-    \begin{itemize}
-        
-        \item however, the QUD-test still tests the at-issueness of content in an assertive utterance relative to a preceding question. no previous literature has suggested that the speech act of the content being tested itself plays a large role.
-        \item Polar questions highlight differences in at-issueness by showing how well a proposition can partition the context set: some contents do this clearly, others less so, and some only partially. By contrast, the other diagnostics depend on anaphoric accessibility (e.g., suitability for response particles) or on how well an assertion addresses a prior QUD, which may blur such distinctions.
-
-        \item We hypothesize that the polar question embedding highlights at-issueness differences. Content is differently suitable to partition the context set, with some content really well able to do this and other content not, and other content inbetween. All the other diagnostics rely on anaphoric accessibility of the proposition or how well it can address a question in prior discourse.
-
-        \item To our knowledge, no previous literature has proposed that the speech act of the tested content itself could be a major driver of differentiation.
-
-      \end{itemize}
-
+  To our knowledge, no previous literature has proposed that the speech act in which target content is presented can itself be a major driver of differentiation. Here, we saw that questions more transparently reveal how different contents can be interpreted as at-issue or not-at-issue, and suggested that this may be because the two contents differ in their commitment status. Assertions, in contrast, commit the speaker both to the at-issue assertion as well as the projected not-at-issue content, thereby obscuring the distinction. Consequently, diagnostics that embed the target content in questions provide a particularly sensitive test of at-issueness.
 
 
 
   \subsection{Diagnostic differences and notions of at-issueness \label{ssec:discussion-differences}}
-    We aimed to determine the extent of consistency or divergence across these diagnostics when applied to identical linguistic stimuli. Different diagnostics give different results.
+    Our study addressed two related questions about at-issueness diagnostics: First, we asked to what extent different diagnostics yield consistent results when applied to the same linguistic stimuli. Second, by examining the convergence and divergence across diagnostics, we aimed to assess whether these differences reflect distinct theoretical notions of at-issueness or instead arise from methodological differences in how a single underlying phenomenon is operationalized.
 
-    results from Exps.~1-4 suggesting that the four diagnostics implemented there interact differently with the seven contents investigated: no pairwise difference goes the same way in all experiments except for \emph{confess} $\leq$ \emph{discover}
+    Across Exps.~1--4, we found clear evidence that the four diagnostics implemented there are not interchangeable: they interact differently with the seven tested contents, and the relative rank orderings of content means do not align uniformly across experiments. Aside from the robust ordering \emph{confess} $\leq$ \emph{discover}, no pairwise difference between contents goes in the same direction across all diagnostics. At the same time, the most striking differences between diagnostics appear to be explainable by factors other than distinct underlying notions of at-issueness.
+    
+    First, as discussed in detail in \Cref{ssec:discussion-questions}, the speech act in which the target content is presented plays a major role. Diagnostics that embed the target content in questions consistently yielded greater differentiation than those that embed it in declarative assertions. This finding, however, is orthogonal to the question whether there are distinct underlying notion of at-issueness: it is compatible both with the view that all diagnostics target a single underlying notion and with the view that there are fundamentally different concepts of what the main point of an utterance is given a question or QUD versus given an assertive proposal. We argued here that the effect arises because questions and assertions differ in how at-issue and not-at-issue content interact with speaker commitment. Questions sharpen this contrast, whereas assertions collapse it, thereby reducing differentiation. The influence of speech act thus offers an explanation for a substantial portion of the observed divergence between diagnostics.
 
-    the diverging results suggest that the diagnostics cannot be applied  interchangeably, and theoretical claims made on their basis should be relativized to the diagnostic used (see also \citealt{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018,koev_notions_2018,korotkova_evidential_2020})
+    Second, the diagnostics differ in how they interact with contextual requirements imposed by particular expressions. A clear example is the behavior of \emph{be right} under the QUD diagnostic, where low QUD-match ratings do not plausibly reflect not-at-issueness, but instead arise from a pragmatic incompatibility: \emph{be right} presupposes a discourse structure that conflicts with the assumptions made by the diagnostic (see Section~\ref{ssub:be-right}). A related concern is raised by \citet{snider_at-issueness_2017,snider_distinguishing_2018}, who emphasized that the direct-dissent and `yes but' diagnostic involve propositional anaphora in the interpretation in the response particles \emph{yes/no} (as does the direct-response diagnostic in Exp.~6). Ratings under these diagnostics may therefore reflect constraints on anaphoric availability that are independent of at-issueness. Although our data show no clear split between diagnostics that involve response particles (Exps.~3, 4, and 6) and those that do not, the broader point remains: different diagnostics impose different requirements on discourse structure, common ground, and anaphoric accessibility, all of which can independently affect acceptability judgments. This supports the conclusion that some differences between diagnostics arise from interactions with expression-specific contextual requirements rather than from differences in at-issueness per se.
 
-
-    Our findings suggest that differences between the diagnostics are affected by the speech act in which the target contents are presented, different way in which they interact with contextual requirements of the target expressions (be right, anaphoric availability)
-    - response task (evident in the small differences between Exps.~5 and 6, as well the lack of replication of Syrett and Koev's positional effect on the at-issueness of appositive NRRCs).
-
-    The influence of the speech act in which the target is presented was evident in ...
-
-    The reason for believing that 
-
-    Another reason for believing that the diagnostics may differ wrt the contextual requirements imposed is the point made by Snider, who noted that the direct-dissent diagnostic, and `yes but' diagnostic involve propositional anaphora in the interpretation in the polar response particles \emph{yes/no} (the same applies to the direct-response diagnostic in Exp.~6). While our data does not provide evidence that all diagnostics involving response particles (Exps.~3, 4, and 6) behave differently from the others
-
-    \begin{itemize}
-        \item \textbf{Positional effects for appositive NRRCs?} \citepos{syrett_experimental_2015} found that sentence-final appositive NRRCs are more at-issue than sentence-medial ones under a version of the direct-dissent diagnostic. We did not reproduce this finding with any of the diagnostics. in fact, the assent/dissent-based `yes but' test showed the opposite effect: In our Exp.~4, sentence medial appositive NRRCs were more at-issue than sentence-final ones. 
-
-        \item \textbf{\emph{be right} under the QUD diagnostic:} receives low ratings not because it's not at-issue, but because how the diagnostic interacts with a contextual requirement of \emph{be right} (namely the presupposition that there was a QUD about the embedded clause in the previous discourse, see discussion in \Cref{ssub:be-right}).
-
-      \end{itemize}
-
-
-     \subsubsection{Medial and final appositives: no replication of S+K}
-        \begin{itemize}
-          \item 
-          \item no evidence that there is a notion of at-issueness under which final appositives are more at-issue than medial ones.
-        \end{itemize}
-
-      \begin{itemize}
-        \item range + sensitvity: differences in how the diagnostics differentiate between contents; why is this? ceiling effects? compare to NAI control means // there is a question here of whether there would be a significant difference between the AI-control, and the other contents. someone who believes in binary at-issueness could say that all it needs for the test to work is that the tested contents lead to less acceptability compared to AI control.
-      \end{itemize}
-
-    \subsubsection{Correspondences/similarities}
-
-      \begin{itemize}
-        \item there is a correlation of the results of the `asking whether' diagnostic with those of direct dissent and `yes, but' diagnostics
-        \item when excluding the \emph{be right} condition, there is a correlation of QUD one with the other ones, too (?) --- these are the correlations we should be looking at!
-        \item now, we see some correlations between all tests, but stronger correlations between Exps 1+2, 3+4, respectively
-
-      \end{itemize}
-
-    \subsubsection{Question (ii): Do the existing definitions of at-issueness describe the same underlying phenomenon?}
-      Second, by identifying areas of convergence and divergence, we aim to shed light on whether the differing diagnostics reflect distinct theoretical concepts of at-issueness or merely methodological variations in operationalizing a single underlying phenomenon.
-
-    \subsubsection{Differences between tests as evidence for sensitivity to different underlying phenomenon?}
-
-      \begin{itemize}
-        \item no obvious distiction between QUD and assertion at issueness
-         \item are the differences between tasks because the at-issueness notion that is relevant for questions and assertions is fundamentally different (Koev), or because the diagnostics engage with an underlying notion of QUD-at-issueness, whereas the assertion-based tests introduce some confound(s), as Snider suggests?
-      \end{itemize}
-
-    \subsubsection{Correspondence between the tests as evidence for sensitivity to a common underlying phenomenon}
-      
-
-      \begin{itemize}
-        \item excluding \emph{be right}, we see some correlations between all tests
-
-        \item why is that? -- there must be some common underlying property that they are both sensitive to, even if in different ways, of if there are other confounding factors
-
-        \item for example, snider showed that the specificity of the direct dissent test goes away without polarity particles, suggesting that it is only about anaphoric availabiltiy rather than disagreement. he also argued that the at-issueness of propsitional content is neither necessary not sufficient for their availability as anaphoric antecedents for the propositional anaphor \emph{that}. however, even if anaphoric availability is not THE SAME as at-issuenes, then the correlation suggests that that the dissent-based tests (and therefore maybe anaphoric availability) are also modulated by at-issueness.
-
-      \end{itemize}
-
-
-    \subsubsection{Differential correspondence between the tests as potential evidence for different underlying phenomena}
-      \begin{itemize}
-        \item excluding \emph{be right}, we see some correlations between all tests, but stronger correlations between Exps 1+2, 3+4, respectively
-
-        \item there is greater correlation between tests that share theoretical assumptions
-
-        \item while the fact that there is correlation between all of them does suggest that they are sensitive to, or at least influenced by the same underlying phenomenon, there is a difference between the question-based tests and the assertion-based tests, in how much they correlate
-
-      \end{itemize}
-
-     \subsubsection{Different underlying notions?}
-      \begin{itemize}
-        \item Correlation between Exp. 1 and Exp. 2 is .77, suggesting that higher QUD-match ratings were strongly associated with higher asking-whether ratings.
-
-        \item Correlation between Exp. 3 and Exp. 4 is .77, suggesting that higher accptability ratings in the direct-dissent task were strongly associated with higher proportions of `yes'-answers.
-
-        \item However, the correlation between Exp. 1 and Exps. 3/4, respectively, is only weak to moderate, while the corratlation between Exp. 2 and Exps. 3/4, respectively, would be characterized as strong, but again, is lower than when comparing the question-based and assertion-based diagnostics to each other. Is there any way to quantify this, or do significance testing on that?
-
-        \item The correlation between all diagnostics suggests that there is an underlying property that they all are sensitive to, but the fact that the correlation is higher between those diagnostics that share theoretical assumptions about at-issueness should tell us something too. (what exactly? this is hard to say on an appropriate level of abstraction; I think concluding that they are sensitive to different underlying phenomena would be too strong here)
-
-      \end{itemize}
-
+    Third, some small differences between diagnostics can be attributed to response-task effects. This is evident in the subtle differences between Exps.~5 and 6 (see \cref{ssec:5-6-discussion}), which differed only in response format, and in our failure to replicate \citeposs{syrett_experimental_2015} \citeyear{syrett_experimental_2015} reported positional effect for appositive NRRCs (see \cref{ssub:appositives}). While they found sentence-final appositives to be more at-issue than sentence-medial ones under a version of the direct-dissent diagnostic, our assent/dissent-based \emph{yes, but} diagnostic in Exp.~4 showed a difference in the opposite direction, while the other experiments found no difference between them (Exp.1--3). Taken together, these results provide no evidence for a stable notion of at-issueness under which sentence-final appositives are systematically more at-issue than medial ones (or the other way round), and they highlight how even small task differences can affect outcomes.
    
+  \subsection{methodological implications  \label{ssec:discussion-methodological}}
+      An implication is that future research should take into account that results may only be due to the speech act, particular response task used, other discourse factors,  empirical investigations should continue path of using multiple diagnostics 
 
+      Therefore, future research on at-issueness should carefully consider the speech act context in which target contents are presented, as this can significantly impact the results of at-issueness diagnostics.
+
+      the diverging results suggest that the diagnostics cannot be applied  interchangeably, and theoretical claims made on their basis should be relativized to the diagnostic used (see also \citealt{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018,koev_notions_2018,korotkova_evidential_2020})
   
 
 \section{Conclusion \label{sec:5_conclusion}}
   
-  The conclusion is the last numbered section, and any ensuing sections are unnumbered.
+  
   \begin{itemize}
     \item Experimental confirmation for claims that there are empirical differences between at-issueness diagnostics (\citealt{snider_anaphoric_2017,snider_at-issueness_2017,snider_distinguishing_2018,koev_notions_2018,faller_discourse_2019,korotkova_evidential_2020})
       \begin{center}
@@ -1042,7 +921,7 @@
 
 \section*{Ethics and consent (if applicable)}
 
-  Research involving human subjects, human material, or human data, must have been performed in accordance with the Declaration of Helsinki. Studies must have been approved by an appropriate ethics committee and the authors should include a statement in the article text detailing this approval, including the name of the ethics committee and reference number of the approval, or mention any exemptions to ethical approval that apply to their research. The identity of research subjects should be anonymised whenever possible. For research involving human subjects, informed consent to participate in the study must be obtained from participants (or their legal guardian).
+  Research involving human subjects, human material, or human data, must have been performed in accordance with the Declaration of Helsinki. Studies must have been approved by an appropriate ethics committee and the authors should include a statement in the article text detailing this approval, including the name of the ethics committee and reference number of the approval, or mention any exemptions to ethical approval that apply to their research. The identity of research subjects should be anonymized whenever possible. For research involving human subjects, informed consent to participate in the study must be obtained from participants (or their legal guardian).
 
 
 \section*{Funding information (if applicable)}
@@ -1120,8 +999,8 @@
       \item Sophia got a tattoo.
       \item Mia drank 2 cocktails last night.
       \item Isabella ate a steak on Sunday.
-      \item  Emily bought a car yesterday.
-      \item  Grace visited her sister.
+      \item Emily bought a car yesterday.
+      \item Grace visited her sister.
       \item Zoe calculated the tip.
 
   %\columnbrea      
