@@ -39,7 +39,7 @@
 	% in text citation macros
 	\newcommand{\citepos}[1]{\citeauthor{#1}'s \citeyear{#1}}
 	\newcommand{\citeposs}[1]{\citeauthor{#1}'s}
-	\newcommand{\citetpos}[1]{\citeauthor{#1}'s \citeyear{#1}}
+	\newcommand{\citetpos}[1]{\citeauthor{#1}'s (\citeyear{#1})}
 
 	%
 	\usepackage{cleveref}
@@ -50,6 +50,8 @@
 %=========================== figures, tables =========================
 
 	\usepackage{enumitem}
+	\usepackage{array}
+	\newcommand{\colw}{.7em}
 	
 
 %=====================================================================
