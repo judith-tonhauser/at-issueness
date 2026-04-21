@@ -10,7 +10,7 @@ setwd(this.dir)
 library(tidyverse)
 
 # load helpers
-source('../../helpers.R')
+source('../../../helpers.R')
 
 # set theme
 theme_set(theme_bw())
@@ -166,43 +166,7 @@ d <- d %>%
   droplevels()
 length(unique(d$workerid)) # 221 remaining participants (24 participants excluded)
 
-# variance
-
-# exclude participants who always clicked on roughly the same point on the scale 
-# ie participants whose variance in overall response distribution is more 
-# than 2 sd below mean by-participant variance
-table(d$trigger)
-table(d$question_type)
-
-variances = d %>%
-  filter(trigger != "MC") %>%
-  group_by(workerid) %>%
-  summarize(Variance = var(response)) %>%
-  mutate(TooSmall = Variance < mean(Variance) - 2*sd(Variance))
-
-lowvarworkers = as.character(variances[variances$TooSmall,]$workerid)
-summary(variances)
-lowvarworkers # 3 participants had lower mean variance
-
-#View(variances)
-
-ggplot(variances,aes(x=workerid,y=Variance)) +
-  geom_point()
-
-lvw = d %>%
-  filter(as.character(workerid) %in% lowvarworkers) %>%
-  droplevels() %>%
-  mutate(Participant = as.factor(as.character(workerid)))
-
-ggplot(lvw,aes(x=Participant,y=response,color=trigger_class)) +
-  geom_jitter()
-
-# exclude 1 participant with really low variance (#1547)
-d <- droplevels(subset(d, !(d$workerid == "1547")))
-#d <- droplevels(subset(d, !(d$workerid %in% lowvarworkers)))
-length(unique(d$workerid)) #220 participants remain
-
-# write cleaned data to file
+# write cleaned data to file  
 write_csv(d, file="../data/data_preprocessed.csv")
 
 # info on remaining participants

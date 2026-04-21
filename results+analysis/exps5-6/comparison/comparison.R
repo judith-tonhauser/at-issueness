@@ -13,7 +13,7 @@ library(tidyverse)
 library(dplyr)
 library(dichromat)
 library(forcats)
-library(ggrepel)
+# library(ggrepel)
 
 theme_set(theme_bw())
 

@@ -15,7 +15,7 @@ this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(this.dir)
 
 # load helper functions
-source('../../helpers.R')
+source('../../../helpers.R')
 
 # load cleaned data
 d = read_csv("../data/data_preprocessed.csv")
@@ -35,6 +35,9 @@ table(t$expression)
 t = t %>%
   mutate(expression = fct_relevel(expression, "be_right"))
 levels(t$expression)
+
+# invert scale to get at-issueness rating rather than not-at-issueness rating
+t = t %>% mutate(response = 1-response)
 
 # response distribution before transformation
 summary(t$response)
