@@ -295,7 +295,7 @@ Here, the complement of \emph{annoyed} was rated as less at-issue than those of 
 
 The possibility that diagnostics may differ in how strongly they differentiate among contents raises another key question: whether different diagnostics systematically reproduce fine-grained by-content differences for clause-embedding predicates.
 
-\subsection{Outlook and how we address the research questions}
+\subsection{Outlook}
 This paper presents a systematic experimental comparison of at-issueness diagnostics across six experiments, taking a first step towards addressing the two overarching research questions: (i) whether at-issueness diagnostics yield consistent results when applied to the same target contents, and (ii) whether they reflect distinct underlying notions of at-issueness.
 
 To address (i), we compare diagnostics by testing whether they reproduce by-content contrasts reported in prior work. Specifically, we examine whether they converge on the positional effect for appositive NRRCs and fine-grained differences among clause-embedding predicates.
@@ -334,7 +334,7 @@ Each experiment tested the same set of contents associated with the seven types 
 
 These seven contents were chosen because prior literature observed differences in at-issueness between two or more of these contents using a particular diagnostic for at-issueness.  As discussed in \S1, \citealt{syrett_experimental_2015} observed differences between sentence-medial and -final NRRCs using a variant of the direct-dissent diagnostic, and \citealt{degen_projection_2025} observed differences between \emph{be right, discover, confess, confirm, discover,} and \emph{know} using the `asking whether' diagnostic. Thus, comparing these seven contents across the four diagnostics in Exps.~1--4 will allow us to assess whether the differences that emerge from one diagnostic also emerge from others. In each experiment, participants read the stimuli and gave ratings corresponding to the diagnostics.
 
-Following prior work (e.g., \citealt{tonhauser_how_2018}), we interpret higher/lower mean ratings as indicating that content is more/less at-issue under a given diagnostic, with two caveats: First, we remain agnostic about whether at-issueness is an underlyingly binary or a gradient property (cf. \citealt{tonhauser_how_2018,barnes_information_2023}). If at-issueness is gradient, the extent to which a content is at-issue may be understood as the extent to which it is relevant to the QUD or the main assertion, in which case gradient mean ratings may be taken to reflect gradient relevance. If at-issueness is categorical, content is at-issue iff it addresses the QUD or assertive proposal, and not-at-issue otherwise; and gradient mean ratings could be attributed to uncertainty about what the QUD/proposal is. For example, our interpretation of a content in a given utterance being more/less at-issue may be interpreted as reflecting the frequency or ease with which a particular QUD is attributed to that utterance.
+Following prior work (e.g., \citealt{tonhauser_how_2018}), we describe higher/lower mean ratings by saying that content is more/less at-issue under a given diagnostic. However, we remain agnostic about whether at-issueness is an underlyingly binary or a gradient property (cf. \citealt{tonhauser_how_2018,barnes_information_2023}). On a gradient view, gradient mean ratings may be taken to reflect gradient at-issueness differences. On a categorical view, gradient mean ratings could be taken to reflect uncertainty about what the relevant QUD or proposal is, thus indicating the frequency or ease with which a particular QUD is attributed to the utterance.
 
 \subsection{Methods}
 
@@ -413,7 +413,7 @@ After completing the experiment, participants filled out a short optional demogr
 
 \subsubsection{Data exclusion}
 
-We excluded the data of participants that were not self-reported native speakers of American English and of participants whose responses to one of the two control trials was more than 2 sd away from the group mean (Exps.~1--3) or whose responses to one of the two control trials was wrong (Exp.~4). Table \ref{t:excluded} shows how many participants were excluded in each experiment, demographic information for the remaining participants, and the number of data points that entered into the analyses.
+We excluded the data of participants that were not self-reported native speakers of American English and of participants whose responses to one of the two control trials was more than 2 sd away from the group mean (Exps.~1--3) or whose responses to one of the two control trials was incorrect (Exp.~4). Table \ref{t:excluded} shows how many participants were excluded in each experiment, demographic information for the remaining participants, and the number of data points that entered into the analyses.
 
 \begin{table}[h!]
   \centering
@@ -486,8 +486,7 @@ As is visually apparent in Fig.~\ref{fig:results}, the diagnostics differ in the
 
 The experiments differ in whether they reproduce distinctions between contents reported in prior work. \citet{syrett_experimental_2015}, using a variant of the direct-dissent diagnostic, found that sentence-medial NRRCs are more not-at-issue than sentence-final ones. In contrast, as shown in Fig.~\ref{fig:results}, no such difference is observed in Exps.~1--3; and in Exp.~4 (`yes, but' diagnostic), we find the opposite: sentence-final NRRCs are rated less at-issue than sentence-medial ones. Thus, none of the diagnostics as implemented in Exps.~1--4 replicate \citeauthor{syrett_experimental_2015}'s finding.
 
-As shown in Fig.~\ref{fig:results}, Exp.~2 (`asking whether') largely reproduces the pattern from \citet{degen_projection_2025} (LIST), except that \emph{confess} and \emph{discover} do not differ.
-\jt{I would like to suggest that we use language here to express the previous finding (this should be in Section 1 already), not $<$.} 
+As shown in Fig.~\ref{fig:results}, Exp.~2 (`asking whether') largely reproduces the pattern from \citet{degen_projection_2025}, namely, that complements of \emph{know} were rated as less at-issue than those of \emph{discover}, followed by \emph{confess}, then \emph{confirm}, and finally \emph{be right}, with the only exception that \emph{confess} and \emph{discover} did not differ in our experiment.
 
 The other three experiments show fewer differences between the mean at-issueness ratings among the clause-embedding predicates. In Exp.~1 (QUD diagnostic), the embedded content of most predicates shows little differentiation, with only two predicates showing a clearly different pattern: the embedded content of \emph{confirm} is rated most at issue, and the embedded content of \emph{be right} is rated less at-issue than the other predicates -- the direction of this difference is the opposite to that observed in prior literature and the other experiments. In Exp.~3, no clear differences among clause-embedding predicates are found. Finally, in Exp.~4, the proportions of \emph{yes}-responses are similar for many of the clause-embedding predicates, but the highest proportion is found for content of the complement of \emph{be right}, and it is clearly different from the clause-embedding predicates on the lower end, such as \emph{confirm} and \emph{confess}.
 
@@ -557,9 +556,9 @@ The other three experiments show fewer differences between the mean at-issueness
 
 The differences described above are supported by post-hoc pairwise comparisons of the estimated means or proportions for each content, using the \texttt{emmeans} package (\citealt{emmeans}) in R (\citealt{r}), illustrated in Fig.~\ref{fig:pairwise}. These comparisons were based on mixed-effects beta regression models (Exps.~1--3) and a mixed-effects logistic regression model (Exp.~4), all fit using the \texttt{brms} package (\citealt{buerkner2017}) using weakly informative priors. The models predicted the ratings\footnote{To model the ratings in Exps.~1--3 using a beta regression, the ratings were first transformed from the interval [0,1] to the interval (0,1) using the method proposed in \citealt{smithson-verkuilen2006}.} from a fixed effect of expression (treatment-coded, with \emph{be right} as reference level), with random intercepts for participants and items. The output of the pairwise comparison were 95\% highest density intervals (HDIs) of estimated marginal mean differences between each of the expressions. We assume that two contents differ if their HDI does not include 0.\footnote{The full model outputs are available in the folder \texttt{results+analysis/exps1-4/} in the repository available at \url{https://anonymous.4open.science/r/at-issueness-diagnostics-232C/.}}
 
-Accordingly, \Cref{fig:pairwise} shows that the only clear positional difference for NRRCs is observed in Exp.~4 (`yes, but' diagnostic), where the sentence-medial ones are rated as more at-issue than sentence-final ones, opposite to the finding in \citet{syrett_experimental_2015}. The other three experiments show no differences between sentence-medial and sentence-final NRRCs. The differences between clause-embedding predicates observed in prior work using the `asking whether' diagnostic are largely replicated in Exp.~2, except for \emph{confess} and \emph{discover}, which do not differ from each other. The other three experiments show fewer differences between clause-embedding predicates, with Exp.~3 showing no differences at all. In particular, the embedded content of \emph{be right} is rated less at-issue than that of most other clause-embedding predicates in Exp.~1, but more at-issue than content of embedded clauses under most other predicates in Exp.~4.
+Accordingly, \Cref{fig:pairwise} shows that the only clear positional difference for NRRCs is observed in Exp.~4 (`yes, but' diagnostic), where the sentence-medial ones are rated as more at-issue than sentence-final ones, opposite to the finding in \citet{syrett_experimental_2015}. The other three experiments show no differences between sentence-medial and sentence-final NRRCs. The differences between clause-embedding predicates observed in prior work using the `asking whether' diagnostic are largely replicated in Exp.~2, except for \emph{confess} and \emph{discover}, which do not differ from each other. The other three experiments show fewer differences between clause-embedding predicates, with Exp.~3 showing no differences at all.
 
-We also find that the four experiments differ in the relative ratings assigned to the seven contents, with only limited overlap. Across all experiments, \emph{confirm} and \emph{discover} consistently received higher ratings (at least numerically) than \emph{confess}, which in turn received higher ratings than medial and final NRRCs. For all other pairs of expressions, however, the ordering was not consistent. In particular, the ranking of \emph{be right} relative to most other contents is inconsistent across experiments (e.g., compared to appositive NRRCs):  The embedded content of \emph{be right} received the lowest ratings in Exp.~1, but was among the most at-issue in the other three experiments.\jt{This point about be right is repeated from above} The embedded content of \emph{know} was rated (numerically) lower than that of \emph{confirm} in Exps.~1 and 2, but higher in Exps.~3 and 4.
+We also find that the four experiments differ in the relative ratings assigned to the seven contents, with only limited overlap. Across all experiments, \emph{confirm} and \emph{discover} consistently received higher ratings (at least numerically) than \emph{confess}, which in turn received higher ratings than medial and final NRRCs. For all other pairs of expressions, however, the ordering was not consistent. In particular, the ranking of \emph{be right} relative to most other contents is inconsistent across experiments (e.g., compared to appositive NRRCs):  The embedded content of \emph{be right} received the lowest ratings in Exp.~1, but was among the most at-issue in the other three experiments.
 %
 This difference between the results of the experiments is quantified in the Spearman rank correlations shown in Table \ref{t:spearman}.\footnote{The Spearman rank correlation coefficient, a value between -1 and 1, is a nonparametric measure of rank correlation: the higher the absolute value of the coefficient, the more the relation between the two variables can be described using a monotonic function. If the coefficient is positive, the value of one variable tends to increase with an increase in the other. In the case of our experiments, a coefficient of 1 for two experiments would mean that there is a perfectly monotone increasing relation between the mean ratings of the seven contents in the two experiments: for any two contents c1 and c2, if c1 ranks below c2 in one experiment (that is, the mean rating of c1 is lower than that of c2), then that ranking is preserved in the other experiment.}
 
@@ -584,12 +583,11 @@ The rank correlations are particularly low for Exp.~1 compared to the other thre
 Exps.~1--4 were designed to compare four at-issueness diagnostics that have been widely used in the literature. To assess whether the diagnostics yield consistent findings when applied to the same target contents, we asked whether they reproduce contrasts reported in prior work, particularly (i) the medial versus sentence-final distinction for appositive NRRCs, and (ii) fine-grained differences among the contents of the complements of clause-embedding predicates. The results of Exps.~1--4 suggest that the four diagnostics do differ in whether they reproduce these contrasts, and in the relative order of the seven contents investigated. Three main differences between the four experiments emerge:
 
 \begin{enumerate}
-  
-  \item The four experiments differ in the extent to which they differentiate between the seven contents investigated, as evidenced by where they find by-content differences: Only the `asking whether' diagnostic (Exp.~2) comes close to comes close to observing fine-grained differences between the contents of the complements of clause-embedding predicates as in \citet{degen_projection_2025}.
+  \item Although none of the diagnostics as implemented here reproduce the positional effect for appositive NRRCs reported by \citet{syrett_experimental_2015}, Exp.~4 (the `yes, but' diagnostic) is the only diagnostic that finds a difference between medial and final NRRCs. In particular, we found the opposite pattern from Syrett and Koev here: medial NRRCs were judged as more at-issue than final ones. Exps.~1-–3 find no significant difference between medial and sentence-final NRRCs.
   
   \item They differ in the relative order of the seven contents -- most notably in the case of the complement of \emph{be right}, which ranks low under the QUD diagnostic but high under the other diagnostics.
-  
-  \item None of the diagnostics as implemented here reproduce the positional effect for appositive NRRCs reported by \citet{syrett_experimental_2015}. Exps.~1-–3 show no difference between medial and sentence-final NRRCs, while Exp.~4 (the `yes, but' diagnostic) yields the opposite pattern: here, medial NRRCs were judged as more at-issue than final ones.
+
+  \item The four experiments differ in the extent to which they differentiate between the seven contents investigated, as evidenced by where they find by-content differences: Only the `asking whether' diagnostic (Exp.~2) comes close to comes close to observing fine-grained differences between the contents of the complements of clause-embedding predicates as in \citet{degen_projection_2025}.
   
 \end{enumerate}
 
@@ -597,13 +595,9 @@ This section discusses the implications of these findings for the interpretation
 
 \subsubsection{Positional effects for appositive NRRCs?} \label{ssub:appositives}
 
-One factor that might explain the difference between our findings and those of \citet{syrett_experimental_2015}, apart from the stimuli, is the response task. Although both studies tested appositive NRRCs using dissent-based diagnostics presenting the target content in an assertion, their\jt{unclear antecedent} forced-choice implementation differs from our Exps.~3 and 4. In Exp.~3 (direct dissent), we elicited naturalness ratings rather than forced-choice judgments. Even\jt{why ``even''? I don't get the scale} in Exp.~4 (`yes, but'), which also used a forced-choice continuation task, the response options were different. In our implementation (based on \citealt{xue_correlation_2011}), all options rejected the target content, and participants chose between expressing direct dissent (\emph{no}), indirect dissent (\emph{yes, but}), or assent without contrast (\emph{yes, and}). In Syrett \& Koev's study, all options expressed direct dissent (\emph{no}), and participants chose whether to reject the appositive content or the main clause content, as illustrated in \Next.\jt{this should be in section 1}
+One factor that might explain the difference between our findings and those of \citet{syrett_experimental_2015}, aside from the stimuli, is the response task. Although both studies used dissent-based diagnostics with target content presented in assertions, \citepos{syrett_experimental_2015} forced-choice implementation differs from our implementation of the dissent-based diagnostics in Exps.~3 and 4.
 
-\ex. \citealt{syrett_experimental_2015}, p.~17
-\a.[A:] My friend Sophie, a classical violinist, performed a piece by Mozart.
-\b.[B1:] No, she's not. (target: NRRC)
-\b.[B2:] No, she didn't. (target: main clause)
-\z. \z. 
+In Exp.~3 (direct dissent), we elicited naturalness ratings rather than forced-choice judgments. In Exp.~4 (`yes, but'), which did use a forced-choice continuation task, the response options were different from those used by Syrett \& Koev. In our implementation (based on \citealt{xue_correlation_2011}), all options rejected the target content, and participants chose between expressing direct dissent (\emph{no}), or indirect dissent (with \emph{yes, but} or \emph{yes, and}). In contrast, in Syrett \& Koev's study, all options expressed direct dissent (with \emph{no}), and participants chose whether to reject the appositive content or the main clause content.
 
 While the findings suggest that positional effects for appositive NRRCs may not be robust across diagnostics, the corresponding task differences suggest that even small changes in the response task used to operationalize a diagnostic, such forced-choice alternatives, might reverse the observed pattern. More generally, different diagnostics vary in whether they detect any positional difference for appositive NRRCs at all. This suggests that previously reported effects may reflect task- or diagnostic-specific effects rather than stable properties of NRRC interpretation. A natural follow-up would be to test whether applying their particular forced-choice schema to our stimuli would reproduce their effect.
 
@@ -612,29 +606,44 @@ While the findings suggest that positional effects for appositive NRRCs may not 
 
 \subsubsection{Interactions with discourse requirements: the case of \emph{be right} \label{ssub:be-right}}
 
-The diagnostics as implemented here yielded different rank orders of contents. At first glance, one might take such differences as evidence that the diagnostics track distinct underlying notions of at-issueness. However, the most pronounced ranking difference, between the low ranking of the complement of \emph{be right} in Exp.~1 (QUD diagnostic) and its high ranking in the other experiments, does not appear to reflect a difference in at-issueness.\jt{I would be more comfortable if this was stated as a hypothesis} Instead, it arises from how the QUD diagnostic interacts with the requirements that \emph{be right} places on the prior discourse.
+The diagnostics, as implemented here, yield different rank orderings of contents. The most pronounced ranking difference concerns the complement of \emph{be right}: it receives the lowest ratings in Exp.~1 (QUD diagnostic)  and high ratings in the other experiments.
 
-As shown in panel (a) of Fig.~\ref{fig:results}, participants gave relatively low naturalness ratings to responses like that in \ref{beright.a}, indicating that they did not judge the response as fitting the question.
+At first glance, this divergence might suggest that the diagnostics track distinct underlying phenomena, but this interpretation is not supported. Both the dual-notion view of at-issueness and the view that distinguishes genuine at-issueness diagnostics from those involving propositional anaphora predict that the QUD diagnostic (Exp.~1) should pattern with the `asking whether' diagnostic (Exp.~2), and contrast with the dissent-based diagnostics (Exps.~3--4). The observed pattern, in which Exp.~1 diverges from all other diagnostics, is not predicted by these views.
+
+The pattern for \emph{be right} could instead be explained by how the QUD diagnostic interacts with the discourse requirements of \emph{be right}. Specifically, we hypothesize that \emph{be right} places constraints on the prior discourse that conflict with the context introduced by the QUD diagnostic. To see how this explanation might work, first consider that%, as shown in panel (a) of Fig.~\ref{fig:results}, 
+participants gave relatively low naturalness ratings to responses such as \ref{beright.a}, indicating that they did not judge the response as fitting the question.
 
 \ex.
 \a.\label{beright.a}  Exp.~1 (QUD diagnostic) with \emph{be right}
 \\ {\bf Nora:} \emph{What did Lucy break?}
-\\ {\bf Leo:} \emph{Danny is right that she broke the plate.}
+\\ {\bf Leo:} \emph{Danny is right that she broke the plate.} \smallskip
 \b.\label{beright.b} Exp.~2 (`asking whether' diagnostic)
-\\ {\bf Nora:} \emph{Is Danny right that she broke the plate?}
+\\ {\bf Nora:} \emph{Is Danny right that Lucy broke the plate?} \smallskip
 \c.\label{beright.c} Exp.~3 (`direct dissent' diagnostic)
-\\ {\bf Nora:} \emph{Danny is right that she broke the plate.}
-\\ {\bf Leo:} \emph{No, she didn't break the plate.}
+\\ {\bf Nora:} \emph{Danny is right that Lucy broke the plate.}
+\\ {\bf Leo:} \emph{No, she didn't break the plate.} \smallskip
 \d.\label{beright.d} Exp.~4 (`yes, but' diagnostic)
-\\ {\bf Nora:} \emph{Danny is right that she broke the plate.}
+\\ {\bf Nora:} \emph{Danny is right that Lucy broke the plate.}  
 \\ {\bf Leo:} \emph{Yes, but she didn't break the plate.}
 \\ \hspace*{1cm} \emph{Yes, and she didn't break the plate.}
 \\ \hspace*{1cm} \emph{No, she didn't break the plate.}
 
-We hypothesize that this is because \emph{be right} in \Last presupposes\jt{I am not comfortable with this formulation as I do not know what it means to presuppose.} that Danny has previously committed to the proposition that \enquote{Lucy broke the plate} \jt{Noa has also looked into the meaning of ``be right''. Please also talk to her about relevant references and point out these two to her -- though, where does Abusch 2010 talk about be right?}\lh{on p. 50, when discussing "near-minimal pairs"}(\citealt{abusch_presupposition_2010,anand_factivity_2014}). In the three diagnostics in \Last[b--d], no previous discourse context is given, so this presupposition can be accommodated. In contrast, the preceding question in the QUD-diagnostic \Last[a] conflicts with the presupposition, making it difficult to accommodate.\jt{I do not follow: Why couldn't the dialogue have been: Danny: Lucy broke the plate. Nora: What did Lucy break? Leo:...?} Specifically, we hypothesize that \emph{be right} signals that the question \enquote{whether Lucy broke the plate} is salient in the preceding discourse.\jt{Is this a second felicity requirement? you call it a presupposed question below. I am, again, not comfortable with that.} This allows us to understand the ill-formedness based on QUD-based discourse structure, because this presupposed question is a subquestion (in the sense of \citealt{roberts_information_2012}) of the question in \Last[a] \enquote{What did Lucy break}, since every complete answer to the latter entails an answer to the former. The progression from the presupposed subquestion question to the explicitly given superquestion violates Roberts' constraint on QUD stacks (p. 6:15), which allows only the reverse order (from superquestions to subquestions).
+We hypothesize that the low ratings in Exp.~1 arise because \emph{be right} imposes a contextual felicity requirement that a prior commitment by an attitude holder be salient in the discourse. Utterances of the form \emph{X is right that $p$} require that the common ground or discourse model contains the information that $X$ has previously endorsed $p$ (or a closely related proposition) (\citealt{abusch_presupposition_2010}, p. 50; \citealt{anand_factivity_2014}).
+% \footnote{This contextual requirement of \emph{be right that $p$}, that there be a salient prior commitment may be a reason for the common use of \emph{right} and related items in agreeing responses (see, e.g, \citealt{krifka_response_2013,greenberg_intensified_2019,oshima_semantics_2026}).}
+In \ref{beright.a}, this requirement is that Danny has previously committed to the proposition that \enquote{Lucy broke the plate}, as would be the case in the discourse in \Next.
 
-As a result, low QUD-match ratings for \Last[a] are predicted, not because the embedded clause is not at-issue, but because the utterance presupposes an incoherent discourse context.%
-\footnote{\label{fn:w-o-be-right}
+\ex.  \a. {\bf Danny:} \emph{Lucy broke the plate.} \hfill (QUD: \enquote{whether Lucy broke the plate})
+  \b. {\bf Nora:} \emph{What did Lucy break?}
+  \b. {\bf Leo:} \emph{Danny is right that she broke the plate.} \z.
+
+We can understand the ill-formedness of \Last with a QUD-based framework of discourse structure (in the sense of \citealt{ginzburg_interrogatives_1996,roberts_information_2012,buring_d-trees_2003}). Within this framework, the contextual requirement of \emph{be right}, that a prior commitment be salient in the discourse, can be understood as a requirement that QUD addressed by the act of making this commitment addresses must be part of the QUD stack. In the case of \Last, this means that the question of whether Lucy broke the plate must be part of the QUD stack at the point where \emph{be right} is uttered.
+
+This question is a subquestion of the question in \Last[b] \enquote{What did Lucy break}, since every complete answer to the latter entails an answer to the former. The progression from the presupposed subquestion question to the explicitly given superquestion violates \citepos{roberts_information_2012} constraint on QUD stacks (p. 6:15), which allows only the reverse order (from superquestions to subquestions).\footnote{
+this constraint can be understood as an informativeness-constraint, which requires that 
+monotone increasing information quantity. in the default case, even strictly increasing quantitiy, since -. where the first two questions engage with the same question, the second one can only be interpreted as an echo question.
+}
+
+Under the hypothesis put forward here, the low ratings in Exp.~1 do not indicate that the embedded proposition is not at-issue.\footnote{\label{fn:w-o-be-right}
 When \emph{be right} is excluded, the Spearman rank correlations are:
 
 \begin{tabular}{l | c c c c}
@@ -644,24 +653,22 @@ When \emph{be right} is excluded, the Spearman rank correlations are:
   Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .77  \\
   \hline
   % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
-\end{tabular}}
-This highlights that diagnostics may interact with contextual requirements independently of at-issueness, and such interactions must be taken into account when interpreting the results.
-
+\end{tabular}} Rather, they reflect that the response is infelicitous in the given discourse context. In the other diagnostics \ref{beright.b}--\ref{beright.d}, no conflicting prior discourse is given, allowing the discourse requirements of \emph{be right} to be accommodated without a reduction in acceptability. This highlights that diagnostics may interact with contextual requirements independently of at-issueness, and such interactions must be taken into account when interpreting the results.
 
 \subsubsection{Why does the `asking whether' diagnostic show greater differentiation? \label{ssub:differentiation}}
 A striking difference between the results of the experiments is that Exp.~2 (`asking whether') showed the greatest differentiation between contents, whereas the other three experiments exhibited a smaller range of means, and fewer statistically supported differences between investigated contents. Among the first 4 experiments, Exp.~2 was the only one that came close to differentiating fine-grained by-content differences as reported in \cite{degen_projection_2025}.
 
 Considering the question whether the existing definitions of at-issueness target the same underlying phenomenon, we might consider whether this empirical difference between diagnostics aligns with the divide emphasized in prior work between diagnostics that have been associated with a QUD-based definition (QUD, `asking whether') and those that have been argued to target a proposal-based definition (direct-dissent, `yes, but'). However, this distinction could not explain why the `asking whether' diagnostic behaves differently from the QUD diagnostic, since both have been linked to the QUD-based definition of at-issueness.
 
-To explain the greater by-content differentiation of the `asking whether' diagnostic, we therefore focus on properties that set it apart from the other three diagnostics. Two differences are particularly salient: First, it is the only diagnostic where the target content itself occurs in a polar question, whereas in the other diagnostics, the target content appears in a declarative assertion. Second, it is the only diagnostic where participants are asked directly about the intentions of the speaker, while the other ones collect measures that are more indirectly tied to semantic interpretation, such as acceptability ratings and continuation choices.\jt{Are acceptability ratings ratings about semantic interpretation? Why ``semantic''? Perhaps a better contrast here is between speaker intentions and participants' meta-linguistic judgments?} Either of these properties might be important for explaining the greater differentiation.
+To explain the greater by-content differentiation of the `asking whether' diagnostic, we therefore focus on properties that set it apart from the other three diagnostics. Two differences are particularly salient: First, it is the only diagnostic where the target content itself occurs in a polar question, whereas in the other diagnostics, the target content appears in a declarative sentence. Second, it is the only diagnostic where participants are asked directly about the intentions of the speaker, while the other ones collect meta-linguistic judgments like acceptability ratings or continuation preferences. Either of these properties might be important for explaining the greater differentiation.
 
-These considerations motivate two hypotheses,\jt{I think it's weird to mention two hypotheses but not present them, especially given how much other detail is given about what's next}  which we tested in Exps.~5--6. The following section reports on these experiments, which compare the `asking whether' diagnostic to a diagnostic that also embeds the target content in a polar question but elicits naturalness ratings for a direct response to assess at-issueness. Both experiments yielded similarly fine-grained distinctions among contents, supporting the conclusion that the increased differentiation observed in Exp.~2 is driven primarily by interrogative embedding rather than by the response task.
+To distinguish between these possibilities, Exps.~5--6., reported in the next section, compare the `asking whether' diagnostic to a diagnostic that also embeds the target content in a polar question but elicits naturalness ratings to assess at-issueness. Both experiments yielded similarly fine-grained distinctions among contents, supporting the conclusion that the increased differentiation observed in Exp.~2 is driven primarily by interrogative embedding rather than by the response task.
 
 \section{Experiments 5 and 6 \label{sec:3_more-experiments}}
 %
-Exps.~5 and 6 investigate\jt{were designed to investigate} whether the greater differentiation observed in Exp.~2 (`asking whether') was due to (i) embedding target contents in polar questions or (ii) the response task, testing two hypotheses:
+Exps.~5 and 6 were designed to investigate whether the greater differentiation observed in Exp.~2 (`asking whether') was due to (i) embedding target contents in polar questions or (ii) the response task, testing two hypotheses:
 \begin{enumerate}
-  \item \textbf{Question-embedding hypothesis:} Differentiation between contents is greater when contents are embedded in a polar question than in a declarative assertion.\jt{`polar question' is a sentence type; `declarative assertion' is both sentence type and speech act}
+  \item \textbf{Question-embedding hypothesis:} Differentiation between contents is greater when contents are embedded in a polar question than in a declarative sentence.
   
   \item \textbf{Response-task hypothesis:} Differentiation is greater when participants are asked directly what the utterance is about, compared to tasks such as acceptability judgments or forced-choice continuations.
   
@@ -673,16 +680,16 @@ To test these hypotheses, we compared two diagnostics that both embed the target
 \ex. Implementation of the diagnostics in Exps.~  5--6 
 \a.\label{exp5} Exp.~5 (`asking whether' diagnostic )
 \\ {\bf Nora:} \emph{Is Tom right that Lucy broke the plate?}
-\\ Question to participants: Is Nora asking whether Lucy broke the plate?
+\\ Question to participants: Is Nora asking whether Lucy broke the plate?\smallskip
 \b.\label{exp6} Exp.~6 (direct-response diagnostic)
 \\ {\bf Nora:} \emph{Is Tom right that Lucy broke the plate?}
 \\ {\bf Leo:} \emph{Yes, she didn't break the plate.}
 \\ Question to participants: How natural is Leo's response to Nora's question?
 \z. \z.
 
-This direct-response diagnostic targets the assumption\jt{assumes?} that at-issue content is interpreted as determining the question alternatives (property (ii)). Participants read a dialogue between two named speakers, where the first utters a polar question, which contributes the target content. They then rate the naturalness of a  \emph{yes}  response that asserts the target content. A response to a question is felicitous only if the target content provides a possible answer, that is, a question alternative (\citealt{von_stechow_focusing_1991}). Accordingly, naturalness ratings are expected to be high when the target content is at-issue and low otherwise.
+This direct-response diagnostic assumes that at-issue content is interpreted as determining the question alternatives (property (ii)). Participants read a dialogue between two named speakers, where the first utters a polar question, which contributes the target content. They then rate the naturalness of a  \emph{yes}  response that asserts the target content. A response to a question is felicitous only if the target content provides a possible answer, that is, a question alternative (\citealt{von_stechow_focusing_1991}). Accordingly, naturalness ratings are expected to be high when the target content is at-issue and low otherwise.
 
-Both experiments measured at-issueness of the contents of the complements of the 20 clause-embedding predicates from \citealt{degen_projection_2025}:\jt{perhaps also tell readers that this is the set shown in Fig 1?}
+Both experiments measured at-issueness of the contents of the complements of the 20 clause-embedding predicates from \citealt{degen_projection_2025}, which were shown in \Cref{fig:dtglossa}.
 
 \ex. \label{ex:predicates}
 20 clause-embedding predicates from \citealt{degen_projection_2025}:\smallskip\\ 
@@ -697,14 +704,14 @@ If the greater differentiation between contents found in Exp.~2 (compared to Exp
 
 \subsubsection{Participants}
 
-We recruited 300 participants on Amazon's Mechanical Turk platform for Exp.~5 and 250 participants on Prolific for Exp.~6.\footnote{Exp.~5 was run in August 2019 and Exp.~6 in August 2021.} Participants recruited on Mechanical Turk had U.S.\ IP addresses and at least 99\% of previous HITs approved. Participants recruited on Prolific had registered as U.S.-born native speakers of English residing in the USA and had an approval rate of at least 99\%. Table~\ref{t:recruited2} summarizes the age and gender distributions of the recruited participants.
+We recruited 284 participants on Amazon's Mechanical Turk platform for Exp.~5 and 250 participants on Prolific for Exp.~6.\footnote{Exp.~5 was run in August 2019 and Exp.~6 in August 2021.} Participants recruited on Mechanical Turk had U.S.\ IP addresses and at least 99\% of previous HITs approved. Participants recruited on Prolific had registered as U.S.-born native speakers of English residing in the USA and had an approval rate of at least 99\%. Table~\ref{t:recruited2} summarizes the age and gender distributions of the recruited participants.
 
 \begin{table}[h!]
   \centering
   \begin{tabular}{l | c | r r r }
     & recruited & ages (mean age) & f/m/nb/dnd \\ \hline
-    Exp.~5 (asking whether) & 300 & 19-74 (38.2) & --/--/--/--  \\
-    Exp.~6 (direct assent) & 250 & 18-58 (25.5)  & 201/43/6/0  \\
+    Exp.~5 (asking whether) & 284 & 19-74 (38.2) & --/--/--/--  \\
+    Exp.~6 (direct response) & 250 & 18-58 (25.5)  & 201/43/6/0  \\
     \hline
   \end{tabular}
   
@@ -736,19 +743,16 @@ In both experiments, target stimuli were created by combining each of the 20 cla
 
 \subsubsection{Data exclusion}
 
-We excluded the data of participants who did not self-identify as native speakers of American English, of participants whose responses to the projection or at-issueness controls were more than 2 sd away from the group mean, and of participants who always selected roughly the same point on the response scale for the target stimuli.
-\jt{did we do this latter one in exps 1-4 as well?}
-\lh{I don't think so, and if it should be the same in both, I would suggest omitting this latter criterion here, since it does not seem to make much of a difference.}\jt{fine by me}
-To identify such participants, we first identified participants whose mean variance on the target stimuli was more than 2 sd below the group mean variance and then manually inspecting their response patterns. Due to a programming error, 5 participants took Exp.~5 more than once. Since we were not able to identify which submission was their first submission, the data of these participants was also excluded. Table \ref{t:excluded2} shows how many participants were excluded in each experiment, the properties of the remaining participants, and the number of data points that entered into the analyses.
+We excluded the data of participants who did not self-identify as native speakers of American English, and of participants whose responses to one of the two control trials was more than 2 sd away from the group mean. Table \ref{t:excluded2} shows how many participants were excluded in each experiment, the properties of the remaining participants, and the number of data points that entered into the analyses.
 
 \begin{table}[h!]
   \centering
   \resizebox{\linewidth}{!}{
-  \begin{tabular}{l | r r r | r r r | r }
-    & \multicolumn{3}{c|}{\bf exclusion criterion} & \multicolumn{3}{c|}{\bf remaining participants} & data \\ 
-    & language & controls & variance & ages (mean age) & f/m/nb/dnd & total &  points \\ \hline
-    Exp.~5 (asking whether)  & 7 &  35 & 0 &  21-74 (39.2) & --/--/--/-- & 242 & 6292 \\ 
-    Exp.~6 (direct assent) &  5 &  24 & 1 & 18-58 (24.9) & 187/28/5/0 & 220 & 5720 \\ 
+  \begin{tabular}{l | r r | r r r | r }
+    & \multicolumn{2}{c|}{\bf exclusion criterion} & \multicolumn{3}{c|}{\bf remaining participants} & data \\ 
+    & language & controls     & ages (mean age) & f/m/nb/dnd & total &  points \\ \hline
+    Exp.~5 (asking whether)   & 7 &  35 &  21-74 (39.2) & --/--/--/-- & 242 & 6292 \\ 
+    Exp.~6 (direct response)    &  5 &  24 & 18-58 (24.9) & 187/28/5/0 & 220 & 5720 \\ 
     \hline
   \end{tabular}}
   \caption{Information from Exps.~5-6 about the number of participants whose data was excluded based on their self-declared language and language variety (`language'), the controls, and the variance of their responses, about the remaining participants, and about the number of at-issueness data points that entered into the analysis.}\label{t:excluded2}
@@ -773,9 +777,9 @@ Fig.~\ref{fig:results2} shows the results of the two experiments by embedding pr
   \label{fig:results2}
 \end{figure}
 
-Overall, the results of two experiments yield highly similar patterns. The ranges of by-content means are comparable (Exp.~5 range: .75, .07 to .82; Exp.~6 range: .73, .09 to .82), and the relative orderings of contents by their means align closely, as reflected in a strong Spearman rank correlation ($r_s=.93$).
+Overall, the results of two experiments yield similar patterns. The ranges of by-content means are comparable (Exp.~5 range: .75, .07 to .82; Exp.~6 range: .73, .09 to .82), and the relative orderings of contents by their means align closely, as reflected in a strong Spearman rank correlation ($r_s=.93$).
 
-Crucially, both experiments show fine-grained by-content differentiation. For instance, for the subset of predicates also tested in Exps.~1--4, Exps.~5 and 6 reproduce the ordering expected based on \citet{degen_projection_2025} and show pairwise differences in the predicted directions for adjacent contents (\emph{know} < \emph{discover} < \emph{confess} < \emph{confirm} < \emph{be right}).\jt{See my comment above} Overall, the results in Exps.~5 and 6 are similar in revealing fine-grained differences among many rank-adjacent predicates.
+Crucially, both experiments show fine-grained by-content differentiation. For instance, for the subset of predicates also tested in Exps.~1--4, Exps.~5 and 6 reproduce the ordering expected based on \citet{degen_projection_2025} and show pairwise differences in the predicted directions for adjacent contents, with differences between \emph{know, discover, confess, confirm, be right} with increasing mean at-issueness ratings in that order. Overall, the results in Exps.~5 and 6 are similar in revealing fine-grained differences among many rank-adjacent predicates.
 
 There are also some differences between the experiments, concerning a small number of local reversals in the middle of the scale. For example, the content of the complement of \emph{demonstrate} comes out as more at-issue than that of \emph{announce}, \emph{confess}, and \emph{reveal} under the `asking whether' diagnostic as implemented in Exp.~5, but as less at-issue than the content embedded under these predicates under the implementation of the direct-response diagnostic in Exp.~6.
 
@@ -846,10 +850,11 @@ Fig.~\ref{fig:pairwise2} presents the results of post-hoc pairwise comparisons o
 % \jt{I don't think all the differences need to be spelled out here; the reader can look for themselves. we should hit the highlights.}
 
 
+Taken together, Exps.~5 and 6 suggest that the two diagnostics as implemented here (`asking whether' and direct-response) yielded highly similar results for the 20 contents investigated, including fine-grained by-predicate differentiation. Although they differ in response task, both present the target content in a question and both yield strong by-content differentiation. This pattern supports the question-embedding hypothesis over the response-task hypothesis.
 
+Under the response-task hypothesis, differentiation should be greater when participants are asked directly what an utterance is about than in tasks such as acceptability judgments or forced-choice continuations, and the direct-response diagnostic (Exp.~6) should show lower differentiation than the asking-whether diagnostic (Exps.~2 and 5). This prediction is not reflected in the data.
 
-
-Taken together, Exps.~5 and 6 suggest that the two diagnostics that embed target contents implemented here (`asking whether' and direct-response) yielded highly similar results for the 20 contents investigated, including fine-grained by-predicate differentiation. This supports the idea\jt{two hypotheses were introduced above and need to be returned to here} that presenting the target content in a polar question is what drives the increased by-content differentiation observed in Exps.~2, 5, and 6 compared to Exps.~1, 3, and 4, where the target content was presented in declarative assertions.
+Instead, both Exps.~5 and 6 exhibit fine-grained pairwise differences across contents, as predicted by the question-embedding hypothesis. This hypothesis attributes increased differentiation to presenting the target content in a polar question, a property shared by Exps.~2, 5, and 6 but absent in Exps.~1, 3, and 4, where the target content was presented in a declarative.
 
 Nonetheless, small differences remain, for example in which by-content contrasts reached significance and in the precise rank ordering of contents. Since the two experiments used identical embedding contexts for the target content and both tested property (ii), which has been linked to a QUD-based definition of at-issueness, these differences may stem from the response tasks used: judging what a question is about (Exp.~5) versus evaluating the naturalness of a response (Exp.~6). This suggests that response task differences can affect at-issueness judgments in subtle ways.
 
