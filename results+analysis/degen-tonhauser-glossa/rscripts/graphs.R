@@ -5,7 +5,7 @@
 
 # load required packages
 library(tidyverse)
-library(ggrepel)
+# library(ggrepel)
 library(dichromat)
 library(forcats)
 library(RColorBrewer)
@@ -32,9 +32,9 @@ nrow(d) #10100
 d$ai = 1-d$ai
 table(d$ai)
 
-# Fig. X: by-predicate not-at-issueness ----
+# Fig. X: by-predicate at-issueness ----
 
-# sort predicates by not-at-issueness mean
+# sort predicates by at-issueness mean
 nai.means = d %>%
   filter(short_trigger != "MC") %>%
   group_by(short_trigger) %>%
@@ -58,7 +58,7 @@ ggplot() +
   geom_point(data=nai.means, aes(x=short_trigger, y=Mean_nai), stroke=.5,size=2.5,color="black") +
   geom_errorbar(data=nai.means, aes(x=short_trigger, ymin=YMin,ymax=YMax), width=0.1,color="black") +
   scale_y_continuous(limits = c(0,1),breaks = c(0,0.2,0.4,0.6,0.8,1.0)) +
-  theme(text = element_text(size=12), axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  theme(text = element_text(size=12), axis.text.x = element_text(size = 12, angle = 45, hjust = 1)) +
   theme(legend.position="bottom") +
   theme(panel.grid.major.x = element_blank()) +
   ylab("Mean 'asking whether' rating \n (higher rating indicates more at-issue)") +
