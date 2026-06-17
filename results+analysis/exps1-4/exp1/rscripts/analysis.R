@@ -134,9 +134,19 @@ expressions
 
 # create a separate dataframe for each predicate
 for (p in expressions) {
-  assign(paste("data.", p, sep=""), subset(tableInput, tableInput$first == p | tableInput$second == p))
-  assign(paste("data.", p, sep=""), get(paste("data.", p, sep="")) %>% mutate(expression = c(p)))
-  write(paste("data.",p,sep=""),file=paste("../models/data.",p,sep=""))
+  obj_name <- paste0("data.", p)
+  assign(obj_name, tableInput %>%
+      filter(first == p | second == p) %>%
+      mutate(expression = p) %>%
+      mutate(across(where(is.list), as.character))
+  )
+  write.table(
+    get(obj_name),
+    file = paste0("../models/data.", p, ".tsv"),
+    sep = "\t",
+    row.names = FALSE,
+    quote = FALSE
+  )
 }
 
 # change dataframes such that value, lower and upper is consistent by expression in first position
@@ -233,27 +243,27 @@ tableData = tableData %>% mutate(across(everything(), ~replace_na(.x, "\\cellcol
 tableData
 names(tableData)
 
-# turn all lower triangle cells black, by each column
-tmp = tableData %>% 
-  mutate('be right' = case_when('be right' = TRUE ~ "\\cellcolor{black}"))
-tmp = tmp %>% 
-  mutate(confirm = case_when(confirm = TRUE & expression != 'be right' ~ "\\cellcolor{black}",
-         TRUE ~ confirm))
-tmp = tmp %>% 
-  mutate(discover = case_when(discover = TRUE & (expression != 'be right' & expression != "confirm") ~ "\\cellcolor{black}",
-                             TRUE ~ discover))
-tmp = tmp %>% 
-  mutate(confess = case_when(confess = TRUE & (expression != 'be right' & expression != "confirm" & expression != "discover") ~ "\\cellcolor{black}",
-                              TRUE ~ confess))
-tmp = tmp %>% 
-  mutate(know = case_when(know = TRUE & (expression != 'be right' & expression != "confirm" 
-                                         & expression != "discover" & expression != "confess") ~ "\\cellcolor{black}",
-                             TRUE ~ know))
-tmp = tmp %>% 
-  mutate(`final NRRC` = case_when(`final NRRC` = TRUE & (expression != 'be right' & expression != "confirm" 
-                                         & expression != "discover" & expression != "confess"
-                                         & expression != "know") ~ "\\cellcolor{black}",
-                          TRUE ~ `final NRRC`))
+order <- c(
+  "medial NRRC",
+  "final NRRC",
+  "know",
+  "confess",
+  "discover",
+  "confirm",
+  "be right"
+)
+
+tmp <- tableData
+
+for (i in seq_along(order)) {
+  col <- order[i]
+  
+  tmp[[col]] <- ifelse(
+    match(tmp$expression, order) >= i,
+    "\\cellcolor{black}",
+    tmp[[col]]
+  )
+}
 
 tmp
 tableData = tmp
@@ -265,14 +275,15 @@ table1 = print(xtable(tableData),
                include.rownames=FALSE,
                include.colnames=FALSE,
                floating=FALSE,
-               hline.after = NULL,
+               hline.after = c(nrow(tableData)),
                latex.environments=NULL,
-               booktabs=TRUE,
+               booktabs=FALSE,
                sanitize.text.function = function(x){x},
                comment = F
 )
-
-write(table1, "../models/table1.tex")
+table1 <- paste(table1, collapse = "\n")
+table1 <- sub("[[:space:]]+$", "", table1)
+cat(table1, file = "../models/table1.tex", sep = "")
 
 # non-Bayesian pairwise comparison ----
 
