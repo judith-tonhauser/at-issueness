@@ -1,6 +1,6 @@
 contrast,.value,.lower,.upper,.width,.point,.interval,first,second
 be right - confess,-0.24581884107279586,-0.6006641232217852,0.10459286985647523,0.95,mean,hdi,be right, confess
-be right - confirm,0.018264534193951156,-0.3356239432870513,0.3630383281059976,0.95,mean,hdi,be right, confirm
+be right - confirm,0.018264534193951156,-0.335623943287052,0.36303832810599707,0.95,mean,hdi,be right, confirm
 be right - discover,-0.16697601637085746,-0.5331334962039324,0.22001826559349147,0.95,mean,hdi,be right, discover
 be right - final NRRC,-0.5516889154683596,-0.9140424383474491,-0.17752595847257377,0.95,mean,hdi,be right, final NRRC
 be right - know,-0.021304636911208933,-0.38819085045501533,0.3205327210067094,0.95,mean,hdi,be right, know

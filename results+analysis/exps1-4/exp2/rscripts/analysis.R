@@ -42,34 +42,34 @@ summary(t$response)
 t$betaresponse = (t$response*(nrow(t)-1) + .5)/nrow(t)
 summary(t$betaresponse)
 
-# fit the model
-prior = get_prior(betaresponse ~ expression + (1|participantID) + (1|cc),family = Beta(),data=t)
-prior
-
-betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
-               phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision 
-               family = Beta())
-
-m.b = brm(formula = betamodel,
-          family=Beta(),
-          data=t, 
-          cores = 4, iter = 3500, warmup = 700,
-          control = list(adapt_delta = .99,max_treedepth=15))
-
-# model summary
-summary(m.b)
-
-# save the model
-saveRDS(m.b,file="../models/bayesian-model.rds")
+# # fit the model
+# prior = get_prior(betaresponse ~ expression + (1|participantID) + (1|cc),family = Beta(),data=t)
+# prior
+# 
+# betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
+#                phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision 
+#                family = Beta())
+# 
+# m.b = brm(formula = betamodel,
+#           family=Beta(),
+#           data=t, 
+#           cores = 4, iter = 3500, warmup = 700,
+#           control = list(adapt_delta = .99,max_treedepth=15))
+# 
+# # run posterior predictive checks
+# p1 <- pp_check(m.b, type = "dens_overlay_grouped", group = "expression", ndraws = 100) +
+#   scale_x_continuous(breaks = seq(0,1,by=.25)) 
+# p1
+# 
+# # save the model
+# saveRDS(m.b,file="../models/bayesian-model.rds")
 
 # read the model
 m.b <- readRDS(file="../models/bayesian-model.rds")
 m.b
 
-# run posterior predictive checks
-p1 <- pp_check(m.b, type = "dens_overlay_grouped", group = "expression", ndraws = 100) +
-  scale_x_continuous(breaks = seq(0,1,by=.25)) 
-p1
+# model summary
+summary(m.b)
 
 # draws of posterior distributions of estimated marginal means of pairwise differences
 pairwise <- m.b %>%
@@ -134,9 +134,19 @@ expressions
 
 # create a separate dataframe for each predicate
 for (p in expressions) {
-  assign(paste("data.", p, sep=""), subset(tableInput, tableInput$first == p | tableInput$second == p))
-  assign(paste("data.", p, sep=""), get(paste("data.", p, sep="")) %>% mutate(expression = c(p)))
-  write(paste("data.",p,sep=""),file=paste("../models/data.",p,sep=""))
+  obj_name <- paste0("data.", p)
+  assign(obj_name, tableInput %>%
+           filter(first == p | second == p) %>%
+           mutate(expression = p) %>%
+           mutate(across(where(is.list), as.character))
+  )
+  write.table(
+    get(obj_name),
+    file = paste0("../models/data.", p, ".tsv"),
+    sep = "\t",
+    row.names = FALSE,
+    quote = FALSE
+  )
 }
 
 # change dataframes such that value, lower and upper is consistent by expression in first position
@@ -176,49 +186,45 @@ nrow(exp2)
 means.exp2 = exp2 %>%
   filter(!(expression == "AI MC" | expression == "NAI MC")) %>%
   group_by(expression) %>%
-  summarize(Mean = mean(response)) 
+  summarize(Mean.exp2 = mean(response))
 means.exp2
-means.exp2$expression = factor(means.exp2$expression, levels=means.exp2$expression[order(means.exp2$Mean)], ordered=TRUE)
-levels(means.exp2$expression)
-
-tableData$expression = factor(tableData$expression, levels=means.exp2$expression[order(means.exp2$Mean)], ordered=TRUE)
-tableData
-levels(tableData$expression)
 
 # join the tmp dataframe with tableData
 tableData = left_join(tableData, means.exp2)
 tableData
 
+tableData$expression = factor(tableData$expression, levels=means.exp2$expression[order(means.exp2$Mean.exp2)], ordered=TRUE)
+tableData
+levels(tableData$expression)
+
 # also sort the other header row by Exp 2 means
-tableData$comparisonExpression = factor(tableData$comparisonExpression, levels=means.exp2$expression[order(means.exp2$Mean)], ordered=TRUE)
+tableData$comparisonExpression = factor(tableData$comparisonExpression, levels=means.exp2$expression[order(means.exp2$Mean.exp2)], ordered=TRUE)
+levels(tableData$comparisonExpression)
 
 # sort by mean (first column) and comparisonExpression (second column)
-tableData <- tableData %>% arrange(Mean, comparisonExpression)
-tableData
-
-# remove last rows (medial NRRCs) because no new information
-tableData = tableData %>%
-  filter(expression != "medial NRRC")
+tableData <- tableData %>% arrange(Mean.exp2, comparisonExpression)
 tableData
 
 # colorcode the cells (just white = HDI contains 0, red = HDI doesn't contain 0)
 tableData$cellColor = ifelse(tableData$lower <= 0 & tableData$upper >= 0, "\\cellcolor{white}",
-                             ifelse(tableData$lower < 0 & tableData$upper < 0 & tableData$value <= -1.5, "\\cellcolor{blue}",
-                                    ifelse(tableData$lower < 0 & tableData$upper < 0 & -1.5 < tableData$value & tableData$value <= -0.5, "\\cellcolor{blue}",
-                                           ifelse(tableData$lower < 0 & tableData$upper < 0 & -.5 < tableData$value & tableData$value <= 0, "\\cellcolor{blue}",
-                                                  ifelse(tableData$lower > 0 & tableData$upper > 0 & tableData$value >= 1.5, "\\cellcolor{red}",
-                                                         ifelse(tableData$lower > 0 & tableData$upper > 0 & 1.5 > tableData$value & tableData$value > 0.5, "\\cellcolor{red}",
-                                                                ifelse(tableData$lower > 0 & tableData$upper > 0 & .5 > tableData$value & tableData$value >= 0, "\\cellcolor{red}", "error")))))))
+                             ifelse(tableData$lower < 0 & tableData$upper < 0 & tableData$value <= -1.5, "\\cellcolor{red}",
+                                    ifelse(tableData$lower < 0 & tableData$upper < 0 & -1.5 < tableData$value & tableData$value <= -0.5, "\\cellcolor{red}",
+                                           ifelse(tableData$lower < 0 & tableData$upper < 0 & -.5 < tableData$value & tableData$value <= 0, "\\cellcolor{red}",
+                                                  ifelse(tableData$lower > 0 & tableData$upper > 0 & tableData$value >= 1.5, "\\cellcolor{blue}",
+                                                         ifelse(tableData$lower > 0 & tableData$upper > 0 & 1.5 > tableData$value & tableData$value > 0.5, "\\cellcolor{blue}",
+                                                                ifelse(tableData$lower > 0 & tableData$upper > 0 & .5 > tableData$value & tableData$value >= 0, "\\cellcolor{blue}", "error")))))))
 tableData$cellColor
 #view(tableData)
 
 # select relevant columns to make the latex table
 tableData = tableData %>%
   select(c(expression,comparisonExpression,cellColor))
+tableData
 
 # spread the data wide
 tableData = tableData %>%
   spread(comparisonExpression,cellColor)
+tableData
 
 # replace NA with gray cells and expressions with color coded versions
 tableData = tableData %>% mutate(across(everything(), ~replace_na(.x, "\\cellcolor{black}")))
@@ -234,31 +240,34 @@ tableData = tableData %>% mutate(across(everything(), ~replace_na(.x, "\\cellcol
 #   ))
 
 #view(tableData)
+tableData
+names(tableData)
 
-# turn all lower triangle cells black, by each column
-tmp = tableData %>% 
-  mutate('be right' = case_when('be right' = TRUE ~ "\\cellcolor{black}"))
-tmp = tmp %>% 
-  mutate(confirm = case_when(confirm = TRUE & expression != 'be right' ~ "\\cellcolor{black}",
-                             TRUE ~ confirm))
-tmp = tmp %>% 
-  mutate(discover = case_when(discover = TRUE & (expression != 'be right' & expression != "confirm") ~ "\\cellcolor{black}",
-                              TRUE ~ discover))
-tmp = tmp %>% 
-  mutate(confess = case_when(confess = TRUE & (expression != 'be right' & expression != "confirm" & expression != "discover") ~ "\\cellcolor{black}",
-                             TRUE ~ confess))
-tmp = tmp %>% 
-  mutate(know = case_when(know = TRUE & (expression != 'be right' & expression != "confirm" 
-                                         & expression != "discover" & expression != "confess") ~ "\\cellcolor{black}",
-                          TRUE ~ know))
-tmp = tmp %>% 
-  mutate(`final NRRC` = case_when(`final NRRC` = TRUE & (expression != 'be right' & expression != "confirm" 
-                                                         & expression != "discover" & expression != "confess"
-                                                         & expression != "know") ~ "\\cellcolor{black}",
-                                  TRUE ~ `final NRRC`))
+order <- c(
+  "medial NRRC",
+  "final NRRC",
+  "know",
+  "confess",
+  "discover",
+  "confirm",
+  "be right"
+)
+
+tmp <- tableData
+
+for (i in seq_along(order)) {
+  col <- order[i]
+  
+  tmp[[col]] <- ifelse(
+    match(tmp$expression, order) >= i,
+    "\\cellcolor{black}",
+    tmp[[col]]
+  )
+}
 
 tmp
 tableData = tmp
+
 
 # now create the table to include in the paper
 table1 = print(xtable(tableData),
@@ -266,12 +275,13 @@ table1 = print(xtable(tableData),
                include.rownames=FALSE,
                include.colnames=FALSE,
                floating=FALSE,
-               hline.after = NULL,
+               hline.after = c(nrow(tableData)),
                latex.environments=NULL,
-               booktabs=TRUE,
+               booktabs=FALSE,
                sanitize.text.function = function(x){x},
                comment = F
 )
-
-write(table1, "../models/table1.tex")
+table1 <- paste(table1, collapse = "\n")
+table1 <- sub("[[:space:]]+$", "", table1)
+cat(table1, file = "../models/table1.tex", sep = "")
 

@@ -43,34 +43,39 @@ summary(t$betaresponse)
 # Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
 # 0.0000751 0.1000601 0.5999850 0.5064720 0.8599459 0.9999249 
 
-# fit the model
-prior = get_prior(betaresponse ~ expression + (1|participantID) + (1|cc),family = Beta(),data=t)
-prior
-
-betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
-               phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision 
-               family = Beta())
-
-m.b = brm(formula = betamodel,
-          family=Beta(),
-          data=t, 
-          cores = 4, iter = 3000, warmup = 500,
-          control = list(adapt_delta = .95,max_treedepth=15))
-
-# model summary
-summary(m.b)
-
-# save the model
-saveRDS(m.b,file="../models/bayesian-model.rds")
+# # fit the model
+# prior = get_prior(betaresponse ~ expression + (1|participantID) + (1|cc),family = Beta(),data=t)
+# prior
+# 
+# betamodel = bf(betaresponse ~ expression + (1|participantID) + (1|cc),
+#                phi ~ expression + (1|participantID) + (1|cc), # beta distribution's precision 
+#                family = Beta())
+# 
+# m.b = brm(formula = betamodel,
+#           family=Beta(),
+#           data=t, 
+#           cores = 4, iter = 3000, warmup = 500,
+#           control = list(adapt_delta = .95,max_treedepth=15))
+# 
+# 
+# 
+# # save the model
+# saveRDS(m.b,file="../models/bayesian-model.rds")
+# 
+# # run posterior predictive checks
+# p1 <- pp_check(m.b, type = "dens_overlay_grouped", group = "expression", ndraws = 100) +
+#   scale_x_continuous(breaks = seq(0,1,by=.25)) 
+# p1
+# 
+# 
 
 # read the model
 m.b <- readRDS(file="../models/bayesian-model.rds")
 m.b
 
-# run posterior predictive checks
-p1 <- pp_check(m.b, type = "dens_overlay_grouped", group = "expression", ndraws = 100) +
-  scale_x_continuous(breaks = seq(0,1,by=.25)) 
-p1
+# model summary
+summary(m.b)
+
 
 # draws of posterior distributions of estimated marginal means of pairwise differences
 pairwise <- m.b %>%
@@ -207,12 +212,12 @@ tableData
 
 # colorcode the cells (just white = HDI contains 0, red = HDI doesn't contain 0)
 tableData$cellColor = ifelse(tableData$lower <= 0 & tableData$upper >= 0, "\\cellcolor{white}",
-                             ifelse(tableData$lower < 0 & tableData$upper < 0 & tableData$value <= -1.5, "\\cellcolor{blue}",
-                                    ifelse(tableData$lower < 0 & tableData$upper < 0 & -1.5 < tableData$value & tableData$value <= -0.5, "\\cellcolor{blue}",
-                                           ifelse(tableData$lower < 0 & tableData$upper < 0 & -.5 < tableData$value & tableData$value <= 0, "\\cellcolor{blue}",
-                                                  ifelse(tableData$lower > 0 & tableData$upper > 0 & tableData$value >= 1.5, "\\cellcolor{red}",
-                                                         ifelse(tableData$lower > 0 & tableData$upper > 0 & 1.5 > tableData$value & tableData$value > 0.5, "\\cellcolor{red}",
-                                                                ifelse(tableData$lower > 0 & tableData$upper > 0 & .5 > tableData$value & tableData$value >= 0, "\\cellcolor{red}", "error")))))))
+                             ifelse(tableData$lower < 0 & tableData$upper < 0 & tableData$value <= -1.5, "\\cellcolor{red}",
+                                    ifelse(tableData$lower < 0 & tableData$upper < 0 & -1.5 < tableData$value & tableData$value <= -0.5, "\\cellcolor{red}",
+                                           ifelse(tableData$lower < 0 & tableData$upper < 0 & -.5 < tableData$value & tableData$value <= 0, "\\cellcolor{red}",
+                                                  ifelse(tableData$lower > 0 & tableData$upper > 0 & tableData$value >= 1.5, "\\cellcolor{blue}",
+                                                         ifelse(tableData$lower > 0 & tableData$upper > 0 & 1.5 > tableData$value & tableData$value > 0.5, "\\cellcolor{blue}",
+                                                                ifelse(tableData$lower > 0 & tableData$upper > 0 & .5 > tableData$value & tableData$value >= 0, "\\cellcolor{blue}", "error")))))))
 tableData$cellColor
 #view(tableData)
 
