@@ -122,10 +122,10 @@ Word count (including references, excluding abstract and supplements): 11,352
 \maketitle
 %TC:ignore
 \begin{abstract}
-At-issueness is a key concept in semantics and pragmatics, distinguishing the main point of an utterance from background information. However, there is no consensus on how at-issueness should be defined, and different diagnostics for at-issueness reflect different assumptions about its underlying nature. This paper presents a systematic experimental comparison of five diagnostics of at-issueness, applied to the same target contents, including the contents of non-restrictive relative clauses and the complements of clause-embedding predicates.
-%
-The results reveal substantial differences between diagnostics, indicating that they are not interchangeable. In particular, diagnostics differ in whether they detect at-issueness differences between particular contents, and diagnostics measuring the at-issueness of contents embedded in questions yield greater differentiation than diagnostics embedding them in assertions. This latter result suggests that the speech act used to present a content plays a key role in affecting diagnostic outcomes. We argue that this effect of speech act on at-issueness ratings is due to how questions and assertions relate at-issue and not-at-issue content to speaker commitments, and cannot be explained by different notions of at-issueness assumed in the literature.
-
+  At-issueness is a key concept in semantics and pragmatics, distinguishing the main point of an utterance from background information. However, there is no consensus on how at-issueness should be defined, and different diagnostics for at-issueness reflect different assumptions about its underlying nature. This paper presents a systematic experimental comparison of five diagnostics of at-issueness, applied to the same target contents, including the contents of non-restrictive relative clauses and the complements of clause-embedding predicates.
+  %
+  The results reveal substantial differences between diagnostics, indicating that they are not interchangeable. In particular, diagnostics differ in whether they detect at-issueness differences between particular contents, and diagnostics measuring the at-issueness of contents embedded in questions yield greater differentiation than diagnostics embedding them in assertions. This latter result suggests that the speech act used to present a content plays a key role in affecting diagnostic outcomes. We argue that this effect of speech act on at-issueness ratings is due to how questions and assertions relate at-issue and not-at-issue content to speaker commitments, and cannot be explained by different notions of at-issueness assumed in the literature.
+  
 \end{abstract}
 \begin{keywords}
   at-issueness, diagnostics, experimental pragmatics, non-restrictive relative clauses, clause-embedding predicates
@@ -175,8 +175,8 @@ Diagnostics of at-issueness operationalize the theoretical notions in \LLast and
 
 \ex.\label{properties} Properties of at-issue content (\citealt{tonhauser_diagnosing_2012})
 \a.\label{properties.i} at-issue content addresses the question under discussion (see also \citealt{amaral_review_2007,simons_what_2010}),
-  \b.\label{properties.ii} the at-issue content of questions determines the relevant set of alternatives, and
-  \c.\label{properties.iii} at-issue content can be directly assented or dissented with (see also \citealt{shanon_two_1976,groenendijk_studies_1984,faller_semantics_2002,faller_evidentiality_2006,murray_evidentiality_2010}).
+\b.\label{properties.ii} the at-issue content of questions determines the relevant set of alternatives, and
+\c.\label{properties.iii} at-issue content can be directly assented or dissented with (see also \citealt{shanon_two_1976,groenendijk_studies_1984,faller_semantics_2002,faller_evidentiality_2006,murray_evidentiality_2010}).
 \z.
 
 Four commonly used diagnostics that build on the properties in \Last are illustrated in (\pref{qud}--\pref{yesbut}) for sentence-medial non-restrictive relative clauses (NRRCs), which are typically taken to contribute not-at-issue content (\citealt{potts_logic_2005}).
@@ -522,8 +522,6 @@ For clause-embedding predicates, Exp.~2 (`asking whether') largely reproduced th
   \label{fig:pairwise}
 \end{figure}
 
-\jt{In Fig3/Exp 2 the expressions are ordered from left to right by increasing at-issueness, but the expressions are ordered from left to right by decreasing at-issueness in the four panels of Fig 4. This needs to be adjusted, either in Fig 3 or in Fig 4. I vote for Fig 3 because those changes and figures are way easier to make (and isn't that the order in which things were originally? why was it changed?).}
-
 The differences described above are supported by post-hoc pairwise comparisons of the estimated means or proportions for each content, using the \texttt{emmeans} package (\citealt{emmeans}) in R (\citealt{r}), illustrated in Fig.~\ref{fig:pairwise}. These comparisons were based on mixed-effects beta regression models (Exps.~1--3) and a mixed-effects logistic regression model (Exp.~4), all fit using the \texttt{brms} package (\citealt{buerkner2017}) using weakly informative priors. The models predicted the ratings\footnote{To model the ratings in Exps.~1--3 using a beta regression, the ratings were first transformed from the interval [0,1] to the interval (0,1) using the method proposed in \citealt{smithson-verkuilen2006}.} from a fixed effect of expression (treatment-coded, with \emph{be right} as reference level), with random intercepts for participants and items. The output of the pairwise comparison were 95\% highest density intervals (HDIs) of estimated marginal mean differences between each of the expressions. We assume that two contents differ if their HDI does not include 0.\footnote{The full model outputs are available in the folder \texttt{results+analysis/exps1-4/} in the repository available at \url{https://anonymous.4open.science/r/at-issueness-diagnostics-232C/.}}
 
 Consistent with the patterns described above, Fig.~\ref{fig:pairwise} shows that the only positional difference for NRRCs is observed in Exp.~4 (`yes, but'), where sentence-medial ones are rated more at-issue than sentence-final ones, opposite to the finding in \citet{syrett_experimental_2015}. Among clause-embedding predicates, Exp.~2 (`asking whether') shows the most pairwise differences, while Exp.~3 (direct dissent) shows none.
@@ -556,7 +554,7 @@ Exps.~1--4 were designed to compare four at-issueness diagnostics that have been
   \item Although none of the diagnostics as implemented here reproduce the positional effect for NRRCs reported by \citet{syrett_experimental_2015}, only Exp.~4 (`yes, but') found a difference for medial and final NRRCs. However, this was the opposite pattern from Syrett and Koev, namely that medial NRRCs were judged as more at-issue than final ones. Exps.~1--3 found no significant difference between medial and sentence-final NRRCs.
   
   \item The results of the diagnostics differ in the relative order of the seven contents---most notably in the case of the complement of \emph{be right}, which ranks low under the QUD diagnostic but high under the other diagnostics.
-
+  
   \item The four diagnostics differ in the extent to which they differentiate between the contents of complements of the five clause-embedding predicates as in \citet{degen_projection_2025}: Only the `asking whether' diagnostic (Exp.~2) comes close to producing the differences. 
   
 \end{enumerate}
@@ -580,8 +578,6 @@ The diagnostics, as implemented here, yield different rank orderings of contents
 
 At first glance, this divergence might suggest that the diagnostics track distinct underlying phenomena, but this interpretation is not supported. Both the dual-notion view of at-issueness and the view that distinguishes genuine at-issueness diagnostics from those involving propositional anaphora predict that the QUD diagnostic (Exp.~1) should pattern with the `asking whether' diagnostic (Exp.~2), and contrast with the dissent-based diagnostics (Exps.~3--4). The observed pattern, in which Exp.~1 diverges from all other diagnostics, is not predicted by these views.
 
-\jt{I am uncomfortable with the notion of a `contextual felicity constraint' that you use in this subsection because  I do not understand what that is supposed to be. It's not a strong contextual felicity constraint because ``be right'' can be used out of the blue without problem; we just infer that the attitude holder claimed CC. I don't think we need to use this term to explain why ``be right'' received such low ratings in Exp 1. See below for a proposed replacement text from me}
-
 The pattern for \emph{be right} could instead be explained by how the QUD diagnostic interacts with the discourse requirements of \emph{be right}. First consider that, as shown in panel (a) of Fig.~\ref{fig:results},  participants gave relatively low naturalness ratings to responses such as \ref{beright.a}, indicating that they did not judge the response as fitting the question.
 
 \ex. Sample stimuli from the four experiments with \emph{be right}
@@ -599,23 +595,24 @@ The pattern for \emph{be right} could instead be explained by how the QUD diagno
 \\ \hspace*{1cm} \emph{Yes, and she didn't break the plate.}
 \\ \hspace*{1cm} \emph{No, she didn't break the plate.}
 
+We hypothesize that the low ratings in Exp.~1 arise because utterances which include \emph{be right} in a veridical environment, like Leo's utterance in \ref{beright.a}, convey that the attitude holder (here, Danny) has publicly committed to the content of the clausal complement (here, that Lucy broke the plate).\footnote{\citet{abusch_lexical_2002,abusch_presupposition_2010} characterizes \emph{be right} as conveying a doxastic inference that the subject believes the embedded proposition---an inference that is empirically characterized as projective in (\citealp[p.~50]{abusch_presupposition_2010}),
+% \citet[p.~6--8]{abusch_lexical_2002} derives projection for this inference via reasoning over lexically determined alternatives.
+Following a suggestion in \citealt{schlenker_local_2010} (p. 135), \citet[p.~73]{anand_factivity_2014} argue that the projective inference of \emph{be right} is assertive rather than doxastic, and conveys that the subject has committed to the embedded content by means of a prior discourse move.
+} as made explicit in \Next.
 
-We hypothesize that the low ratings in Exp.~1 arise because an utterance including \emph{be right} imposes a contextual felicity requirement that a prior commitment by an attitude holder be salient in the discourse. Utterances of the form \emph{X is right that $p$} require that the common ground or discourse model contains the information that $X$ has previously committed to $p$ (\citealt{abusch_presupposition_2010}, p. 50; \citealt{anand_factivity_2014}).\footnote{This contextual requirement of \emph{be right that $p$}, that there be a salient prior commitment may be a reason for the common use of \emph{right} and related items in agreeing responses (see, e.g, \citealt{krifka_response_2013,greenberg_intensified_2019,oshima_semantics_2026}).} In \ref{beright.a}, this requirement is that Danny has previously committed to the proposition that \enquote{Lucy broke the plate}, as would be the case in the discourse in \Next.
+\ex.  \a. {\bf Danny:} \emph{Lucy broke the plate.}
+% \hfill (QUD: \enquote{whether Lucy broke the plate})
+\b. {\bf Nora:} \emph{What did Lucy break?}
+\b. {\bf Leo:} \emph{Danny is right that she broke the plate.} \z.
 
-We hypothesize that the low ratings in Exp.~1 arise because utterances of positive declaratives with \emph{be right}, like Leo's utterance in \ref{beright.a}, convey that the attitude holder (here, Danny) is publicly committed to the content of the clausal complement (here, that Lucy broke the plate), as made explicit in \Next.\footnote{\jt{You referred to ``(\citealt{abusch_presupposition_2010}, p. 50; \citealt{anand_factivity_2014})'' for the claim that be right introduces a contextual requirement. I do not see that Abusch 2010 says anything of this sort on p.50 -- did you mean a different page or work? What's the relevant page number for Anand \& H 2014? I also do not see where they make this sort of claim; if they do, I'd like to refer to them in my paper with Noa.}} In the context of Danny's assertion, Leo's \emph{be right}-utterance is conveys that he considers Danny's speech act justified (see \citealt{krifka_response_2013} on the response particle \emph{right} and \citealt{attali_tale_2026} on the meaning of \emph{be right}).
+We can understand the ill-formedness of \Last with a QUD-based framework of discourse structure (in the sense of \citealt{ginzburg_interrogatives_1996,roberts_information_2012,buring_d-trees_2003}). Within this framework, Danny's assertion is assumed to address the question whether Lucy broke the plate.\footnote{
+While asserting $p$ is typically assumed to raise the issue of whether $p$ (see, e.g., \citealt{ginzburg_interrogative_2000,farkas_reacting_2010}), this may well be a subquestion (i.e., part of an answering strategy in the sense of \citealp{roberts_information_2012}) of a superquestion such as \enquote{What did Lucy break?} or \emph{Who broke the plate?}, since an answer to \emph{whether $p$} entails a partial answer to either of the latter two (see definition of subquestion in \citealt{roberts_information_2012}, p.6:16).
+}
+The inference associated with \Last[c], that Danny has previously committed to Lucy breaking the plate, therefore can be interpreted within a QUD-framework as conveying that the question \enquote{whether Lucy broke the plate} is on the QUD-stack of previously raised questions at the point where \emph{be right} is uttered.
 
+This QUD is a subquestion of Nora's question in \Last[b] \enquote{What did Lucy break}, since every complete answer to the latter entails an answer to the former. The progression from the subquestion to the explicitly given superquestion violates \citepos{roberts_information_2012} constraint on QUD stacks (p. 6:15), which allows only the reverse order (from superquestions to subquestions).\footnote{This constraint on QUD stacks can be understood as an informativeness-constraint, which requires that discourse moves contribute towards increasing the information quantity in the context set. Accordingly, the exchange in \Last is acceptable only under an echo-question interpretation of Nora's question.} 
 
-\ex.  \a. {\bf Danny:} \emph{Lucy broke the plate.} \hfill (QUD: \enquote{whether Lucy broke the plate})
-  \b. {\bf Nora:} \emph{What did Lucy break?}
-  \b. {\bf Leo:} \emph{Danny is right that she broke the plate.} \z.
-  
-  \jt{Why is `Did Lucy break the plate?' the QUD for Danny's utterance? Aren't  `What did Lucy break?' or `Who broke the plate?' also possibilities?}
-
-We can understand the ill-formedness of \Last within a QUD-based framework of discourse structure (in the sense of \citealt{ginzburg_interrogatives_1996,roberts_information_2012,buring_d-trees_2003}). In this framework, the contextual requirement of \emph{be right}, that a prior commitment be salient in the discourse, will result in a requirement that the QUD addressed by the act of making this commitment addresses must be part of the QUD stack. Specifically, in \Last, Danny's commitment that \enquote{Lucy broke the plate} addresses the QUD (or sub-QUD) \enquote{whether Lucy broke the plate}. This means that the question \enquote{Whether Lucy broke the plate} must be part of the QUD stack at the point where \emph{be right} is uttered.
-
-This question is a subquestion of the question in \Last[b] \enquote{What did Lucy break}, since every complete answer to the latter entails an answer to the former. The progression from the contextually required subquestion to the explicitly given superquestion violates \citepos{roberts_information_2012} constraint on QUD stacks (p. 6:15), which allows only the reverse order (from superquestions to subquestions).\footnote{This constraint on QUD stacks can be understood as an informativeness-constraint, which requires that discourse moves contribute towards increasing the information quantity in the context set. Accordingly, the exchange in \Last is acceptable only under an echo-question interpretation of Nora's question.}
-
-Under the hypothesis put forward here, the low ratings in Exp.~1 do not indicate that the embedded proposition is not at-issue.\footnote{\label{fn:w-o-be-right}
+As a result, the low ratings in Exp.~1 need not indicate that the embedded proposition is not at-issue but may be due to an infelicitous response in the given discourse context.\footnote{\label{fn:w-o-be-right}
 When \emph{be right} is excluded, the Spearman rank correlations are:
 
 \begin{tabular}{l | c c c c}
@@ -625,27 +622,10 @@ When \emph{be right} is excluded, the Spearman rank correlations are:
   Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .77  \\
   \hline
   % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
-\end{tabular}} Rather, they reflect that the response is infelicitous in the given discourse context. In the other diagnostics \ref{beright.b}--\ref{beright.d}, no conflicting prior discourse is given, allowing the discourse requirements of \emph{be right} to be accommodated without a reduction in acceptability. This highlights that diagnostics may interact with contextual requirements independently of at-issueness, and such interactions must be taken into account when interpreting the results.
+\end{tabular}}
+%
+In the other diagnostics \ref{beright.b}--\ref{beright.d}, where no prior discourse is given, the ratings for \emph{be right} are not affected by its inference about a previous discourse commitment. This contrast highlights that diagnostics may interact with literal meaning independently of at-issueness, and such interactions must be taken into account when interpreting the results.
 
-\jt{Replacement text starts here.}
-
-\ex.  \a. {\bf Danny:} \emph{Lucy broke the plate.} \hfill (QUD: \enquote{whether Lucy broke the plate})
-  \b. {\bf Nora:} \emph{What did Lucy break?}
-  \b. {\bf Leo:} \emph{Danny is right that she broke the plate.} \z.
-  
-  \jt{Why is `Did Lucy break the plate?' the QUD for Danny's utterance? Aren't  `What did Lucy break?' or `Who broke the plate?' also possibilities?}
-
-We can understand the ill-formedness of \Last with a QUD-based framework of discourse structure (in the sense of \citealt{ginzburg_interrogatives_1996,roberts_information_2012,buring_d-trees_2003}). Within this framework, Danny's assertion is assumed to address a QUD that is on the QUD stack, like the QUD \enquote{Whether Lucy broke the plate}. This QUD must be part of the QUD stack at the point where \emph{be right} is uttered. This QUD is a subquestion of Nora's question in \Last[b] \enquote{What did Lucy break}, since every complete answer to the latter entails an answer to the former. The progression from the subquestion to the explicitly given superquestion violates \citepos{roberts_information_2012} constraint on QUD stacks (p. 6:15), which allows only the reverse order (from superquestions to subquestions).\footnote{This constraint on QUD stacks can be understood as an informativeness-constraint, which requires that discourse moves contribute towards increasing the information quantity in the context set. Accordingly, the exchange in \Last is acceptable only under an echo-question interpretation of Nora's question.} In sum, the low ratings in Exp.~1 need not indicate that the embedded proposition is not at-issue but may be due to an infelicitous response in the given discourse context.\footnote{\label{fn:w-o-be-right}
-When \emph{be right} is excluded, the Spearman rank correlations are:
-
-\begin{tabular}{l | c c c c}
-  & Exp.~1 & Exp.~2 & Exp.~3 & Exp.~4 \\ \hline
-  Exp.~1 (QUD diagnostic) & \cellcolor{lightgray} & .77 & -.09 & -.31 \\
-  Exp.~2 (`asking whether' diagnostic) & \cellcolor{lightgray} & \cellcolor{lightgray} & .66 & .66 \\
-  Exp.~3 (`direct dissent' diagnostic) & \cellcolor{lightgray}& \cellcolor{lightgray} & \cellcolor{lightgray} & .77  \\
-  \hline
-  % Exp.~4 (`yes, but' diagnostic) & & & & \cellcolor{lightgray} \\ \hline
-\end{tabular}} In the other diagnostics \ref{beright.b}--\ref{beright.d}, no prior discourse is given. This discussion highlights that diagnostics may interact with lexical meaning independently of at-issueness, and such interactions must be taken into account when interpreting the results.
 
 \subsubsection{Why does the `asking whether' diagnostic show greater differentiation? \label{ssub:differentiation}}
 A striking difference between the results of the experiments is that Exp.~2 (`asking whether') showed the greatest differentiation between contents, whereas the other three experiments exhibited a smaller range of means, and fewer statistically supported differences between investigated contents. Among the first four experiments, Exp.~2 was the only one that came close to differentiating the contents of the complements of the five clause-embedding predicates that were differentiated in \cite{degen_projection_2025}.
@@ -662,8 +642,8 @@ Exps.~5 and 6 were designed to investigate whether the greater differentiation o
 
 \ex. Hypotheses
 \a.\label{hypotheses.a} \textbf{Question-embedding hypothesis:} Differentiation between contents is greater when contents are embedded in a polar question than in a declarative sentence.
-  \b.\label{hypotheses.b} \textbf{Response-task hypothesis:} Differentiation between contents is greater when participants are asked directly what the utterance is about, compared to tasks such as naturalness judgments or forced-choice continuations.
-  \z.
+\b.\label{hypotheses.b} \textbf{Response-task hypothesis:} Differentiation between contents is greater when participants are asked directly what the utterance is about, compared to tasks such as naturalness judgments or forced-choice continuations.
+\z.
 
 
 Exps.~5 and 6 compared two diagnostics that both embed the target content in a polar question but differ in the response task. Exp.~5 used the `asking whether' diagnostic as in Exp.~2 \Next[a] and Exp.~6 uses a direct-response diagnostic (\citealt{amaral_review_2007,tonhauser_diagnosing_2012}), shown in \Next[b].
@@ -926,11 +906,11 @@ To our knowledge, no previous work has proposed that the illocutionary force of 
 What could we discuss?
 
 \begin{enumerate}
-
-\item For NRRCs: Syrett/Koev found distinction, we did not. Extremely not-at-issue under asking-whether diagnostic, but not under the other ones. 
-
-\item For CCs of clause-embedding predicates: Asking-whether diagnostic shows more differentiation than the other ones.
-
+  
+  \item For NRRCs: Syrett/Koev found distinction, we did not. Extremely not-at-issue under asking-whether diagnostic, but not under the other ones. 
+  
+  \item For CCs of clause-embedding predicates: Asking-whether diagnostic shows more differentiation than the other ones.
+  
 \end{enumerate}
 
 \bigskip
@@ -938,34 +918,34 @@ What could we discuss?
 Possible explanations:
 
 \begin{enumerate}
-\item For NRRCs:  The stimuli with NRRCs convey two speech acts (asserted main clause/asserted NRRC vs. question/asserted NRRC). Since Exp 2 asks participants to judge what the speaker is asking about, the NRRCs are not candidates, resulting in the extreme not-at-issueness ratings. The other three diagnostics do not presume that one content is a question, but are in principle compatible with both asserted contents. 
-
-If we go with this, this needs to be part of the discussion of Exps 1-4 already, and could be mentioned as a reason for why Exps 5-6 don't include NRRCs anymore.
-
-No idea why Syrett/Koev found a difference in declarative diagnostic, leave to future research
-
-\item For the CCs of the five clause-embedding predicates: Exp 2 shows great differentiation (know $<$ confess, discover $<$ confirm $<$ be right; 9/10 cells), Exp 3 shows no differentiation (0/10 cells, and Exps 1 (6/10 cells, but be right wonkiness) and 4 (5/10) show much less differentiation
-
-\begin{itemize}
-
-\item {\bf Hypothesis:} The greater differentiation in Exp 2 is because of the embedding polar questions, not because of the response task.
-
-\item We confirmed this by running Exps 5-6, where we found lots of differentiation among the CCs of the 20 clause-embedding predicates.
-
-\item Why would polar question-embedding produce greater differentiation than declarative embedding in the five predicates featured in our experiments?
-
-\item Observation: We picked the five predicates because they differed greatly in the asking-whether diagnostic. But the CCs of all five predicates received pretty high ratings in gradient and categorical inference experiments of Degen/Tonhauser/Language, so there's a pretty strong inference that the CC follows from these utterances (not all entailed; confess $<$ know $<$ confirm $<$ discover $<$ be right); only one that is entailed is be right and know. 
-
-\item So the five predicates don't differ a great deal in declaratives when it comes to speaker commitment (? or interpreter inference) to the CC
-
-\item So when a speaker in Exps 1, 3-4 asserts the declarative, the interpreter is likely to take both contents to follow. These three diagnostics may not reliably distinguish between at-issueness but are rather about availability for subsequent reference. And since all of the CCs are (almost) entailed, they are available for subsequent reference.
-
-\item Exp 2 is the only diagnostic where MC and CC are both embedded under entailment-canceling operator; so here we entailments are canceled and the diagnostic can pay more attention to at-issueness? the more projective the more not-at-issue
-
-\item \citealt{scontras-tonhauser2025,scontras-tonhauser2026}: q-know utterance has more utility when CC is assumed to be true than when BEL is assumed to be true. ==> explains low at-issueness rating for CC in Exp 2
-
-\end{itemize}
-
+  \item For NRRCs:  The stimuli with NRRCs convey two speech acts (asserted main clause/asserted NRRC vs. question/asserted NRRC). Since Exp 2 asks participants to judge what the speaker is asking about, the NRRCs are not candidates, resulting in the extreme not-at-issueness ratings. The other three diagnostics do not presume that one content is a question, but are in principle compatible with both asserted contents. 
+  
+  If we go with this, this needs to be part of the discussion of Exps 1-4 already, and could be mentioned as a reason for why Exps 5-6 don't include NRRCs anymore.
+  
+  No idea why Syrett/Koev found a difference in declarative diagnostic, leave to future research
+  
+  \item For the CCs of the five clause-embedding predicates: Exp 2 shows great differentiation (know $<$ confess, discover $<$ confirm $<$ be right; 9/10 cells), Exp 3 shows no differentiation (0/10 cells, and Exps 1 (6/10 cells, but be right wonkiness) and 4 (5/10) show much less differentiation
+  
+  \begin{itemize}
+    
+    \item {\bf Hypothesis:} The greater differentiation in Exp 2 is because of the embedding polar questions, not because of the response task.
+    
+    \item We confirmed this by running Exps 5-6, where we found lots of differentiation among the CCs of the 20 clause-embedding predicates.
+    
+    \item Why would polar question-embedding produce greater differentiation than declarative embedding in the five predicates featured in our experiments?
+    
+    \item Observation: We picked the five predicates because they differed greatly in the asking-whether diagnostic. But the CCs of all five predicates received pretty high ratings in gradient and categorical inference experiments of Degen/Tonhauser/Language, so there's a pretty strong inference that the CC follows from these utterances (not all entailed; confess $<$ know $<$ confirm $<$ discover $<$ be right); only one that is entailed is be right and know. 
+    
+    \item So the five predicates don't differ a great deal in declaratives when it comes to speaker commitment (? or interpreter inference) to the CC
+    
+    \item So when a speaker in Exps 1, 3-4 asserts the declarative, the interpreter is likely to take both contents to follow. These three diagnostics may not reliably distinguish between at-issueness but are rather about availability for subsequent reference. And since all of the CCs are (almost) entailed, they are available for subsequent reference.
+    
+    \item Exp 2 is the only diagnostic where MC and CC are both embedded under entailment-canceling operator; so here we entailments are canceled and the diagnostic can pay more attention to at-issueness? the more projective the more not-at-issue
+    
+    \item \citealt{scontras-tonhauser2025,scontras-tonhauser2026}: q-know utterance has more utility when CC is assumed to be true than when BEL is assumed to be true. ==> explains low at-issueness rating for CC in Exp 2
+    
+  \end{itemize}
+  
 \end{enumerate}
 
 \subsection*{Why might the different experiments/diagnostics give different results? \label{ssec:discussion-questions}}
