@@ -31,9 +31,6 @@ table(t$trigger)
 
 # mean at-issueness rating by expression
 
-# invert scale to get at-issueness rating rather than not-at-issueness rating
-t = t %>% mutate(response = 1-response)
-
 # rename trigger into expression
 t$expression = t$trigger
 

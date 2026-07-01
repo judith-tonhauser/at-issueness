@@ -233,16 +233,6 @@ tableData
 
 # replace NA with gray cells and expressions with color coded versions
 tableData = tableData %>% mutate(across(everything(), ~replace_na(.x, "\\cellcolor{black}")))
-# tableData = tableData %>%
-#   mutate(expression = recode(expression,
-#                              "know" = "\\color{orange}{\\bf know}\\color{black}",
-#                              "confess" = "\\color{black}{\\bf confess}\\color{black}",
-#                              "discover" = "\\color{orange}{\\bf discover}\\color{black}",
-#                              "be.right" = "\\color{black}{\\bf be right}\\color{black}",
-#                              "confirm" = "\\color{black}{\\bf confirm}\\color{black}",
-#                              "medial NRRC" = "\\color{black}{\\bf medial NRRC}\\color{black}",
-#                              "final NRRC" = "\\color{black}{\\bf final NRRC}\\color{black}"                             
-#   ))
 
 #view(tableData)
 tableData

@@ -36,9 +36,6 @@ t = t %>%
   mutate(expression = fct_relevel(expression, "be_right"))
 levels(t$expression)
 
-# invert scale to get at-issueness rating rather than not-at-issueness rating
-t = t %>% mutate(response = 1-response)
-
 # response distribution before transformation
 summary(t$response)
 
@@ -48,25 +45,25 @@ summary(t$response)
 t$betaresponse = (t$response*(nrow(t)-1) + .5)/nrow(t)
 summary(t$betaresponse)
 
-# fit the model
-prior = get_prior(betaresponse ~ expression + (1|workerid) + (1|content),family = Beta(),data=t)
-prior
-
-betamodel = bf(betaresponse ~ expression + (1|workerid) + (1|content),
-               phi ~ expression + (1|workerid) + (1|content), # beta distribution's precision 
-               family = Beta())
-
-m.b = brm(formula = betamodel,
-          family=Beta(),
-          data=t, 
-          cores = 4, iter = 3000, warmup = 500,
-          control = list(adapt_delta = .97,max_treedepth=15))
-
-# model summary
-summary(m.b)
-
-# save the model
-saveRDS(m.b,file="../models/bayesian-model.rds")
+# # fit the model
+# prior = get_prior(betaresponse ~ expression + (1|workerid) + (1|content),family = Beta(),data=t)
+# prior
+# 
+# betamodel = bf(betaresponse ~ expression + (1|workerid) + (1|content),
+#                phi ~ expression + (1|workerid) + (1|content), # beta distribution's precision
+#                family = Beta())
+# 
+# m.b = brm(formula = betamodel,
+#           family=Beta(),
+#           data=t,
+#           cores = 4, iter = 3000, warmup = 500,
+#           control = list(adapt_delta = .97,max_treedepth=15))
+# 
+# # model summary
+# summary(m.b)
+# 
+# # save the model
+# saveRDS(m.b,file="../models/bayesian-model.rds")
 
 # read the model
 m.b <- readRDS(file="../models/bayesian-model.rds")
@@ -213,10 +210,6 @@ tableData = tableData %>%
 tableData <- tableData %>% arrange(Mean, comparisonExpression)
 tableData
 
-# remove what will be last row (be annoyed)
-tableData = tableData %>%
-  filter(expression != 'be annoyed')
-tableData
 
 # colorcode the cells (just white = HDI contains 0, red = HDI doesn't contain 0)
 tableData$cellColor = ifelse(tableData$lower <= 0 & tableData$upper >= 0, "\\cellcolor{white}",
@@ -239,178 +232,52 @@ tableData = tableData %>%
   spread(comparisonExpression,cellColor)
 tableData
 
-# replace NA with gray cells and expressions with color coded versions
+# replace NA with gray cells 
 tableData = tableData %>% mutate(across(everything(), ~replace_na(.x, "\\cellcolor{black}")))
-# tableData = tableData %>%
-#   mutate(expression = recode(expression,
-#                              "know" = "\\color{orange}{\\bf know}\\color{black}",
-#                              "confess" = "\\color{black}{\\bf confess}\\color{black}",
-#                              "discover" = "\\color{orange}{\\bf discover}\\color{black}",
-#                              "be.right" = "\\color{black}{\\bf be right}\\color{black}",
-#                              "confirm" = "\\color{black}{\\bf confirm}\\color{black}",
-#                              "medial NRRC" = "\\color{black}{\\bf medial NRRC}\\color{black}",
-#                              "final NRRC" = "\\color{black}{\\bf final NRRC}\\color{black}"                             
-#   ))
 
-#view(tableData)
+# view(tableData)
 tableData
 
 
-# turn all lower triangle cells black, by each column
-# & \rots{be right} & \rots{confirm} & \rots{say} & \rots{establish} & \rots{prove} & 
-#   \rots{suggest} & \rots{demonstrate} & \rots{announce} & \rots{reveal} & \rots{admit} & 
-#   \rots{confess} & \rots{think} & \rots{acknowledge} & \rots{pretend} & \rots{see} & \rots{discover} &
-#   \rots{hear} & \rots{inform} & \rots{know} & \rots{be annoyed}
+# turn all lower triangle cells black
+order <- c(
+  "be annoyed",
+  "know",
+  "inform",
+  "hear",
+  "discover",
+  "see",
+  "pretend",
+  "acknowledge",
+  "think",
+  "confess",
+  "admit",
+  "reveal",
+  "announce",
+  "demonstrate",
+  "suggest",
+  "prove",
+  "establish",
+  "say",
+  "confirm",
+  "be right"
+)
 
-tmp = tableData %>% 
-  mutate('be right' = case_when('be right' = TRUE ~ "\\cellcolor{black}"))
+tmp <- tableData
 
-tmp = tmp %>% 
-  mutate(confirm = case_when(confirm = TRUE & expression != 'be right' ~ "\\cellcolor{black}",
-                             TRUE ~ confirm))
-tmp = tmp %>% 
-  mutate(say = case_when(say = TRUE & (expression != 'be right' & expression != "confirm") ~ "\\cellcolor{black}",
-                              TRUE ~ say))
-tmp = tmp %>% 
-  mutate(establish = case_when(establish = TRUE & (expression != 'be right' & expression != "confirm" & 
-                                                    expression != "say") ~ "\\cellcolor{black}",
-                             TRUE ~ establish))
-tmp = tmp %>% 
-  mutate(prove = case_when(prove = TRUE & (expression != 'be right' & expression != "confirm" 
-                                         & expression != "say" & expression != "establish") ~ "\\cellcolor{black}",
-                          TRUE ~ prove))
-
-tmp = tmp %>% 
-  mutate(suggest = case_when(suggest = TRUE & (expression != 'be right' & expression != "confirm" 
-                                           & expression != "say" & expression != "establish"
-                                           & expression != "prove") ~ "\\cellcolor{black}",
-                           TRUE ~ suggest))
-
-tmp = tmp %>% 
-  mutate(demonstrate = case_when(demonstrate = TRUE & (expression != 'be right' & expression != "confirm" 
-                                               & expression != "say" & expression != "establish"
-                                               & expression != "prove" & expression != "suggest") ~ "\\cellcolor{black}",
-                             TRUE ~ demonstrate))
-
-tmp = tmp %>% 
-  mutate(announce = case_when(announce = TRUE & (expression != 'be right' & expression != "confirm" 
-                                                       & expression != "say" & expression != "establish"
-                                                       & expression != "prove" & expression != "suggest"
-                                                 & expression != "demonstrate") ~ "\\cellcolor{black}",
-                                 TRUE ~ announce))
-
-tmp = tmp %>% 
-  mutate(reveal = case_when(reveal = TRUE & (expression != 'be right' & expression != "confirm" 
-                                                 & expression != "say" & expression != "establish"
-                                                 & expression != "prove" & expression != "suggest"
-                                                 & expression != "demonstrate" & expression != "announce") ~ "\\cellcolor{black}",
-                              TRUE ~ reveal))
-
-tmp = tmp %>% 
-  mutate(admit = case_when(admit = TRUE & (expression != 'be right' & expression != "confirm" 
-                                             & expression != "say" & expression != "establish"
-                                             & expression != "prove" & expression != "suggest"
-                                             & expression != "demonstrate" & expression != "announce"
-                                           & expression != "reveal") ~ "\\cellcolor{black}",
-                            TRUE ~ admit))
-
-tmp = tmp %>% 
-  mutate(confess = case_when(confess = TRUE & (expression != 'be right' & expression != "confirm" 
-                                           & expression != "say" & expression != "establish"
-                                           & expression != "prove" & expression != "suggest"
-                                           & expression != "demonstrate" & expression != "announce"
-                                           & expression != "reveal" & expression != "admit") ~ "\\cellcolor{black}",
-                           TRUE ~ confess))
-
-tmp = tmp %>% 
-  mutate(think = case_when(think = TRUE & (expression != 'be right' & expression != "confirm" 
-                                               & expression != "say" & expression != "establish"
-                                               & expression != "prove" & expression != "suggest"
-                                               & expression != "demonstrate" & expression != "announce"
-                                               & expression != "reveal" & expression != "admit"
-                                           & expression != "confess") ~ "\\cellcolor{black}",
-                             TRUE ~ think))
-
-tmp = tmp %>% 
-  mutate(acknowledge = case_when(acknowledge = TRUE & (expression != 'be right' & expression != "confirm" 
-                                           & expression != "say" & expression != "establish"
-                                           & expression != "prove" & expression != "suggest"
-                                           & expression != "demonstrate" & expression != "announce"
-                                           & expression != "reveal" & expression != "admit"
-                                           & expression != "confess" & expression != "think") ~ "\\cellcolor{black}",
-                           TRUE ~ acknowledge))
-
-tmp = tmp %>% 
-  mutate(pretend = case_when(pretend = TRUE & (expression != 'be right' & expression != "confirm" 
-                                                       & expression != "say" & expression != "establish"
-                                                       & expression != "prove" & expression != "suggest"
-                                                       & expression != "demonstrate" & expression != "announce"
-                                                       & expression != "reveal" & expression != "admit"
-                                                       & expression != "confess" & expression != "think"
-                                               & expression != "acknowledge") ~ "\\cellcolor{black}",
-                                 TRUE ~ pretend))
-
-tmp = tmp %>% 
-  mutate(see = case_when(see = TRUE & (expression != 'be right' & expression != "confirm" 
-                                               & expression != "say" & expression != "establish"
-                                               & expression != "prove" & expression != "suggest"
-                                               & expression != "demonstrate" & expression != "announce"
-                                               & expression != "reveal" & expression != "admit"
-                                               & expression != "confess" & expression != "think"
-                                               & expression != "acknowledge" & expression != "pretend") ~ "\\cellcolor{black}",
-                             TRUE ~ see))
-tmp = tmp %>% 
-  mutate(discover = case_when(discover = TRUE & (expression != 'be right' & expression != "confirm" 
-                                       & expression != "say" & expression != "establish"
-                                       & expression != "prove" & expression != "suggest"
-                                       & expression != "demonstrate" & expression != "announce"
-                                       & expression != "reveal" & expression != "admit"
-                                       & expression != "confess" & expression != "think"
-                                       & expression != "acknowledge" & expression != "pretend"
-                                       & expression != "see") ~ "\\cellcolor{black}",
-                         TRUE ~ discover))
-
-tmp = tmp %>% 
-  mutate(hear = case_when(hear = TRUE & (expression != 'be right' & expression != "confirm" 
-                                                 & expression != "say" & expression != "establish"
-                                                 & expression != "prove" & expression != "suggest"
-                                                 & expression != "demonstrate" & expression != "announce"
-                                                 & expression != "reveal" & expression != "admit"
-                                                 & expression != "confess" & expression != "think"
-                                                 & expression != "acknowledge" & expression != "pretend"
-                                                 & expression != "see" & expression != "discover") ~ "\\cellcolor{black}",
-                              TRUE ~ hear))
-
-
-tmp = tmp %>% 
-  mutate(inform = case_when(inform = TRUE & (expression != 'be right' & expression != "confirm" 
-                                         & expression != "say" & expression != "establish"
-                                         & expression != "prove" & expression != "suggest"
-                                         & expression != "demonstrate" & expression != "announce"
-                                         & expression != "reveal" & expression != "admit"
-                                         & expression != "confess" & expression != "think"
-                                         & expression != "acknowledge" & expression != "pretend"
-                                         & expression != "see" & expression != "discover"
-                                         & expression != "hear" ) ~ "\\cellcolor{black}",
-                          TRUE ~ inform))
-
-tmp = tmp %>% 
-  mutate(know = case_when(know = TRUE & (expression != 'be right' & expression != "confirm" 
-                                             & expression != "say" & expression != "establish"
-                                             & expression != "prove" & expression != "suggest"
-                                             & expression != "demonstrate" & expression != "announce"
-                                             & expression != "reveal" & expression != "admit"
-                                             & expression != "confess" & expression != "think"
-                                             & expression != "acknowledge" & expression != "pretend"
-                                             & expression != "see" & expression != "discover"
-                                             & expression != "hear" & expression != "inform") ~ "\\cellcolor{black}",
-                            TRUE ~ know))
-
-# tmp = tmp %>% 
-#   mutate('be annoyed' = case_when('be annoyed' = TRUE) ~ "\\cellcolor{black}")
+for (i in seq_along(order)) {
+  col <- order[i]
+  
+  tmp[[col]] <- ifelse(
+    match(tmp$expression, order) >= i,
+    "\\cellcolor{black}",
+    tmp[[col]]
+  )
+}
 
 tmp
 tableData = tmp
+
 
 # now create the table to include in the paper
 table1 = print(xtable(tableData),

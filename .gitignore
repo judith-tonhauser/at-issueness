@@ -284,3 +284,5 @@ TSWLatexianTemp*
 .github/*
 cspell.json
 .Rproj.user
+*.Rproj
+.positai

@@ -226,9 +226,6 @@ d %>%
 
 nrow(d)
 
-# code response such that 1 = not-at-issue and 0 = at-issue
-table(d$response)
-
 means.exp2 = d %>%
   filter(!(expression == "AI MC" | expression == "NAI MC")) %>%
   group_by(expression) %>%

@@ -54,11 +54,6 @@ d %>%
   summarize(count=n())
 #201 female, 43 male, 6 other, 0 undeclared
 
-# change the response for ai condition so that what was 0/not-at-issue is now 1/not-at-issue
-# by subtracting the ai responses from 1
-table(d$question_type,d$response)
-d[d$question_type == "ai",]$response = 1 - d[d$question_type == "ai",]$response
-
 # make a trial number
 unique(d$slide_number_in_experiment) #slide numbers from 5 to 57
 d$trial = d$slide_number_in_experiment - 4
@@ -87,7 +82,7 @@ table(d$american)
 d <- d %>%
   filter(american == "Yes") %>%
   droplevels()
-length(unique(d$workerid)) #245 (data from 4 participants excluded)
+length(unique(d$workerid)) #245 (data from 5 participants excluded)
 
 # exclude participants based on main clause controls
 
@@ -128,7 +123,7 @@ d.MC.AI <- d.MC %>%
 nrow(d.MC.AI) #1470
 
 # group not-at-issueness mean (all participants, all clauses)
-round(mean(d.MC.AI$response),2) #.07
+round(mean(d.MC.AI$response),2) #.93
 
 # calculate each participants mean response to the projection of main clauses
 ai.means = d.MC.AI %>%
@@ -151,7 +146,7 @@ p <- p.means[p.means$Mean > (mean(p.means$Mean) + 2*sd(p.means$Mean)),]
 p #14 participants 
 
 # get the participants who are more than 2 standard deviations above the mean on ai 
-ai <- ai.means[ai.means$Mean > (mean(ai.means$Mean) + 2*sd(ai.means$Mean)),]
+ai <- ai.means[ai.means$Mean < (mean(ai.means$Mean) - 2*sd(ai.means$Mean)),]
 ai #15 participants
 
 # make data subset of just the outliers

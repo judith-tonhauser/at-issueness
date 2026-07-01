@@ -211,10 +211,6 @@ d %>%
 # number of data points that entered into the analysis
 nrow(d)
 
-# code response such that 1 = not-at-issue and 0 = at-issue
-# d$response = 1-d$response
-table(d$response)
-
 means = d %>%
   filter(!(expression == "AI MC" | expression == "NAI MC")) %>%
   group_by(expression) %>%

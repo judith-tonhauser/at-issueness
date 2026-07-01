@@ -14,7 +14,7 @@ cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00",
 theme_set(theme_bw())
 
 # load helper functions
-source('../../helpers.R')
+source('../../../helpers.R')
 
 # load cleaned data
 d = read_csv("../data/data_preprocessed.csv")
@@ -33,10 +33,6 @@ table(t$trigger)
 
 # rename trigger into expression
 t$expression = t$trigger
-
-# code response such that 1 = at-issue and 0 = not-at-issue
-t$response = 1-t$response
-table(t$response)
 
 means = t %>%
   group_by(expression) %>%

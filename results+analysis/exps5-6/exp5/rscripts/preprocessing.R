@@ -10,7 +10,7 @@ setwd(this.dir)
 library(tidyverse)
 
 # load helpers
-source('../../helpers.R')
+source('../../../helpers.R')
 
 # set theme
 theme_set(theme_bw())
@@ -88,11 +88,6 @@ nrow(d) #14768 / 52 = 284
 
 # no gender information
 
-# change the response for ai condition so that what was 0/not-at-issue is now 1/not-at-issue
-# by subtracting the ai responses from 1
-table(d$question_type,d$response)
-d[d$question_type == "ai",]$response = 1 - d[d$question_type == "ai",]$response
-
 # make a trial number
 unique(d$slide_number_in_experiment) #slide numbers from 5 to 57
 d$trial = d$slide_number_in_experiment - 4
@@ -162,8 +157,8 @@ d.MC.AI <- d.MC %>%
   droplevels()
 nrow(d.MC.AI) #1662 / 277 Turkers = 6 main clause controls in ai block
 
-# group not-at-issueness mean (all Turkers, all clauses)
-round(mean(d.MC.AI$response),2) #.05
+# group at-issueness mean (all Turkers, all clauses)
+round(mean(d.MC.AI$response),2) #.95
 
 # calculate each Turkers mean response to the projection of main clauses
 ai.means = d.MC.AI %>%
@@ -185,8 +180,8 @@ ggplot(ai.means, aes(x=workerid,y=Mean)) +
 p <- p.means[p.means$Mean > (mean(p.means$Mean) + 2*sd(p.means$Mean)),]
 p #23 Turkers 
 
-# get the Turkers who are more than 2 standard deviations above the mean on ai 
-ai <- ai.means[ai.means$Mean > (mean(ai.means$Mean) + 2*sd(ai.means$Mean)),]
+# get the Turkers who are more than 2 standard deviations below the mean on ai 
+ai <- ai.means[ai.means$Mean < (mean(ai.means$Mean) - 2*sd(ai.means$Mean)),]
 ai #17 Turkers
 
 # make data subset of just the outliers
@@ -200,43 +195,6 @@ d <- d %>%
   filter(!(workerid %in% p$workerid | workerid %in% ai$workerid)) %>%
   droplevels()
 length(unique(d$workerid)) # 242 remaining Turkers (35 Turkers excluded)
-
-# variance
-
-# exclude participants who always clicked on roughly the same point on the scale 
-# ie participants whose variance in overall response distribution is more 
-# than 2 sd below mean by-participant variance
-table(d$trigger)
-table(d$question_type)
-
-variances = d %>%
-  filter(trigger != "MC") %>%
-  group_by(workerid) %>%
-  summarize(Variance = var(response)) %>%
-  mutate(TooSmall = Variance < mean(Variance) - 2*sd(Variance))
-
-#View(variances)
-
-ggplot(variances,aes(x=workerid,y=Variance)) +
-  geom_point()
-
-lowvarworkers = as.character(variances[variances$TooSmall,]$workerid)
-summary(variances)
-lowvarworkers # 3 participants had lower mean variance
-
-lvw = d %>%
-  filter(as.character(workerid) %in% lowvarworkers) %>%
-  droplevels() %>%
-  mutate(Participant = as.factor(as.character(workerid)))
-
-ggplot(lvw[lvw$trigger != "MC",],aes(x=Participant,y=response,color=trigger_class)) +
-  geom_point()
-
-# manual inspection shows that these three participants used the whole scale, so no reason to exclude them
-
-# exclude 0 participant with really low variance 
-#d <- droplevels(subset(d, !(d$workerid %in% lowvarworkers)))
-length(unique(d$workerid)) #242 participants remain
 
 # write cleaned data to file
 write_csv(d, file="../data/data_preprocessed.csv")
