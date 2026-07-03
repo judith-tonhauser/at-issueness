@@ -1,0 +1,175 @@
+% !TEX program = lualatex
+% glossa-template.tex
+% Copyright 2016 Guido Vanden Wyngaerd
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is 
+% Guido Vanden Wyngaerd (guido.vandenwyngaerd@kuleuven.be).
+%
+% This work consists of the files 
+% glossa.cls
+% glossa.bst
+% gl-authoryear-comp.cbx
+% biblatex-gl.bbx
+% glossa-template.tex
+% glossa.png
+%
+% The files of the work are derived from the Semantics & Pragmatics style files
+% by Kai von Fintel, Christopher Potts, and Chung-chieh Shan
+% All changes are documented on the github repository 
+% https://github.com/guidovw/Glossalatex.
+
+\PassOptionsToPackage{table}{xcolor}
+\PassOptionsToPackage{xcolor}{dvipsnames}
+\documentclass[times,linguex]{glossa}
+\usepackage{rotating}
+\usepackage{tablefootnote}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{booktabs}
+
+\usepackage{adjustbox}
+\usepackage{array}
+
+\newcolumntype{R}[2]{%
+>{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+l%
+<{\egroup}%
+}
+
+\newcommand*\rots{\multicolumn{1}{R{90}{.7em}}}% no optional argument here, please!
+%\usepackage{xcolor}
+
+% possible options:
+% [times] for Times font (default if no option is chosen)
+% [cm] for Computer Modern font
+% [lucida] for Lucida font (not freely available)
+% [brill] open type font, freely downloadable for non-commercial use from http://www.brill.com/about/brill-fonts; requires xetex
+% [charis] for CharisSIL font, freely downloadable from http://software.sil.org/charis/
+% for the Brill an CharisSIL fonts, you have to use the XeLatex typesetting engine (not pdfLatex)
+% for headings, tables, captions, etc., Fira Sans is used: https://www.fontsquirrel.com/fonts/fira-sans
+% [biblatex] for using biblatex (the default is natbib, do not load the natbib package in this file, it is loaded automatically via the document class glossa.cls)
+% [linguex] loads the linguex example package
+% !! a note on the use of linguex: in glossed examples, the third line of the example (the translation) needs to be prefixed with \glt. This is to allow a first line with the name of the language and the source of the example. See example (2) in the text for an illustration.
+% !! a note on the use of bibtex: for PhD dissertations to typeset correctly in the references list, the Address field needs to contain the city (for US cities in the format "Santa Cruz, CA")
+
+%\addbibresource{sample.bib}
+% the above line is for use with biblatex
+% replace this by the name of your bib-file (extension .bib is required)
+% comment out if you use natbib/bibtex
+
+\let\B\relax %to resolve a conflict in the definition of these commands between xyling and xunicode (the latter called by fontspec, called by charis)
+\let\T\relax
+\usepackage{xyling} %for trees; the use of xyling with the CharisSIL font produces poor results in the branches. This problem does not arise with the packages qtree or forest.
+%\usepackage[linguistics]{forest} %for nice trees!
+
+
+
+
+% \pdf* commands provide metadata for the PDF output. ASCII characters only!
+\pdfauthor{}
+\pdftitle{Comparing at-issueness diagnostics}
+\pdfkeywords{}
+
+\title[Comparing at-issueness diagnostics]{An experimental comparison of at-issueness diagnostics\\ 
+\bigskip \large
+Word count (including references, excluding abstract and supplements): 11,352
+}
+% Optional short title inside square brackets, for the running headers.
+
+\author[]% short form of the author names for the running header. If no short author is given, no authors print in the headers.
+{%as many authors as you like, each separated by \AND.
+% \spauthor{Waltraud Paul\\
+% \institute{CRLAO, CNRS-EHESS-INALCO}\\
+% \small{%105, Bd. Raspail, 75005 Paris\\
+% waltraud.paul@ehess.fr}
+% }
+% \AND
+% \spauthor{Guido Vanden Wyngaerd \\
+% \institute{KU Leuven}\\
+% \small{%Warmoesberg 26, 1000 Brussel\\
+% guido.vandenwyngaerd@kuleuven.be}
+% }%
+}
+
+\input{author-added}
+
+% positive coefficients/difference
+\definecolor{red}{RGB}{178,24,43}
+
+% negative coefficients/difference
+\definecolor{blue}{RGB}{33,102,172}
+
+% comments by JT
+\newcommand{\jt}[1]{%TC:ignore
+\textbf{\color{blue}JT: #1}%TC:endignore
+}
+\newcommand{\lh}[1]{%TC:ignore
+\textbf{\color{orange}LH: #1}%TC:endignore
+}
+
+\begin{document}
+
+
+
+\section{Experiments 1-4 \label{sec:2_experiments}}
+
+To try to understand the greater by-content differentiation of the `asking whether' diagnostic, we focus on properties that set it apart from the other three diagnostics. Two differences are particularly salient: First, it is the only diagnostic where the target content itself occurs in a polar question, whereas in the other diagnostics, the target content appears in a declarative sentence. Second, it is the only diagnostic where participants are asked directly about the intentions of the speaker, while the other ones collect meta-linguistic judgments like naturalness ratings or continuation preferences. To distinguish between these possibilities, the next section compares the `asking whether' diagnostic (Exp.~5) to a diagnostic that also embeds the target content in a polar question but elicits naturalness ratings on direct responses (Exp.~6). 
+
+
+
+
+\subsection*{Why do the different experiments/diagnostics give different results? \label{ssec:discussion-questions}}
+
+\bigskip
+\noindent
+Possible explanations:
+
+\begin{enumerate}
+  
+  \item For the CCs of the five clause-embedding predicates: Exp 2 shows great differentiation (know $<$ confess, discover $<$ confirm $<$ be right; 9/10 cells), Exp 3 shows no differentiation (0/10 cells, and Exps 1 (6/10 cells, but be right wonkiness) and 4 (5/10) show much less differentiation
+  
+  \begin{itemize}
+    
+    \item {\bf Hypothesis:} The greater differentiation in Exp 2 is because of the embedding polar questions, not because of the response task.
+    
+    \item We confirmed this by running Exps 5-6, where we found lots of differentiation among the CCs of the 20 clause-embedding predicates.
+    
+    \item Why would polar question-embedding produce greater differentiation than declarative embedding in the five predicates featured in our experiments?
+    
+    \item Observation: We picked the five predicates because they differed greatly in the asking-whether diagnostic. But the CCs of all five predicates received pretty high ratings in gradient and categorical inference experiments of Degen/Tonhauser/Language, so there's a pretty strong inference that the CC follows from these utterances (not all entailed; confess $<$ know $<$ confirm $<$ discover $<$ be right); only one that is entailed is be right and know. 
+    
+    \item So the five predicates don't differ a great deal in declaratives when it comes to speaker commitment (? or interpreter inference) to the CC
+    
+    \item So when a speaker in Exps 1, 3-4 asserts the declarative, the interpreter is likely to take both contents to follow. These three diagnostics may not reliably distinguish between at-issueness but are rather about availability for subsequent reference. And since all of the CCs are (almost) entailed, they are available for subsequent reference.
+    
+    \item Exp 2 is the only diagnostic where MC and CC are both embedded under entailment-canceling operator; so here we entailments are canceled and the diagnostic can pay more attention to at-issueness? the more projective the more not-at-issue
+    
+    \item \citealt{scontras-tonhauser2025,scontras-tonhauser2026}: q-know utterance has more utility when CC is assumed to be true than when BEL is assumed to be true. ==> explains low at-issueness rating for CC in Exp 2
+    
+  \end{itemize}
+  
+\end{enumerate}
+
+
+
+
+
+\bibliography{at-issueness} %for use with natbib; comment out if you use biblatex, and change 'sample' by the name of your bib-file
+
+%TC:endignore
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: luatex
+%%% End:
