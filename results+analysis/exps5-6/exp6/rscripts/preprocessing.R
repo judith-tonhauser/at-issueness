@@ -176,5 +176,5 @@ d %>%
   summarize(count=n())
 #187 female, 28 male, 5 other, 0 undeclared
 
-# data points (at-issueness ratings only)
-nrow(d)/2
+# data points (at-issueness ratings only, target trials w/o controls only)
+d %>% filter(short_trigger != "MC") %>% nrow()/2

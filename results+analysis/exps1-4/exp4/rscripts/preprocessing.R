@@ -233,6 +233,7 @@ d %>%
 # 3 non-binary      2
 # 4 preferNoToSay   0
 
-nrow(d)
+# number of data points that entered into the analysis (should not include controls)
+d %>% filter(!(expression == "controlBad" | expression == "controlGood")) %>% nrow()
 
 write_csv(d, file="../data/cd.csv")

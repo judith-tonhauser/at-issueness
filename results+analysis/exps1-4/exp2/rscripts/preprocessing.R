@@ -224,7 +224,8 @@ d %>%
 # 3 non-binary      1
 # 4 preferNoToSay   1
 
-nrow(d)
+# number of data points that entered into the analysis (should not include controls)
+d %>% filter(!(expression == "AI MC" | expression == "NAI MC")) %>% nrow()
 
 means.exp2 = d %>%
   filter(!(expression == "AI MC" | expression == "NAI MC")) %>%

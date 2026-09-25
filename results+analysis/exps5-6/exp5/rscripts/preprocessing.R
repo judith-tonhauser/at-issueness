@@ -206,7 +206,5 @@ mean(d$age,na.rm=TRUE) #39.2
 
 # no gender information available
 
-# data points (at-issueness ratings only)
-nrow(d)/2
-
-
+# data points (at-issueness ratings only, target trials w/o controls only)
+d %>% filter(short_trigger != "MC") %>% nrow()/2
